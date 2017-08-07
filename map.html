@@ -42,13 +42,15 @@ body {
 
 <script>
 d3.json("country_temperatures.json", function(err, data) {
-  var config = {"width":960,"height":960}
+  var config = {"minTemp":-30,"maxTemp":50,"width":960,"height":960}
 
   var width = config.width,
       height = config.height;
 
-  var colors = ["#2c7bb6", "#00a6ca","#00ccbc","#90eb9d","#ffff8c","#f9d057","#f29e2e","#e76818","#d7191c"]
-  var colorScale = d3.scale.linear().range(colors);
+  var color = d3.scale.linear()
+     .domain([35, 0, -30])
+     .range(["#d7191c", "#ffffbf", "#2c7bb6"])
+     .interpolate(d3.interpolateHcl);
 
   var projection = d3.geo.mercator()
       .scale((width + 1) / 2 / Math.PI)
@@ -68,13 +70,6 @@ d3.json("country_temperatures.json", function(err, data) {
       .datum(graticule)
       .attr("class", "graticule")
       .attr("d", path);
-
-  var quantize = d3.scale.quantize()
-      .domain([0, 1.0])
-      .range(d3.range(colors.length).map(function(i) { return i }));
-
-  // this is hard coded. can this be combined with the above line?
-  quantize.domain([-30, 50]);
 
   d3.json("https://s3-us-west-2.amazonaws.com/vida-public/geo/world-topo-min.json", function(error, world) {
     var countries = topojson.feature(world, world.objects.countries).features;
@@ -102,9 +97,7 @@ d3.json("country_temperatures.json", function(err, data) {
         .style("fill", function(d) {
           if (data[d.properties.name]) {
             var temp = (data[d.properties.name][month]);
-            var c = quantize(temp);
-            var color = colorScale(c);
-            return color;
+            return color(temp);
           } else {
             return "#ccc";
           }
