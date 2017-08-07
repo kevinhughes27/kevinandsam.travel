@@ -40,18 +40,25 @@ def worldbank_api():
     for country in countries():
         country_iso3 = coco.convert(names=[country], to='ISO3')
 
+        # host = 'http://climatedataapi.worldbank.org/climateweb/rest/v1/country'
+        # type = 'mavg'
+        # # I should pick this more carefully or average all the models potentially
+        # # I could email API help with this question they might have a suggestion.
+        # gcm = 'bccr_bcm2_0'
+        # # I am going to chose the 'b1' model for predicted temperatures
+        # # http://www.ipcc.ch/ipccreports/sres/emission/index.php?idp=3 for more details
+        # sres = 'b1'
+        # var = 'tas'
+        # start = '2020'
+        # end = '2039'
+        # url = '/'.join([host, type, gcm, sres, var, start, end, country_iso3]) + '.json'
+
         host = 'http://climatedataapi.worldbank.org/climateweb/rest/v1/country'
         type = 'mavg'
-        # I should pick this more carefully or average all the models potentially
-        # I could email API help with this question they might have a suggestion.
-        gcm = 'bccr_bcm2_0'
-        # I am going to chose the 'b1' model for predicted temperatures
-        # http://www.ipcc.ch/ipccreports/sres/emission/index.php?idp=3 for more details
-        sres = 'b1'
         var = 'tas'
-        start = '2020'
-        end = '2039'
-        url = '/'.join([host, type, gcm, sres, var, start, end, country_iso3]) + '.json'
+        start = '1980'
+        end = '1999'
+        url = '/'.join([host, type, var, start, end, country_iso3]) + '.json'
 
         try:
             response = requests.get(url)
