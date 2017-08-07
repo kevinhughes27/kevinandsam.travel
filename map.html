@@ -42,10 +42,8 @@ body {
 
 <script>
 d3.json("country_temperatures.json", function(err, data) {
-  var config = {"minTemp":-30,"maxTemp":50,"width":960,"height":960}
-
-  var width = config.width,
-      height = config.height;
+  var width = 960,
+      height = 960;
 
   var color = d3.scale.linear()
      .domain([35, 0, -30])
@@ -144,7 +142,7 @@ d3.json("country_temperatures.json", function(err, data) {
         .attr("class", "boundary")
         .attr("d", path);
 
-    svg.attr("height", config.height * 2.2 / 3);
+    svg.attr("height", height * 2.2 / 3);
   });
 
   d3.select(self.frameElement).style("height", (height * 2.3 / 3) + "px");
