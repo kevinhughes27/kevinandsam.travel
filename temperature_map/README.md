@@ -4,6 +4,10 @@ A map of average temperature by time of year. A slider lets the user adjust the 
 
 Data is fetched from the World Bank climat api and saved to JSON using a python script. Note that this data is fairly complex - I had to choose a future scenario and modelling technique.
 
+## Development
+
+run `python -m SimpleHTTPServer 8000`
+then access [http://localhost:8000/temperature_map/index.html](http://localhost:8000/temperature_map/index.html)
 
 ## Useful examples
 * [click-to-zoom via transform](https://bl.ocks.org/mbostock/2206590)
