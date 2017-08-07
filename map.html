@@ -5,10 +5,6 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   width: 960px;
   height: 500px;
-  position: relative;
-}
-.land {
-  fill: #222;
 }
 .boundary {
   fill: none;
@@ -45,6 +41,19 @@ d3.json("country_temperatures.json", function(err, data) {
   var width = 960,
       height = 960;
 
+  var headline = "Average Temperature in ";
+  var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
+  var init_month = 0;
+
+  d3.select("body").insert("p", ":first-child").append("input")
+      .attr("type", "range")
+      .attr("min", "0")
+      .attr("max", "11")
+      .attr("value", init_month)
+      .attr("id", "month");
+
+  d3.select("body").insert("h2", ":first-child").text(headline + months[init_month]);
+
   var color = d3.scale.linear()
      .domain([35, 0, -30])
      .range(["#d7191c", "#ffffbf", "#2c7bb6"])
@@ -58,48 +67,24 @@ d3.json("country_temperatures.json", function(err, data) {
   var path = d3.geo.path()
       .projection(projection);
 
-  var graticule = d3.geo.graticule();
-
   var svg = d3.select("#canvas-svg").append("svg")
       .attr("width", width)
       .attr("height", height);
 
-  svg.append("path")
-      .datum(graticule)
-      .attr("class", "graticule")
-      .attr("d", path);
-
-  d3.json("https://s3-us-west-2.amazonaws.com/vida-public/geo/world-topo-min.json", function(error, world) {
+  // this response should be saved to file.
+  d3.json("world-topo.json", function(error, world) {
     var countries = topojson.feature(world, world.objects.countries).features;
-
-    svg.append("path")
-       .datum(graticule)
-       .attr("class", "choropleth")
-       .attr("d", path);
 
     var g = svg.append("g");
 
-    g.append("path")
-     .datum({type: "LineString", coordinates: [[-180, 0], [-90, 0], [0, 0], [90, 0], [180, 0]]})
-     .attr("class", "equator")
-     .attr("d", path);
-
     var country = g.selectAll(".country").data(countries);
-    var month = 0;
 
     country.enter().insert("path")
         .attr("class", "country")
         .attr("d", path)
         .attr("id", function(d,i) { return d.id; })
         .attr("title", function(d) { return d.properties.name; })
-        .style("fill", function(d) {
-          if (data[d.properties.name]) {
-            var temp = (data[d.properties.name][month]);
-            return color(temp);
-          } else {
-            return "#ccc";
-          }
-        })
+        .call(fillMap, color, data, init_month)
         .on("mousemove", function(d) {
             var html = "";
 
@@ -108,7 +93,7 @@ d3.json("country_temperatures.json", function(err, data) {
             html += d.properties.name;
             html += "</span>";
             html += "<span class=\"tooltip_value\">";
-            html += (data[d.properties.name] ? Math.round(data[d.properties.name][month]) + " C" : "");
+            html += (data[d.properties.name] ? Math.round(data[d.properties.name][init_month]) + " C" : "");
             html += "";
             html += "</span>";
             html += "</div>";
@@ -119,9 +104,7 @@ d3.json("country_temperatures.json", function(err, data) {
 
             var coordinates = d3.mouse(this);
 
-            var map_width = $('.choropleth')[0].getBoundingClientRect().width;
-
-            if (d3.event.pageX < map_width / 2) {
+            if (d3.event.pageX < width / 2) {
               d3.select("#tooltip-container")
                 .style("top", (d3.event.layerY + 15) + "px")
                 .style("left", (d3.event.layerX + 15) + "px");
@@ -133,9 +116,9 @@ d3.json("country_temperatures.json", function(err, data) {
             }
         })
         .on("mouseout", function() {
-                $(this).attr("fill-opacity", "1.0");
-                $("#tooltip-container").hide();
-            });
+            $(this).attr("fill-opacity", "1.0");
+            $("#tooltip-container").hide();
+        });
 
     g.append("path")
         .datum(topojson.mesh(world, world.objects.countries, function(a, b) { return a !== b; }))
@@ -143,8 +126,34 @@ d3.json("country_temperatures.json", function(err, data) {
         .attr("d", path);
 
     svg.attr("height", height * 2.2 / 3);
+
+    // Slider
+    d3.select("#month").on("input", function() {
+      var month = this.value;
+      updateMap(color, data, month);
+    });
   });
 
-  d3.select(self.frameElement).style("height", (height * 2.3 / 3) + "px");
+  function fillMap(selection, color, data, month) {
+    selection
+      .attr("fill", function(d) {
+        if (data[d.properties.name]) {
+          var temp = (data[d.properties.name][month]);
+          return color(temp);
+        } else {
+          return "#ccc";
+        }
+      })
+  }
+
+  function updateMap(color, data, month) {
+    // re-fill countries
+    d3.selectAll(".country").transition()
+      .delay(100)
+      .call(fillMap, color, data, month);
+
+    // update headline
+    d3.select("h2").text(headline + months[month]);
+  }
 });
 </script>
