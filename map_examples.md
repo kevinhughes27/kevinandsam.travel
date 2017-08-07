@@ -17,6 +17,7 @@ looks like a good api for climate data and its free like it should be.
 https://datahelpdesk.worldbank.org/knowledgebase/articles/902061-climate-data-api
 * needs to be cached but this cache could be permanant. I could write a function that caches to file as a request runs unless its in the cache. Then this can still be a totally static app when it is done. Clearing the file will rebuild the cache from scratch.
 
+
 More data
 http://berkeleyearth.org/data/
 
