@@ -1,25 +1,20 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
-  "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "name": "kevinandsam.travel",
+  "private": true,
   "dependencies": {
     "gatsby": "^1.9.119",
     "gatsby-link": "^1.6.28",
     "gatsby-plugin-react-helmet": "^1.0.8"
   },
-  "keywords": [
-    "gatsby"
-  ],
+  "devDependencies": {
+    "prettier": "^1.8.2",
+    "gh-pages": "^1.1.0"
+  },
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public"
-  },
-  "devDependencies": {
-    "prettier": "^1.8.2",
-    "gh-pages": "^1.1.0"
   }
 }
