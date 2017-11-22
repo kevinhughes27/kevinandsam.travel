@@ -9,6 +9,9 @@ Data is fetched from the World Bank climat api and saved to JSON using a python 
 run `python -m SimpleHTTPServer 8000`
 then access [http://localhost:8000/temperature_map/index.html](http://localhost:8000/temperature_map/index.html)
 
+## Related work
+* [https://news.ycombinator.com/item?id=15074526](https://news.ycombinator.com/item?id=15074526) is a very similar tool. I like my presentation better since its more informative to see the gradients but I think their data is better.
+
 ## Useful examples
 * [click-to-zoom via transform](https://bl.ocks.org/mbostock/2206590)
 There is a whole series on map manipulation
