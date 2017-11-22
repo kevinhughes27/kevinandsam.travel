@@ -12,13 +12,14 @@ FUTURA VARIO 50 + 10
 * 2 pairs of jeans
 * Northface trekking pants
 * Prana yoga pants
+* Prana other pants?
 * gym shorts
 * swim shorts
 
 * toque
 
-* 15 pairs of underwear
-* 8 pairs of socks
+* 12 pairs of underwear
+* 5 pairs of socks
 
 * Toms
 * flip-flops
@@ -66,7 +67,6 @@ TRANS APLINE 30
 
 * Yoga strap
 * Alpha ball
-* Yoga tune-up originals
 * lacross ball (better for feet)
 
 * Humira kit
