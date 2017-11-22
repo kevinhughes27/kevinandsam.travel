@@ -27,7 +27,7 @@ const Header = () => (
             textDecoration: 'none',
           }}
         >
-          Gatsby
+          KevinandSam.travel
         </Link>
       </h1>
     </div>
