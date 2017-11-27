@@ -1,11 +1,19 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import { withPrefix } from 'gatsby-link'
 
 const IndexPage = () => (
-  <div>
-    <h1>Coming Soon!</h1>
-    <Link to="/page-2/">Go to page 2</Link>
-  </div>
+  <section className='mast'>
+    <header className='mast__header'>
+      <h1>Kevin & Sam</h1>
+      <span>Eat. Sleep. Travel.</span>
+    </header>
+    <div className='mast__img bg-alpha'>
+      <div className='absolute-bg' style={{backgroundImage: `url('${__PATH_PREFIX__}/mast-left.jpg')`}}></div>
+    </div>
+    <div className='mast__img bg-alpha'>
+      <div className='absolute-bg' style={{backgroundImage: `url('${__PATH_PREFIX__}/mast-right.jpg')`}}></div>
+    </div>
+  </section>
 )
 
 export default IndexPage

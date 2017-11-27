@@ -4,11 +4,12 @@
   "dependencies": {
     "gatsby": "^1.9.119",
     "gatsby-link": "^1.6.28",
-    "gatsby-plugin-react-helmet": "^1.0.8"
+    "gatsby-plugin-react-helmet": "^1.0.8",
+    "gatsby-plugin-sass": "^1.0.13"
   },
   "devDependencies": {
-    "prettier": "^1.8.2",
-    "gh-pages": "^1.1.0"
+    "gh-pages": "^1.1.0",
+    "prettier": "^1.8.2"
   },
   "scripts": {
     "build": "gatsby build",

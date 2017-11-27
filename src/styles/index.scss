@@ -1,0 +1,18 @@
+$color-alpha: #feeaeb;
+$color-beta: #05009e;
+
+@import 'tools/_config',
+  'tools/_mixins',
+  'tools/_extends';
+
+@import 'base/_normalize',
+  'base/_settings';
+
+@import 'regions/_body',
+  'regions/_footer',
+  'regions/_header';
+
+@import 'components/_mast';
+
+@import 'utils/_animations',
+  'utils/_helpers';
