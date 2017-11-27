@@ -3,7 +3,18 @@ module.exports = {
     title: `kevinandsam.travel`,
   },
   plugins: [
+    `gatsby-plugin-catch-links`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sass`
+    `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/blog`,
+        name: 'pages',
+      },
+    },
+    {
+      resolve: 'gatsby-transformer-remark'
+    }
   ]
 }

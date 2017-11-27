@@ -1,3 +1,9 @@
+---
+path: "/tiger-leaping-gorge"
+date: "2017-05-23"
+title: "Tiger Leaping Gorge"
+---
+
 upper gorge, also called ____, further than 4km, probably 10. Do it if you have time but consider skipping if you're doing the hike in 2 days or less
 
 Timeline
