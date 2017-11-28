@@ -5,6 +5,7 @@
     "gatsby": "^1.9.119",
     "gatsby-link": "^1.6.28",
     "gatsby-plugin-catch-links": "^1.0.9",
+    "gatsby-plugin-google-fonts": "^0.0.3",
     "gatsby-plugin-react-helmet": "^1.0.8",
     "gatsby-plugin-sass": "^1.0.13",
     "gatsby-source-filesystem": "^1.5.8",

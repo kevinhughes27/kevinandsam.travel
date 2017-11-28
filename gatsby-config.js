@@ -15,6 +15,15 @@ module.exports = {
     },
     {
       resolve: 'gatsby-transformer-remark'
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Fanwood`,
+          `Quattrocento\:400,700`
+        ]
+      }
     }
   ]
 }
