@@ -15,7 +15,7 @@ const Head = () => (
   />
 )
 
-const TopNav = () => (
+const Nav = () => (
   <header className="header">
     <a href="/">
       <figure className="header__img">
@@ -30,6 +30,9 @@ const TopNav = () => (
           <GatsbyLink to="/about">About</GatsbyLink>
         </li>
         <li>
+          <GatsbyLink to="/map">Map</GatsbyLink>
+        </li>
+        <li>
           <GatsbyLink to="/blog">Blog</GatsbyLink>
         </li>
       </ul>
@@ -40,9 +43,9 @@ const TopNav = () => (
 const Layout = ({ children }) => (
   <div id="home">
     <Head />
-    <TopNav />
+    <Nav />
     <main>
-      {children()}
+      { children() }
     </main>
   </div>
 )

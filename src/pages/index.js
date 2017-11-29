@@ -1,7 +1,7 @@
 import React from 'react'
 import { withPrefix } from 'gatsby-link'
 
-const IndexPage = () => (
+const HomePage = () => (
   <section className='mast'>
     <header className='mast__header'>
       <h1>Kevin & Sam</h1>
@@ -16,4 +16,4 @@ const IndexPage = () => (
   </section>
 )
 
-export default IndexPage
+export default HomePage
