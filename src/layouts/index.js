@@ -27,10 +27,10 @@ const TopNav = () => (
           <GatsbyLink to="/">Home</GatsbyLink>
         </li>
         <li>
-          <GatsbyLink to="/archive">About</GatsbyLink>
+          <GatsbyLink to="/about">About</GatsbyLink>
         </li>
         <li>
-          <GatsbyLink to="/archive">Blog</GatsbyLink>
+          <GatsbyLink to="/blog">Blog</GatsbyLink>
         </li>
       </ul>
     </nav>

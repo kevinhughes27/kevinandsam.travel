@@ -12,7 +12,8 @@ $color-beta: #05009e;
   'regions/_footer',
   'regions/_header';
 
-@import 'components/_mast';
+@import 'components/_mast',
+  'components/_preview';
 
 @import 'utils/_animations',
   'utils/_helpers';
