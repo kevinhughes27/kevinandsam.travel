@@ -1,28 +1,33 @@
 import React from 'react'
 import GatsbyLink from 'gatsby-link';
 
-const Post = ({node: post}) => (
-  <li key={post.id} className="preview" itemProp="blogPost" itemScope itemType="http://schema.org/BlogPosting">
-    <a className="preview__link" href={post.frontmatter.path} itemProp="url">
-      <div className="preview__img bg-grey wow slideInUp">
-        <figure className="absolute-bg wow fadeIn" data-wow-delay="900ms" style={{backgroundImage: `url('${post.frontmatter.date}`}} />
-      </div>
-      <div className="preview__container bg-white">
-        <div>
-          <h2 className="wow fadeInUp" data-wow-delay="150ms" itemProp="name">
-            {post.frontmatter.title}
-          </h2>
-          <p className="preview__excerpt wow fadeInUp" data-wow-delay="300ms" itemProp="description">
-            {post.excerpt}
-          </p>
+function Post({node: post}) {
+  const { path, title, excerpt, date } = post.frontmatter
+  const imageSrc = post.frontmatter.image.childImageSharp.resize.src;
+
+  return (
+    <li key={post.id} className="preview" itemProp="blogPost" itemScope itemType="http://schema.org/BlogPosting">
+      <a className="preview__link" href={path} itemProp="url">
+        <div className="preview__img bg-grey wow slideInUp">
+          <figure className="absolute-bg wow fadeIn" data-wow-delay="900ms" style={{backgroundImage: `url('${imageSrc}`}} />
         </div>
-        <time className="preview__date wow fadeInUp" data-wow-delay="450ms" itemProp="datePublished" dateTime={post.frontmatter.date}>
-          { post.frontmatter.date }
-        </time>
-      </div>
-    </a>
-  </li>
-)
+        <div className="preview__container bg-white">
+          <div>
+            <h2 className="wow fadeInUp" data-wow-delay="150ms" itemProp="name">
+              {title}
+            </h2>
+            <p className="preview__excerpt wow fadeInUp" data-wow-delay="300ms" itemProp="description">
+              {post.excerpt}
+            </p>
+          </div>
+          <time className="preview__date wow fadeInUp" data-wow-delay="450ms" itemProp="datePublished" dateTime={date}>
+            { date }
+          </time>
+        </div>
+      </a>
+    </li>
+  );
+}
 
 export default function Blog({ data }) {
   const { edges: posts } = data.allMarkdownRemark;
@@ -59,6 +64,13 @@ export const pageQuery = graphql`
             title
             date(formatString: "MMMM DD, YYYY")
             path
+            image {
+              childImageSharp {
+                resize(width: 1000, height: 1000) {
+                  src
+                }
+              }
+            }
           }
         }
       }

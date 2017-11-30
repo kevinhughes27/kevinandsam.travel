@@ -5,6 +5,8 @@ module.exports = {
   plugins: [
     `gatsby-plugin-catch-links`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -14,7 +16,18 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-transformer-remark'
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          'gatsby-remark-copy-linked-files',
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              linkImagesToOriginal: false
+            }
+          },
+        ]
+      }
     },
     {
       resolve: `gatsby-plugin-google-fonts`,

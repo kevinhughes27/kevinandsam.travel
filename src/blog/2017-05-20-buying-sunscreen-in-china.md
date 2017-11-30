@@ -2,6 +2,7 @@
 path: "/buying-sunscreen-in-china"
 date: "2017-05-20"
 title: "Buying Sunscreen in China"
+image: "china.jpeg"
 ---
 
 * won't find it in corner stores, grocery stores or even pharmacies
