@@ -13,7 +13,8 @@
     "gatsby-remark-images": "^1.5.33",
     "gatsby-source-filesystem": "^1.5.8",
     "gatsby-transformer-remark": "^1.7.21",
-    "gatsby-transformer-sharp": "^1.6.15"
+    "gatsby-transformer-sharp": "^1.6.15",
+    "react-simple-maps": "^0.10.1"
   },
   "devDependencies": {
     "gh-pages": "^1.1.0",
