@@ -13,6 +13,7 @@ $color-beta: #05009e;
   'regions/_header';
 
 @import 'components/_mast',
+  'components/_about',
   'components/_preview';
 
 @import 'utils/_animations',

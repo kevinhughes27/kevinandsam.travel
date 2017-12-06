@@ -27,7 +27,7 @@ const Nav = () => (
           <GatsbyLink to="/">Home</GatsbyLink>
         </li>
         <li>
-          <GatsbyLink to="/about">About</GatsbyLink>
+          <GatsbyLink to="/about">About Us</GatsbyLink>
         </li>
         <li>
           <GatsbyLink to="/map">Map</GatsbyLink>
