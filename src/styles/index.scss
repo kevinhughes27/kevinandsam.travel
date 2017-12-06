@@ -14,7 +14,8 @@ $color-beta: #05009e;
 
 @import 'components/_mast',
   'components/_about',
-  'components/_preview';
+  'components/_preview',
+  'components/_post';
 
 @import 'utils/_animations',
   'utils/_helpers';

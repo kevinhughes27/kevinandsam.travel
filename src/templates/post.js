@@ -3,14 +3,34 @@ import Helmet from 'react-helmet';
 
 export default function Template({ data }) {
   const { markdownRemark: post } = data;
+  const { path, title, excerpt, date } = post.frontmatter
+  const imageSrc = post.frontmatter.image.childImageSharp.resize.src;
 
   return (
     <div>
-      <Helmet title={`kevinandsam.travel - ${post.frontmatter.title}`} />
-      <div className="blog-post">
-        <h1>{post.frontmatter.title}</h1>
-        <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: post.html }} />
-      </div>
+      <Helmet title={`kevinandsam.travel - ${title}`} />
+
+      <article className="bg-grey" itemProp="blogPost" itemScope itemType="http://schema.org/BlogPosting">
+
+        <header className="post-mast bg-alpha">
+          <figure className="absolute-bg" style={{backgroundImage: `url('${imageSrc}')`}}></figure>
+        </header>
+
+        <div className="grid--double">
+          <section className="post section-padding--half bg-grey" itemProp="articleBody">
+            <header className="post-header">
+              <h1 itemProp="name headline">
+                { title }
+              </h1>
+              <time className="post-header__time" itemProp="datePublished" dateTime={data}>
+                { date }
+              </time>
+            </header>
+
+            <div className="post-content" dangerouslySetInnerHTML={{ __html: post.html }} />
+          </section>
+        </div>
+      </article>
     </div>
   );
 }
@@ -20,9 +40,16 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
+        title
         date(formatString: "MMMM DD, YYYY")
         path
-        title
+        image {
+          childImageSharp {
+            resize(width: 1000, height: 1000) {
+              src
+            }
+          }
+        }
       }
     }
   }
