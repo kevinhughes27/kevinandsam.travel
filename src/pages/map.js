@@ -2,7 +2,7 @@
 // plot our intended route on a map
 
 import React from 'react'
-import { withPrefix } from 'gatsby-link'
+import topojson from '../data/world-50m-simplified.json'
 
 import {
   ComposableMap,
@@ -35,7 +35,7 @@ const Map = () => (
         }}
         >
         <ZoomableGroup center={[0,20]} disablePanning>
-          <Geographies geography={`${__PATH_PREFIX__}/world-50m.json`}>
+          <Geographies geography={topojson}>
             {(geographies, projection) => geographies.map((geography, i) => geography.id !== "ATA" && (
               <Geography
                 key={i}
