@@ -1,11 +1,6 @@
 import React from 'react'
 import { Markers, Marker } from 'react-simple-maps'
 
-const currentLocation = {
-  name: 'Ottawa Canada',
-  coordinates: [-75.6972, 45.4215]
-}
-
 const styles = {
   default: {
     fill: "rgb(49, 130, 189)",
@@ -36,14 +31,14 @@ const textStyles = {
   strokeWidth: 0,
 }
 
-const renderLocation = () => (
+const renderLocation = (location) => (
   <Markers>
-    <Marker key={0} marker={currentLocation}
+    <Marker key={0} marker={location}
       style={styles}>
       <circle cx={0} cy={0} r={5}/>
-      <circle className="pulse" cx={0} cy={0} r={8}/>
+      <circle className="pulse" cx={0} cy={0} r={10}/>
       <text textAnchor="middle" y={-10} style={textStyles}>
-        {currentLocation.name}
+        {location.name}
       </text>
     </Marker>
   </Markers>

@@ -1,5 +1,4 @@
 import React from 'react'
-import { Motion, spring } from 'react-motion'
 import topojson from './world-50m-simplified.json'
 
 import {
@@ -34,7 +33,7 @@ const styles = {
   },
 }
 
-const Map = () => (
+const Map = ({ zoom, x, y, currentLocation }) => (
   <ComposableMap
     projectionConfig={{
       scale: 205,
@@ -47,7 +46,7 @@ const Map = () => (
       height: "auto",
     }}
     >
-    <ZoomableGroup center={[0,20]} disablePanning>
+    <ZoomableGroup center={[x,y]} zoom={zoom}>
       <Geographies geography={topojson}>
         {(geographies, projection) => geographies.map((geography, i) => geography.id !== "ATA" && (
           <Geography
@@ -58,7 +57,7 @@ const Map = () => (
           />
         ))}
       </Geographies>
-      { renderLocation() }
+      { renderLocation(currentLocation) }
       { renderRoute() }
     </ZoomableGroup>
   </ComposableMap>
