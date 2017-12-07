@@ -53,13 +53,13 @@ const Map = () => (
                     outline: "none",
                   },
                   hover: {
-                    fill: "#607D8B",
+                    fill: "#ECEFF1",
                     stroke: "#607D8B",
                     strokeWidth: 0.75,
                     outline: "none",
                   },
                   pressed: {
-                    fill: "#FF5722",
+                    fill: "#ECEFF1",
                     stroke: "#607D8B",
                     strokeWidth: 0.75,
                     outline: "none",
@@ -77,6 +77,20 @@ const Map = () => (
                   stroke: "rgb(49, 130, 189)",
                   strokeWidth: 2,
                   strokeOpacity: 1
+                },
+                hover: {
+                  fill: "rgb(49, 130, 189)",
+                  stroke: "rgb(49, 130, 189)",
+                  strokeWidth: 2,
+                  strokeOpacity: 1,
+                  outline: "none"
+                },
+                pressed: {
+                  fill: "rgb(49, 130, 189)",
+                  stroke: "rgb(49, 130, 189)",
+                  strokeWidth: 2,
+                  strokeOpacity: 1,
+                  outline: "none"
                 }
               }}>
               <circle cx={0} cy={0} r={5}/>
@@ -102,8 +116,8 @@ const Map = () => (
                 marker={marker}
                 style={{
                   default: { fill: "#FF5722" },
-                  hover: { fill: "#FFFFFF" },
-                  pressed: { fill: "#FF5722" },
+                  hover: { fill: "#FFFFFF", outline: "none" },
+                  pressed: { fill: "#FF5722", outline: "none" },
                 }}
                 >
                 <circle
