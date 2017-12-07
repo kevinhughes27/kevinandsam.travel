@@ -13,6 +13,10 @@ import {
   Marker,
 } from 'react-simple-maps'
 
+const currentLocation = {
+  markerOffset: -10, name: 'Ottawa Canada', coordinates: [-75.6972, 45.4215]
+}
+
 const markers = [
   { markerOffset: -10, name: "Antigua Guatemala", coordinates: [-90.7333304, 14.5666644] },
   { markerOffset: -10, name: "Bogota Columbia", coordinates: [-74.072222, 4.711111] },
@@ -64,41 +68,68 @@ const Map = () => (
               />
             ))}
           </Geographies>
+
           <Markers>
-              {markers.map((marker, i) => (
-                <Marker
-                  key={i}
-                  marker={marker}
+            <Marker key={0} marker={currentLocation}
+              style={{
+                default: {
+                  fill: "rgb(49, 130, 189)",
+                  stroke: "rgb(49, 130, 189)",
+                  strokeWidth: 2,
+                  strokeOpacity: 1
+                }
+              }}>
+              <circle cx={0} cy={0} r={5}/>
+              <circle className="pulse" cx={0} cy={0} r={8}/>
+              <text
+                textAnchor="middle"
+                y={currentLocation.markerOffset}
+                style={{
+                  fontSize: "6pt",
+                  fontFamily: "Roboto, sans-serif",
+                  fill: "#607D8B",
+                  strokeWidth: 0,
+                }}>
+                {currentLocation.name}
+              </text>
+            </Marker>
+          </Markers>
+
+          <Markers>
+            {markers.map((marker, i) => (
+              <Marker
+                key={i}
+                marker={marker}
+                style={{
+                  default: { fill: "#FF5722" },
+                  hover: { fill: "#FFFFFF" },
+                  pressed: { fill: "#FF5722" },
+                }}
+                >
+                <circle
+                  cx={0}
+                  cy={0}
+                  r={5}
                   style={{
-                    default: { fill: "#FF5722" },
-                    hover: { fill: "#FFFFFF" },
-                    pressed: { fill: "#FF5722" },
+                    stroke: "#FF5722",
+                    strokeWidth: 3,
+                    opacity: 0.9,
+                  }}
+                />
+                <text
+                  textAnchor="middle"
+                  y={marker.markerOffset}
+                  style={{
+                    fontSize: '6pt',
+                    fontFamily: "Roboto, sans-serif",
+                    fill: "#607D8B",
                   }}
                   >
-                  <circle
-                    cx={0}
-                    cy={0}
-                    r={5}
-                    style={{
-                      stroke: "#FF5722",
-                      strokeWidth: 3,
-                      opacity: 0.9,
-                    }}
-                  />
-                  <text
-                    textAnchor="middle"
-                    y={marker.markerOffset}
-                    style={{
-                      fontSize: '6pt',
-                      fontFamily: "Roboto, sans-serif",
-                      fill: "#607D8B",
-                    }}
-                    >
-                    {marker.name}
-                  </text>
-                </Marker>
-              ))}
-            </Markers>
+                  {marker.name}
+                </text>
+              </Marker>
+            ))}
+          </Markers>
         </ZoomableGroup>
       </ComposableMap>
     </div>
