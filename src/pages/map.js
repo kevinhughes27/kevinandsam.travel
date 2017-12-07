@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Motion, spring } from 'react-motion'
-import Map from './Map'
+import Map from '../components/RouteMap'
 
 const currentLocation = {
   name: 'Ottawa Canada',
