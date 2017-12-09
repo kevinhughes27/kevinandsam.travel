@@ -18,12 +18,12 @@ class MapPage extends Component {
   }
 
   componentDidMount() {
-    setTimeout(this.focus, 1000)
+    this.focus();
   }
 
   focus() {
     this.setState({
-      zoom: 1.5,
+      zoom: 2,
       center: currentLocation.coordinates,
     })
   }
@@ -38,15 +38,11 @@ class MapPage extends Component {
     }
 
     return (
-      <section className="section-padding bg-white">
-        <div className="grid">
-          <Motion style={motionStyle} >
-            {({zoom, x, y}) => (
-              <Map zoom={zoom} x={x} y={y} currentLocation={currentLocation} />
-            )}
-          </Motion>
-        </div>
-      </section>
+      <Motion style={motionStyle} >
+        {({zoom, x, y}) => (
+          <Map zoom={zoom} x={x} y={y} currentLocation={currentLocation} />
+        )}
+      </Motion>
     )
   }
 }

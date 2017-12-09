@@ -15,7 +15,8 @@
     "gatsby-transformer-remark": "^1.7.21",
     "gatsby-transformer-sharp": "^1.6.15",
     "react-motion": "^0.5.2",
-    "react-simple-maps": "^0.10.1"
+    "react-simple-maps": "^0.10.1",
+    "react-window-size": "^1.0.1"
   },
   "devDependencies": {
     "gh-pages": "^1.1.0",
