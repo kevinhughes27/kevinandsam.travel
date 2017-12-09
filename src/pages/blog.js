@@ -35,7 +35,6 @@ export default function Blog({ data }) {
   return (
     <section id="blog" className="section-padding bg-white">
       <div className="grid">
-        <h1 className="section-header">Blog</h1>
         <ul className="container-double" itemScope itemType="http://schema.org/Blog">
           {posts.map(Post)}
         </ul>

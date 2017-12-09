@@ -9,12 +9,13 @@ $color-beta: #323235;
   'base/_settings',
   'base/_body';
 
+  @import 'pages/_home',
+  'pages/_about',
+  'pages/_blog',
+  'pages/_post';
+
 @import 'components/_nav', 
-  'components/_mast',
-  'components/_about',
   'components/_map',
-  'components/_preview',
-  'components/_post',
   'components/_video';
 
 @import 'utils/_animations',
