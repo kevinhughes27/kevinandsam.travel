@@ -1,9 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import GatsbyLink from 'gatsby-link'
-import classNames from 'classnames'
 
+import Nav from '../components/Nav'
 import '../styles/index.scss'
 
 const Head = () => (
@@ -15,32 +14,6 @@ const Head = () => (
     ]}
   />
 )
-
-const Nav = () => {
-  const isHome = window.location.pathname === "/";
-  const classes = classNames("header", {'home': isHome});
-
-  return (
-    <header className={classes}>
-      <nav>
-        <ul>
-          <li>
-            <GatsbyLink to="/">Home</GatsbyLink>
-          </li>
-          <li>
-            <GatsbyLink to="/about">About Us</GatsbyLink>
-          </li>
-          <li>
-            <GatsbyLink to="/map">Map</GatsbyLink>
-          </li>
-          <li>
-            <GatsbyLink to="/blog">Blog</GatsbyLink>
-          </li>
-        </ul>
-      </nav>
-    </header>
-  )
-}
 
 const Layout = ({ children }) => (
   <div>
