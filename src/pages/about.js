@@ -6,6 +6,7 @@ import { withPrefix } from 'gatsby-link'
 const AboutPage = () => (
   <section id="about" className="section-padding bg-grey">
     <div className="grid">
+      <h1 className="section-header">About Us</h1>
       <div className="about-text">
         <p className="about__text wow fadeInUp" data-wow-delay="300ms">
           Kevin and Sam met in 2014 through a mutual love of travelling. Their first adventure together was in 2015 to Costa Rica.
