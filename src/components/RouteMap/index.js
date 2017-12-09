@@ -77,5 +77,4 @@ class Map extends Component {
   }
 }
 
-
 export default windowSize(Map)

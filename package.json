@@ -2,6 +2,7 @@
   "name": "kevinandsam.travel",
   "private": true,
   "dependencies": {
+    "classnames": "^2.2.5",
     "gatsby": "^1.9.119",
     "gatsby-link": "^1.6.28",
     "gatsby-plugin-catch-links": "^1.0.9",
