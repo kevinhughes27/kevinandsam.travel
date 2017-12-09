@@ -6,13 +6,11 @@ $color-beta: #323235;
   'tools/_extends';
 
 @import 'base/_normalize',
-  'base/_settings';
+  'base/_settings',
+  'base/_body';
 
-@import 'regions/_body',
-  'regions/_footer',
-  'regions/_header';
-
-@import 'components/_mast',
+@import 'components/_nav', 
+  'components/_mast',
   'components/_about',
   'components/_map',
   'components/_preview',
