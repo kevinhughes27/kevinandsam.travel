@@ -11,11 +11,11 @@ $color-beta: #323235;
 
   @import 'pages/_home',
   'pages/_about',
+  'pages/_map',
   'pages/_blog',
   'pages/_post';
 
-@import 'components/_nav', 
-  'components/_map',
+@import 'components/_nav',
   'components/_video';
 
 @import 'utils/_animations',
