@@ -4,7 +4,7 @@ import classNames from 'classnames'
 
 function isHome() {
   if (typeof window !== `undefined`) {
-    return window.location.pathname === '/';
+    return window.location.pathname === '/home';
   } else {
     return true;
   }
@@ -13,13 +13,13 @@ function isHome() {
 class Nav extends Component {
   render () {
     const classes = classNames("header", {'home': isHome()});
-    
+
     return (
       <header className={classes}>
         <nav>
           <ul>
             <li>
-              <GatsbyLink to="/">Home</GatsbyLink>
+              <GatsbyLink to="/home">Home</GatsbyLink>
             </li>
             <li>
               <GatsbyLink to="/about">About Us</GatsbyLink>

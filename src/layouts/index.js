@@ -1,32 +1,39 @@
-import React from 'react'
+import React, {Component} from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import Nav from '../components/Nav'
 import '../styles/index.scss'
 
-const Head = () => (
-  <Helmet
-    title="kevinandsam.travel"
-    meta={[
-      { name: 'description', content: 'Sample' },
-      { name: 'keywords', content: 'sample, something' },
-    ]}
-  />
-)
+class Layout extends Component {
+  static propTypes = {
+    location: PropTypes.object.isRequired,
+    children: PropTypes.func,
+  }
 
-const Layout = ({ children }) => (
-  <div>
-    <Head />
-    <Nav />
-    <main>
-      { children() }
-    </main>
-  </div>
-)
+  render() {
+    const location = this.props.location.pathname;
+    const children = this.props.children;
 
-Layout.propTypes = {
-  children: PropTypes.func,
+    const nav = location !== '/'
+      ? <Nav />
+      : null
+
+    return (
+      <div>
+        <Helmet
+          title="kevinandsam.travel"
+          meta={[]}
+        />
+
+        { nav }
+
+        <main>
+          { children() }
+        </main>
+      </div>
+    )
+  }
 }
 
 export default Layout
