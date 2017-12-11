@@ -16,6 +16,7 @@ $color-beta: #323235;
   'pages/_post';
 
 @import 'components/_nav',
+  'components/_countdown',
   'components/_video';
 
 @import 'utils/_animations',
