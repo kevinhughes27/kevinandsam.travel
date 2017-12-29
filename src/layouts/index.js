@@ -12,6 +12,7 @@ class Layout extends Component {
   }
 
   render() {
+    const title = "kevinandsam.travel"
     const location = this.props.location.pathname;
     const children = this.props.children;
 
@@ -21,13 +22,8 @@ class Layout extends Component {
 
     return (
       <div>
-        <Helmet
-          title="kevinandsam.travel"
-          meta={[]}
-        />
-
+        <Helmet title={title} meta={[]} />
         { nav }
-
         <main>
           { children() }
         </main>
