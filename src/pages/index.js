@@ -1,5 +1,5 @@
 import React from 'react'
-import Countdown from 'react-cntdwn'
+import Countdown from '../components/Countdown'
 
 const IndexPage = () => (
   <div id="countdown">
