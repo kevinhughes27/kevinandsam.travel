@@ -36,13 +36,13 @@ const styles = {
 class Map extends Component {
   render () {
     const {x, y, zoom,  currentLocation} = this.props;
-    
+
     const width = this.props.windowWidth == 0
-      ? 850 
+      ? 850
       : this.props.windowWidth;
 
     const height = this.props.windowHeight == 0
-      ? 500 
+      ? 500
       : this.props.windowHeight;
 
     return (

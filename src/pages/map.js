@@ -8,24 +8,13 @@ const currentLocation = {
 }
 
 class MapPage extends Component {
-  constructor() {
-    super()
-    this.focus = this.focus.bind(this)
+  constructor(props) {
+    super(props)
+
     this.state = {
-      center: [0,20],
-      zoom: 1,
-    }
-  }
-
-  componentDidMount() {
-    this.focus();
-  }
-
-  focus() {
-    this.setState({
-      zoom: 2,
       center: currentLocation.coordinates,
-    })
+      zoom: 2,
+    }
   }
 
   render() {
