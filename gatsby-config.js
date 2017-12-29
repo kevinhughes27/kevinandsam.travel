@@ -38,6 +38,7 @@ module.exports = {
     title: `kevinandsam.travel`,
   },
   plugins: [
+    `gatsby-plugin-react-next`,
     `gatsby-plugin-catch-links`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sharp`,
