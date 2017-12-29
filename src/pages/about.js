@@ -12,7 +12,7 @@ const Image = (image, overlayText) => (
 )
 
 const AboutPage = () => (
-  <section id="about" className="section-padding bg-grey">
+  <section id="about" className="section-padding">
     <div className="grid">
       <h1 className="section-header">About Us</h1>
       <div className="text-container">

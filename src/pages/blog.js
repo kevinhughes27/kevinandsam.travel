@@ -8,7 +8,7 @@ function Post({node: post}) {
   return (
     <li key={post.id} className="preview" itemProp="blogPost" itemScope itemType="http://schema.org/BlogPosting">
       <a className="preview__link" href={path} itemProp="url">
-        <div className="preview__img bg-grey wow slideInUp">
+        <div className="preview__img wow slideInUp">
           <figure className="absolute-bg wow fadeIn" data-wow-delay="900ms" style={{backgroundImage: `url('${imageSrc}')`}} />
         </div>
         <div className="preview__container bg-white">
