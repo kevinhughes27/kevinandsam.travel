@@ -35,6 +35,5 @@ const renderDesktop = () => (
     </div>
   </section>
 )
-  
 
 export default windowSize(Home)
