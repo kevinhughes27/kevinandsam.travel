@@ -1,13 +1,21 @@
 import React from 'react'
 import { withPrefix } from 'gatsby-link'
 
-// about classes aren't in scss files. might be missing might be extra.
+const Image = (image, overlayText) => (
+  <div className="image-container">
+    <div className="content-overlay"></div>
+    <img className="content-image" src={`${__PATH_PREFIX__}/${image}`} />
+    <div className="content-details fadeIn-bottom">
+      <h3>{overlayText}</h3>
+    </div>
+  </div>
+)
 
 const AboutPage = () => (
   <section id="about" className="section-padding bg-grey">
     <div className="grid">
       <h1 className="section-header">About Us</h1>
-      <div className="about-text">
+      <div className="text-container">
         <p className="about__text wow fadeInUp" data-wow-delay="300ms">
           Kevin and Sam met in 2014 through a mutual love of travelling. Their first adventure together was in 2015 to Costa Rica.
           Since that first trip things have only escalated, hiking the Inca trail in Peru and backpacking around China for 4 weeks.
@@ -16,36 +24,10 @@ const AboutPage = () => (
         </p>
       </div>
 
-      <div className="container-triple">
-        <div className="container-item">
-          <div className="image-container">
-            <div className="content-overlay"></div>
-            <img className="content-image" src={`${__PATH_PREFIX__}/about-1.jpg`} />
-            <div className="content-details fadeIn-bottom">
-              <h3>Where</h3>
-            </div>
-          </div>
-        </div>
-
-        <div className="container-item">
-          <div className="image-container">
-            <div className="content-overlay"></div>
-            <img className="content-image" src={`${__PATH_PREFIX__}/about-2.jpg`} />
-            <div className="content-details fadeIn-bottom">
-              <h3>to</h3>
-            </div>
-          </div>
-        </div>
-
-        <div className="container-item">
-          <div className="image-container">
-            <div className="content-overlay"></div>
-            <img className="content-image" src={`${__PATH_PREFIX__}/about-3.jpg`} />
-            <div className="content-details fadeIn-bottom">
-              <h3>Next?</h3>
-            </div>
-          </div>
-        </div>
+      <div className="images">
+        { Image('about-1.jpg', 'Where') }
+        { Image('about-2.jpg', 'to') }
+        { Image('about-3.jpg', 'Next') }
       </div>
     </div>
   </section>
