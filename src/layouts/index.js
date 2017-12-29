@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import Nav from '../components/Nav'
+import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import '../styles/index.scss'
 
 class Layout extends Component {
