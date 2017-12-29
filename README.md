@@ -10,7 +10,7 @@ Gatsby is configured using two top level files `gatsby-config.js` and `gatsby-no
 1. Install `Nodejs` and `yarn`
 2. Run `yarn install` to fetch the dependencies specified in `package.json`
 3. Run `yarn develop` to start the development server
-4. Visit http://0.0.0.0:8000 after the server has finished booting
+4. Visit http://localhost:8000 after the server has finished booting
 
 
 ## Debugging
