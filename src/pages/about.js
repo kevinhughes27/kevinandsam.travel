@@ -33,16 +33,18 @@ class Images extends Component {
 }
 
 const renderMobile = () => (
-  <Carousel
-    showArrows={false}
-    showStatus={false}
-    showThumbs={false}
-    infiniteLoop={true}
-    autoPlay={true}>
-    { Item('about-1.jpg') }
-    { Item('about-2.jpg') }
-    { Item('about-3.jpg') }
-  </Carousel>
+  <div style={{paddingBottom: 15}}>
+    <Carousel
+      showArrows={false}
+      showStatus={false}
+      showThumbs={false}
+      infiniteLoop={true}
+      autoPlay={true}>
+      { Item('about-1.jpg') }
+      { Item('about-2.jpg') }
+      { Item('about-3.jpg') }
+    </Carousel>
+  </div>
 )
 
 const Item = (image) => (
