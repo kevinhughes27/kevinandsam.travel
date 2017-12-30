@@ -1,11 +1,16 @@
 import React, { Component } from 'react'
-import { Motion, spring } from 'react-motion'
-import Map from '../components/RouteMap'
+import { Map, TileLayer, Circle, CircleMarker } from 'react-leaflet'
 
 const currentLocation = {
   name: 'Ottawa Canada',
-  coordinates: [-75.6972, 45.4215]
+  coordinates: [45.4215, -75.6972]
 }
+
+const route = [
+  { name: "Antigua Guatemala", coordinates: [14.5666644, -90.7333304] },
+  { name: "Bogota Columbia", coordinates: [4.711111, -74.072222] },
+  { name: "La Paz Bolivia", coordinates: [-16.499998, -68.1333328] },
+]
 
 class MapPage extends Component {
   constructor(props) {
@@ -13,25 +18,21 @@ class MapPage extends Component {
 
     this.state = {
       center: currentLocation.coordinates,
-      zoom: 2,
+      zoom: 3,
     }
   }
 
   render() {
     const {zoom, center} = this.state
-    const motionParams = {stiffness: 100, damping: 30}
-    const motionStyle = {
-      zoom: spring(zoom, motionParams),
-      x: spring(center[0], motionParams),
-      y: spring(center[1], motionParams),
-    }
 
     return (
-      <Motion style={motionStyle} >
-        {({zoom, x, y}) => (
-          <Map zoom={zoom} x={x} y={y} currentLocation={currentLocation} />
-        )}
-      </Motion>
+      <Map center={center} zoom={zoom} zoomControl={false}>
+        <TileLayer url='https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}' />
+        <CircleMarker center={center} radius={5} />
+        {route.map((location, i) => (
+          <Circle key={i} center={location.coordinates} radius={5} />
+        ))}
+      </Map>
     )
   }
 }
