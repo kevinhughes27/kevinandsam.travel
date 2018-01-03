@@ -29,6 +29,17 @@ function Post({node: post}) {
   );
 }
 
+const ReadMoreBtn = () => {
+  <div className="read-more">
+    <a className="btn" href="/blog">
+      <div>
+        <span>Read More</span>
+        <span>Read More</span>
+      </div>
+    </a>
+  </div>
+}
+
 export default function Blog({ data }) {
   const { edges: posts } = data.allMarkdownRemark;
 
@@ -39,14 +50,7 @@ export default function Blog({ data }) {
           {posts.map(Post)}
         </ul>
 
-        <div className="read-more">
-          <a className="btn" href="/blog">
-            <div>
-              <span>Read More</span>
-              <span>Read More</span>
-            </div>
-          </a>
-        </div>
+
       </div>
     </section>
   );
