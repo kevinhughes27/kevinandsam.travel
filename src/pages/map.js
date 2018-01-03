@@ -46,6 +46,7 @@ class MapPage extends Component {
         center={Center(windowWidth)}
         zoom={zoom}
         zoomControl={false}
+        attributionControl={false}
         onMove={(ev) => {
           const latLng = ev.target.getCenter()
           console.log(latLng)
