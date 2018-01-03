@@ -45,7 +45,6 @@
 }
 
 .post-content {
-
   @media (min-width: $mq-md) {
     margin-right: 8em;
     margin-left: 8em;
@@ -143,13 +142,9 @@
       font-family: $font-body;
       font-weight: 400;
     }
-
-    & + .container-btn {
-      margin-top: 0;
-    }
   }
+}
 
-  .container-btn {
-    margin-top: 3em;
-  }
+.post-padding {
+  padding-bottom: 2em;
 }

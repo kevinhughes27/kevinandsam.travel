@@ -7,7 +7,7 @@ export default function Template({ data }) {
   const imageSrc = post.frontmatter.postImage.childImageSharp.resize.src;
 
   return (
-    <div>
+    <div className="post-padding">
       <Helmet title={`kevinandsam.travel - ${title}`} />
 
       <article itemProp="blogPost" itemScope itemType="http://schema.org/BlogPosting">

@@ -17,21 +17,6 @@ section {
 
 .section-padding {
   padding-top: 4em;
-
-  @media (min-width: $mq-sm) {
-    padding-top: 6em;
-    padding-bottom: 6em;
-  }
-
-  &--half {
-    padding-top: 2em;
-    padding-bottom: 2em;
-
-    @media (min-width: $mq-sm) {
-      padding-top: 3em;
-      padding-bottom: 3em;
-    }
-  }
 }
 
 .grid {
