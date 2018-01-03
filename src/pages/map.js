@@ -37,6 +37,10 @@ class MapPage extends Component {
       return <div></div>
     }
 
+    if (window === undefined) {
+      return <div></div>
+    }
+
     return (
       <Map
         center={Center(windowWidth)}
