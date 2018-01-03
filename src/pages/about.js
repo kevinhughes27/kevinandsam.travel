@@ -8,7 +8,6 @@ class AboutPage extends Component {
     return (
       <section id="about" className="section-padding">
         <div className="grid">
-          <h1 className="section-header">About Us</h1>
           <div className="text-container">
             <p className="about__text wow fadeInUp" data-wow-delay="300ms">
               Kevin and Sam met in 2014 through a mutual love of travelling. Their first adventure together was in 2015 to Costa Rica.
