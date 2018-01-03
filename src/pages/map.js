@@ -1,8 +1,12 @@
 import React, { Component } from 'react'
 import { Map, TileLayer, Circle, CircleMarker } from 'react-leaflet'
+import windowSize from 'react-window-size'
 
 const zoom = 3
-const center = [23.76, -34.27]
+const Center = (windowWidth) => {
+  const smallScreen = windowWidth < 667;
+  return smallScreen ? [23.16, -76.81] : [23.76, -34.27]
+}
 
 const currentLocation = {
   name: 'Ottawa Canada',
@@ -29,10 +33,13 @@ class MapPage extends Component {
   render() {
     return (
       <Map
-        center={center}
+        center={Center(this.props.windowWidth)}
         zoom={zoom}
         zoomControl={false}
-        onDrag={(ev) => console.log(ev.target._lastCenter)}>
+        onMove={(ev) => {
+          const latLng = ev.target.getCenter()
+          console.log(latLng)
+        }}>
 
         <TileLayer url={tileProviderUrl} />
         <CircleMarker center={currentLocation.coordinates} radius={5} />
@@ -43,4 +50,4 @@ class MapPage extends Component {
   }
 }
 
-export default MapPage
+export default windowSize(MapPage)
