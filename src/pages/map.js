@@ -31,9 +31,15 @@ const RouteMarkers = ({ locations }) => {
 
 class MapPage extends Component {
   render() {
+    const windowWidth = this.props.windowWidth
+
+    if (windowWidth === 0) {
+      return <div></div>
+    }
+
     return (
       <Map
-        center={Center(this.props.windowWidth)}
+        center={Center(windowWidth)}
         zoom={zoom}
         zoomControl={false}
         onMove={(ev) => {
