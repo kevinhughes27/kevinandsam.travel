@@ -53,14 +53,3 @@ section {
     }
   }
 }
-
-.section-header {
-  text-align: center;
-  overflow: hidden;
-
-  span {
-    @include nth-animation-delay();
-
-    display: inline-block;
-  }
-}
