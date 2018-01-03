@@ -1,39 +1,59 @@
 import React, { Component } from 'react'
-import { Motion, spring } from 'react-motion'
-import Map from '../components/RouteMap'
+import { Map, TileLayer, Circle, CircleMarker } from 'react-leaflet'
+import windowSize from 'react-window-size'
+
+const zoom = 3
+const Center = (windowWidth) => {
+  const smallScreen = windowWidth < 667;
+  return smallScreen ? [23.16, -76.81] : [23.76, -34.27]
+}
 
 const currentLocation = {
   name: 'Ottawa Canada',
-  coordinates: [-75.6972, 45.4215]
+  coordinates: [45.4215, -75.6972]
+}
+
+const route = [
+  { name: "Antigua Guatemala", coordinates: [14.5666644, -90.7333304] },
+  { name: "Bogota Columbia", coordinates: [4.711111, -74.072222] },
+  { name: "La Paz Bolivia", coordinates: [-16.499998, -68.1333328] },
+]
+
+const tileProviderUrl =
+  'https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}'
+
+const RouteMarkers = ({ locations }) => {
+  const markers = locations.map((location, i) => (
+    <Circle key={i} center={location.coordinates} radius={5} />
+  ))
+  return <div>{markers}</div>
 }
 
 class MapPage extends Component {
-  constructor(props) {
-    super(props)
-
-    this.state = {
-      center: currentLocation.coordinates,
-      zoom: 2,
-    }
-  }
-
   render() {
-    const {zoom, center} = this.state
-    const motionParams = {stiffness: 100, damping: 30}
-    const motionStyle = {
-      zoom: spring(zoom, motionParams),
-      x: spring(center[0], motionParams),
-      y: spring(center[1], motionParams),
+    const windowWidth = this.props.windowWidth
+
+    if (windowWidth === 0) {
+      return <div></div>
     }
 
     return (
-      <Motion style={motionStyle} >
-        {({zoom, x, y}) => (
-          <Map zoom={zoom} x={x} y={y} currentLocation={currentLocation} />
-        )}
-      </Motion>
+      <Map
+        center={Center(windowWidth)}
+        zoom={zoom}
+        zoomControl={false}
+        onMove={(ev) => {
+          const latLng = ev.target.getCenter()
+          console.log(latLng)
+        }}>
+
+        <TileLayer url={tileProviderUrl} />
+        <CircleMarker center={currentLocation.coordinates} radius={5} />
+        <RouteMarkers locations={route} />
+
+      </Map>
     )
   }
 }
 
-export default MapPage
+export default windowSize(MapPage)
