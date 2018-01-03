@@ -15,7 +15,7 @@ const renderMobile = () => (
       <h1>Kevin & Sam</h1>
       <span>Eat. Sleep. Travel.</span>
     </header>
-    <div className='mast__img bg-alpha'>
+    <div className='mast__img'>
       <div className='absolute-bg' style={{backgroundImage: `url('${__PATH_PREFIX__}/home.jpg')`}}></div>
     </div>
   </section>
@@ -27,10 +27,10 @@ const renderDesktop = () => (
       <h1>Kevin & Sam</h1>
       <span>Eat. Sleep. Travel.</span>
     </header>
-    <div className='mast__img_left bg-alpha'>
+    <div className='mast__img_left'>
       <div className='absolute-bg' style={{backgroundImage: `url('${__PATH_PREFIX__}/home-left.jpg')`}}></div>
     </div>
-    <div className='mast__img_right bg-alpha'>
+    <div className='mast__img_right'>
       <div className='absolute-bg' style={{backgroundImage: `url('${__PATH_PREFIX__}/home-right.jpg')`}}></div>
     </div>
   </section>

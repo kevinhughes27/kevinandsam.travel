@@ -74,7 +74,7 @@
   max-width: $mq-md;
   margin: 1em auto 0;
   padding-top: 2em;
-  
+
   text-align: center;
   border-top: 1px solid rgba($color-black, 0.1);
 }
@@ -89,9 +89,6 @@
 /**
  * Color Helpers
  */
-.bg-alpha {
-  background-color: $color-alpha;
-}
 
 .bg-white {
   background-color: $color-white;
