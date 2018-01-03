@@ -35,11 +35,11 @@ export default function Blog({ data }) {
   return (
     <section id="blog" className="section-padding bg-white">
       <div className="grid">
-        <ul className="container-double" itemScope itemType="http://schema.org/Blog">
+        <ul itemScope itemType="http://schema.org/Blog">
           {posts.map(Post)}
         </ul>
 
-        <div className="container-btn">
+        <div className="read-more">
           <a className="btn" href="/archive">
             <div>
               <span>Read More</span>

@@ -1,6 +1,3 @@
-/**
- * Absolute Background Cover
- */
 .absolute-bg {
   position: absolute;
   top: 0;
@@ -14,74 +11,6 @@
   background-position: 50%;
 }
 
-/**
- * Containers
- */
-.container-double {
-  @include flex-grid(1, 2, $pad: 1em);
-
-  margin-top: 1em;
-
-  list-style-type: none;
-
-  @media (min-width: $mq-sm) {
-    margin-top: 2em;
-  }
-
-  @media (min-width: $mq-xxl) {
-    max-width: $mq-xl;
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
-
-.container-triple {
-  @include flex-grid(1, 3, $pad: 1em);
-
-  margin-top: 1em;
-
-  list-style-type: none;
-
-  @media (min-width: $mq-sm) {
-    margin-top: 2em;
-  }
-
-  @media (min-width: $mq-xxl) {
-    max-width: $mq-xxl;
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
-
-.container-quadruple {
-  @include flex-grid(1, 3, $xxl: 4, $pad: 1em);
-
-  margin-top: 1em;
-
-  list-style-type: none;
-
-  @media (min-width: $mq-sm) {
-    margin-top: 2em;
-  }
-
-  @media (min-width: $mq-xxl) {
-    width: $mq-xxl;
-    margin: 2em auto 0;
-  }
-}
-
-.container-btn {
-  max-width: $mq-md;
-  margin: 1em auto 0;
-  padding-top: 2em;
-
-  text-align: center;
-  border-top: 1px solid rgba($color-black, 0.1);
-}
-
-/**
- * Buttons
- */
 .btn {
   @include btn-slide();
 }
