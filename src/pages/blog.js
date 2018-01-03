@@ -40,7 +40,7 @@ export default function Blog({ data }) {
         </ul>
 
         <div className="read-more">
-          <a className="btn" href="/archive">
+          <a className="btn" href="/blog">
             <div>
               <span>Read More</span>
               <span>Read More</span>
