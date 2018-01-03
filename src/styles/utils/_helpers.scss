@@ -85,19 +85,3 @@
 .btn {
   @include btn-slide();
 }
-
-/**
- * Color Helpers
- */
-
-.bg-white {
-  background-color: $color-white;
-}
-
-.bg-grey {
-  background-color: $color-grey;
-}
-
-.bg-black {
-  background-color: $color-black;
-}

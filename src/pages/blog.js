@@ -11,7 +11,7 @@ function Post({node: post}) {
         <div className="preview__img wow slideInUp">
           <figure className="absolute-bg wow fadeIn" data-wow-delay="900ms" style={{backgroundImage: `url('${imageSrc}')`}} />
         </div>
-        <div className="preview__container bg-white">
+        <div className="preview__container">
           <div>
             <h2 className="wow fadeInUp" data-wow-delay="150ms" itemProp="name">
               {title}
