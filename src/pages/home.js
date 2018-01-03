@@ -14,12 +14,16 @@ class Home extends Component {
 
 const renderMobile = () => (
   <section className='mast'>
-    <header className='mast__header'>
+    <header className='mast__header' >
       <h1>{title}</h1>
       <span>{subheading}</span>
     </header>
     <div className='mast__img'>
-      <div className='absolute-bg' style={{backgroundImage: `url('${__PATH_PREFIX__}/home.jpg')`}}></div>
+      <div className='absolute-bg' style={{
+          backgroundPosition: '65%',
+          backgroundImage: `url('${__PATH_PREFIX__}/home.jpg')`
+        }}>
+      </div>
     </div>
   </section>
 )
