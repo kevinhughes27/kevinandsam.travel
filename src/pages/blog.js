@@ -3,7 +3,7 @@ import GatsbyLink from 'gatsby-link';
 
 function Post({node: post}) {
   const { path, title, excerpt, date } = post.frontmatter
-  const imageSrc = post.frontmatter.image.childImageSharp.resize.src;
+  const imageSrc = post.frontmatter.cardImage.childImageSharp.resize.src;
 
   return (
     <li key={post.id} className="preview" itemProp="blogPost" itemScope itemType="http://schema.org/BlogPosting">
@@ -63,7 +63,7 @@ export const pageQuery = graphql`
             title
             date(formatString: "MMMM DD, YYYY")
             path
-            image {
+            cardImage {
               childImageSharp {
                 resize(width: 1000, height: 1000) {
                   src

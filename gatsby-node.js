@@ -19,9 +19,16 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
               date
               path
               title
-              image {
+              cardImage {
                 childImageSharp {
-                  resize(width: 1000, height: 1000) {
+                  resize(width: 800) {
+                    src
+                  }
+                }
+              }
+              postImage {
+                childImageSharp {
+                  resize(width: 1920) {
                     src
                   }
                 }

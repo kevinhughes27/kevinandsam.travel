@@ -4,7 +4,7 @@ import Helmet from 'react-helmet';
 export default function Template({ data }) {
   const { markdownRemark: post } = data;
   const { path, title, excerpt, date } = post.frontmatter
-  const imageSrc = post.frontmatter.image.childImageSharp.resize.src;
+  const imageSrc = post.frontmatter.postImage.childImageSharp.resize.src;
 
   return (
     <div>
@@ -43,9 +43,9 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         path
-        image {
+        postImage {
           childImageSharp {
-            resize(width: 1000, height: 1000) {
+            resize(width: 1920) {
               src
             }
           }

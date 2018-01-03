@@ -2,7 +2,8 @@
 path: "/tiger-leaping-gorge"
 date: "2017-05-23"
 title: "Tiger Leaping Gorge"
-image: "tiger-leaping-gorge.jpg"
+cardImage: "tiger-leaping-gorge-card.jpg"
+postImage: "tiger-leaping-gorge-post.jpg"
 ---
 
 upper gorge, also called ____, further than 4km, probably 10. Do it if you have time but consider skipping if you're doing the hike in 2 days or less
