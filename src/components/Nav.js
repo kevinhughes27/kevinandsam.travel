@@ -1,21 +1,10 @@
 import React, {Component} from 'react'
 import GatsbyLink from 'gatsby-link'
-import classNames from 'classnames'
-
-function isHome() {
-  if (typeof window !== `undefined`) {
-    return window.location.pathname === '/home';
-  } else {
-    return true;
-  }
-}
 
 class Nav extends Component {
   render () {
-    const classes = classNames("header", {'home': isHome()});
-
     return (
-      <header className={classes}>
+      <header className="header">
         <nav>
           <ul>
             <li>

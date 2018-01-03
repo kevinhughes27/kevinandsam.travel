@@ -9,11 +9,12 @@
   }
 
   .absolute-bg {
-    animation: fadeIn 3s both 0.3s;
+    animation: fadeIn 2s;
   }
 }
 
 .post {
+  background-color: $color-grey;
 
   @media (min-width: $mq-md) {
     margin-top: -6em;

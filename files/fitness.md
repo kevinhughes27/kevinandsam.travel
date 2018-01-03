@@ -10,19 +10,18 @@ In addition to an active lifestyle and regular rock climbing the following worko
 Leg Day
 -------
 ### Warm-Up
-* Arm circles
-* Trunk rotations
 * Leg swings
+* Hip opener
+* Full Squat sit
 * Arm sweeps
 * Dog pees
 
 ### Circuit
-* 20 Kettlebell swings (til departure)
 * Squats 20 reps (deep step ups if possible)
 * Lateral Lunges or Cossack Squats 10 reps per leg
 * [L-sit](https://www.reddit.com/r/bodyweightfitness/wiki/exercises/l-sit) hold for 1 minute
-* Cook Hip Lift 8 reps per leg
-* Calf raises 10 reps
+* Cook Hip Lift 10 reps per leg
+* Calf raises 10 reps per leg
 
 repeat for 3 sets
 
@@ -30,6 +29,7 @@ repeat for 3 sets
 * Split Squat (stationary lunge)
 * Pistol Squat Progression (lunge to standing)
 * Single Leg Deadlift
+* Hamstring curl with blanket
 
 
 Upper Body

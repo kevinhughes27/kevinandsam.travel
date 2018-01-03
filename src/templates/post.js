@@ -10,9 +10,9 @@ export default function Template({ data }) {
     <div>
       <Helmet title={`kevinandsam.travel - ${title}`} />
 
-      <article className="bg-grey" itemProp="blogPost" itemScope itemType="http://schema.org/BlogPosting">
+      <article itemProp="blogPost" itemScope itemType="http://schema.org/BlogPosting">
 
-        <header className="post-mast bg-alpha">
+        <header className="post-mast">
           <figure className="absolute-bg" style={{backgroundImage: `url('${imageSrc}')`}}></figure>
         </header>
 

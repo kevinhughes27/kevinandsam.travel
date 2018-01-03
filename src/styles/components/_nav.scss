@@ -1,34 +1,22 @@
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 99;
-
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
 
   height: 4em;
   width: 100%;
   padding-right: 1em;
   padding-left: 1em;
 
-  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 
-  &.scrollingHeader {
-    @extend %box-shadow;
-    @extend .animated;
-    @extend .fadeInDown;
+  background-color: $color-grey;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
-    position: fixed;
-
-    background-color: $color-white;
-  }
-
-  @media (min-width: $mq-md) {
-    padding-right: 2em;
-    padding-left: 2em;
-  }
+  animation: fadeIn 3s both 0.3s;
 }
 
 nav ul {
@@ -44,13 +32,9 @@ nav ul {
 
     a {
       @include link-underline();
-      
+
       font-family: $font-header;
       font-weight: 700;
     }
   }
-}
-
-.home nav ul a {
-  @include link-underline($color-white, $color-white);
 }
