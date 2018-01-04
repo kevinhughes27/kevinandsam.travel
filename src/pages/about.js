@@ -26,8 +26,8 @@ class AboutPage extends Component {
 
 class Images extends Component {
   render() {
-    const smallScreen = this.props.windowWidth < 667;
-    return smallScreen ? renderMobile() : renderDesktop();
+    const mediumScreen = this.props.windowWidth <= 768;
+    return mediumScreen ? renderMobile() : renderDesktop();
   }
 }
 
