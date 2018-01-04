@@ -38,3 +38,8 @@ section {
     }
   }
 }
+
+.text-container {
+  max-width: $mq-md;
+  margin: 2em auto 0;
+}
