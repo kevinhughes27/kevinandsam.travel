@@ -9,7 +9,7 @@
     padding: $pad;
     flex-basis: 100% / $sm;
     max-width: 100% / $sm;
-    
+
     @media (min-width: $mq-md) {
       flex-basis: 100% / $md;
       max-width: 100% / $md;
@@ -62,7 +62,7 @@
 
     height: 2px;
     width: 100%;
-    
+
     background-color: $underColor;
     visibility: hidden;
     transform: scaleX(0);
@@ -79,7 +79,7 @@
   box-shadow: inset 0 -4px 0 $hoverColor;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.33, 0.66, 0.66, 1);
-  
+
   &:hover,
   &:focus {
     color: $textColor;
@@ -154,9 +154,9 @@
  */
 @mixin nth-animation-delay($items: 12, $time: 0.1s) {
   @for $i from 1 through $items {
-    
-    &:nth-child(#{$i}) {   
-      animation-delay: $time * $i; 
+
+    &:nth-child(#{$i}) {
+      animation-delay: $time * $i;
     }
   }
 }

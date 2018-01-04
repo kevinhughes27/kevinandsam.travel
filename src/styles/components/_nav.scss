@@ -38,3 +38,10 @@ nav ul {
     }
   }
 }
+
+.active {
+  &:before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+}

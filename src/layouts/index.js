@@ -15,17 +15,13 @@ class Layout extends Component {
 
   render() {
     const title = "kevinandsam.travel"
-    const location = this.props.location.pathname;
     const children = this.props.children;
-
-    const nav = location !== '/'
-      ? <Nav />
-      : null
+    const path = this.props.location.pathname;
 
     return (
       <div>
         <Helmet title={title} meta={[]} />
-        { nav }
+        <Nav path={path} />
         <main>
           { children() }
         </main>
