@@ -45,6 +45,10 @@ class MapPage extends Component {
       <Map
         center={Center(windowWidth)}
         zoom={zoom}
+        minZoom={2}
+        zoomSnap={0}
+        zoomDelta={0.5}
+        wheelPxPerZoomLevel={100}
         zoomControl={false}
         attributionControl={false}
         onMove={(ev) => {
