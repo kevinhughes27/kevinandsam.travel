@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import Select from 'react-select'
 import DatePicker from 'react-datepicker'
+import moment from 'moment'
 import { currentLocation, route } from '../data/route'
+
 
 class VisitPage extends Component {
   state = {
@@ -10,20 +12,35 @@ class VisitPage extends Component {
   }
 
   handleWhenChange = (date) => {
-    this.setState({when: date})
+    const location = route.reverse().find((r) => {
+      return date.isAfter(r.date)
+    })
+
+    this.setState({
+      when: date,
+      where: location.name
+    })
   }
 
+  handleWhereChange = (option) => {
+    const locationName = option.value
+    const location = route.find((r) => {
+      return r.name === locationName
+    })
 
-  handleWhereChange = (location) => {
-    this.setState({where: location})
+    const when = moment(location.date)
+
+    this.setState({
+      when: when,
+      where: locationName
+    })
   }
 
   render () {
     const { when, where } = this.state
-    const options = [
-      { value: 'one', label: 'One' },
-      { value: 'two', label: 'Two' },
-    ]
+    const whereOptions = route.map((r) => {
+      return { value: r.name, label: r.name }
+    })
 
     return (
       <section id="visit" className="section-padding">
@@ -38,6 +55,7 @@ class VisitPage extends Component {
                 When
                 <DatePicker
                   selected={when}
+                  minDate={moment('2018-02-01')}
                   onChange={this.handleWhenChange}
                 />
               </div>
@@ -48,10 +66,10 @@ class VisitPage extends Component {
                 Where
                 <Select
                   value={where}
-                  onChange={this.handleWhereChange}
-                  options={options}
+                  options={whereOptions}
                   clearable={false}
                   searchPromptText={''}
+                  onChange={this.handleWhereChange}
                 />
               </div>
             </div>

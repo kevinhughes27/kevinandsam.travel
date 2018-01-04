@@ -4,7 +4,19 @@ export const currentLocation = {
 }
 
 export const route = [
-  { name: "Antigua Guatemala", coordinates: [14.5666644, -90.7333304] },
-  { name: "Bogota Columbia", coordinates: [4.711111, -74.072222] },
-  { name: "La Paz Bolivia", coordinates: [-16.499998, -68.1333328] },
+  {
+    name: "Guatemala",
+    date: "2018-02-01",
+    coordinates: [14.5666644, -90.7333304]
+  },
+  {
+    name: "Columbia",
+    date: "2018-03-01",
+    coordinates: [4.711111, -74.072222]
+  },
+  {
+    name: "Bolivia",
+    date: "2018-04-01",
+    coordinates: [-16.499998, -68.1333328]
+  },
 ]
