@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Select from 'react-select'
 import DatePicker from 'react-datepicker'
+import { currentLocation, route } from '../data/route'
 
 class VisitPage extends Component {
   state = {

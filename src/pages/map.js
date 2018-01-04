@@ -1,23 +1,12 @@
 import React, { Component } from 'react'
-import { Map, TileLayer, Circle, CircleMarker } from 'react-leaflet'
 import windowSize from 'react-window-size'
+import { Map, TileLayer, Circle, CircleMarker } from 'react-leaflet'
+import { currentLocation, route } from '../data/route'
 
-const zoom = 3
 const Center = (windowWidth) => {
   const smallScreen = windowWidth < 667;
   return smallScreen ? [23.16, -76.81] : [23.76, -34.27]
 }
-
-const currentLocation = {
-  name: 'Ottawa Canada',
-  coordinates: [45.4215, -75.6972]
-}
-
-const route = [
-  { name: "Antigua Guatemala", coordinates: [14.5666644, -90.7333304] },
-  { name: "Bogota Columbia", coordinates: [4.711111, -74.072222] },
-  { name: "La Paz Bolivia", coordinates: [-16.499998, -68.1333328] },
-]
 
 const tileProviderUrl =
   'https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}'
@@ -44,7 +33,7 @@ class MapPage extends Component {
     return (
       <Map
         center={Center(windowWidth)}
-        zoom={zoom}
+        zoom={3}
         minZoom={2}
         zoomSnap={0}
         zoomDelta={0.5}
