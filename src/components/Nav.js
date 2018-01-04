@@ -24,6 +24,7 @@ class Nav extends Component {
             <Item path="/home" title="Home" />
             <Item path="/about" title="About Us" />
             <Item path="/map" title="Map" />
+            <Item path="/visit" title="Come Visit" />
             <Item path="/blog" title="Blog" />
           </ul>
         </nav>
