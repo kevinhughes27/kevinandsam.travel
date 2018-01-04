@@ -1,17 +1,59 @@
 import React, { Component } from 'react'
+import Select from 'react-select'
+import DatePicker from 'react-datepicker'
 
 class VisitPage extends Component {
+  state = {
+    when: null,
+    where: '',
+  }
+
+  handleWhenChange = (date) => {
+    this.setState({when: date})
+  }
+
+
+  handleWhereChange = (location) => {
+    this.setState({where: location})
+  }
+
   render () {
+    const { when, where } = this.state
+    const options = [
+      { value: 'one', label: 'One' },
+      { value: 'two', label: 'Two' },
+    ]
+
     return (
       <section id="visit" className="section-padding">
         <div className="grid">
           <div className="text-container">
-            <p className="wow fadeInUp" data-wow-delay="300ms">
-              Kevin and Sam met in 2014 through a mutual love of travelling. Their first adventure together was in 2015 to Costa Rica.
-              Since that first trip things have only escalated, hiking the Inca trail in Peru and backpacking around China for 4 weeks.
-              In 2018 Sam and Kevin are embarking on their most ambitious adventure yet -
-              we are selling all of our stuff and becoming nomads to see the world.
+            <p>
+              We'd be thrilled to have visitors at any time during our travels. All you need to do is pick:
             </p>
+
+            <div className="question-container">
+              <div className="question">
+                When
+                <DatePicker
+                  selected={when}
+                  onChange={this.handleWhenChange}
+                />
+              </div>
+
+              or
+
+              <div className="question">
+                Where
+                <Select
+                  value={where}
+                  onChange={this.handleWhereChange}
+                  options={options}
+                  clearable={false}
+                  searchPromptText={''}
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
