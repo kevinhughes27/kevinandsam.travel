@@ -11,7 +11,7 @@ Leg Day
 -------
 ### Warm-Up
 * Leg swings
-* Hip opener
+* Hip opener with forward hamstring stretch
 * Full Squat sit
 * Arm sweeps
 * Dog pees
