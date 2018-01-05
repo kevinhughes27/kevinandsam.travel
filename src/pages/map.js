@@ -5,7 +5,7 @@ import { currentLocation, route } from '../data/route'
 
 const Center = (windowWidth) => {
   const smallScreen = windowWidth < 667;
-  return smallScreen ? [23.16, -76.81] : [23.76, -34.27]
+  return smallScreen ? [23.16, -76.81] : [14.51, -31.20]
 }
 
 const tileProviderUrl =
