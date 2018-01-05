@@ -33,6 +33,7 @@ nav ul {
     a {
       @include link-underline();
 
+      text-decoration: none;
       font-family: $font-header;
       font-weight: 700;
     }
