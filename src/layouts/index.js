@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import Nav from '../components/Nav'
+import Link from 'gatsby-link'
 
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import 'react-datepicker/dist/react-datepicker.css'
@@ -18,12 +18,11 @@ class Layout extends Component {
   render() {
     const title = "kevinandsam.travel"
     const children = this.props.children;
-    const path = this.props.location.pathname;
 
     return (
       <div>
         <Helmet title={title} meta={[]} />
-        <Nav path={path} />
+        <Nav />
         <main>
           { children() }
         </main>
@@ -31,5 +30,27 @@ class Layout extends Component {
     )
   }
 }
+
+const Nav = () => (
+  <header className="header">
+    <nav>
+      <ul>
+        <Item path="/" title="Home" />
+        <Item path="/about" title="About Us" />
+        <Item path="/map" title="Map" />
+        <Item path="/visit" title="Come Visit" />
+        <Item path="/blog" title="Blog" />
+      </ul>
+    </nav>
+  </header>
+)
+
+const Item = ({path, title}) => (
+  <li>
+    <Link activeClassName="active" to={path} exact>
+      {title}
+    </Link>
+  </li>
+)
 
 export default Layout
