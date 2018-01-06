@@ -10,10 +10,12 @@ class AboutPage extends Component {
         <div className="grid">
           <div className="text-container">
             <p>
-              Kevin and Sam met in 2014 through a mutual love of travelling. Their first adventure together was in 2015 to Costa Rica.
-              Since that first trip things have only escalated, hiking the Inca trail in Peru and backpacking around China for 4 weeks.
-              In 2018 Sam and Kevin are embarking on their most ambitious adventure yet -
-              we are selling all of our stuff and becoming nomads to see the world.
+              In 2014, Kevin and Sam met through their mutual love of travel.
+              Their first adventure together was in Costa Rica where they explored the rainforest,
+              went zip-lining, and enjoyed many a beachside drink.
+              Since then the trips have escalated from hiking the Inca Trail in Peru to backpacking China for a month.
+              Now it’s time for Kevin and Sam to embark on their most ambitious plan to date,
+              sell everything and become traveling nomads.
             </p>
           </div>
 
