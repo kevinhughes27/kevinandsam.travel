@@ -68,7 +68,7 @@ class VisitPage extends Component {
 
   render () {
     const { when, where } = this.state
-    const whereOptions = route.map((r) => {
+    const whereOptions = route.filter((r) => r.form !== false).map((r) => {
       return { value: r.name, label: r.name }
     })
 
