@@ -1,21 +1,46 @@
 import React, { Component } from 'react'
 import windowSize from 'react-window-size'
-import { Map, TileLayer, Circle, CircleMarker } from 'react-leaflet'
+import { Map, TileLayer, Circle, CircleMarker, Polyline } from 'react-leaflet'
 import { currentLocation, route } from '../data/route'
 
-const Center = (windowWidth) => {
-  const smallScreen = windowWidth < 667;
-  return smallScreen ? [23.16, -76.81] : [14.51, -31.20]
+const RouteMarkers = ({ coordinates }) => {
+  const markers = coordinates.map((point, i) => (
+    <Circle key={i} center={point} radius={5} />
+  ))
+
+  return <div>{markers}</div>
 }
 
-const tileProviderUrl =
-  'https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}'
+const Route = () => {
+  const coordinates = route.map((location, i) => location.coordinates)
+  const currentCoordinates = currentLocation.coordinates
+  const positions = [currentCoordinates, ...coordinates]
 
-const RouteMarkers = ({ locations }) => {
-  const markers = locations.map((location, i) => (
-    <Circle key={i} center={location.coordinates} radius={5} />
-  ))
-  return <div>{markers}</div>
+  return (
+    <div>
+      <CircleMarker center={currentCoordinates} radius={5} />
+      <RouteMarkers coordinates={coordinates} />
+      <Polyline
+        color="blue"
+        weight={2}
+        opacity={0.25}
+        dashArray={'5,5'}
+        positions={positions} />
+    </div>
+  )
+}
+
+const MapParams = (windowWidth) => {
+  const smallScreen = windowWidth < 667
+  const mediumScreen = windowWidth <= 768
+
+  if (smallScreen) {
+    return { center: [9.96, -57.65], zoom: 2 }
+  } else if (mediumScreen) {
+    return { center: [9.35, -37.32], zoom: 2.9 }
+  } else {
+    return { center: [11.43, -7.20], zoom: 3 }
+  }
 }
 
 class MapPage extends Component {
@@ -30,10 +55,12 @@ class MapPage extends Component {
       return <div></div>
     }
 
+    const { center, zoom } = MapParams(windowWidth)
+
     return (
       <Map
-        center={Center(windowWidth)}
-        zoom={3}
+        center={center}
+        zoom={zoom}
         minZoom={2}
         zoomSnap={0}
         zoomDelta={0.5}
@@ -41,14 +68,14 @@ class MapPage extends Component {
         zoomControl={false}
         attributionControl={false}
         onMove={(ev) => {
-          const latLng = ev.target.getCenter()
-          console.log(latLng)
+          const map = ev.target
+          const latLng = map.getCenter()
+          const zoom = map.getZoom()
+          console.log(latLng, zoom)
         }}>
 
-        <TileLayer url={tileProviderUrl} />
-        <CircleMarker center={currentLocation.coordinates} radius={5} />
-        <RouteMarkers locations={route} />
-
+        <TileLayer url='https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}' />
+        <Route />
       </Map>
     )
   }
