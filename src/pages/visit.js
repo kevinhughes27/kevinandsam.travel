@@ -68,7 +68,19 @@ class VisitPage extends Component {
       ? <p>In {month} we're planning to be in {where}. Now just {contactLink} and {flightLink}</p>
       : <p>We're planning to be in {where} around {month}. Now just {contactLink} and {flightLink}</p>
 
-    return response
+    return <div className='response'>{response}</div>
+  }
+
+  renderClosing() {
+    const subject = 'What about '
+    const contactHref = `mailto:kevinhughes27@gmail.com?subject=${subject}`
+    const contactLink = <a href={contactHref}>Tell us!</a>
+
+    return (
+      <p className='closing'>
+        Have something else in mind or a suggestion? {contactLink}
+      </p>
+    )
   }
 
   render () {
@@ -111,6 +123,7 @@ class VisitPage extends Component {
             </div>
 
             { this.renderResponse() }
+            { this.renderClosing() }
           </div>
         </div>
       </section>

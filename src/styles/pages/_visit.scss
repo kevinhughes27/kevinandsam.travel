@@ -41,4 +41,12 @@
       box-shadow: none;
     }
   }
+
+  .response {
+    animation: fadeIn 1s both;
+  }
+
+  .closing {
+    animation: fadeIn 2s both 1s;
+  }
 }
