@@ -43,12 +43,16 @@ class VisitPage extends Component {
       return
     }
 
+    const location = route.find((r) => {
+      return r.name === where
+    })
+
     const month = when.format("MMMM")
     const monthDay = when.format("MMMM D")
 
     const baseUrl = 'https://www.google.ca/flights/'
     const userAirport = 'YOW'
-    const locationAirport = 'GUA'
+    const locationAirport = location.airport
     const startDate = when.format('YYYY-MM-DD')
     const endDate = when.add(15, 'days').format('YYYY-MM-DD')
     const flightUrl = baseUrl + `#search;f=${userAirport};t=${locationAirport};d=${startDate};r=${endDate}`
