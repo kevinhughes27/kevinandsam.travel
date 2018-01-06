@@ -1,34 +1,8 @@
 import React, { Component } from 'react'
 import windowSize from 'react-window-size'
-import { Map, TileLayer, Circle, CircleMarker, Polyline } from 'react-leaflet'
+import { Map, TileLayer, Marker, CircleMarker, Polyline } from 'react-leaflet'
+import { divIcon } from 'leaflet'
 import { currentLocation, route } from '../data/route'
-
-const RouteMarkers = ({ coordinates }) => {
-  const markers = coordinates.map((point, i) => (
-    <Circle key={i} center={point} radius={5} />
-  ))
-
-  return <div>{markers}</div>
-}
-
-const Route = () => {
-  const coordinates = route.map((location, i) => location.coordinates)
-  const currentCoordinates = currentLocation.coordinates
-  const positions = [currentCoordinates, ...coordinates]
-
-  return (
-    <div>
-      <CircleMarker center={currentCoordinates} radius={5} />
-      <RouteMarkers coordinates={coordinates} />
-      <Polyline
-        color="blue"
-        weight={2}
-        opacity={0.25}
-        dashArray={'5,5'}
-        positions={positions} />
-    </div>
-  )
-}
 
 const MapParams = (windowWidth) => {
   const smallScreen = windowWidth < 667
@@ -79,6 +53,48 @@ class MapPage extends Component {
       </Map>
     )
   }
+}
+
+const Route = () => {
+  const coordinates = route.map((location, i) => location.coordinates)
+  const currentCoordinates = currentLocation.coordinates
+  const positions = [currentCoordinates, ...coordinates]
+
+  return (
+    <div>
+      <LocationMarker location={currentCoordinates} />
+      <RouteMarkers coordinates={coordinates} />
+      <Polyline
+        color='blue'
+        weight={2}
+        opacity={0.25}
+        dashArray={'5,5'}
+        positions={positions} />
+    </div>
+  )
+}
+
+const LocationMarker = ({ location }) => {
+  const pulsingIcon = divIcon({
+    className: 'css-icon',
+    html: '<div class="gps_ring"></div>',
+    iconSize: [20,20]
+  })
+
+  return (
+    <div>
+      <Marker position={location} icon={pulsingIcon} />
+      <CircleMarker center={location} radius={1} />
+    </div>
+  )
+}
+
+const RouteMarkers = ({ coordinates }) => {
+  const markers = coordinates.map((point, i) => (
+    <CircleMarker key={i} center={point} radius={1} />
+  ))
+
+  return <div>{markers}</div>
 }
 
 export default windowSize(MapPage)
