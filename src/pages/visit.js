@@ -94,7 +94,7 @@ class VisitPage extends Component {
         <div className="grid">
           <div className="text-container">
             <p>
-              We'd be thrilled to have visitors at any time during our travels. All you need to do is pick:
+              We'd be thrilled to have visitors at any time during our travels. All you need to do is choose:
             </p>
 
             <div className="question-container">
