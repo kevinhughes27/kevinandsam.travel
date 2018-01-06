@@ -91,6 +91,7 @@ class VisitPage extends Component {
                 <DatePicker
                   selected={when}
                   minDate={moment('2018-02-01')}
+                  disabledKeyboardNavigation
                   onChange={this.handleWhenChange}
                 />
               </div>
