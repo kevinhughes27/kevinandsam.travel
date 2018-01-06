@@ -3,7 +3,7 @@ import Helmet from 'react-helmet';
 
 export default function Template({ data }) {
   const { markdownRemark: post } = data;
-  const { path, title, excerpt, date } = post.frontmatter
+  const { path, title, author, date } = post.frontmatter
   const imageSrc = post.frontmatter.postImage.childImageSharp.resize.src;
 
   return (
@@ -41,6 +41,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
+        author
         date(formatString: "MMMM DD, YYYY")
         path
         postImage {

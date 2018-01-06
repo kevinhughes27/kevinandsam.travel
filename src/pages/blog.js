@@ -2,7 +2,7 @@ import React from 'react'
 import GatsbyLink from 'gatsby-link';
 
 function Post({node: post}) {
-  const { path, title, excerpt, date } = post.frontmatter
+  const { path, title, date } = post.frontmatter
   const imageSrc = post.frontmatter.cardImage.childImageSharp.resize.src;
 
   return (
@@ -13,16 +13,15 @@ function Post({node: post}) {
         </div>
         <div className="preview__container">
           <div>
-            <h2 className="wow fadeInUp" data-wow-delay="150ms" itemProp="name">
+            <h2 itemProp="name">
               {title}
             </h2>
-            <p className="preview__excerpt wow fadeInUp" data-wow-delay="300ms" itemProp="description">
-              {post.excerpt}
-            </p>
           </div>
-          <time className="preview__date wow fadeInUp" data-wow-delay="450ms" itemProp="datePublished" dateTime={date}>
-            { date }
-          </time>
+          <span>
+            <time className="preview__date" itemProp="datePublished" dateTime={date}>
+              { date }
+            </time>
+          </span>
         </div>
       </a>
     </li>

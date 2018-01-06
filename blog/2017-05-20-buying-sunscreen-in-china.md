@@ -1,6 +1,7 @@
 ---
 path: "/buying-sunscreen-in-china"
 date: "2017-05-20"
+author: "Sam"
 title: "Buying Sunscreen in China"
 cardImage: "china-sunscreen-card.jpg"
 postImage: "china-sunscreen-post.jpg"
