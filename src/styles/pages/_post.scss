@@ -4,17 +4,22 @@
   padding-top: 60%;
 
   @media (min-width: $mq-md) {
-    height: calc(100vh - 4em);
+    height: calc(100vh - 12em);
     padding-top: 0;
   }
 
+  @media (max-width: $mq-sm) {
+    margin-top: 4em;
+  }
+
   .absolute-bg {
-    animation: fadeIn 2s;
+    animation: fadeIn 3s both 0.3s;
   }
 }
 
 .post {
   background-color: $color-grey;
+  animation: fadeIn 3s both 0.3s;
 
   @media (min-width: $mq-md) {
     margin-top: -6em;
