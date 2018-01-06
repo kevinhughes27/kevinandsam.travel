@@ -85,9 +85,14 @@ class VisitPage extends Component {
 
   render () {
     const { when, where } = this.state
-    const whereOptions = route.filter((r) => r.form !== false).map((r) => {
-      return { value: r.name, label: r.name }
-    })
+    const whereOptions = route
+      .filter((r) => r.form !== false)
+      .sort((a, b) => {
+        return (a.name[0] < b.name[0]) ? -1 : (a.name[0] > b.name[0]) ? 1 : 0
+      })
+      .map((r) => {
+        return { value: r.name, label: r.name }
+      })
 
     return (
       <section id="visit" className="section-padding">
