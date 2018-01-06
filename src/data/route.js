@@ -47,9 +47,9 @@ export const route = [
     coordinates: [-34.6037,-58.3816]
   },
   {
-    name: "Montenegro",
+    name: "Croatia",
     date: "2018-05-15",
-    coordinates: [42.7087,19.3744]
+    coordinates: [44.1350119,15.2138848]
   },
   {
     name: "Bosnia",
@@ -57,9 +57,9 @@ export const route = [
     coordinates: [43.8938256,18.312952]
   },
   {
-    name: "Croatia",
-    date: "2018-06-10",
-    coordinates: [44.1350119,15.2138848]
+    name: "Montenegro",
+    date: "2018-06-08",
+    coordinates: [42.7087,19.3744]
   },
   {
     name: "Hungary",
@@ -95,5 +95,15 @@ export const route = [
     name: "United Kingdom",
     date: "2018-07-25",
     coordinates: [53.4723272,-2.2935021]
+  },
+  {
+    name: "Africa",
+    date: "2018-09-15",
+    coordinates: [-22.322312,22.4436439]
+  },
+  {
+    name: "Asia",
+    date: "2018-11-01",
+    coordinates: [13.7196108,100.5322264]
   },
 ]
