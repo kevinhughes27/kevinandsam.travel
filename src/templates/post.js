@@ -17,7 +17,7 @@ export default function Template({ data }) {
         </header>
 
         <div className="grid--double">
-          <section className="post section-padding--half bg-grey" itemProp="articleBody">
+          <section className="post section-padding--half" itemProp="articleBody">
             <header className="post-header">
               <h1 itemProp="name headline">
                 { title }
