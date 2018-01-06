@@ -9,6 +9,7 @@ class VisitPage extends Component {
   state = {
     when: null,
     where: '',
+    lastAnswer: null
   }
 
   handleWhenChange = (date) => {
@@ -18,7 +19,8 @@ class VisitPage extends Component {
 
     this.setState({
       when: date,
-      where: location.name
+      where: location.name,
+      lastAnswer: 'when'
     })
   }
 
@@ -32,20 +34,19 @@ class VisitPage extends Component {
 
     this.setState({
       when: when,
-      where: locationName
+      where: locationName,
+      lastAnswer: 'where'
     })
   }
 
   renderResponse() {
-    const { when, where } = this.state
+    const { when, where, lastAnswer } = this.state
 
     if (when === null) {
       return
     }
 
-    const location = route.find((r) => {
-      return r.name === where
-    })
+    const location = route.find((r) => { return r.name === where })
 
     const month = when.format("MMMM")
     const monthDay = when.format("MMMM D")
@@ -57,16 +58,17 @@ class VisitPage extends Component {
     const flightUrl = baseUrl + `#search;t=${locationAirport};d=${startDate};r=${endDate}`
     const flightLink = <a href={flightUrl} target="_blank">book your flights!</a>
 
-    const subject = `Coming to visit in ${month}`
-    const body = `I was thinking of coming to visit ${monthDay}. Do you think you'll still be in ${where}?`
-    const contactHref = `mailto:kevinhughes27@gmail.com?subject=${subject}?body=${body}`
+    const subject = lastAnswer === 'when'
+      ? `Coming to visit in ${month}`
+      : `Coming to visit in ${where}`
+    const contactHref = `mailto:kevinhughes27@gmail.com?subject=${subject}`
     const contactLink = <a href={contactHref}>Let us know</a>
 
-    return (
-      <p>
-        In {month} we're planning to be in {where}. Now just {contactLink} and {flightLink}
-      </p>
-    )
+    const response = lastAnswer === 'when'
+      ? <p>In {month} we're planning to be in {where}. Now just {contactLink} and {flightLink}</p>
+      : <p>We're planning to be in {where} around {month}. Now just {contactLink} and {flightLink}</p>
+
+    return response
   }
 
   render () {
