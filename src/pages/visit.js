@@ -51,11 +51,10 @@ class VisitPage extends Component {
     const monthDay = when.format("MMMM D")
 
     const baseUrl = 'https://www.google.ca/flights/'
-    const userAirport = 'YOW'
     const locationAirport = location.airport
     const startDate = when.format('YYYY-MM-DD')
     const endDate = when.add(15, 'days').format('YYYY-MM-DD')
-    const flightUrl = baseUrl + `#search;f=${userAirport};t=${locationAirport};d=${startDate};r=${endDate}`
+    const flightUrl = baseUrl + `#search;t=${locationAirport};d=${startDate};r=${endDate}`
     const flightLink = <a href={flightUrl} target="_blank">book your flights!</a>
 
     const subject = `Coming to visit in ${month}`
