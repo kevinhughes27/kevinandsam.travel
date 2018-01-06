@@ -7,7 +7,7 @@ const subheading = "See the World"
 
 class Home extends Component {
   render() {
-    const mediumScreen = this.props.windowWidth <= 768;
+    const mediumScreen = this.props.windowWidth <= 800;
     return mediumScreen ? renderMobile() : renderDesktop();
   }
 }
