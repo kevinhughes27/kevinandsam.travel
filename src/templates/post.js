@@ -3,14 +3,16 @@ import Helmet from 'react-helmet';
 
 export default function Template({ data }) {
   const { markdownRemark: post } = data;
-  const { path, title, author, excerpt, date } = post.frontmatter
+  const { path, title, author, date } = post.frontmatter
   const imageSrc = post.frontmatter.postImage.childImageSharp.resize.src;
 
+  const baseUrl = 'https://kevinandsam.travel'
   const meta = [
+    { property: "og:url", content: baseUrl + path },
     { property: "og:type", content: "article" },
     { property: "og:title", content: title },
-    { property: "og:description", content: excerpt },
-    { property: "og:image", content: imageSrc },
+    { property: "og:description", content: post.excerpt },
+    { property: "og:image", content: baseUrl + imageSrc },
   ]
 
   return (
@@ -49,7 +51,6 @@ export const pageQuery = graphql`
       frontmatter {
         title
         author
-        excerpt
         date(formatString: "MMMM DD, YYYY")
         path
         postImage {
