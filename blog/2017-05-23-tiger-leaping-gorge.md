@@ -13,7 +13,7 @@ To get to the hike we flew into Lijiang which seemed like a pretty easy thing to
 
 The bus took us to get tickets for the trail and dropped us off just on the other side of the ticket booth. The trail heads up a road to your left as you are walking away from town and you should pass the trail sign early on. The first 45 minutes of the trek is on a road.
 
-Before starting the trek we did decide to head to upper gorge, also called ____, on the map everyone was using. We took a sketchy local taxi but it turned out to be worth it because it is definitely further than 4km to upper gorge, probably closer to 10. Do it if you have time but consider skipping if you're doing the hike in 2 days or less.
+Before starting the trek we did decide to head to Upper Gorge. We took a sketchy local taxi but it turned out to be worth it because it is definitely further than 4km to upper gorge, probably closer to 10. Do it if you have time but consider skipping if you're doing the hike in 2 days or less.
 
 After Upper Gorge we started trekking at 11:30 and then 45 minutes later we got to the start of the dirt trail. The next part of the hike was probably the hardest with a lot of up hill in the sun. It took us to 2:15 to reach the Naxi Family Guest House where we took a much needed hour long lunch break.
 
