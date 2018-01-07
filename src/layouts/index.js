@@ -21,7 +21,7 @@ class Layout extends Component {
 
     return (
       <div>
-        <Helmet title={title} meta={[]} />
+        <Helmet title={title} />
         <Nav />
         <main>
           { children() }

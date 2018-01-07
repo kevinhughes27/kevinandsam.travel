@@ -3,17 +3,24 @@ import Helmet from 'react-helmet';
 
 export default function Template({ data }) {
   const { markdownRemark: post } = data;
-  const { path, title, author, date } = post.frontmatter
+  const { path, title, author, excerpt, date } = post.frontmatter
   const imageSrc = post.frontmatter.postImage.childImageSharp.resize.src;
+
+  const meta = [
+    { property: "og:type", content: "article" },
+    { property: "og:title", content: title },
+    { property: "og:description", content: excerpt },
+    { property: "og:image", content: imageSrc },
+  ]
 
   return (
     <div className="post-padding">
-      <Helmet title={`kevinandsam.travel - ${title}`} />
+      <Helmet title={`kevinandsam.travel - ${title}`} meta={meta}/>
 
       <article itemProp="blogPost" itemScope itemType="http://schema.org/BlogPosting">
 
         <header className="post-mast">
-          <figure className="absolute-bg" style={{backgroundImage: `url('${imageSrc}')`}}></figure>
+          <figure className="absolute-bg" style={{backgroundImage: `url('${imageSrc}')`}} />
         </header>
 
         <div className="grid--double">
@@ -42,6 +49,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         author
+        excerpt
         date(formatString: "MMMM DD, YYYY")
         path
         postImage {
