@@ -9,7 +9,7 @@ $color-beta: #323235;
   'base/_settings',
   'base/_body';
 
-  @import 'pages/_home',
+@import 'pages/_home',
   'pages/_about',
   'pages/_map',
   'pages/_visit',
@@ -17,7 +17,6 @@ $color-beta: #323235;
   'pages/_post';
 
 @import 'components/_nav',
-  'components/_countdown',
   'components/_video';
 
 @import 'utils/_animations',
