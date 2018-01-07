@@ -3,8 +3,10 @@ Fitness
 
 In addition to an active lifestyle and regular rock climbing the following workouts will keep us in shape.
 
-* Situational workouts at hotel gyms or outdoor gyms
-* Consider going for a run instead of walking or cycling
+* Consider going for a run instead of walking or cycling to see some sight (e.g a lake)
+* Occasional Yoga classes
+* Situational workouts at hotel or outdoor gyms.
+  * Pull ups, Shoulders and Rows are the hardest for us to do in hostels
 
 
 Leg Day
@@ -32,14 +34,6 @@ repeat for 3 sets
 * Hamstring curl with blanket
 
 
-Upper Body
-----------
-### Circuit
-
-### Other exercies:
-* Bench Dips
-
-
 Core
 ----
 ### Circuit
@@ -49,6 +43,19 @@ Core
 * Hollow Hold
 * Arch Hold
 
+
 ### Notes
 * Hold each for 10-60 seconds
 * This is warm up from [/r/bodyweightfitness](https://www.reddit.com/r/bodyweightfitness/wiki/kb/recommended_routine)
+
+
+Upper Body
+----------
+### Circuit
+* Push Ups 10 reps
+* Dips 10 reps
+
+repeat for 3 sets
+
+### Notes
+* Least important of the workouts. Try and suppliment with gym visits etc.
