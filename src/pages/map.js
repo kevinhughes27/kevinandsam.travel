@@ -56,9 +56,12 @@ class MapPage extends Component {
 }
 
 const Route = () => {
-  const coordinates = route.map((location, i) => location.coordinates)
   const currentCoordinates = currentLocation.coordinates
-  const positions = [currentCoordinates, ...coordinates]
+  const coordinates = route
+    .map((location) => location.coordinates)
+    .reduce((accumulator, currentValue, currentIndex, array) => {
+      return accumulator.concat(currentValue)
+    })
 
   return (
     <div>
@@ -69,7 +72,7 @@ const Route = () => {
         weight={2}
         opacity={0.25}
         dashArray={'5,5'}
-        positions={positions} />
+        positions={coordinates} />
     </div>
   )
 }
