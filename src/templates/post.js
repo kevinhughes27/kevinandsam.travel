@@ -8,7 +8,7 @@ export default function Template({ data }) {
 
   const baseUrl = 'https://kevinandsam.travel'
   const meta = [
-    { property: "og:url", content: baseUrl + path },
+    { property: "og:url", content: baseUrl + path + '/' },
     { property: "og:type", content: "article" },
     { property: "og:title", content: title },
     { property: "og:description", content: post.excerpt },
