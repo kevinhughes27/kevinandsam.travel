@@ -7701,9 +7701,9 @@ react-responsive-carousel@^3.1.30:
     prop-types "^15.5.8"
     react-easy-swipe "^0.0.13"
 
-react-responsive-select@^3.0.10:
+"react-responsive-select@git://github.com/kevinhughes27/react-responsive-select.git#350e4c9bca3e62ab6befe7641a298ec0e2fa514a":
   version "3.0.10"
-  resolved "https://registry.yarnpkg.com/react-responsive-select/-/react-responsive-select-3.0.10.tgz#715884f3ca78d9e46aceec1b41deb7fa7b863435"
+  resolved "git://github.com/kevinhughes27/react-responsive-select.git#350e4c9bca3e62ab6befe7641a298ec0e2fa514a"
   dependencies:
     singleline "1.0.x"
 
