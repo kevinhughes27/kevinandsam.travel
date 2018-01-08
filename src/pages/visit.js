@@ -14,7 +14,7 @@ class VisitPage extends Component {
   }
 
   handleWhenChange = (date) => {
-    const location = locations.reverse().find((r) => {
+    const location = locations.find((r) => {
       return date.isAfter(r.date)
     })
 
@@ -27,6 +27,11 @@ class VisitPage extends Component {
 
   handleWhereChange = (option) => {
     const locationName = option.value
+
+    if (locationName === '') {
+      return
+    }
+
     const location = locations.find((r) => {
       return r.name === locationName
     })
@@ -55,7 +60,7 @@ class VisitPage extends Component {
     const baseUrl = 'https://www.google.ca/flights/'
     const locationAirport = location.airport
     const startDate = when.format('YYYY-MM-DD')
-    const endDate = when.add(15, 'days').format('YYYY-MM-DD')
+    const endDate = moment(startDate).add(15, 'days').format('YYYY-MM-DD')
     const flightUrl = baseUrl + `#search;t=${locationAirport};d=${startDate};r=${endDate}`
     const flightLink = <a href={flightUrl} target="_blank">book your flights!</a>
 
@@ -85,7 +90,7 @@ class VisitPage extends Component {
   render () {
     const { when, where } = this.state
 
-    const whereOptions = locations
+    let whereOptions = locations
       .sort((a, b) => {
         return (a.name[0] < b.name[0]) ? -1 : (a.name[0] > b.name[0]) ? 1 : 0
       })
@@ -93,11 +98,10 @@ class VisitPage extends Component {
         return { value: r.name, text: r.name }
       })
 
-    const caretIcon = (
-      <svg className="caret-icon" x="0px" y="0px" width="11.848px" height="6.338px" viewBox="351.584 2118.292 11.848 6.338">
-        <g><path d="M363.311,2118.414c-0.164-0.163-0.429-0.163-0.592,0l-5.205,5.216l-5.215-5.216c-0.163-0.163-0.429-0.163-0.592,0s-0.163,0.429,0,0.592l5.501,5.501c0.082,0.082,0.184,0.123,0.296,0.123c0.103,0,0.215-0.041,0.296-0.123l5.501-5.501C363.474,2118.843,363.474,2118.577,363.311,2118.414L363.311,2118.414z"/></g>
-      </svg>
-    )
+    // add empty initial option
+    if (when === null) {
+      whereOptions.push({value: '', text: 'Select'})
+    }
 
     return (
       <section id="visit" className="section-padding">
@@ -112,7 +116,7 @@ class VisitPage extends Component {
                 <p>When</p>
                 <DatePicker
                   selected={when}
-                  minDate={moment('2018-02-01')}
+                  minDate={moment('2018-02-02')}
                   customInput={<DatePickerButton />}
                   withPortal
                   onChange={this.handleWhenChange}
@@ -153,5 +157,11 @@ class DatePickerButton extends Component {
     )
   }
 }
+
+const caretIcon = (
+  <svg className="caret-icon" x="0px" y="0px" width="11.848px" height="6.338px" viewBox="351.584 2118.292 11.848 6.338">
+    <g><path d="M363.311,2118.414c-0.164-0.163-0.429-0.163-0.592,0l-5.205,5.216l-5.215-5.216c-0.163-0.163-0.429-0.163-0.592,0s-0.163,0.429,0,0.592l5.501,5.501c0.082,0.082,0.184,0.123,0.296,0.123c0.103,0,0.215-0.041,0.296-0.123l5.501-5.501C363.474,2118.843,363.474,2118.577,363.311,2118.414L363.311,2118.414z"/></g>
+  </svg>
+)
 
 export default VisitPage
