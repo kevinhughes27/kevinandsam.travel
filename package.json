@@ -24,7 +24,7 @@
     "react-helmet": "^5.2.0",
     "react-leaflet": "^1.7.8",
     "react-responsive-carousel": "^3.1.30",
-    "react-select": "^1.1.0",
+    "react-responsive-select": "^3.0.10",
     "react-window-size": "^1.0.1"
   },
   "devDependencies": {

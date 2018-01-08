@@ -38,19 +38,6 @@
     }
   }
 
-  .Select {
-    text-align: left;
-
-    &.is-open > .Select-control {
-      border-color: #d9d9d9 #ccc #b3b3b3;
-    }
-
-    &.is-focused:not(.is-open) > .Select-control {
-      border-color: #d9d9d9 #ccc #b3b3b3;
-      box-shadow: none;
-    }
-  }
-
   .response {
     animation: fadeIn 1s both;
   }
@@ -58,4 +45,40 @@
   .closing {
     animation: fadeIn 2s both 1s;
   }
+}
+
+/*
+ * Select
+ */
+.caret-icon {
+  position: absolute;
+  right: 1rem;
+  top: 1.25rem;
+  fill: #333;
+}
+
+/* animate caret icon */
+.rrs--options-visible .caret-icon {
+  transform: rotate(180deg);
+}
+
+/* animate opening of the options panel */
+.rrs__options {
+  transition: all .2s cubic-bezier(0.19, 1, 0.22, 1);
+  max-height: 0;
+  opacity: 0;
+}
+
+/* animate opening of the options panel */
+.rrs--options-visible .rrs__options {
+  opacity: 1;
+}
+
+/* remove coloring */
+.rrs--has-changed .rrs__label {
+  color: $color-black;
+}
+
+.rrs__option.rrs__option--selected {
+  color: $color-black;
 }

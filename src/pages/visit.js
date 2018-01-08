@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Select from 'react-select'
+import ReactResponsiveSelect from 'react-responsive-select'
 import DatePicker from 'react-datepicker'
 import moment from 'moment'
 import { currentLocation, locations } from '../data/route'
@@ -88,8 +88,14 @@ class VisitPage extends Component {
         return (a.name[0] < b.name[0]) ? -1 : (a.name[0] > b.name[0]) ? 1 : 0
       })
       .map((r) => {
-        return { value: r.name, label: r.name }
+        return { value: r.name, text: r.name }
       })
+
+    const caretIcon = (
+      <svg className="caret-icon" x="0px" y="0px" width="11.848px" height="6.338px" viewBox="351.584 2118.292 11.848 6.338">
+        <g><path d="M363.311,2118.414c-0.164-0.163-0.429-0.163-0.592,0l-5.205,5.216l-5.215-5.216c-0.163-0.163-0.429-0.163-0.592,0s-0.163,0.429,0,0.592l5.501,5.501c0.082,0.082,0.184,0.123,0.296,0.123c0.103,0,0.215-0.041,0.296-0.123l5.501-5.501C363.474,2118.843,363.474,2118.577,363.311,2118.414L363.311,2118.414z"/></g>
+      </svg>
+    );
 
     return (
       <section id="visit" className="section-padding">
@@ -105,7 +111,7 @@ class VisitPage extends Component {
                 <DatePicker
                   selected={when}
                   minDate={moment('2018-02-01')}
-                  disabledKeyboardNavigation
+                  withPortal
                   onChange={this.handleWhenChange}
                 />
               </div>
@@ -114,11 +120,11 @@ class VisitPage extends Component {
 
               <div className="question">
                 Where
-                <Select
-                  value={where}
+                <ReactResponsiveSelect
+                  caretIcon={caretIcon}
+                  name="where"
                   options={whereOptions}
-                  clearable={false}
-                  searchPromptText={''}
+                  selectedValue={where}
                   onChange={this.handleWhereChange}
                 />
               </div>
