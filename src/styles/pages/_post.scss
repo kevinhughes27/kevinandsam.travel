@@ -117,8 +117,14 @@
 .post-author {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   margin-top: 2em;
+
+  @media (min-width: $mq-md) {
+    margin-right: 8em;
+    margin-left: 8em;
+  }
+
   img {
     height: 80px;
     width: 80px;
