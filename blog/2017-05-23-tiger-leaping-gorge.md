@@ -33,6 +33,7 @@ The Teahorse Guest House has an incredible view and a pretty good atmosphere inc
 
 <figure>
   <img src="tiger-leaping-gorge-day2.jpg"/>
+  <figcaption>A waterfall we hiked right through on day 2 of the trek</figcaption>
 </figure>
 
 Day 1 was harder than we expected especially for Sam, mostly because of the sun and heat was hard to trek through. We started day 2 pretty early at 8:15 am to take advantage of the cooler part of the day. In the morning at our hostel we got to see the sunrise over the mountains. The second day was an easier trek with better scenery. It took us 1.5 hours to get to the Halfway House arriving at 9:45 am. While there we checked out the toilet with a view and picked up our bus tickets back to Lijiang.
