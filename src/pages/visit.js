@@ -10,7 +10,8 @@ class VisitPage extends Component {
   state = {
     when: null,
     where: '',
-    lastAnswer: ''
+    lastAnswer: '',
+    debounce: false
   }
 
   handleWhenChange = (date) => {
@@ -21,14 +22,21 @@ class VisitPage extends Component {
     this.setState({
       when: date,
       where: location.name,
-      lastAnswer: 'when'
+      lastAnswer: 'when',
+      debounce: true
     })
+
+    setTimeout(() => {
+      this.setState({
+        debounce: false
+      })
+    }, 100)
   }
 
   handleWhereChange = (option) => {
     const locationName = option.value
 
-    if (locationName === '') {
+    if (locationName === '' || this.state.debounce) {
       return
     }
 
