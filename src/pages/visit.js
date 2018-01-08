@@ -111,7 +111,7 @@ class VisitPage extends Component {
                 <p>When</p>
                 <DatePicker
                   selected={when}
-                  minDate={moment('2018-02-01')}
+                  minDate={moment('2018-02-03')}
                   customInput={<DatePickerButton />}
                   withPortal
                   onChange={this.handleWhenChange}
