@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import windowSize from 'react-window-size'
-import { Map, TileLayer, Marker, CircleMarker, Polyline } from 'react-leaflet'
+import { Map, TileLayer, Marker, CircleMarker, Popup, Polyline } from 'react-leaflet'
 import { divIcon } from 'leaflet'
 import { currentLocation, route } from '../data/route'
 
@@ -57,11 +57,7 @@ class MapPage extends Component {
 
 const Route = () => {
   const currentCoordinates = currentLocation.coordinates
-  const coordinates = route
-    .map((location) => location.coordinates)
-    .reduce((accumulator, currentValue, currentIndex, array) => {
-      return accumulator.concat(currentValue)
-    })
+  const coordinates = route.map((location) => location.coordinates)
 
   return (
     <div>
@@ -94,7 +90,11 @@ const LocationMarker = ({ location }) => {
 
 const RouteMarkers = ({ coordinates }) => {
   const markers = coordinates.map((point, i) => (
-    <CircleMarker key={i} center={point} radius={1} />
+    <CircleMarker key={i} center={point} radius={1}>
+      <Popup>
+
+      </Popup>
+    </CircleMarker>
   ))
 
   return <div>{markers}</div>
