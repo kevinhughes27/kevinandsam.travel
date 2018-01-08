@@ -105,7 +105,7 @@ const RouteMarkers = ({ locations }) => {
     <Circle key={i} center={location.coordinates} radius={3} />
   ))
 
-  return <div>{markers}{circles}</div>
+  return <div>{circles}{markers}</div>
 }
 
 export default windowSize(MapPage)
