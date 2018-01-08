@@ -62,14 +62,14 @@ const Route = () => {
 
   return (
     <div>
-      <LocationMarker location={currentCoordinates} />
-      <RouteMarkers locations={locations} />
       <Polyline
         color='blue'
         weight={2}
         opacity={0.25}
         dashArray={'5,5'}
         positions={coordinates} />
+      <LocationMarker location={currentCoordinates} />
+      <RouteMarkers locations={locations} />
     </div>
   )
 }
