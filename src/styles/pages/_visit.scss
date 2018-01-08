@@ -20,12 +20,11 @@
   .react-datepicker__input-container {
     input {
       max-width: 200px;
-      height: 36px;
-      border-color: #d9d9d9 #ccc #b3b3b3;
-      border-radius: 4px;
-      border: 1px solid #ccc;
+      height: 44px;
+      border: 0;
       padding-left: 10px;
-      color: #333;
+      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .2);
+      color: $color-black;
       font-family: 'Fanwood Text';
 
       @media (max-width: $mq-sm) {

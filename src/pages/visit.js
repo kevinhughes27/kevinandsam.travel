@@ -107,7 +107,7 @@ class VisitPage extends Component {
 
             <div className="question-container">
               <div className="question">
-                When
+                <p>When</p>
                 <DatePicker
                   selected={when}
                   minDate={moment('2018-02-01')}
@@ -116,10 +116,10 @@ class VisitPage extends Component {
                 />
               </div>
 
-              or
+              <p>or</p>
 
               <div className="question">
-                Where
+                <p>Where</p>
                 <ReactResponsiveSelect
                   caretIcon={caretIcon}
                   name="where"
