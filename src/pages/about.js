@@ -12,7 +12,7 @@ class AboutPage extends Component {
             <p>
               In 2014, Kevin and Sam met through their mutual love of travel.
               Their first adventure together was in Costa Rica where they explored the rainforest,
-              went zip-lining, and enjoyed many a beachside drink.
+              went zip-lining, and enjoyed many beachside drinks.
               Since then the trips have escalated from hiking the Inca Trail in Peru to backpacking China for a month.
               Now it’s time for Kevin and Sam to embark on their most ambitious plan to date,
               sell everything and become traveling nomads.

@@ -4,7 +4,6 @@ import DatePicker from 'react-datepicker'
 import moment from 'moment'
 import { currentLocation, route } from '../data/route'
 
-
 class VisitPage extends Component {
   state = {
     when: null,
@@ -62,7 +61,7 @@ class VisitPage extends Component {
       ? `Coming to visit in ${month}`
       : `Coming to visit in ${where}`
     const contactHref = `mailto:kevinhughes27@gmail.com?subject=${subject}`
-    const contactLink = <a href={contactHref}>Let us know</a>
+    const contactLink = <a href={contactHref}>let us know</a>
 
     const response = lastAnswer === 'when'
       ? <p>In {month} we're planning to be in {where}. Now just {contactLink} and {flightLink}</p>
@@ -72,13 +71,11 @@ class VisitPage extends Component {
   }
 
   renderClosing() {
-    const subject = 'What about '
-    const contactHref = `mailto:kevinhughes27@gmail.com?subject=${subject}`
-    const contactLink = <a href={contactHref}>Tell us!</a>
+    const contactLink = <a href='mailto:kevinhughes27@gmail.com'>Tell us!</a>
 
     return (
       <p className='closing'>
-        Have something else in mind or a suggestion? {contactLink}
+        Have somewhere else in mind or a suggestion? {contactLink}
       </p>
     )
   }

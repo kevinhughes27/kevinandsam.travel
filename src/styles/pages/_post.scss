@@ -103,13 +103,6 @@
     margin-top: 2em;
     margin-bottom: 2em;
 
-    background-color: $color-grey;
-
-    @media (min-width: $mq-sm) {
-      margin-top: 3em;
-      margin-bottom: 3em;
-    }
-
     img {
       width: 100%;
     }
@@ -117,36 +110,7 @@
 
   figcaption {
     margin-top: 0.5em;
-
     text-align: center;
-  }
-
-  & figure.large-img {
-
-    @media (min-width: $mq-md) {
-      margin-right: -16em;
-      margin-left: -16em;
-    }
-  }
-
-  &__tags {
-    display: block;
-    margin-top: 2em;
-    margin-bottom: 2em;
-
-    font-family: $font-header;
-    font-weight: 700;
-    text-align: center;
-
-    @media (min-width: $mq-sm) {
-      margin-top: 3em;
-      margin-bottom: 3em;
-    }
-
-    a {
-      font-family: $font-body;
-      font-weight: 400;
-    }
   }
 }
 

@@ -7,6 +7,8 @@ cardImage: "china-sunscreen-card.jpg"
 postImage: "china-sunscreen-post.jpg"
 ---
 
-* won't find it in corner stores, grocery stores or even pharmacies
-* we finally found some in a makeup store!
-* be careful because some brands will contain bleach to make you whiter
+Buying sunscreen in China may seem like a simple thing but it was definitely a challenge in the more rural and less travelled regions. We were starting to run low on our supply which for most people is ok but for me, as a ginger in a sunny hot climate, it's a stressful situation.
+
+We searched everywhere we could think of including grocery stores, pharmacies and even convenience stores with no luck. Finally we decided to try a cosmetics store and that’s where we found it. The sunscreen was sitting right beside the eyeshadow in the store.
+
+When buying sunscreen in China you have to be careful which brand you pick – some contain bleach or whitening ingredients so stay away from those. Your best bet is to purchase a brand you recognize from home, which will be a bit more costly but you’ll know exactly what you’re getting.
