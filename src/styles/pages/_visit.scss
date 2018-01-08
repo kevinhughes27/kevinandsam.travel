@@ -18,17 +18,22 @@
   }
 
   .react-datepicker__input-container {
-    input {
+    button {
       max-width: 200px;
+      min-width: 200px;
       height: 44px;
       border: 0;
-      padding-left: 10px;
+      background-color: $color-white;
       box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .2);
       color: $color-black;
       font-family: 'Fanwood Text';
+      text-align: left;
+      padding-left: 14px;
+      cursor: pointer;
 
       @media (max-width: $mq-sm) {
         max-width: 140px;
+        min-width: 140px;
       }
 
       &:focus  {
