@@ -1,5 +1,6 @@
-import React from 'react';
-import Helmet from 'react-helmet';
+import React from 'react'
+import Helmet from 'react-helmet'
+import { withPrefix } from 'gatsby-link'
 
 export default function Template({ data }) {
   const { markdownRemark: post } = data;
@@ -37,6 +38,13 @@ export default function Template({ data }) {
             </header>
 
             <div className="post-content" dangerouslySetInnerHTML={{ __html: post.html }} />
+            <div className="post-author">
+              <img src={`${__PATH_PREFIX__}/${author.toLowerCase()}.jpg`} />
+              <div>
+                <strong>Author</strong>
+                <p>{ author }</p>
+              </div>
+            </div>
           </section>
         </div>
       </article>
