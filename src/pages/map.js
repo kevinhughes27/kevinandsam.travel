@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import windowSize from 'react-window-size'
-import { Map, TileLayer, Marker, CircleMarker, Popup, Polyline } from 'react-leaflet'
+import { Map, TileLayer, Marker, CircleMarker, Circle, Popup, Polyline } from 'react-leaflet'
 import { divIcon } from 'leaflet'
-import { currentLocation, route } from '../data/route'
+import moment from 'moment'
+import { locations, currentLocation } from '../data/route'
 
 const MapParams = (windowWidth) => {
   const smallScreen = windowWidth < 667
@@ -57,12 +58,12 @@ class MapPage extends Component {
 
 const Route = () => {
   const currentCoordinates = currentLocation.coordinates
-  const coordinates = route.map((location) => location.coordinates)
+  const coordinates = locations.map((location) => location.coordinates)
 
   return (
     <div>
       <LocationMarker location={currentCoordinates} />
-      <RouteMarkers coordinates={coordinates} />
+      <RouteMarkers locations={locations} />
       <Polyline
         color='blue'
         weight={2}
@@ -88,16 +89,23 @@ const LocationMarker = ({ location }) => {
   )
 }
 
-const RouteMarkers = ({ coordinates }) => {
-  const markers = coordinates.map((point, i) => (
-    <CircleMarker key={i} center={point} radius={1}>
+const RouteMarkers = ({ locations }) => {
+  const markers = locations.map((location, i) => (
+    <CircleMarker key={i} center={location.coordinates} radius={24} color="transparent">
       <Popup>
-
+        <div>
+          <h4>{location.name}</h4>
+          {moment(location.date).format('MMMM')}
+        </div>
       </Popup>
     </CircleMarker>
   ))
 
-  return <div>{markers}</div>
+  const circles = locations.map((location, i) => (
+    <Circle key={i} center={location.coordinates} radius={3} />
+  ))
+
+  return <div>{markers}{circles}</div>
 }
 
 export default windowSize(MapPage)

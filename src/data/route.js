@@ -3,7 +3,7 @@ export const currentLocation = {
   coordinates: [45.4215, -75.6972]
 }
 
-export const route = [
+export const locations = [
   {
     name: "Ottawa",
     form: false,
@@ -24,16 +24,18 @@ export const route = [
   {
     name: "Columbian Rainforest",
     form: false,
+    date: "2018-03-01",
     coordinates: [-1.4156281,-71.4211711]
   },
   {
     name: "Bolivia",
-    date: "2018-03-12",
+    date: "2018-03-10",
     airport: "LAP",
     coordinates: [-16.499998, -68.1333328]
   },
   {
     name: "Salt Flats",
+    date: "2018-03-12",
     form: false,
     coordinates: [-20.2086421,-68.1524845]
   },

@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Select from 'react-select'
 import DatePicker from 'react-datepicker'
 import moment from 'moment'
-import { currentLocation, route } from '../data/route'
+import { currentLocation, locations } from '../data/route'
 
 class VisitPage extends Component {
   state = {
@@ -12,7 +12,7 @@ class VisitPage extends Component {
   }
 
   handleWhenChange = (date) => {
-    const location = route.reverse().find((r) => {
+    const location = locations.reverse().find((r) => {
       return date.isAfter(r.date)
     })
 
@@ -25,7 +25,7 @@ class VisitPage extends Component {
 
   handleWhereChange = (option) => {
     const locationName = option.value
-    const location = route.find((r) => {
+    const location = locations.find((r) => {
       return r.name === locationName
     })
 
@@ -45,7 +45,7 @@ class VisitPage extends Component {
       return
     }
 
-    const location = route.find((r) => { return r.name === where })
+    const location = locations.find((r) => { return r.name === where })
 
     const month = when.format("MMMM")
     const monthDay = when.format("MMMM D")
@@ -82,7 +82,7 @@ class VisitPage extends Component {
 
   render () {
     const { when, where } = this.state
-    const whereOptions = route
+    const whereOptions = locations
       .filter((r) => r.form !== false)
       .sort((a, b) => {
         return (a.name[0] < b.name[0]) ? -1 : (a.name[0] > b.name[0]) ? 1 : 0
