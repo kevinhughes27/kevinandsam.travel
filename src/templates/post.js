@@ -32,7 +32,7 @@ export default function Template({ data }) {
               <h1 itemProp="name headline">
                 { title }
               </h1>
-              <time className="post-header__time" itemProp="datePublished" dateTime={data}>
+              <time itemProp="datePublished" dateTime={data}>
                 { date }
               </time>
             </header>
