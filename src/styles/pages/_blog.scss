@@ -29,27 +29,25 @@
 }
 
 .preview {
-
   &:nth-child(even) {
-
     @media (min-width: $mq-md) {
       margin-top: 3em;
     }
   }
 
-  &__link {
+  a {
     @extend %card-shadow;
-
+    text-decoration: none;
     display: block;
   }
 
-  &__img {
+  .image {
     position: relative;
 
     padding-bottom: 60%;
   }
 
-  &__container {
+  .container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -63,7 +61,11 @@
     }
   }
 
-  &__date {
+  h2 {
+    text-decoration: underline;
+  }
+
+  .date {
     font-family: $font-header;
   }
 }

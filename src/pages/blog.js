@@ -7,21 +7,17 @@ function Post({node: post}) {
 
   return (
     <li key={post.id} className="preview" itemProp="blogPost" itemScope itemType="http://schema.org/BlogPosting">
-      <a className="preview__link" href={path} itemProp="url">
-        <div className="preview__img wow slideInUp">
-          <figure className="absolute-bg wow fadeIn" data-wow-delay="900ms" style={{backgroundImage: `url('${imageSrc}')`}} />
+      <a href={path} itemProp="url">
+        <div className="image">
+          <figure className="absolute-bg" style={{backgroundImage: `url('${imageSrc}')`}} />
         </div>
-        <div className="preview__container">
-          <div>
-            <h2 itemProp="name">
-              {title}
-            </h2>
-          </div>
-          <span>
-            <time className="preview__date" itemProp="datePublished" dateTime={date}>
-              { date }
-            </time>
-          </span>
+        <div className="container">
+          <h2 itemProp="name">
+            {title}
+          </h2>
+          <time className="date" itemProp="datePublished" dateTime={date}>
+            { date }
+          </time>
         </div>
       </a>
     </li>
