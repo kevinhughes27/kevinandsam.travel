@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import ReactResponsiveSelect from 'react-responsive-select'
 import DatePicker from 'react-datepicker'
 import moment from 'moment'
+import pickRandom from 'pick-random'
 import { currentLocation, locations } from '../data/route'
 
 class VisitPage extends Component {
@@ -9,6 +10,18 @@ class VisitPage extends Component {
     when: null,
     where: '',
     lastAnswer: null
+  }
+
+  componentWillMount() {
+    const location = pickRandom(locations, {count: 1})[0]
+    const when = moment(location.date)
+    const where = location.name
+
+    this.setState({
+      when: when,
+      where: where,
+      lastAnswer: 'where'
+    })
   }
 
   handleWhenChange = (date) => {
