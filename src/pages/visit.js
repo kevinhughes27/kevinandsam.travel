@@ -12,7 +12,7 @@ class VisitPage extends Component {
     lastAnswer: null
   }
 
-  componentWillMount() {
+  componentDidMount() {
     const location = pickRandom(locations, {count: 1})[0]
     const when = moment(location.date)
     const where = location.name
