@@ -6,22 +6,18 @@ import pickRandom from 'pick-random'
 import { currentLocation, locations } from '../data/route'
 
 class VisitPage extends Component {
-  state = {
-    when: null,
-    where: '',
-    lastAnswer: null
-  }
+  constructor() {
+    super()
 
-  componentDidMount() {
     const location = pickRandom(locations, {count: 1})[0]
     const when = moment(location.date)
     const where = location.name
 
-    this.setState({
+    this.state = {
       when: when,
       where: where,
       lastAnswer: 'where'
-    })
+    }
   }
 
   handleWhenChange = (date) => {
