@@ -15,9 +15,13 @@ class VisitPage extends Component {
   }
 
   handleWhenChange = (date) => {
-    const location = locations.find((r) => {
-      return date.isAfter(r.date)
-    })
+    const location = locations
+      .sort((a, b) => {
+        return new Date(b.date) - new Date(a.date)
+      })
+      .find((r) => {
+        return date.isAfter(r.date)
+      })
 
     this.setState({
       when: date,
