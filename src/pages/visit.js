@@ -2,7 +2,9 @@ import React, { Component } from 'react'
 import ReactResponsiveSelect from 'react-responsive-select'
 import DatePicker from 'react-datepicker'
 import moment from 'moment'
-import { currentLocation, locations } from '../data/route'
+
+import { currentLocation, locations as allLocations } from '../data/route'
+const locations = allLocations.filter((r) => r.form !== false)
 
 class VisitPage extends Component {
   state = {
@@ -84,7 +86,6 @@ class VisitPage extends Component {
     const { when, where } = this.state
 
     const whereOptions = locations
-      .filter((r) => r.form !== false)
       .sort((a, b) => {
         return (a.name[0] < b.name[0]) ? -1 : (a.name[0] > b.name[0]) ? 1 : 0
       })
@@ -111,7 +112,7 @@ class VisitPage extends Component {
                 <p>When</p>
                 <DatePicker
                   selected={when}
-                  minDate={moment('2018-02-03')}
+                  minDate={moment('2018-02-01')}
                   customInput={<DatePickerButton />}
                   withPortal
                   onChange={this.handleWhenChange}
