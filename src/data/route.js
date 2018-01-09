@@ -113,9 +113,21 @@ export const locations = [
   },
   {
     name: "United Kingdom",
-    date: "2018-07-25",
+    date: "2018-07-28",
     airport: "YXU",
     coordinates: [53.4723272,-2.2935021]
+  },
+  {
+    name: "Scottland",
+    date: "2018-08-10",
+    airport: "EDI",
+    coordinates: [55.9411885,-3.2753778]
+  },
+  {
+    name: "Ireland",
+    date: "2018-08-28",
+    airport: "DUB",
+    coordinates: [53.3239919,-6.5258808]
   },
   {
     name: "Botswana",
