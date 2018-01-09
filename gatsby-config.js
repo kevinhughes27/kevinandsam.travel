@@ -22,6 +22,25 @@ const blog = [
   }
 ]
 
+const favicon = {
+  resolve: `gatsby-plugin-favicon`,
+  options: {
+    logo: "./src/favicon.png",
+    injectHTML: true,
+    icons: {
+      android: true,
+      appleIcon: true,
+      appleStartup: true,
+      coast: false,
+      favicons: true,
+      firefox: true,
+      twitter: false,
+      yandex: false,
+      windows: false
+    }
+  }
+}
+
 const googleFonts = {
   resolve: `gatsby-plugin-google-fonts`,
   options: {
@@ -53,6 +72,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     googleFonts,
     googleAnalytics,
+    favicon,
     ...blog,
   ]
 }
