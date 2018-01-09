@@ -118,7 +118,7 @@ export const locations = [
     coordinates: [53.4723272,-2.2935021]
   },
   {
-    name: "Scottland",
+    name: "Scotland",
     date: "2018-08-10",
     airport: "EDI",
     coordinates: [55.9411885,-3.2753778]
