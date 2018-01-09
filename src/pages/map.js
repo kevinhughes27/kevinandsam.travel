@@ -36,7 +36,8 @@ class MapPage extends Component {
       <Map
         center={center}
         zoom={zoom}
-        minZoom={2}
+        minZoom={2.7}
+        maxZoom={6.8}
         zoomSnap={0}
         zoomDelta={0.5}
         wheelPxPerZoomLevel={100}
