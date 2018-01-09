@@ -155,7 +155,7 @@ export const locations = [
   },
   {
     name: "Philippines",
-    date: "2018-12-22",
+    date: "2018-12-03",
     airport: "MNL",
     coordinates: [14.5965788,120.9445404]
   },
