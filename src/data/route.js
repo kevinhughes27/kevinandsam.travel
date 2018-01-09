@@ -118,15 +118,69 @@ export const locations = [
     coordinates: [53.4723272,-2.2935021]
   },
   {
-    name: "Africa",
+    name: "Botswana",
     date: "2018-09-15",
     airport: "GBE",
     coordinates: [-22.322312,22.4436439]
   },
   {
-    name: "Asia",
+    name: "South Africa",
+    date: "2018-10-01",
+    airport: "CPT",
+    coordinates: [-33.9249,18.4241]
+  },
+  {
+    name: "Namibia",
+    date: "2018-10-15",
+    airport: "WDH",
+    coordinates: [-22.5602536,17.0495205]
+  },
+  {
+    name: "Tanzania",
+    date: "2018-10-25",
+    airport: "WDH",
+    coordinates: [-6.172943,35.713066]
+  },
+  {
+    name: "Japan",
     date: "2018-11-01",
+    airport: "NRT",
+    coordinates: [35.6693863,139.6012976]
+  },
+  {
+    name: "South Korea",
+    date: "2018-11-15",
+    airport: "ICN",
+    coordinates: [37.5652894,126.8494671]
+  },
+  {
+    name: "Philippines",
+    date: "2018-12-22",
+    airport: "MNL",
+    coordinates: [14.5965788,120.9445404]
+  },
+  {
+    name: "Singapore",
+    date: "2018-12-22",
+    airport: "SIN",
+    coordinates: [1.3439166,103.7540049]
+  },
+  {
+    name: "Malaysia",
+    date: "2018-12-28",
+    airport: "KUL",
+    coordinates: [3.138675,101.6169495]
+  },
+  {
+    name: "Thailand",
+    date: "2019-01-08",
     airport: "DMK",
     coordinates: [13.7196108,100.5322264]
+  },
+  {
+    name: "Vietnam",
+    date: "2019-02-01",
+    airport: "SGN",
+    coordinates: [10.7553411,106.4150414]
   },
 ]
