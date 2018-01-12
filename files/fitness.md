@@ -59,3 +59,23 @@ repeat for 3 sets
 
 ### Notes
 * Least important of the workouts. Try and suppliment with gym visits etc.
+
+
+Mobility
+--------
+Sam:
+* hip opener / couch strech
+* sitting in full squat
+* pigeon
+* half moon
+
+Kevin basic stretches:
+* full body side stretch (half moon)
+* chest and pecs using a corner
+* lat and back pull using an edge
+* hamstring strap
+* downward dog
+* pigeon pose (improve)
+* upward dog
+* cat cow
+* hero pose (improve)
