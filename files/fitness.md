@@ -52,13 +52,16 @@ Core
 Upper Body
 ----------
 ### Circuit
+* Should rolls
+* Scapular shrugs
+* Wall extensions
 * Push Ups 10 reps
-* Dips 10 reps
 
 repeat for 3 sets
 
 ### Notes
 * Least important of the workouts. Try and suppliment with gym visits etc.
+* Consider adding squats based on recent activity.
 
 
 Mobility
