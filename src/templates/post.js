@@ -18,7 +18,7 @@ export default function Template({ data }) {
 
   return (
     <div className="post-padding">
-      <Helmet title={`kevinandsam.travel - ${title}`} meta={meta}/>
+      <Helmet title={`${title} - kevinandsam.travel`} meta={meta}/>
 
       <article itemProp="blogPost" itemScope itemType="http://schema.org/BlogPosting">
 

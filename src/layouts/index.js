@@ -19,9 +19,13 @@ class Layout extends Component {
     const title = "kevinandsam.travel"
     const children = this.props.children;
 
+    const meta = [
+      { property: "keywords", content: "travel, backpacking, digital nomad" },
+    ]
+
     return (
       <div>
-        <Helmet title={title} />
+        <Helmet title={title} meta={meta}/>
         <Nav />
         <main>
           { children() }
