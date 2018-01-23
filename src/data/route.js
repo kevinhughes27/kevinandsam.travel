@@ -17,31 +17,31 @@ export const locations = [
   },
   {
     name: "Columbia",
-    date: "2018-02-21",
+    date: "2018-02-24",
     airport: "BOG",
     coordinates: [4.711111, -74.072222]
   },
   {
     name: "Columbian Rainforest",
     form: false,
-    date: "2018-03-01",
+    date: "2018-03-10",
     coordinates: [-1.4156281,-71.4211711]
   },
   {
     name: "Bolivia",
-    date: "2018-03-10",
+    date: "2018-03-18",
     airport: "LAP",
     coordinates: [-16.499998, -68.1333328]
   },
   {
-    name: "Salt Flats",
-    date: "2018-03-12",
+    name: "Salar de Uyuni",
+    date: "2018-03-23",
     form: false,
     coordinates: [-20.2086421,-68.1524845]
   },
   {
     name: "Chile",
-    date: "2018-03-15",
+    date: "2018-03-27",
     airport: "SCL",
     coordinates: [-33.4533303,-70.6967031]
   },
