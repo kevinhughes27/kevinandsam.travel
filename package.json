@@ -25,7 +25,7 @@
     "react-helmet": "^5.2.0",
     "react-leaflet": "^1.7.8",
     "react-responsive-carousel": "^3.1.30",
-    "react-responsive-select": "git://github.com/kevinhughes27/react-responsive-select.git#350e4c9bca3e62ab6befe7641a298ec0e2fa514a",
+    "react-responsive-select": "^3.1.0",
     "react-window-size": "^1.0.1"
   },
   "devDependencies": {
