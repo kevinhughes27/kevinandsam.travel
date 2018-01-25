@@ -1,0 +1,4 @@
+This is a Brave Payments publisher verification file.
+
+Domain: kevinandsam.travel
+Token: 6686a5da6908c5f933e98804eed62b9f15f8b4afc62c1cc562983f4afb9a96db
