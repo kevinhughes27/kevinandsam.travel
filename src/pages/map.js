@@ -73,25 +73,33 @@ const Route = () => {
         dashArray={'5,5'}
         positions={coordinates} />
       <LocationMarker location={currentLocation} />
-      <RouteMarkers locations={locations} />
+      <RouteMarkers locations={locations} color='blue' />
     </div>
   )
 }
 
 const Previous = () => {
-  const coordinates = previousTrips.map((trip) => {
-    return trip.locations.map((location) => location.coordinates)
-  })
+  return (
+    <div>
+      {previousTrips.map((trip) => {
+        return <Trip trip={trip} />
+      })}
+    </div>
+  )
+}
+
+const Trip = ({ trip }) => {
+  const coordinates = trip.locations.map((location) => location.coordinates)
 
   return (
     <div>
       <Polyline
-        color='blue'
+        color='grey'
         weight={2}
         opacity={0.25}
         dashArray={'5,5'}
         positions={coordinates} />
-      <RouteMarkers locations={locations} />
+      <RouteMarkers locations={trip.locations} color='grey' />
     </div>
   )
 }
@@ -129,7 +137,7 @@ const DateText = ({ date} ) => {
   }
 }
 
-const RouteMarkers = ({ locations }) => {
+const RouteMarkers = ({ locations, color }) => {
   const markers = locations.map((location, i) => (
     <CircleMarker key={i} center={location.coordinates} radius={14} color="transparent">
       <Popup>
@@ -142,7 +150,7 @@ const RouteMarkers = ({ locations }) => {
   ))
 
   const circles = locations.map((location, i) => (
-    <Circle key={i} center={location.coordinates} radius={3} />
+    <Circle key={i} center={location.coordinates} color={color} radius={3} />
   ))
 
   return <div>{circles}{markers}</div>
