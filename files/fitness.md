@@ -42,7 +42,7 @@ Core
 * Reverse Plank
 * Hollow Hold
 * Arch Hold
-
+* V Sit side to side taps
 
 ### Notes
 * Hold each for 10-60 seconds
