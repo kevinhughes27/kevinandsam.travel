@@ -3,7 +3,7 @@ path: "/nomadification"
 date: "2018-01-27"
 title: "Nomadification"
 author: "Kevin"
-cardImage: "packing.jpg"
+cardImage: "backpacks.jpg"
 postImage: "apartment.jpg"
 ---
 

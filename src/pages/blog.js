@@ -64,7 +64,7 @@ export const pageQuery = graphql`
             path
             cardImage {
               childImageSharp {
-                resize(width: 1000, height: 1000) {
+                resize(width: 800) {
                   src
                 }
               }
