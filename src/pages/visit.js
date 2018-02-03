@@ -32,6 +32,8 @@ class VisitPage extends Component {
   handleWhereChange = (option) => {
     const locationName = option.value
 
+    if (locationName === '') { return }
+
     const location = locations.find((r) => {
       return r.name === locationName
     })
