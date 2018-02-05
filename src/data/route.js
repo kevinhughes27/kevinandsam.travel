@@ -1,6 +1,6 @@
 export const currentLocation = {
-  name: 'Ottawa',
-  coordinates: [45.4215, -75.6972]
+  name: 'Guatemala',
+  coordinates: [14.5666644, -90.7333304]
 }
 
 export const locations = [

@@ -58,7 +58,6 @@ class MapPage extends Component {
 }
 
 const Route = () => {
-  const currentCoordinates = currentLocation.coordinates
   const coordinates = locations.map((location) => location.coordinates)
 
   return (
@@ -69,7 +68,7 @@ const Route = () => {
         opacity={0.25}
         dashArray={'5,5'}
         positions={coordinates} />
-      <LocationMarker location={currentCoordinates} />
+      <LocationMarker location={currentLocation} />
       <RouteMarkers locations={locations} />
     </div>
   )
@@ -84,8 +83,14 @@ const LocationMarker = ({ location }) => {
 
   return (
     <div>
-      <Marker position={location} icon={pulsingIcon} />
-      <CircleMarker center={location} radius={1} />
+      <Marker position={location.coordinates} icon={pulsingIcon}>
+        <Popup>
+          <div>
+            <h4>{location.name}</h4>
+            {"We're here now!"}
+          </div>
+        </Popup>
+      </Marker>
     </div>
   )
 }
