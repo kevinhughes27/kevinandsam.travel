@@ -15,10 +15,9 @@ Leg Day
 * Leg swings
 * Hip opener with forward hamstring stretch
 * Full Squat sit
-* Arm sweeps
-* Dog pees
 
 ### Circuit
+* Dog pees 5 reps per side
 * Squats 20 reps (deep step ups if possible)
 * Lateral Lunges or Cossack Squats 10 reps per leg
 * [L-sit](https://www.reddit.com/r/bodyweightfitness/wiki/exercises/l-sit) hold for 1 minute
@@ -52,6 +51,7 @@ Core
 Upper Body
 ----------
 ### Circuit
+* Arm sweeps
 * Should rolls
 * Scapular shrugs
 * Wall extensions
