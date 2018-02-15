@@ -59,6 +59,14 @@ const googleAnalytics = {
   },
 }
 
+const bravePublisher = {
+  resolve: `gatsby-bat-verification`,
+  options: {
+    domain: 'kevinandsam.travel',
+    token: '6686a5da6908c5f933e98804eed62b9f15f8b4afc62c1cc562983f4afb9a96db'
+  }
+}
+
 module.exports = {
   siteMetadata: {
     title: `kevinandsam.travel`,
@@ -72,6 +80,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     googleFonts,
     googleAnalytics,
+    bravePublisher,
     favicon,
     ...blog,
   ]
