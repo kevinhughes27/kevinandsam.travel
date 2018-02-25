@@ -4,11 +4,13 @@ import { withPrefix } from 'gatsby-link'
 
 import rehypeReact from 'rehype-react'
 import Quote from '../components/Quote'
+import Video from '../components/Video'
 import Instagram from '../components/Instagram'
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,
   components: {
+    "video": Video,
     "quote": Quote,
     "instagram": Instagram
   }

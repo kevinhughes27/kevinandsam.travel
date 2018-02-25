@@ -42,7 +42,4 @@ We arrived at Tina's Guesthouse at 11:30 am where we had lunch and inquired abou
 
 I took some footage and made a short video of the trek. Check it out!
 
-<div class="video-responsive">
-  <iframe frameborder="0"
-  src="https://www.youtube.com/embed/KI779jCEEWM?rel=0&amp;showinfo=0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-</div>
+<video uuid="KI779jCEEWM"></video>
