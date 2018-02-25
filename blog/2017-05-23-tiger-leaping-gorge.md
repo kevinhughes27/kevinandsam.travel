@@ -13,28 +13,19 @@ Transportation to the hike: we flew into Lijiang which seemed like a pretty easy
 
 The bus took us to get tickets for the trail and dropped us off just on the other side of the ticket booth. The trail heads up a road to your left as you are walking away from town and you should pass the trail sign early on. The first 45 minutes of the trek is on a road.
 
-<figure>
-  <img src="tiger-leaping-gorge-card.jpg"/>
-  <figcaption>The sign which points vaguely in the direction of the trail</figcaption>
-</figure>
+<photo src="tiger-leaping-gorge-card.jpg" caption="The sign which points vaguely in the direction of the trail"></photo>
 
 Before starting the trek we did decide to head to Upper Gorge. We took a sketchy local taxi but it turned out to be worth it because it is definitely further than 4km to upper gorge, probably closer to 10km. Do it if you have time but consider skipping if you're doing the hike in 2 days or less.
 
 After Upper Gorge we started trekking at 11:30 am and then 45 minutes later we got to the start of the dirt trail. The next part of the hike was probably the hardest with a lot of up hill in the sun. It took us to 2:15 pm to reach the Naxi Family Guest House where we took a much needed hour long lunch break.
 
-Since we were planning to do the hike in 2 days we logicially expected to make it to the Halfway Lodge for the first night. This turned out to be unrealistic for us. We arrived at the Tea horse Guesthouse at 615pm and decided to stay there for the night. The map we were given at the beginning of the trek didn't have accurate distance estimates so don’t let it fool you!
+Since we were planning to do the hike in 2 days we logically expected to make it to the Halfway Lodge for the first night. This turned out to be unrealistic for us. We arrived at the Tea horse Guesthouse at 615pm and decided to stay there for the night. The map we were given at the beginning of the trek didn't have accurate distance estimates so don’t let it fool you!
 
-<figure>
-  <img src="teahorse-guesthouse.jpg"/>
-  <figcaption>The view from the rooftop seating area at the Teahorse Guest House</figcaption>
-</figure>
+<photo src="teahorse-guesthouse.jpg" caption="The view from the rooftop seating area at the Teahorse Guest House"></photo>
 
 The Teahorse Guest House has an incredible view and a pretty good atmosphere including a restaurant. Most of the other trekkers we encountered on day 1 also stayed the night here.
 
-<figure>
-  <img src="tiger-leaping-gorge-day2.jpg"/>
-  <figcaption>A waterfall we hiked right through on day 2 of the trek</figcaption>
-</figure>
+<photo src="tiger-leaping-gorge-day2.jpg" caption="A waterfall we hiked right through on day 2 of the trek"></photo>
 
 Day 1 was harder than we expected especially for Sam, mostly because of the sun and heat was hard to trek through. We started day 2 pretty early at 8:15 am to take advantage of the cooler part of the day. In the morning at our hostel we got to see the sunrise over the mountains. The second day was an easier trek with better scenery. It took us 1.5 hours to get to the Halfway House arriving at 9:45 am. While there we checked out the toilet with a view and picked up our bus tickets back to Lijiang.
 
@@ -42,7 +33,4 @@ We arrived at Tina's Guesthouse at 11:30 am where we had lunch and inquired abou
 
 I took some footage and made a short video of the trek. Check it out!
 
-<div class="video-responsive">
-  <iframe frameborder="0"
-  src="https://www.youtube.com/embed/KI779jCEEWM?rel=0&amp;showinfo=0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-</div>
+<youtube uuid="KI779jCEEWM"></youtube>

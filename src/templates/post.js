@@ -3,11 +3,21 @@ import Helmet from 'react-helmet'
 import { withPrefix } from 'gatsby-link'
 
 import rehypeReact from 'rehype-react'
+import Photo from '../components/Photo'
+import Gif from '../components/Gif'
+import Quote from '../components/Quote'
 import Instagram from '../components/Instagram'
+import YouTube from '../components/YouTube'
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,
-  components: { "instagram-embed": Instagram }
+  components: {
+    "photo": Photo,
+    "gif": Gif,
+    "quote": Quote,
+    "instagram": Instagram,
+    "youtube": YouTube
+  }
 }).Compiler
 
 export default function Template({ data }) {
