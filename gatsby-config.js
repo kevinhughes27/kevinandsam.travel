@@ -10,6 +10,7 @@ const blog = [
     resolve: 'gatsby-transformer-remark',
     options: {
       plugins: [
+        'gatsby-remark-component',
         'gatsby-remark-copy-linked-files',
         {
           resolve: 'gatsby-remark-images',

@@ -2,6 +2,14 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { withPrefix } from 'gatsby-link'
 
+import rehypeReact from 'rehype-react'
+import Instagram from '../components/Instagram'
+
+const renderAst = new rehypeReact({
+  createElement: React.createElement,
+  components: { "instagram-embed": Instagram }
+}).Compiler
+
 export default function Template({ data }) {
   const { markdownRemark: post } = data;
   const { path, title, author, date } = post.frontmatter
@@ -37,7 +45,10 @@ export default function Template({ data }) {
               </time>
             </header>
 
-            <div className="post-content" dangerouslySetInnerHTML={{ __html: post.html }} />
+            <div className="post-content">
+              { renderAst(post.htmlAst) }
+            </div>
+
             <div className="post-author">
               <img src={`${__PATH_PREFIX__}/${author.toLowerCase()}.jpg`} />
               <div>
@@ -55,7 +66,7 @@ export default function Template({ data }) {
 export const pageQuery = graphql`
   query BlogPostByPath($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
-      html
+      htmlAst
       excerpt(pruneLength: 250)
       frontmatter {
         title
