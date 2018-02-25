@@ -3,11 +3,15 @@ import Helmet from 'react-helmet'
 import { withPrefix } from 'gatsby-link'
 
 import rehypeReact from 'rehype-react'
+import Quote from '../components/Quote'
 import Instagram from '../components/Instagram'
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,
-  components: { "instagram-embed": Instagram }
+  components: {
+    "quote": Quote,
+    "instagram": Instagram
+  }
 }).Compiler
 
 export default function Template({ data }) {

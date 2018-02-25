@@ -7,11 +7,7 @@ cardImage: "antigua.jpeg"
 postImage: "atitlan-sunrise.jpg"
 ---
 
-<p>
-  <blockquote>
-    Validation, bad luck, redemption and reflections
-  </blockquote>
-</p>
+<quote>Validation, bad luck, redemption and reflections</quote>
 
 Its been a month since we left our apartment and our transition to nomad life has been pretty smooth. Our planning paid off and we've done a good job actually doing life things that we might not normally do while travelling. Since leaving Canada we've visited a two local climbing gyms, played some pick-up Ultimate and completed 3 hotel work-outs. We've also already had the chance to use almost everything we packed which definitely builds confidence that we brought the right stuff. However we need to up our cooking game since we haven't cooked much in Guatemala and we're still adjusting to nomad pace versus traveller pace.
 
