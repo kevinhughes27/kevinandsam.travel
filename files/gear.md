@@ -4,40 +4,44 @@ FUTURA VARIO 50 + 10
 * 2 Lululemon short sleeve shirts
 * 2 Lululemon long sleeve shirts
 * 2 v-necks
-* 2 t-shirts
-* 1 collar shirt
+* 3 t-shirts
+* 1 tank top
 * 1 Lululemon sweater
 
 * 3 pairs of shorts
-* 2 pairs of jeans
+* 1 pairs of jeans
 * Northface trekking pants
+* Prana climbing pants
 * Prana yoga pants
-* Prana other pants?
 * gym shorts
 * swim shorts
 
-* toque
 
 * 12 pairs of underwear
 * 5 pairs of socks
 
 * Toms
 * flip-flops
-* running shoes
-* casual shoes
+* Trail running shoes
+* Climbing shoes
 
 * Toiletries
+* Electric toothbrush
 * Travel towel
 
 * 2 packing cubes
-* sock bag
 * compression sack (for laundry)
+
+* Alpha ball
+* lacross ball (better for feet)
+* Voodoo floss
 
 Notes
 -----
 * Pants get rolled up then go in the main compartment first
-* Shirts and underwear each go in their own packing cube and then in the main compartment
-* 2 pairs of shoes in the bottom compartment, the other pair goes in the side pockets
+* Shirts and underwear go in a packing cube and then in the main compartment
+* Shoes in the bottom compartment, other shoes go in the side pockets
+* Balls go into shoes
 * move the laptop into this back after arriving at hotels etc.
 
 
@@ -46,28 +50,33 @@ TRANS APLINE 30
 
 * Hoodie
 * Northface jacket
-* ball hat
+* Puffy coat
+* Ball hat
+* Toque
 * Sun glasses
+* Yoga strap
+* Lip balm
 
 * Laptop
-* Laptop charger
-* Travel adapter
-* USB-C wall adapter
-* USB-C to usb cable
-* 2 USB-C cables
+
+* Laptop adaptor
+* USB-C wall adaptor
+* USB-C cable
 * FitBit charger
-* USB flash drive
+* USB flash drives
 * SIM card case
 * Headphones
-* GoPro
-
-* Lip balm
+* USB shaver charger
 * pen and pencil
-* key lock
 
-* Yoga strap
-* Alpha ball
-* lacross ball (better for feet)
+* Travel adaptor
+
+* GoPro
+* GoPro accessories
+* USB-C to USB-A cable
+
+* First aid kit
+* Goal Zero battery
 
 * Humira kit
 
@@ -75,5 +84,4 @@ TRANS APLINE 30
 
 Notes
 -----
-* Passports in the hidden side pocket
-* Laptop, GoPro, hoodie and jacket in the main compartment
+* Passports go in the electronics bag
