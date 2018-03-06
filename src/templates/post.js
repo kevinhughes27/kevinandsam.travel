@@ -19,11 +19,13 @@ const renderAst = new rehypeReact({
 export default function Template({ data }) {
   const { markdownRemark: post } = data;
   const { path, title, author, date } = post.frontmatter
-  const imageSrc = post.frontmatter.postImage.childImageSharp.resize.src;
+
+  const postImage = post.frontmatter.postImage.childImageSharp.resize.src;
+  const cardImage = post.frontmatter.cardImage.childImageSharp.resize.src;
 
   const baseUrl = 'https://kevinandsam.travel'
   const shareUrl = baseUrl + path + '/'
-  const imageUrl = baseUrl + imageSrc
+  const imageUrl = baseUrl + cardImage
 
   const meta = [
     { property: "og:url", content: shareUrl },
@@ -40,7 +42,7 @@ export default function Template({ data }) {
       <article itemProp="blogPost" itemScope itemType="http://schema.org/BlogPosting">
 
         <header className="post-mast">
-          <figure className="absolute-bg" style={{backgroundImage: `url('${imageSrc}')`}} />
+          <figure className="absolute-bg" style={{backgroundImage: `url('${postImage}')`}} />
         </header>
 
         <div className="grid--double">
@@ -56,7 +58,7 @@ export default function Template({ data }) {
 
             <div className="post-content">
               { renderAst(post.htmlAst) }
-              <Share title={title} shareUrl={shareUrl} />
+              <Share title={title} shareUrl={shareUrl} imageUrl={imageUrl} />
             </div>
 
             <div className="post-author">
@@ -86,6 +88,13 @@ export const pageQuery = graphql`
         postImage {
           childImageSharp {
             resize(width: 1920) {
+              src
+            }
+          }
+        }
+        cardImage {
+          childImageSharp {
+            resize(width: 800) {
               src
             }
           }
