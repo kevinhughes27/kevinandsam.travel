@@ -6,6 +6,8 @@ import rehypeReact from 'rehype-react'
 import Quote from '../components/Quote'
 import Instagram from '../components/Instagram'
 
+import Share from '../components/Share'
+
 const renderAst = new rehypeReact({
   createElement: React.createElement,
   components: {
@@ -20,12 +22,15 @@ export default function Template({ data }) {
   const imageSrc = post.frontmatter.postImage.childImageSharp.resize.src;
 
   const baseUrl = 'https://kevinandsam.travel'
+  const shareUrl = baseUrl + path + '/'
+  const imageUrl = baseUrl + imageSrc
+
   const meta = [
-    { property: "og:url", content: baseUrl + path + '/' },
+    { property: "og:url", content: shareUrl },
     { property: "og:type", content: "article" },
     { property: "og:title", content: title },
     { property: "og:description", content: post.excerpt },
-    { property: "og:image", content: baseUrl + imageSrc },
+    { property: "og:image", content: imageUrl },
   ]
 
   return (
@@ -51,6 +56,7 @@ export default function Template({ data }) {
 
             <div className="post-content">
               { renderAst(post.htmlAst) }
+              <Share title={title} shareUrl={shareUrl} />
             </div>
 
             <div className="post-author">

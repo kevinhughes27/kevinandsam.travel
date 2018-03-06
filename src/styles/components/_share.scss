@@ -1,0 +1,19 @@
+.share-container {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.share-wrapper {
+  vertical-align: top;
+  display: inline-block;
+  margin-right: 30px;
+  text-align: center;
+}
+
+.share-button {
+  cursor: pointer;
+}
+
+.share-button:hover:not(:active) {
+  opacity: 0.75;
+}
