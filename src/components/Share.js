@@ -47,7 +47,7 @@ class Share extends Component {
           </GooglePlusShareButton>
 
           <PinterestShareButton
-            url={String(window.location)}
+            url={shareUrl}
             media={imageUrl}
             windowWidth={1000}
             windowHeight={730}
