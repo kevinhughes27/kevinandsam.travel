@@ -3,7 +3,9 @@ import windowSize from 'react-window-size'
 import { Map, TileLayer, Marker, CircleMarker, Circle, Popup, Polyline } from 'react-leaflet'
 import { divIcon } from 'leaflet'
 import moment from 'moment'
-import { locations, currentLocation } from '../data/route'
+
+import { currentLocation, locations as allLocations } from '../data/route'
+const locations = allLocations.filter((r) => r.map !== false)
 
 const MapParams = (windowWidth) => {
   const smallScreen = windowWidth < 667

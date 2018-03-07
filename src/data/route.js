@@ -6,7 +6,7 @@ export const currentLocation = {
 export const locations = [
   {
     name: "Ottawa",
-    form: false,
+    visit: false,
     coordinates: [45.4215, -75.6972]
   },
   {
@@ -23,31 +23,31 @@ export const locations = [
   },
   {
     name: "Colombian Rainforest",
-    form: false,
+    visit: false,
     date: "2018-03-10",
     coordinates: [-1.4156281,-71.4211711]
   },
   {
     name: "Bolivia",
-    date: "2018-03-18",
+    date: "2018-03-20",
     airport: "LAP",
     coordinates: [-16.499998, -68.1333328]
   },
   {
     name: "Salar de Uyuni",
-    date: "2018-03-23",
-    form: false,
+    date: "2018-03-24",
+    visit: false,
     coordinates: [-20.2086421,-68.1524845]
   },
   {
     name: "Chile",
-    date: "2018-03-27",
+    date: "2018-03-28",
     airport: "SCL",
     coordinates: [-33.4533303,-70.6967031]
   },
   {
     name: "Patagonia",
-    date: "2018-04-05",
+    date: "2018-04-12",
     airport: "SCL",
     coordinates: [-50.9423,-73.4068]
   },
@@ -59,7 +59,7 @@ export const locations = [
   },
   {
     name: "Croatia",
-    date: "2018-05-15",
+    date: "2018-05-17",
     airport: "DBV",
     coordinates: [44.1350119,15.2138848]
   },
@@ -71,19 +71,19 @@ export const locations = [
   },
   {
     name: "Montenegro",
-    date: "2018-06-08",
+    date: "2018-06-06",
     airport: "TGD",
     coordinates: [42.7087,19.3744]
   },
   {
     name: "Hungary",
-    date: "2018-06-22",
+    date: "2018-06-14",
     airport: "BUD",
     coordinates: [47.4813602,18.9902211]
   },
   {
     name: "Slovenia",
-    date: "2018-06-30",
+    date: "2018-06-24",
     airport: "LJU",
     coordinates: [46.0662151,14.4620597]
   },
@@ -112,46 +112,46 @@ export const locations = [
     coordinates: [52.5069704,13.2846504]
   },
   {
-    name: "United Kingdom",
-    date: "2018-07-28",
-    airport: "YXU",
-    coordinates: [53.4723272,-2.2935021]
-  },
-  {
-    name: "Scotland",
-    date: "2018-08-10",
-    airport: "EDI",
-    coordinates: [55.9411885,-3.2753778]
-  },
-  {
     name: "Ireland",
-    date: "2018-08-28",
+    date: "2018-08-01",
     airport: "DUB",
     coordinates: [53.3239919,-6.5258808]
   },
   {
-    name: "Botswana",
-    date: "2018-09-15",
-    airport: "GBE",
-    coordinates: [-22.322312,22.4436439]
+    name: "Scotland",
+    date: "2018-08-16",
+    airport: "EDI",
+    coordinates: [55.9411885,-3.2753778]
   },
   {
     name: "South Africa",
-    date: "2018-10-01",
+    date: "2018-09-01",
     airport: "CPT",
     coordinates: [-33.9249,18.4241]
   },
   {
+    name: "Botswana",
+    date: "2018-09-14",
+    airport: "GBE",
+    coordinates: [-22.322312,22.4436439]
+  },
+  {
     name: "Namibia",
-    date: "2018-10-15",
+    date: "2018-10-01",
     airport: "WDH",
     coordinates: [-22.5602536,17.0495205]
   },
   {
     name: "Tanzania",
-    date: "2018-10-25",
+    date: "2018-10-15",
     airport: "WDH",
     coordinates: [-6.172943,35.713066]
+  },
+  {
+    name: "Ottawa",
+    map: false,
+    visit: false,
+    date: "2018-10-20"
   },
   {
     name: "Japan",

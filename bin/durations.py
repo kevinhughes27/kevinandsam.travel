@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 import demjson
 from datetime import datetime
@@ -11,7 +11,7 @@ start = javascript_code.find(target) + len(target)
 locations_json = javascript_code[start:]
 
 allLocations = demjson.decode(locations_json)
-locations = [l for l in allLocations if l.get('form') != False]
+locations = [l for l in allLocations[1:] if l.get('visit') != False or l.get('name') == 'Ottawa' ]
 
 last_location = locations[0]
 

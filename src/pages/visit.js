@@ -4,7 +4,7 @@ import DatePicker from 'react-datepicker'
 import moment from 'moment'
 
 import { currentLocation, locations as allLocations } from '../data/route'
-const locations = allLocations.filter((r) => r.form !== false)
+const locations = allLocations.filter((r) => r.visit !== false)
 
 class VisitPage extends Component {
   state = {
