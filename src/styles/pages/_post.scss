@@ -56,16 +56,6 @@
     margin-left: 8em;
   }
 
-  p {
-    &:first-of-type {
-      font-size: 1.25em;
-    }
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-
   a {
     @include link-posts();
   }

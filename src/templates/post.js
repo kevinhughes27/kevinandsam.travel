@@ -6,6 +6,8 @@ import rehypeReact from 'rehype-react'
 import Quote from '../components/Quote'
 import Instagram from '../components/Instagram'
 
+import Share from '../components/Share'
+
 const renderAst = new rehypeReact({
   createElement: React.createElement,
   components: {
@@ -17,15 +19,20 @@ const renderAst = new rehypeReact({
 export default function Template({ data }) {
   const { markdownRemark: post } = data;
   const { path, title, author, date } = post.frontmatter
-  const imageSrc = post.frontmatter.postImage.childImageSharp.resize.src;
+
+  const postImage = post.frontmatter.postImage.childImageSharp.resize.src;
+  const cardImage = post.frontmatter.cardImage.childImageSharp.resize.src;
 
   const baseUrl = 'https://kevinandsam.travel'
+  const shareUrl = baseUrl + path + '/'
+  const imageUrl = baseUrl + cardImage
+
   const meta = [
-    { property: "og:url", content: baseUrl + path + '/' },
+    { property: "og:url", content: shareUrl },
     { property: "og:type", content: "article" },
     { property: "og:title", content: title },
     { property: "og:description", content: post.excerpt },
-    { property: "og:image", content: baseUrl + imageSrc },
+    { property: "og:image", content: imageUrl },
   ]
 
   return (
@@ -35,7 +42,7 @@ export default function Template({ data }) {
       <article itemProp="blogPost" itemScope itemType="http://schema.org/BlogPosting">
 
         <header className="post-mast">
-          <figure className="absolute-bg" style={{backgroundImage: `url('${imageSrc}')`}} />
+          <figure className="absolute-bg" style={{backgroundImage: `url('${postImage}')`}} />
         </header>
 
         <div className="grid--double">
@@ -52,6 +59,8 @@ export default function Template({ data }) {
             <div className="post-content">
               { renderAst(post.htmlAst) }
             </div>
+
+            <Share title={title} shareUrl={shareUrl} imageUrl={imageUrl} />
 
             <div className="post-author">
               <img src={`${__PATH_PREFIX__}/${author.toLowerCase()}.jpg`} />
@@ -80,6 +89,13 @@ export const pageQuery = graphql`
         postImage {
           childImageSharp {
             resize(width: 1920) {
+              src
+            }
+          }
+        }
+        cardImage {
+          childImageSharp {
+            resize(width: 800) {
               src
             }
           }

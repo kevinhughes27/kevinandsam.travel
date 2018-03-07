@@ -1,0 +1,22 @@
+.share-container {
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.share-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.share-button {
+  cursor: pointer;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.share-button:hover:not(:active) {
+  opacity: 0.75;
+}
