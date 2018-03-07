@@ -1,17 +1,20 @@
 .share-container {
-  text-align: center;
   padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
-.share-wrapper {
-  vertical-align: top;
-  display: inline-block;
-  margin-right: 30px;
-  text-align: center;
+.share-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .share-button {
   cursor: pointer;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .share-button:hover:not(:active) {

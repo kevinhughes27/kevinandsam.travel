@@ -58,8 +58,9 @@ export default function Template({ data }) {
 
             <div className="post-content">
               { renderAst(post.htmlAst) }
-              <Share title={title} shareUrl={shareUrl} imageUrl={imageUrl} />
             </div>
+
+            <Share title={title} shareUrl={shareUrl} imageUrl={imageUrl} />
 
             <div className="post-author">
               <img src={`${__PATH_PREFIX__}/${author.toLowerCase()}.jpg`} />
