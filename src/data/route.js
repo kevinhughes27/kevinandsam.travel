@@ -77,73 +77,85 @@ export const locations = [
   },
   {
     name: "Hungary",
-    date: "2018-06-14",
+    date: "2018-06-10",
     airport: "BUD",
     coordinates: [47.4813602,18.9902211]
   },
   {
     name: "Slovenia",
-    date: "2018-06-24",
+    date: "2018-06-20",
     airport: "LJU",
     coordinates: [46.0662151,14.4620597]
   },
   {
     name: "Austria",
-    date: "2018-07-04",
+    date: "2018-06-30",
     airport: "VIE",
     coordinates: [48.220778,16.3100206]
   },
   {
     name: "Slovakia",
-    date: "2018-07-09",
+    date: "2018-07-11",
     airport: "BTS",
     coordinates: [48.8683701,19.1196324]
   },
   {
     name: "Czech Republic",
-    date: "2018-07-14",
+    date: "2018-07-16",
     airport: "PRG",
     coordinates: [50.0598058,14.3255423]
   },
   {
     name: "Germany",
-    date: "2018-07-20",
+    date: "2018-07-22",
     airport: "TXL",
     coordinates: [52.5069704,13.2846504]
   },
   {
+    name: "Netherlands",
+    date: "2018-08-04",
+    airport: "AMS",
+    coordinates: [52.3546274,4.828584]
+  },
+  {
     name: "Ireland",
-    date: "2018-08-01",
+    date: "2018-08-08",
     airport: "DUB",
     coordinates: [53.3239919,-6.5258808]
   },
   {
     name: "Scotland",
-    date: "2018-08-16",
+    date: "2018-08-20",
     airport: "EDI",
     coordinates: [55.9411885,-3.2753778]
   },
   {
-    name: "South Africa",
+    name: "Shetland and Orkney",
     date: "2018-09-01",
-    airport: "CPT",
-    coordinates: [-33.9249,18.4241]
+    form: false,
+    map: false
   },
   {
     name: "Botswana",
-    date: "2018-09-14",
+    date: "2018-09-08",
     airport: "GBE",
     coordinates: [-22.322312,22.4436439]
   },
   {
     name: "Namibia",
-    date: "2018-10-01",
+    date: "2018-09-14",
     airport: "WDH",
     coordinates: [-22.5602536,17.0495205]
   },
   {
+    name: "South Africa",
+    date: "2018-10-02",
+    airport: "CPT",
+    coordinates: [-33.9249,18.4241]
+  },
+  {
     name: "Tanzania",
-    date: "2018-10-15",
+    date: "2018-10-16",
     airport: "WDH",
     coordinates: [-6.172943,35.713066]
   },
@@ -151,19 +163,19 @@ export const locations = [
     name: "Ottawa",
     map: false,
     visit: false,
-    date: "2018-10-20"
-  },
-  {
-    name: "Japan",
-    date: "2018-11-01",
-    airport: "NRT",
-    coordinates: [35.6693863,139.6012976]
+    date: "2018-10-23"
   },
   {
     name: "South Korea",
-    date: "2018-11-15",
+    date: "2018-11-01",
     airport: "ICN",
     coordinates: [37.5652894,126.8494671]
+  },
+  {
+    name: "Japan",
+    date: "2018-11-14",
+    airport: "NRT",
+    coordinates: [35.6693863,139.6012976]
   },
   {
     name: "Philippines",
@@ -173,19 +185,19 @@ export const locations = [
   },
   {
     name: "Singapore",
-    date: "2018-12-22",
+    date: "2018-12-18",
     airport: "SIN",
     coordinates: [1.3439166,103.7540049]
   },
   {
     name: "Malaysia",
-    date: "2018-12-28",
+    date: "2018-12-24",
     airport: "KUL",
     coordinates: [3.138675,101.6169495]
   },
   {
     name: "Thailand",
-    date: "2019-01-08",
+    date: "2019-01-06",
     airport: "DMK",
     coordinates: [13.7196108,100.5322264]
   },
