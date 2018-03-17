@@ -1,6 +1,6 @@
 export const currentLocation = {
   name: 'Colombia',
-  coordinates: [-1.4156281,-71.4211711]
+  coordinates: [-4.2031648,-69.9599656]
 }
 
 export const locations = [
@@ -25,7 +25,7 @@ export const locations = [
     name: "Colombian Rainforest",
     visit: false,
     date: "2018-03-10",
-    coordinates: [-1.4156281,-71.4211711]
+    coordinates: [-4.2031648,-69.9599656]
   },
   {
     name: "Bolivia",
