@@ -6,7 +6,7 @@ In addition to an active lifestyle and regular rock climbing the following worko
 * Consider going for a run instead of walking or cycling to see some sight (e.g a lake)
 * Occasional Yoga classes
 * Situational workouts at hotel or outdoor gyms.
-  * Pull ups, Shoulders and Rows are the hardest for us to do in hostels
+  * Pull ups, Shoulders and Rows are the hardest for us to do in hostels and airbnbs
 
 
 Leg Day
@@ -18,15 +18,14 @@ Leg Day
 
 ### Circuit
 * Dog pees 5 reps per side
-* Squats 20 reps (deep step ups if possible)
-* Lateral Lunges or Cossack Squats 10 reps per leg
-* [L-sit](https://www.reddit.com/r/bodyweightfitness/wiki/exercises/l-sit) hold for 1 minute
-* Cook Hip Lift 10 reps per leg
-* Calf raises 10 reps per leg
+* Squats 5 reps 3 1 3 tempo
+* Cook Hip Lift 8 reps per leg
+* Calf raises 8 reps per leg
 
 repeat for 3 sets
 
-### Other exercies:
+### Other exercises:
+* Lateral Lunge
 * Split Squat (stationary lunge)
 * Pistol Squat Progression (lunge to standing)
 * Single Leg Deadlift
@@ -35,6 +34,9 @@ repeat for 3 sets
 
 Core
 ----
+### Strength
+* planks 3 times per week, 3 sets, 10 seconds but tense everything. Test max plank before and after a few weeks
+
 ### Circuit
 * Plank
 * Side Plank
@@ -42,6 +44,7 @@ Core
 * Hollow Hold
 * Arch Hold
 * V Sit side to side taps
+* [L-sit](https://www.reddit.com/r/bodyweightfitness/wiki/exercises/l-sit) hold for 1 minute
 
 ### Notes
 * Hold each for 10-60 seconds
