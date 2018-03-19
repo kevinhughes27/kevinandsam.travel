@@ -3,8 +3,8 @@ path: "/the-first-month"
 date: "2018-02-24"
 title: "The First Month"
 author: "Kevin"
-cardImage: "antigua.jpeg"
-postImage: "atitlan-sunrise.jpg"
+cardImage: "card.jpeg"
+postImage: "post.jpg"
 ---
 
 <quote>Validation, bad luck, redemption and reflections</quote>

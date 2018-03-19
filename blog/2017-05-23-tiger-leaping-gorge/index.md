@@ -3,8 +3,8 @@ path: "/tiger-leaping-gorge"
 date: "2017-05-23"
 title: "Tiger Leaping Gorge"
 author: "Kevin"
-cardImage: "tiger-leaping-gorge-card.jpg"
-postImage: "tiger-leaping-gorge-post.jpg"
+cardImage: "card.jpg"
+postImage: "post.jpg"
 ---
 
 After our last trip hiking the Inca Trail we knew we wanted to do a hike in China. Our research led us to the Tiger Leaping Gorge trek in the Yunnan province. We found the guide from [Nomadasaurus](https://www.nomadasaurus.com/tiger-leaping-gorge-trekking-guide/) to be pretty helpful but also did a few things differently and thought another first hand account would be useful to others.

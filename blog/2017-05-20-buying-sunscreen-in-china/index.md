@@ -3,8 +3,8 @@ path: "/buying-sunscreen-in-china"
 date: "2017-05-20"
 author: "Sam"
 title: "Buying Sunscreen in China"
-cardImage: "china-sunscreen-card.jpg"
-postImage: "china-sunscreen-post.jpg"
+cardImage: "card.jpg"
+postImage: "post.jpg"
 ---
 
 Buying sunscreen in China may seem like a simple thing but it was definitely a challenge in the more rural and less travelled regions. We were starting to run low on our supply which for most people is ok but for me, as a ginger in a sunny hot climate, it's a stressful situation.
