@@ -88,26 +88,32 @@ export const locations = [
     coordinates: [46.0662151,14.4620597]
   },
   {
+    name: "Ottawa",
+    map: false,
+    visit: false,
+    date: "2018-06-29"
+  },
+  {
     name: "Austria",
-    date: "2018-06-30",
+    date: "2018-07-05",
     airport: "VIE",
     coordinates: [48.220778,16.3100206]
   },
   {
     name: "Slovakia",
-    date: "2018-07-11",
+    date: "2018-07-17",
     airport: "BTS",
     coordinates: [48.8683701,19.1196324]
   },
   {
     name: "Czech Republic",
-    date: "2018-07-16",
+    date: "2018-07-21",
     airport: "PRG",
     coordinates: [50.0598058,14.3255423]
   },
   {
     name: "Germany",
-    date: "2018-07-22",
+    date: "2018-07-26",
     airport: "TXL",
     coordinates: [52.5069704,13.2846504]
   },
