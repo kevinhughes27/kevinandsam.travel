@@ -1,6 +1,6 @@
 export const currentLocation = {
-  name: 'Colombia',
-  coordinates: [-4.2031648,-69.9599656]
+  name: 'Bolivia',
+  coordinates: [-16.499998, -68.1333328]
 }
 
 export const locations = [
@@ -35,13 +35,13 @@ export const locations = [
   },
   {
     name: "Salar de Uyuni",
-    date: "2018-03-24",
+    date: "2018-03-26",
     visit: false,
     coordinates: [-20.2086421,-68.1524845]
   },
   {
     name: "Chile",
-    date: "2018-03-28",
+    date: "2018-03-29",
     airport: "SCL",
     coordinates: [-33.4533303,-70.6967031]
   },
