@@ -1,6 +1,10 @@
+import Colombia from './countries/colombia'
+import Bolivia from './countries/bolivia'
+import Chile from './countries/chile'
+
 export const currentLocation = {
-  name: 'Colombia',
-  coordinates: [-4.2031648,-69.9599656]
+  name: 'San Pedro, Chile',
+  coordinates: [-22.914014,-68.2074194]
 }
 
 export const locations = [
@@ -15,36 +19,9 @@ export const locations = [
     airport: "GUA",
     coordinates: [14.5666644, -90.7333304]
   },
-  {
-    name: "Colombia",
-    date: "2018-02-24",
-    airport: "BOG",
-    coordinates: [4.711111, -74.072222]
-  },
-  {
-    name: "Colombian Rainforest",
-    visit: false,
-    date: "2018-03-10",
-    coordinates: [-4.2031648,-69.9599656]
-  },
-  {
-    name: "Bolivia",
-    date: "2018-03-20",
-    airport: "LAP",
-    coordinates: [-16.499998, -68.1333328]
-  },
-  {
-    name: "Salar de Uyuni",
-    date: "2018-03-24",
-    visit: false,
-    coordinates: [-20.2086421,-68.1524845]
-  },
-  {
-    name: "Chile",
-    date: "2018-03-28",
-    airport: "SCL",
-    coordinates: [-33.4533303,-70.6967031]
-  },
+  ...Colombia,
+  ...Bolivia,
+  ...Chile,
   {
     name: "Patagonia",
     date: "2018-04-12",
@@ -88,26 +65,32 @@ export const locations = [
     coordinates: [46.0662151,14.4620597]
   },
   {
+    name: "Ottawa",
+    map: false,
+    visit: false,
+    date: "2018-06-29"
+  },
+  {
     name: "Austria",
-    date: "2018-06-30",
+    date: "2018-07-05",
     airport: "VIE",
     coordinates: [48.220778,16.3100206]
   },
   {
     name: "Slovakia",
-    date: "2018-07-11",
+    date: "2018-07-17",
     airport: "BTS",
     coordinates: [48.8683701,19.1196324]
   },
   {
     name: "Czech Republic",
-    date: "2018-07-16",
+    date: "2018-07-21",
     airport: "PRG",
     coordinates: [50.0598058,14.3255423]
   },
   {
     name: "Germany",
-    date: "2018-07-22",
+    date: "2018-07-26",
     airport: "TXL",
     coordinates: [52.5069704,13.2846504]
   },
@@ -132,7 +115,7 @@ export const locations = [
   {
     name: "Shetland and Orkney",
     date: "2018-09-01",
-    form: false,
+    visit: false,
     map: false
   },
   {

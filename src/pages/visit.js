@@ -4,7 +4,10 @@ import DatePicker from 'react-datepicker'
 import moment from 'moment'
 
 import { currentLocation, locations as allLocations } from '../data/route'
-const locations = allLocations.filter((r) => r.visit !== false)
+
+const locations = allLocations.filter((r) => {
+  return r.visit !== false && (moment(r.date) > Date.now())
+})
 
 class VisitPage extends Component {
   state = {
@@ -21,6 +24,7 @@ class VisitPage extends Component {
       .find((r) => {
         return date.isAfter(r.date)
       })
+        || locations[locations.length - 1]
 
     this.setState({
       when: date,
@@ -118,7 +122,7 @@ class VisitPage extends Component {
                 <p>When</p>
                 <DatePicker
                   selected={when}
-                  minDate={moment('2018-02-02')}
+                  minDate={Date.now()}
                   customInput={<DatePickerButton />}
                   withPortal
                   onChange={this.handleWhenChange}

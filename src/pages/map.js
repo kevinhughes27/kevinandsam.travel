@@ -97,13 +97,25 @@ const LocationMarker = ({ location }) => {
   )
 }
 
+const DateText = ({ date} ) => {
+  if (date === undefined) {
+    return
+  }
+
+  if (moment(date) < Date.now()) {
+    return moment(date).format('MMM Do')
+  } else {
+    return moment(date).format('MMMM')
+  }
+}
+
 const RouteMarkers = ({ locations }) => {
   const markers = locations.map((location, i) => (
-    <CircleMarker key={i} center={location.coordinates} radius={24} color="transparent">
+    <CircleMarker key={i} center={location.coordinates} radius={14} color="transparent">
       <Popup>
         <div>
           <h4>{location.name}</h4>
-          {moment(location.date).format('MMMM')}
+          <DateText date={location.date}/>
         </div>
       </Popup>
     </CircleMarker>
