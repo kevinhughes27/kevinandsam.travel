@@ -24,6 +24,7 @@ class VisitPage extends Component {
       .find((r) => {
         return date.isAfter(r.date)
       })
+        || locations[locations.length - 1]
 
     this.setState({
       when: date,
