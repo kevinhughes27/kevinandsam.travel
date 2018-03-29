@@ -1,6 +1,10 @@
+import Colombia from './countries/colombia'
+import Bolivia from './countries/bolivia'
+import Chile from './countries/chile'
+
 export const currentLocation = {
-  name: 'Bolivia',
-  coordinates: [-16.499998, -68.1333328]
+  name: 'San Pedro, Chile',
+  coordinates: [-22.914014,-68.2074194]
 }
 
 export const locations = [
@@ -15,36 +19,9 @@ export const locations = [
     airport: "GUA",
     coordinates: [14.5666644, -90.7333304]
   },
-  {
-    name: "Colombia",
-    date: "2018-02-24",
-    airport: "BOG",
-    coordinates: [4.711111, -74.072222]
-  },
-  {
-    name: "Colombian Rainforest",
-    visit: false,
-    date: "2018-03-10",
-    coordinates: [-4.2031648,-69.9599656]
-  },
-  {
-    name: "Bolivia",
-    date: "2018-03-20",
-    airport: "LAP",
-    coordinates: [-16.499998, -68.1333328]
-  },
-  {
-    name: "Salar de Uyuni",
-    date: "2018-03-26",
-    visit: false,
-    coordinates: [-20.2086421,-68.1524845]
-  },
-  {
-    name: "Chile",
-    date: "2018-03-29",
-    airport: "SCL",
-    coordinates: [-33.4533303,-70.6967031]
-  },
+  ...Colombia,
+  ...Bolivia,
+  ...Chile,
   {
     name: "Patagonia",
     date: "2018-04-12",
@@ -138,7 +115,7 @@ export const locations = [
   {
     name: "Shetland and Orkney",
     date: "2018-09-01",
-    form: false,
+    visit: false,
     map: false
   },
   {
