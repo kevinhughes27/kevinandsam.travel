@@ -3,8 +3,8 @@ import Bolivia from './countries/bolivia'
 import Chile from './countries/chile'
 
 export const currentLocation = {
-  name: 'San Pedro, Chile',
-  coordinates: [-22.914014,-68.2074194]
+  name: 'Santiago, Chile',
+  coordinates: [-33.4533303,-70.6967031]
 }
 
 export const locations = [
