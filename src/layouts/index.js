@@ -2,6 +2,13 @@ import React, {Component} from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
+import pick from 'random-pick'
+
+import fontawesome from '@fortawesome/fontawesome'
+import FontAwesomeIcon from '@fortawesome/react-fontawesome'
+import brands from '@fortawesome/fontawesome-free-brands'
+
+fontawesome.library.add(brands)
 
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import 'react-datepicker/dist/react-datepicker.css'
@@ -44,6 +51,7 @@ const Nav = () => (
         <Item path="/map" title="Map" />
         <Item path="/visit" title="Come Visit" />
         <Item path="/blog" title="Blog" />
+        <InstagramLink account={ pick(['kevinhughes27', 'samcluthe'])[0] } />
       </ul>
     </nav>
   </header>
@@ -54,6 +62,14 @@ const Item = ({path, title}) => (
     <Link activeClassName="active" to={path} exact>
       {title}
     </Link>
+  </li>
+)
+
+const InstagramLink = ({account}) => (
+  <li>
+    <a href={`https://instagram.com/${account}`} target='_blank'>
+      <FontAwesomeIcon icon={["fab", "instagram"]} />
+    </a>
   </li>
 )
 
