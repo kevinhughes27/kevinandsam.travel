@@ -11,6 +11,12 @@ export default [
     coordinates: [-33.4533303,-70.6967031]
   },
   {
+    name: "Valparaíso, Chile",
+    date: "2018-04-03",
+    airport: "SCL",
+    coordinates: [-33.0507029,-71.6460679]
+  },
+  {
     name: "Punta Arenas, Chile",
     date: "2018-04-08",
     airport: "PUQ",
