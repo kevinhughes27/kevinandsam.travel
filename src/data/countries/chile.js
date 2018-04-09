@@ -9,5 +9,16 @@ export default [
     date: "2018-04-01",
     airport: "SCL",
     coordinates: [-33.4533303,-70.6967031]
-  }
+  },
+  {
+    name: "Punta Arenas, Chile",
+    date: "2018-04-08",
+    airport: "PUQ",
+    coordinates: [-53.1417622,-70.9412864]
+  },
+  {
+    name: "Puerto Natales, Chile",
+    date: "2018-04-08",
+    coordinates: [-51.7293565,-72.5108059]
+  },
 ]

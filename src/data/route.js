@@ -1,10 +1,11 @@
 import Colombia from './countries/colombia'
 import Bolivia from './countries/bolivia'
 import Chile from './countries/chile'
+import Argentina from './countries/argentina'
 
 export const currentLocation = {
-  name: 'Santiago, Chile',
-  coordinates: [-33.4533303,-70.6967031]
+  name: 'Puerto Natales, Chile',
+  coordinates: [-51.7293565,-72.5108059]
 }
 
 export const locations = [
@@ -22,18 +23,7 @@ export const locations = [
   ...Colombia,
   ...Bolivia,
   ...Chile,
-  {
-    name: "Patagonia",
-    date: "2018-04-12",
-    airport: "SCL",
-    coordinates: [-50.9423,-73.4068]
-  },
-  {
-    name: "Argentina",
-    date: "2018-05-01",
-    airport: "EZE",
-    coordinates: [-34.6037,-58.3816]
-  },
+  ...Argentina,
   {
     name: "Croatia",
     date: "2018-05-17",
