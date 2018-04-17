@@ -1,6 +1,6 @@
 export default [
   {
-    name: "El Clalten, Argentina",
+    name: "El Chalten, Argentina",
     date: "2018-04-15",
     visit: false,
     coordinates: [-49.3278183,-72.8985005]
