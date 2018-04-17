@@ -4,8 +4,8 @@ import Chile from './countries/chile'
 import Argentina from './countries/argentina'
 
 export const currentLocation = {
-  name: 'Puerto Natales, Chile',
-  coordinates: [-51.7293565,-72.5108059]
+  name: 'El Clalten, Argentina',
+  coordinates: [-49.3278183,-72.8985005]
 }
 
 export const locations = [
