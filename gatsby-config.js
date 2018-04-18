@@ -15,6 +15,7 @@ const blog = [
         {
           resolve: 'gatsby-remark-images',
           options: {
+            maxWidth: 640,
             linkImagesToOriginal: false
           }
         },
