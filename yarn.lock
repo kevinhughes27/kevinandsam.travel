@@ -3869,12 +3869,6 @@ gatsby-plugin-react-next@^1.0.7:
     react "^16.0.0"
     react-dom "^16.0.0"
 
-gatsby-plugin-remove-trailing-slashes@^1.0.9:
-  version "1.0.9"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-remove-trailing-slashes/-/gatsby-plugin-remove-trailing-slashes-1.0.9.tgz#4839d5928f68c533fd703f460801ca27b15c5121"
-  dependencies:
-    babel-runtime "^6.26.0"
-
 gatsby-plugin-sass@^1.0.13:
   version "1.0.25"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-sass/-/gatsby-plugin-sass-1.0.25.tgz#81f756e149d86f921d43d703b9bd6a35dc51288f"
@@ -4654,6 +4648,18 @@ hast-to-hyperscript@^3.0.0:
 hast-to-hyperscript@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/hast-to-hyperscript/-/hast-to-hyperscript-4.0.0.tgz#3eb25483ec72a8e9a71e4b1ad7eb8f7c86f755db"
+  dependencies:
+    comma-separated-tokens "^1.0.0"
+    is-nan "^1.2.1"
+    kebab-case "^1.0.0"
+    property-information "^3.0.0"
+    space-separated-tokens "^1.0.0"
+    trim "0.0.1"
+    unist-util-is "^2.0.0"
+
+"hast-to-hyperscript@git://github.com/lfittl/hast-to-hyperscript":
+  version "4.0.0"
+  resolved "git://github.com/lfittl/hast-to-hyperscript#4b1611cbd9a4dfa041ea4806be2fcb82a0bade09"
   dependencies:
     comma-separated-tokens "^1.0.0"
     is-nan "^1.2.1"
