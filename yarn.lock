@@ -8309,9 +8309,9 @@ react-responsive-carousel@^3.1.30:
     prop-types "^15.5.8"
     react-easy-swipe "^0.0.13"
 
-react-responsive-select@^3.1.0:
-  version "3.2.4"
-  resolved "https://registry.yarnpkg.com/react-responsive-select/-/react-responsive-select-3.2.4.tgz#c28c89bbc802fc7aec5d23fd955e13e9bbb4c45a"
+react-responsive-select@3.1.4:
+  version "3.1.4"
+  resolved "https://registry.yarnpkg.com/react-responsive-select/-/react-responsive-select-3.1.4.tgz#753fd35fa495147e470c1157f44cbd91faf89d14"
   dependencies:
     lodash.isequal "^4.5.0"
     singleline "1.0.x"
