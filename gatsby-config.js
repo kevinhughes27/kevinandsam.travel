@@ -69,6 +69,7 @@ module.exports = {
     `gatsby-plugin-react-next`,
     `gatsby-plugin-catch-links`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-remove-trailing-slashes`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
     `gatsby-transformer-sharp`,
