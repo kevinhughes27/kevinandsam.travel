@@ -2,6 +2,8 @@ import Colombia from './countries/colombia'
 import Bolivia from './countries/bolivia'
 import Chile from './countries/chile'
 import Argentina from './countries/argentina'
+import Croatia from './countries/croatia'
+import SouthAfrica from './countries/south_africa'
 
 export const currentLocation = {
   name: "Bariloche, Argentina",
@@ -25,22 +27,17 @@ export const locations = [
   ...Chile,
   ...Argentina,
   {
-    name: "Croatia",
-    date: "2018-05-17",
-    airport: "DBV",
-    coordinates: [44.1350119,15.2138848]
+    name: "Montenegro",
+    date: "2018-05-08",
+    airport: "TGD",
+    coordinates: [42.7087,19.3744]
   },
+  ...Croatia,
   {
     name: "Bosnia",
     date: "2018-05-29",
     airport: "SJJ",
     coordinates: [43.8938256,18.312952]
-  },
-  {
-    name: "Montenegro",
-    date: "2018-06-06",
-    airport: "TGD",
-    coordinates: [42.7087,19.3744]
   },
   {
     name: "Hungary",
@@ -109,23 +106,18 @@ export const locations = [
     map: false
   },
   {
-    name: "Botswana",
-    date: "2018-09-08",
-    airport: "GBE",
-    coordinates: [-22.322312,22.4436439]
-  },
-  {
     name: "Namibia",
-    date: "2018-09-14",
+    date: "2018-09-08",
     airport: "WDH",
     coordinates: [-22.5602536,17.0495205]
   },
   {
-    name: "South Africa",
-    date: "2018-10-02",
-    airport: "CPT",
-    coordinates: [-33.9249,18.4241]
+    name: "Botswana",
+    date: "2018-09-24",
+    airport: "GBE",
+    coordinates: [-22.322312,22.4436439]
   },
+  ...SouthAfrica,
   {
     name: "Tanzania",
     date: "2018-10-16",
