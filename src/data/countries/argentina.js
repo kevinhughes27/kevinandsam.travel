@@ -11,12 +11,12 @@ export default [
     visit: false,
     coordinates: [-41.9657342,-71.5414559]
   },
-  // {
-  //   name: "Bariloche, Argentina",
-  //   date: "2018-04-28",
-  //   visit: false,
-  //   coordinates: [-41.1283316,-71.4099539]
-  // },
+  {
+    name: "Bariloche, Argentina",
+    date: "2018-04-26",
+    visit: false,
+    coordinates: [-41.1283316,-71.4099539]
+  },
   {
     name: "Mendoza, Argentina",
     date: "2018-05-01",
