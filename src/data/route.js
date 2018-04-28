@@ -3,6 +3,8 @@ import Bolivia from './countries/bolivia'
 import Chile from './countries/chile'
 import Argentina from './countries/argentina'
 import Croatia from './countries/croatia'
+import Ireland from './countries/ireland'
+import Scotland from './countries/scotland'
 import SouthAfrica from './countries/south_africa'
 
 export const currentLocation = {
@@ -87,24 +89,8 @@ export const locations = [
     airport: "AMS",
     coordinates: [52.3546274,4.828584]
   },
-  {
-    name: "Ireland",
-    date: "2018-08-08",
-    airport: "DUB",
-    coordinates: [53.3239919,-6.5258808]
-  },
-  {
-    name: "Scotland",
-    date: "2018-08-20",
-    airport: "EDI",
-    coordinates: [55.9411885,-3.2753778]
-  },
-  {
-    name: "Shetland and Orkney",
-    date: "2018-09-01",
-    visit: false,
-    map: false
-  },
+  ...Ireland,
+  ...Scotland,
   {
     name: "Namibia",
     date: "2018-09-08",
