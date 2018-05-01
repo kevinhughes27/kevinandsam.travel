@@ -51,7 +51,7 @@ const Nav = () => (
         <Item path="/map" title="Map" />
         <Item path="/visit" title="Come Visit" />
         <Item path="/blog" title="Blog" />
-        <InstagramLink account={ pick(['kevinhughes27', 'samcluthe'])[0] } />
+        <InstagramLink />
       </ul>
     </nav>
   </header>
@@ -65,12 +65,16 @@ const Item = ({path, title}) => (
   </li>
 )
 
-const InstagramLink = ({account}) => (
+const InstagramLink = () => (
   <li>
-    <a href={`https://instagram.com/${account}`} target='_blank'>
+    <a href={`https://instagram.com/${randomAccount()}`} target='_blank'>
       <FontAwesomeIcon icon={["fab", "instagram"]} />
     </a>
   </li>
+)
+
+const randomAccount = () => (
+  pick(['kevinhughes27', 'samcluthe', 'kevinhughes27'])[0]
 )
 
 export default Layout
