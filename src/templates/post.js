@@ -20,19 +20,20 @@ export default function Template({ data }) {
   const { markdownRemark: post } = data;
   const { path, title, author, date } = post.frontmatter
 
-  const postImage = post.frontmatter.postImage.childImageSharp.resize.src;
-  const cardImage = post.frontmatter.cardImage.childImageSharp.resize.src;
+  const postImage = post.frontmatter.postImage.childImageSharp.resize;
+  const cardImage = post.frontmatter.cardImage.childImageSharp.resize;
 
   const baseUrl = 'https://kevinandsam.travel'
   const shareUrl = baseUrl + path + '/'
-  const imageUrl = baseUrl + cardImage
+  const imageUrl = baseUrl + cardImage.src
 
   const meta = [
     { property: "og:url", content: shareUrl },
-    { property: "og:type", content: "article" },
     { property: "og:title", content: title },
     { property: "og:description", content: post.excerpt },
     { property: "og:image", content: imageUrl },
+    { property: "og:image:height", content: cardImage.height },
+    { property: "og:image:wdith", content: cardImage.width },
   ]
 
   return (
@@ -42,7 +43,7 @@ export default function Template({ data }) {
       <article itemProp="blogPost" itemScope itemType="http://schema.org/BlogPosting">
 
         <header className="post-mast">
-          <figure className="absolute-bg" style={{backgroundImage: `url('${postImage}')`}} />
+          <figure className="absolute-bg" style={{backgroundImage: `url('${postImage.src}')`}} />
         </header>
 
         <div className="grid--double">
@@ -96,6 +97,8 @@ export const pageQuery = graphql`
         cardImage {
           childImageSharp {
             resize(width: 800) {
+              width
+              height
               src
             }
           }
