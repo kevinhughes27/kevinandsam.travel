@@ -14,6 +14,7 @@ Note: requires python3 for the country_converter package
 Other possible data sources:
 http://berkeleyearth.org/data/
 https://opendata.stackexchange.com/questions/4629/how-can-i-get-temperature-data-for-each-country-annual
+https://darksky.net
 """
 
 import country_converter as coco
