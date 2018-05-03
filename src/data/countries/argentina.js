@@ -25,7 +25,7 @@ export default [
   },
   {
     name: "Buenos Aires, Argentina",
-    date: "2018-05-05",
+    date: "2018-05-03",
     airport: "EZE",
     coordinates: [-34.6037,-58.3816]
   },
