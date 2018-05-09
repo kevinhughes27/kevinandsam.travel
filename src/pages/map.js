@@ -99,13 +99,13 @@ const LocationMarker = ({ location }) => {
 
 const DateText = ({ date} ) => {
   if (date === undefined) {
-    return
+    return null
   }
 
   if (moment(date) < Date.now()) {
-    return moment(date).format('MMM Do')
+    return moment(date).format('MMM Do YYYY')
   } else {
-    return moment(date).format('MMMM')
+    return moment(date).format('MMMM YYYY')
   }
 }
 
