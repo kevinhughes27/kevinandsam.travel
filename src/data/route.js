@@ -147,15 +147,40 @@ export const locations = [
     coordinates: [3.138675,101.6169495]
   },
   {
-    name: "Thailand",
+    name: "Vietnam",
     date: "2019-01-06",
+    airport: "SGN",
+    coordinates: [10.7553411,106.4150414]
+  },
+  {
+    name: "Thailand",
+    date: "2019-01-26",
     airport: "DMK",
     coordinates: [13.7196108,100.5322264]
   },
   {
-    name: "Vietnam",
-    date: "2019-02-01",
-    airport: "SGN",
-    coordinates: [10.7553411,106.4150414]
+    name: "Myanmar",
+    date: "2019-02-26",
+    airport: "MDL",
+    coordinates: [21.9403451,96.0057844]
+  },
+  {
+    name: "Bhutan",
+    date: "2019-03-12",
+    visit: false,
+    coordinates: [27.470012,89.3147555]
+  },
+  {
+    name: "Nepal",
+    date: "2019-03-16",
+    airport: "KTM",
+    coordinates: [27.7089559,85.2911134]
+  },
+
+  {
+    name: "India",
+    date: "2019-04-01",
+    airport: "DEL",
+    coordinates: [28.527272,77.1389455]
   },
 ]
