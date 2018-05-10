@@ -1,14 +1,16 @@
 export default [
   {
     name: "Dubrovnik, Croatia",
-    date: "2018-05-11",
+    date: "2018-05-12",
     airport: "DBV",
-    coordinates: [42.6457559,17.8138958]
+    map: false,
+    coordinates: [42.6457559,18.0765377]
   },
   {
     name: "Zagreb, Croatia",
     date: "2018-05-18",
     airport: "ZAG",
+    map: false,
     coordinates: [45.8401746,15.8942923]
   },
   {

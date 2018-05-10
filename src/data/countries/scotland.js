@@ -7,7 +7,7 @@ export default [
   },
   {
     name: "Faroe Islands",
-    date: "2018-09-01",
+    date: "2018-08-28",
     visit: false,
     coordinates: [61.9409512,-6.9159436]
   },
@@ -19,7 +19,7 @@ export default [
   },
   {
     name: "Shetland Islands, UK",
-    date: "2018-09-01",
+    date: "2018-09-05",
     visit: false,
     coordinates: [60.1855439,-1.2824989]
   }
