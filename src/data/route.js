@@ -63,11 +63,11 @@ export const locations = [
     name: "Ottawa",
     map: false,
     visit: false,
-    date: "2018-06-29"
+    date: "2018-06-27"
   },
   {
     name: "Slovakia",
-    date: "2018-07-07",
+    date: "2018-07-05",
     airport: "BTS",
     coordinates: [48.8683701,19.1196324]
   },
