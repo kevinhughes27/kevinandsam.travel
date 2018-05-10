@@ -33,7 +33,7 @@ export default function Template({ data }) {
     { property: "og:description", content: post.excerpt },
     { property: "og:image", content: imageUrl },
     { property: "og:image:height", content: cardImage.height },
-    { property: "og:image:wdith", content: cardImage.width },
+    { property: "og:image:width", content: cardImage.width },
   ]
 
   return (
