@@ -9,7 +9,7 @@ import SouthAfrica from './countries/south_africa'
 
 export const currentLocation = {
   name: "Montenegro",
-  coordinates: [42.7087,19.3744]
+  coordinates: [42.4242999,18.7683874]
 }
 
 export const locations = [
@@ -31,8 +31,8 @@ export const locations = [
   {
     name: "Montenegro",
     date: "2018-05-08",
-    airport: "TGD",
-    coordinates: [42.7087,19.3744]
+    airport: "TIV",
+    coordinates: [42.4242999,18.7683874]
   },
   ...Croatia,
   {
