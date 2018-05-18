@@ -8,8 +8,8 @@ import Scotland from './countries/scotland'
 import SouthAfrica from './countries/south_africa'
 
 export const currentLocation = {
-  name: "Montenegro",
-  coordinates: [42.4242999,18.7683874]
+  name: "Croatia",
+  coordinates: [45.8401746,15.8942923]
 }
 
 export const locations = [
