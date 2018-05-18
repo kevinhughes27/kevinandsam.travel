@@ -12,11 +12,11 @@ const MapParams = (windowWidth) => {
   const mediumScreen = windowWidth <= 768
 
   if (smallScreen) {
-    return { center: [9.96, -57.65], zoom: 2 }
+    return { center: [26.43, 16.35], zoom: 2 }
   } else if (mediumScreen) {
-    return { center: [9.35, -37.32], zoom: 2.9 }
+    return { center: [23.94, 14.40], zoom: 3.2 }
   } else {
-    return { center: [10, 5], zoom: 3 }
+    return { center: [11.82, 22.00], zoom: 3.1 }
   }
 }
 
