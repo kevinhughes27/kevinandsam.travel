@@ -6,10 +6,11 @@ import Croatia from './countries/croatia'
 import Ireland from './countries/ireland'
 import Scotland from './countries/scotland'
 import SouthAfrica from './countries/south_africa'
+import Thailand from './countries/thailand'
 
 export const currentLocation = {
-  name: "Croatia",
-  coordinates: [45.8401746,15.8942923]
+  name: "Bosnia",
+  coordinates: [43.8938256,18.312952]
 }
 
 export const locations = [
@@ -153,11 +154,12 @@ export const locations = [
     coordinates: [10.7553411,106.4150414]
   },
   {
-    name: "Thailand",
+    name: "Cambodia",
     date: "2019-01-26",
-    airport: "DMK",
-    coordinates: [13.7196108,100.5322264]
+    airport: "REP",
+    coordinates: [13.3403383,103.7929146]
   },
+  ...Thailand,
   {
     name: "Myanmar",
     date: "2019-02-26",
@@ -176,7 +178,6 @@ export const locations = [
     airport: "KTM",
     coordinates: [27.7089559,85.2911134]
   },
-
   {
     name: "India",
     date: "2019-04-01",
@@ -184,8 +185,14 @@ export const locations = [
     coordinates: [28.527272,77.1389455]
   },
   {
+    name: "Sri Lanka",
+    date: "2019-04-18",
+    airport: "CMB",
+    coordinates: [6.9218374,79.8211861]
+  },
+  {
     name: "Ottawa",
-    date: "2019-04-10",
+    date: "2019-05-01",
     visit: false,
     map: false,
     coordinates: [45.4215, -75.6972]
