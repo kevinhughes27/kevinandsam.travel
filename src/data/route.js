@@ -3,14 +3,16 @@ import Bolivia from './countries/bolivia'
 import Chile from './countries/chile'
 import Argentina from './countries/argentina'
 import Croatia from './countries/croatia'
+import Austria from './countries/austria'
+import Germany from './countries/germany'
 import Ireland from './countries/ireland'
 import Scotland from './countries/scotland'
 import SouthAfrica from './countries/south_africa'
 import Thailand from './countries/thailand'
 
 export const currentLocation = {
-  name: "Bosnia",
-  coordinates: [43.8938256,18.312952]
+  name: "Budapest, Hungary",
+  coordinates: [47.4813602,18.9902211]
 }
 
 export const locations = [
@@ -43,23 +45,24 @@ export const locations = [
     coordinates: [43.8938256,18.312952]
   },
   {
-    name: "Hungary",
-    date: "2018-06-04",
+    name: "Budapest, Hungary",
+    date: "2018-06-01",
     airport: "BUD",
     coordinates: [47.4813602,18.9902211]
   },
   {
+    name: "Slovakia",
+    date: "2018-06-05",
+    airport: "BTS",
+    coordinates: [48.1356952,16.9758341]
+  },
+  {
     name: "Slovenia",
-    date: "2018-06-10",
+    date: "2018-06-08",
     airport: "LJU",
     coordinates: [46.0662151,14.4620597]
   },
-  {
-    name: "Austria",
-    date: "2018-06-20",
-    airport: "VIE",
-    coordinates: [48.220778,16.3100206]
-  },
+  ...Austria,
   {
     name: "Ottawa",
     map: false,
@@ -67,23 +70,12 @@ export const locations = [
     date: "2018-06-27"
   },
   {
-    name: "Slovakia",
-    date: "2018-07-05",
-    airport: "BTS",
-    coordinates: [48.8683701,19.1196324]
-  },
-  {
     name: "Czech Republic",
     date: "2018-07-14",
     airport: "PRG",
     coordinates: [50.0598058,14.3255423]
   },
-  {
-    name: "Germany",
-    date: "2018-07-21",
-    airport: "TXL",
-    coordinates: [52.5069704,13.2846504]
-  },
+  ...Germany,
   {
     name: "Netherlands",
     date: "2018-08-04",
