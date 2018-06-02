@@ -11,6 +11,7 @@ class Instagram extends Component {
           url={`https://instagr.am/p/${this.props.uuid}/`}
           hideCaption={hideCaption}
           maxWidth={640}
+          injectScript={false}
         />
       </div>
     )

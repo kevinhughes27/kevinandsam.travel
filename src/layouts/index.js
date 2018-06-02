@@ -34,9 +34,13 @@ class Layout extends Component {
       { property: "keywords", content: "travel, backpacking, digital nomad" },
     ]
 
+    const script = [
+      { src: 'https://platform.instagram.com/en_US/embeds.js', type: 'text/javascript', async: true, defer: true }
+    ]
+
     return (
       <div>
-        <Helmet title={title} meta={meta}/>
+        <Helmet title={title} meta={meta} script={script} />
         <Nav compressed={compressedNav} />
         <main>
           { children() }

@@ -8377,9 +8377,9 @@ react-hot-loader@^3.0.0-beta.6:
     redbox-react "^1.3.6"
     source-map "^0.6.1"
 
-react-instagram-embed@^1.3.4:
+"react-instagram-embed@git://github.com/kevinhughes27/react-instagram-embed":
   version "1.3.4"
-  resolved "https://registry.yarnpkg.com/react-instagram-embed/-/react-instagram-embed-1.3.4.tgz#467fb5f4fced30f11ce3c6e9d246fecfc37b855d"
+  resolved "git://github.com/kevinhughes27/react-instagram-embed#2882c975d85b07f0b30d9004db62e58accf2bcf0"
   dependencies:
     jsonp-p "^2.0.0"
     query-string "^5.1.0"
