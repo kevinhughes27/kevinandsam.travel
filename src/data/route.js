@@ -1,14 +1,4 @@
-import Colombia from './countries/colombia'
-import Bolivia from './countries/bolivia'
-import Chile from './countries/chile'
-import Argentina from './countries/argentina'
-import Croatia from './countries/croatia'
-import Austria from './countries/austria'
-import Germany from './countries/germany'
-import Ireland from './countries/ireland'
-import Scotland from './countries/scotland'
-import SouthAfrica from './countries/south_africa'
-import Thailand from './countries/thailand'
+import Countries from './countries'
 
 export const currentLocation = {
   name: "Slovenia",
@@ -27,17 +17,17 @@ export const locations = [
     airport: "GUA",
     coordinates: [14.5666644, -90.7333304]
   },
-  ...Colombia,
-  ...Bolivia,
-  ...Chile,
-  ...Argentina,
+  ...Countries.Colombia,
+  ...Countries.Bolivia,
+  ...Countries.Chile,
+  ...Countries.Argentina,
   {
     name: "Montenegro",
     date: "2018-05-08",
     airport: "TIV",
     coordinates: [42.4242999,18.7683874]
   },
-  ...Croatia,
+  ...Countries.Croatia,
   {
     name: "Bosnia",
     date: "2018-05-29",
@@ -56,13 +46,8 @@ export const locations = [
     airport: "BTS",
     coordinates: [48.1356952,16.9758341]
   },
-  {
-    name: "Slovenia",
-    date: "2018-06-08",
-    airport: "LJU",
-    coordinates: [46.0662151,14.4620597]
-  },
-  ...Austria,
+  ...Countries.Slovenia,
+  ...Countries.Austria,
   {
     name: "Ottawa",
     map: false,
@@ -75,15 +60,15 @@ export const locations = [
     airport: "PRG",
     coordinates: [50.0598058,14.3255423]
   },
-  ...Germany,
+  ...Countries.Germany,
   {
     name: "Netherlands",
     date: "2018-08-04",
     airport: "AMS",
     coordinates: [52.3546274,4.828584]
   },
-  ...Ireland,
-  ...Scotland,
+  ...Countries.Ireland,
+  ...Countries.Scotland,
   {
     name: "Namibia",
     date: "2018-09-08",
@@ -96,7 +81,12 @@ export const locations = [
     airport: "GBE",
     coordinates: [-22.322312,22.4436439]
   },
-  ...SouthAfrica,
+  {
+    name: "South Africa",
+    date: "2018-10-02",
+    airport: "CPT",
+    coordinates: [-33.9142688,18.0956097]
+  },
   {
     name: "Tanzania",
     date: "2018-10-16",
@@ -151,7 +141,7 @@ export const locations = [
     airport: "REP",
     coordinates: [13.3403383,103.7929146]
   },
-  ...Thailand,
+  ...Countries.Thailand,
   {
     name: "Myanmar",
     date: "2019-02-26",
