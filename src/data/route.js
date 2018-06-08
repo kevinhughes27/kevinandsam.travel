@@ -11,8 +11,8 @@ import SouthAfrica from './countries/south_africa'
 import Thailand from './countries/thailand'
 
 export const currentLocation = {
-  name: "Budapest, Hungary",
-  coordinates: [47.4813602,18.9902211]
+  name: "Slovenia",
+  coordinates: [46.0662151,14.4620597]
 }
 
 export const locations = [
