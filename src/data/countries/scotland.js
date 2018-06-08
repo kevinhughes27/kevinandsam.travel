@@ -6,21 +6,21 @@ export default [
     coordinates: [55.9411885,-3.2753778]
   },
   {
-    name: "Faroe Islands",
-    date: "2018-08-28",
+    name: "Shetland Islands, UK",
+    date: "2018-09-01",
     visit: false,
-    coordinates: [61.9409512,-6.9159436]
+    coordinates: [60.1855439,-1.2824989]
   },
   {
     name: "Orkney, UK",
-    date: "2018-09-01",
+    date: "2018-09-05",
     visit: false,
     coordinates: [59.0075871,-3.3099799]
   },
   {
-    name: "Shetland Islands, UK",
-    date: "2018-09-05",
+    name: "Faroe Islands",
+    date: "2018-09-08",
     visit: false,
-    coordinates: [60.1855439,-1.2824989]
-  }
+    coordinates: [61.9409512,-6.9159436]
+  },
 ]
