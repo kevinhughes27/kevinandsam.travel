@@ -77,7 +77,7 @@ export const locations = [
   ...Countries.Scotland,
   {
     name: "Namibia",
-    date: "2018-09-14",
+    date: "2018-09-12",
     airport: "WDH",
     coordinates: [-22.5602536,17.0495205]
   },

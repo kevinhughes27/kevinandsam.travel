@@ -17,10 +17,4 @@ export default [
     visit: false,
     coordinates: [59.0075871,-3.3099799]
   },
-  {
-    name: "Faroe Islands",
-    date: "2018-09-08",
-    visit: false,
-    coordinates: [61.9409512,-6.9159436]
-  },
 ]
