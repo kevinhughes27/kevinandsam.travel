@@ -1,8 +1,8 @@
 import Countries from './countries'
 
 export const currentLocation = {
-  name: "Slovenia",
-  coordinates: [46.0662151,14.4620597]
+  name: "Austria",
+  coordinates: [47.5116627,12.4080857]
 }
 
 export const locations = [
@@ -118,71 +118,59 @@ export const locations = [
     coordinates: [35.6693863,139.6012976]
   },
   {
-    name: "Philippines",
-    date: "2018-11-29",
-    airport: "MNL",
-    coordinates: [14.5965788,120.9445404]
-  },
-  {
-    name: "Singapore",
-    date: "2018-12-13",
-    airport: "SIN",
-    coordinates: [1.3439166,103.7540049]
-  },
-  {
-    name: "Malaysia",
-    date: "2018-12-19",
-    airport: "KUL",
-    coordinates: [3.138675,101.6169495]
-  },
-  {
     name: "Vietnam",
-    date: "2018-12-29",
+    date: "2018-11-28",
     airport: "SGN",
     coordinates: [10.7553411,106.4150414]
   },
   {
     name: "Cambodia",
-    date: "2019-01-16",
+    date: "2018-12-14",
     airport: "REP",
     coordinates: [13.3403383,103.7929146]
+  },
+  {
+    name: "Malaysia",
+    date: "2018-12-17",
+    airport: "KUL",
+    coordinates: [3.138675,101.6169495]
+  },
+  {
+    name: "Singapore",
+    date: "2018-12-29",
+    airport: "SIN",
+    coordinates: [1.3439166,103.7540049]
   },
   ...Countries.Thailand,
   {
     name: "Myanmar",
-    date: "2019-02-18",
+    date: "2019-02-08",
     airport: "MDL",
     coordinates: [21.9403451,96.0057844]
   },
   {
     name: "Bhutan",
-    date: "2019-02-28",
+    date: "2019-02-22",
     visit: false,
     coordinates: [27.470012,89.3147555]
   },
   {
     name: "Nepal",
-    date: "2019-03-03",
+    date: "2019-02-25",
     airport: "KTM",
     coordinates: [27.7089559,85.2911134]
   },
   {
     name: "India",
-    date: "2019-03-17",
+    date: "2019-03-08",
     airport: "DEL",
     coordinates: [28.527272,77.1389455]
   },
   {
-    name: "Sri Lanka",
-    date: "2019-04-04",
-    airport: "CMB",
-    coordinates: [6.9218374,79.8211861]
-  },
-  {
     name: "Ottawa",
-    date: "2019-04-15",
+    date: "2019-04-01",
     visit: false,
     map: false,
     coordinates: [45.4215, -75.6972]
-  },
+  }
 ]

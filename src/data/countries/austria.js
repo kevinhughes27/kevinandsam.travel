@@ -1,9 +1,9 @@
 export default [
   {
-    name: "Hallstatt, Austria",
-    date: "2018-06-16",
+    name: "St Johann in Tirol, Austria",
+    date: "2018-06-15",
     visit: false,
-    coordinates: [47.5344487,13.5405908]
+    coordinates: [47.5116627,12.4080857]
   },
   {
     name: "Salzburg, Austria",

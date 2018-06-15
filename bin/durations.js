@@ -10,7 +10,7 @@ if (process.argv[2] !== 'all') {
 
 let lastLocation = locations[0]
 
-locations.slice(1).forEach((location) => {
+locations.slice(1, -1).forEach((location) => {
   let start = moment(location.date)
   let end = moment(lastLocation.date)
   let duration = moment.duration(start.diff(end)).as('days')
