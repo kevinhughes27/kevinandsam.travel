@@ -1,8 +1,8 @@
 import Countries from './countries'
 
 export const currentLocation = {
-  name: "Austria",
-  coordinates: [48.220778,16.3100206]
+  name: "Munich",
+  coordinates: [48.1548895,11.4717966]
 }
 
 export const locations = [
@@ -55,12 +55,23 @@ export const locations = [
     date: "2018-06-27"
   },
   {
+    name: "Munich, Germany",
+    date: "2018-07-10",
+    visit: false,
+    coordinates: [48.1548895,11.4717966]
+  },
+  {
     name: "Czech Republic",
     date: "2018-07-05",
     airport: "PRG",
     coordinates: [50.0598058,14.3255423]
   },
-  ...Countries.Germany,
+  {
+    name: "Berlin, Germany",
+    date: "2018-07-10",
+    airport: "TXL",
+    coordinates: [52.5069704,13.2846504]
+  },
   {
     name: "Netherlands",
     date: "2018-07-28",
