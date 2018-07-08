@@ -56,33 +56,57 @@ export const locations = [
   },
   {
     name: "Munich, Germany",
-    date: "2018-07-10",
+    date: "2018-07-06",
     visit: false,
     coordinates: [48.1548895,11.4717966]
   },
   {
     name: "Czech Republic",
-    date: "2018-07-05",
+    date: "2018-07-09",
     airport: "PRG",
     coordinates: [50.0598058,14.3255423]
   },
   {
     name: "Berlin, Germany",
-    date: "2018-07-10",
+    date: "2018-07-13",
     airport: "TXL",
     coordinates: [52.5069704,13.2846504]
   },
   {
-    name: "Netherlands",
-    date: "2018-07-28",
+    name: "Hamburg, Germany",
+    date: "2018-07-20",
+    visit: false,
+    coordinates: [53.5586941,9.7877404]
+  },
+  {
+    name: "Amersterdam, Netherlands",
+    date: "2018-07-22",
     airport: "AMS",
     coordinates: [52.3546274,4.828584]
   },
   {
-    name: "Belgium",
-    date: "2018-08-03",
+    name: "Rotterdam, Netherlands",
+    date: "2018-07-26",
+    airport: "AMS",
+    coordinates: [51.9280573,4.420367]
+  },
+  {
+    name: "Bruges, Belgium",
+    date: "2018-07-29",
+    visit: false,
+    coordinates: [51.2607606,3.1521058]
+  },
+  {
+    name: "Brussels, Belgium",
+    date: "2018-07-31",
     airport: "BRU",
     coordinates: [50.8550625,4.3053507]
+  },
+  {
+    name: "London UK",
+    date: "2018-08-04",
+    airport: "LHR",
+    coordinates: [51.5287718,-0.24168]
   },
   ...Countries.Ireland,
   ...Countries.Scotland,
