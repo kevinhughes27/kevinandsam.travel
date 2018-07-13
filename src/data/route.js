@@ -92,19 +92,19 @@ export const locations = [
   },
   {
     name: "Bruges, Belgium",
-    date: "2018-07-29",
+    date: "2018-07-28",
     visit: false,
     coordinates: [51.2607606,3.1521058]
   },
   {
     name: "Brussels, Belgium",
-    date: "2018-07-31",
+    date: "2018-07-30",
     airport: "BRU",
     coordinates: [50.8550625,4.3053507]
   },
   {
     name: "London UK",
-    date: "2018-08-04",
+    date: "2018-08-03",
     airport: "LHR",
     coordinates: [51.5287718,-0.24168]
   },
