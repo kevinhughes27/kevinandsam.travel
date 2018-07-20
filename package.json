@@ -26,7 +26,7 @@
     "gatsby-source-filesystem": "^1.5.8",
     "gatsby-transformer-remark": "^1.7.21",
     "gatsby-transformer-sharp": "^1.6.15",
-    "hast-to-hyperscript": "git://github.com/lfittl/hast-to-hyperscript",
+    "hast-to-hyperscript": "^5.0.0",
     "leaflet": "^1.2.0",
     "moment": "^2.20.1",
     "prop-types": "^15.6.0",
