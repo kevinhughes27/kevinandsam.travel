@@ -55,6 +55,12 @@ export const locations = [
     date: "2018-06-27"
   },
   {
+    name: "Frankfurt, Germany",
+    date: "2018-07-05",
+    visit: false,
+    coordinates: [50.121301,8.5665245]
+  },
+  {
     name: "Munich, Germany",
     date: "2018-07-06",
     visit: false,
