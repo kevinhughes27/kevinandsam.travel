@@ -11,7 +11,7 @@ Blog posts are automatically generated for any markdown file in the `/blog` fold
 
 1. Install `Nodejs` and `yarn`
 2. Run `yarn install` to fetch the dependencies specified in `package.json`
-3. Run `yarn develop` to start the development server
+3. Run `yarn start` to start the development server
 4. Visit http://localhost:8000 after the server has finished booting
 
 

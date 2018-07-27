@@ -6,6 +6,7 @@ import Croatia from './croatia'
 import Slovenia from './slovenia'
 import Austria from './austria'
 import Ireland from './ireland'
+import Namibia from './namibia'
 import Scotland from './scotland'
 import Thailand from './thailand'
 
@@ -18,6 +19,7 @@ export default {
   Slovenia,
   Austria,
   Ireland,
+  Namibia,
   Scotland,
   Thailand
 }

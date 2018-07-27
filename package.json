@@ -52,7 +52,7 @@
   "scripts": {
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "develop": "gatsby develop",
+    "start": "gatsby develop",
     "durations": "./node_modules/babel-cli/bin/babel-node.js bin/durations.js",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"
