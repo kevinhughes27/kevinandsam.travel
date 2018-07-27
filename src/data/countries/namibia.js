@@ -25,7 +25,7 @@ export default [
   },
   {
     name: "Sesriem, Namibia",
-    date: "2018-09-23",
+    date: "2018-09-22",
     visit: false,
     coordinates: [-24.4860011,15.7988655]
   },

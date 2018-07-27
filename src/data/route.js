@@ -136,6 +136,12 @@ export const locations = [
     coordinates: [-6.172943,35.713066]
   },
   {
+    name: "Kilimanjaro, Tanzania",
+    date: "2018-10-11",
+    airport: "WDH",
+    coordinates: [-3.0674031,37.3468725]
+  },
+  {
     name: "Zanzibar",
     date: "2018-10-19",
     airport: "WDH",
@@ -185,26 +191,32 @@ export const locations = [
   },
   ...Countries.Thailand,
   {
-    name: "Myanmar",
+    name: "Laos",
     date: "2019-02-08",
+    airport: "VTE",
+    coordinates: [18.2015656,101.6154653]
+  },
+  {
+    name: "Myanmar",
+    date: "2019-02-18",
     airport: "MDL",
     coordinates: [21.9403451,96.0057844]
   },
   {
     name: "Bhutan",
-    date: "2019-02-22",
+    date: "2019-03-02",
     visit: false,
     coordinates: [27.470012,89.3147555]
   },
   {
     name: "Nepal",
-    date: "2019-02-25",
+    date: "2019-03-05",
     airport: "KTM",
     coordinates: [27.7089559,85.2911134]
   },
   {
     name: "India",
-    date: "2019-03-08",
+    date: "2019-03-16",
     airport: "DEL",
     coordinates: [28.527272,77.1389455]
   },

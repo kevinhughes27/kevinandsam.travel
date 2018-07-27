@@ -10,10 +10,11 @@ if (process.argv[2] !== 'all') {
 
 let lastLocation = locations[0]
 
-locations.slice(1, -1).forEach((location) => {
+locations.forEach((location) => {
   let start = moment(location.date)
   let end = moment(lastLocation.date)
   let duration = moment.duration(start.diff(end)).as('days')
+  duration = Math.round(duration)
 
   if (duration > 0)
     console.log(`${lastLocation.name} ${duration} days`)
