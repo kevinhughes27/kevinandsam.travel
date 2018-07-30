@@ -118,12 +118,6 @@ export const locations = [
   ...Countries.Scotland,
   ...Countries.Namibia,
   {
-    name: "Botswana",
-    date: "2018-09-29",
-    airport: "GBE",
-    coordinates: [-22.322312,22.4436439]
-  },
-  {
     name: "Maun, Botswana",
     date: "2018-09-30",
     airport: "GBE",

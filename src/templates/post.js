@@ -4,6 +4,7 @@ import { withPrefix } from 'gatsby-link'
 
 import rehypeReact from 'rehype-react'
 import Quote from '../components/Quote'
+import TwoColumn from '../components/TwoColumn'
 import Instagram from '../components/Instagram'
 
 import Share from '../components/Share'
@@ -12,6 +13,7 @@ const renderAst = new rehypeReact({
   createElement: React.createElement,
   components: {
     "quote": Quote,
+    "two-column": TwoColumn,
     "instagram": Instagram
   }
 }).Compiler

@@ -1,0 +1,14 @@
+.two-column {
+  display: flex;
+  margin-top: -1em;
+  margin-bottom: -2em;
+
+  .column {
+    display: flex;
+    flex: 50%;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+  }
+}
