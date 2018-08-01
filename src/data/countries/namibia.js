@@ -46,5 +46,11 @@ export default [
     date: "2018-09-26",
     visit: false,
     coordinates: [-24.1666465,16.1579119]
-  }
+  },
+  {
+    name: "Windhoek, Namibia",
+    date: "2018-09-27",
+    airport: "WDH",
+    coordinates: [-22.5602536,17.0495205]
+  },
 ]
