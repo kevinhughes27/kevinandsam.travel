@@ -15,7 +15,7 @@ We were a bit faster travelling through Europe than expected so we were able to 
 
 I did a bit of research before arriving and found a [map](http://foto.brugge.be/city_film_office/moviemap_uk.pdf) provided by the tourism office and [this blog post](https://wonderfulwanderings.com/in-bruges-locations/) showing the various filming locations in town. With a plan in mind we set out for a day of fun and culture in Bruges.
 
-Our first location was Minnewater Park which was nice but not super memorable from the film - Harry walks across the bridge on his way into Bruges. We made our way back into town passing by all the old buildings and to our next stop - the Groeningmuseum which Ken and Ray visit on their second day in Bruges.
+Our first location was Minnewater Park which was nice but not super memorable from the film - Harry walks across the bridge on his way into Bruges. We made our way back into town passing by all the old buildings to our next stop - the Groeningmuseum which Ken and Ray visit on their second day in Bruges.
 
 <figure>
   <img src="groeningmuseum.jpg"/>
@@ -31,7 +31,7 @@ Our first location was Minnewater Park which was nice but not super memorable fr
 
 <two-column>
   <quote>"It's a fairytale fucking town, isn't it?"</quote>
-  <p>Just down the street from the museum is the Church of our Lady which without giving too much away is the building that Ray is looking up at in the final scene of the movie.</p>
+  <p>Just down the street from the museum is the Church of our Lady which without giving too much away is the building that Ray is looking up at during the final scene of the movie.</p>
 </two-column>
 
 <figure>
@@ -90,4 +90,4 @@ Wrapping up our day we walked back through town passing the Basilca of the Holy 
   <img src="astridpark.jpg"/>
 </figure>
 
-Before we left I checked around for the alcoves but they were no where to be seen, but maybe that's the point. *Are you sure this is the right word, 'alcoves'?*
+Before we left I checked around for the alcoves but they were no where to be seen - maybe that's the point. *Are you sure this is the right word, 'alcoves'?*
