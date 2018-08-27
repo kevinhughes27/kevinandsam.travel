@@ -90,7 +90,7 @@
 /**
  * Button Slide
  */
-@mixin btn-slide($color: $color-black, $hoverColor: $color-alpha) {
+@mixin btn-slide($color: $color-black, $hoverColor: $color-grey) {
   position: relative;
   z-index: 1;
 

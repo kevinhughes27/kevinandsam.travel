@@ -24,29 +24,46 @@ function Post({node: post}) {
   );
 }
 
-const ReadMoreBtn = () => {
-  <div className="read-more">
-    <a className="btn" href="/blog">
-      <div>
-        <span>Read More</span>
-        <span>Read More</span>
+const Pagination = (pathContext) => {
+  const { index, pageCount } = pathContext;
+
+  const previousUrl = index - 1 <= 1 ? `/blog` : `/blog/${index -1}`;
+  const nextUrl = index + 1 > pageCount ? `/blog/${index}` : `/blog/${index + 1}`;
+
+  return (
+    <div className="pagination">
+      <div className="read-more">
+        <a className="btn" href={previousUrl}>
+          <div>
+            <span>Previous Page</span>
+            <span>Previous Page</span>
+          </div>
+        </a>
       </div>
-    </a>
-  </div>
+
+      <div className="read-more">
+        <a className="btn" href={nextUrl}>
+          <div>
+            <span>Next Page</span>
+            <span>Next Page</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  );
 }
 
-export default function Blog({ data }) {
-  const { edges: posts } = data.allMarkdownRemark;
+export default function Blog({ data, pathContext }) {
+  const { group } = pathContext;
 
   return (
     <section id="blog" className="section-padding bg-white">
       <div className="grid">
         <ul itemScope itemType="http://schema.org/Blog">
-          {posts.map(Post)}
+          {group.map(Post)}
         </ul>
-
-
       </div>
+      {Pagination(pathContext)}
     </section>
   );
 }

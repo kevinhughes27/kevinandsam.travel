@@ -1,8 +1,10 @@
 const path = require('path');
+const createPaginatedPages = require("gatsby-paginate");
 
 exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators;
 
+  const blogTemplate = path.resolve(`src/templates/blog.js`);
   const postTemplate = path.resolve(`src/templates/post.js`);
 
   return graphql(`{
@@ -43,6 +45,15 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
     if (result.errors) {
       return Promise.reject(result.errors);
     }
+
+    createPaginatedPages({
+      edges: result.data.allMarkdownRemark.edges,
+      createPage: createPage,
+      pageTemplate: blogTemplate,
+      pageLength: 6,
+      pathPrefix: "blog",
+      context: {}
+    });
 
     result.data.allMarkdownRemark.edges
       .forEach(({ node }) => {
