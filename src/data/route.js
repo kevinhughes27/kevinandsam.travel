@@ -2,7 +2,7 @@ import Countries from './countries'
 
 export const currentLocation = {
   name: "Scotland",
-  coordinates: [55.9411885,-3.2753778]
+  coordinates: [56.4110465,-5.4896182]
 }
 
 export const locations = [
@@ -139,19 +139,19 @@ export const locations = [
   },
   {
     name: "Vietnam",
-    date: "2018-11-28",
+    date: "2018-12-01",
     airport: "SGN",
     coordinates: [10.7553411,106.4150414]
   },
   {
     name: "Cambodia",
-    date: "2018-12-14",
+    date: "2018-12-17",
     airport: "REP",
     coordinates: [13.3403383,103.7929146]
   },
   {
     name: "Malaysia",
-    date: "2018-12-17",
+    date: "2018-12-20",
     airport: "KUL",
     coordinates: [3.138675,101.6169495]
   },

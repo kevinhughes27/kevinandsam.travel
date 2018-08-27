@@ -7,8 +7,14 @@ export default [
   },
   {
     name: "Galway, Ireland",
-    date: "2018-08-08",
+    date: "2018-08-10",
     visit: false,
     coordinates: [53.2404728,-9.7532451]
+  },
+  {
+    name: "Killarney, Ireland",
+    date: "2018-08-14",
+    visit: false,
+    coordinates: [52.0605387,-9.5251095]
   }
 ]
