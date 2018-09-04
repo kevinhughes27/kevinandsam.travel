@@ -31,13 +31,13 @@ export default [
     coordinates: [57.1498817,-2.1950666]
   },
   {
-    name: "Shetland Islands, UK",
+    name: "Shetland, Scotland",
     date: "2018-09-01",
     visit: false,
     coordinates: [60.1855439,-1.2824989]
   },
   {
-    name: "Orkney, UK",
+    name: "Orkney, Scotland",
     date: "2018-09-05",
     visit: false,
     coordinates: [59.0075871,-3.3099799]
