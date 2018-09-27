@@ -6,7 +6,7 @@ import moment from 'moment'
 import { currentLocation, countries as allCountries } from '../data/route'
 
 const countries = allCountries.filter((c) => {
-   const foreignCountry = c.name !== "Ottawa" || c.name !== "Calgary"
+   const foreignCountry = c.name !== "Ottawa" && c.name !== "Calgary"
    const futureCountry = moment(c.date) > Date.now()
    return foreignCountry && futureCountry
 })
