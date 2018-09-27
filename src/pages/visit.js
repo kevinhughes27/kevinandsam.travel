@@ -3,33 +3,10 @@ import ReactResponsiveSelect from 'react-responsive-select'
 import DatePicker from 'react-datepicker'
 import moment from 'moment'
 
-import { currentLocation, locations as allLocations } from '../data/route'
+import { currentLocation, countries as allCountries } from '../data/route'
 
-const locations = allLocations.filter((r) => {
+const countries = allCountries.filter((r) => {
   return r.visit !== false && (moment(r.date) > Date.now())
-})
-
-const countries = []
-
-locations.forEach((location) => {
-  let countryName = location.name.indexOf(", ") !== -1
-    ? location.name.split(", ")[1]
-    : location.name
-
-  let countryIndex = countries.findIndex((c) => c.name === countryName)
-  let countryAdded = countryIndex !== -1
-
-  if (!countryAdded) {
-    countries.push({
-      name: countryName,
-      date: location.date,
-      airport: location.airport
-    })
-  } else {
-    if (!countries[countryIndex].airport) {
-      countries[countryIndex].airport = location.airport
-    }
-  }
 })
 
 class VisitPage extends Component {

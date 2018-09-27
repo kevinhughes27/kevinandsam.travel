@@ -1,35 +1,19 @@
 import moment from 'moment'
-import { locations as allLocations } from '../src/data/route'
+import { countries as _countries, sortedLocations as _locations } from '../src/data/route'
 
-let locations = allLocations.sort((a, b) => new Date(a.date) - new Date(b.date))
+let countries = _countries
+let locations = _locations
 
 // run the script as `yarn durations all` to show past durations
 if (process.argv.indexOf('all') === -1) {
   locations = locations.filter((l) => new Date(l.date) > new Date)
+  countries = countries.filter((l) => new Date(l.date) > new Date)
 }
 
 // run the script as `yarn durations countries` to show country durations
 if (process.argv.indexOf('countries') !== -1) {
-  let countries = []
-
-  locations.forEach((location) => {
-    let countryName = location.name.indexOf(", ") !== -1
-      ? location.name.split(", ")[1]
-      : location.name
-
-    let countryAdded = countries.find((c) => c.name === countryName)
-
-    if (!countryAdded) {
-      countries.push({
-        name: countryName,
-        date: location.date
-      })
-    }
-  })
-
   locations = countries
 }
-
 
 let lastLocation = locations[0]
 
