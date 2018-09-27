@@ -41,7 +41,7 @@ export const locations = [
     coordinates: [47.4813602,18.9902211]
   },
   {
-    name: "Slovakia",
+    name: "Bratislava, Slovakia",
     date: "2018-06-05",
     airport: "BTS",
     coordinates: [48.1356952,16.9758341]
@@ -67,7 +67,7 @@ export const locations = [
     coordinates: [48.1548895,11.4717966]
   },
   {
-    name: "Czech Republic",
+    name: "Prague, Czech Republic",
     date: "2018-07-09",
     airport: "PRG",
     coordinates: [50.0598058,14.3255423]
@@ -125,33 +125,24 @@ export const locations = [
     visit: false,
     date: "2018-10-22"
   },
+  ...Countries.SouthKorea,
+  ...Countries.Japan,
   {
-    name: "South Korea",
-    date: "2018-11-01",
-    airport: "ICN",
-    coordinates: [37.5652894,126.8494671]
+    name: "Vientiane, Laos",
+    date: "2018-12-02",
+    airport: "VTE",
+    coordinates: [17.9605181,102.5707462]
   },
   {
-    name: "Japan",
-    date: "2018-11-12",
-    airport: "NRT",
-    coordinates: [35.6693863,139.6012976]
+    name: "Laos",
+    date: "2018-12-05",
+    airport: "VTE",
+    coordinates: [19.6894002,102.4119533]
   },
-  {
-    name: "Vietnam",
-    date: "2018-12-01",
-    airport: "SGN",
-    coordinates: [10.7553411,106.4150414]
-  },
-  {
-    name: "Cambodia",
-    date: "2018-12-17",
-    airport: "REP",
-    coordinates: [13.3403383,103.7929146]
-  },
+  ...Countries.Vietnam,
   {
     name: "Malaysia",
-    date: "2018-12-20",
+    date: "2018-12-23",
     airport: "KUL",
     coordinates: [3.138675,101.6169495]
   },
@@ -161,13 +152,13 @@ export const locations = [
     airport: "SIN",
     coordinates: [1.3439166,103.7540049]
   },
-  ...Countries.Thailand,
   {
-    name: "Laos",
-    date: "2019-02-08",
-    airport: "VTE",
-    coordinates: [18.2015656,101.6154653]
+    name: "Cambodia",
+    date: "2019-01-02",
+    airport: "REP",
+    coordinates: [13.3403383,103.7929146]
   },
+  ...Countries.Thailand,
   {
     name: "Myanmar",
     date: "2019-02-18",

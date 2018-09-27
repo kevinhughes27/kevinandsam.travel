@@ -10,6 +10,9 @@ import Namibia from './namibia'
 import SouthAfrica from './south_africa'
 import Tanzania from './tanzania'
 import Scotland from './scotland'
+import SouthKorea from './south_korea'
+import Japan from './japan'
+import Vietnam from './vietnam'
 import Thailand from './thailand'
 
 export default {
@@ -25,5 +28,8 @@ export default {
   SouthAfrica,
   Tanzania,
   Scotland,
+  SouthKorea,
+  Japan,
+  Vietnam,
   Thailand
 }
