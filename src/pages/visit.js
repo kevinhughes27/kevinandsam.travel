@@ -9,6 +9,29 @@ const locations = allLocations.filter((r) => {
   return r.visit !== false && (moment(r.date) > Date.now())
 })
 
+const countries = []
+
+locations.forEach((location) => {
+  let countryName = location.name.indexOf(", ") !== -1
+    ? location.name.split(", ")[1]
+    : location.name
+
+  let countryIndex = countries.findIndex((c) => c.name === countryName)
+  let countryAdded = countryIndex !== -1
+
+  if (!countryAdded) {
+    countries.push({
+      name: countryName,
+      date: location.date,
+      airport: location.airport
+    })
+  } else {
+    if (!countries[countryIndex].airport) {
+      countries[countryIndex].airport = location.airport
+    }
+  }
+})
+
 class VisitPage extends Component {
   state = {
     when: null,
@@ -17,36 +40,36 @@ class VisitPage extends Component {
   }
 
   handleWhenChange = (date) => {
-    const location = locations
+    const country = countries
       .sort((a, b) => {
         return new Date(b.date) - new Date(a.date)
       })
       .find((r) => {
         return date.isAfter(r.date)
       })
-        || locations[locations.length - 1]
+        || countries[countries.length - 1]
 
     this.setState({
       when: date,
-      where: location.name,
+      where: country.name,
       lastAnswer: 'when'
     })
   }
 
   handleWhereChange = (option) => {
-    const locationName = option.value
+    const countryName = option.value
 
-    if (locationName === '') { return }
+    if (countryName === '') { return }
 
-    const location = locations.find((r) => {
-      return r.name === locationName
+    const country = countries.find((r) => {
+      return r.name === countryName
     })
 
-    const when = moment(location.date)
+    const when = moment(country.date)
 
     this.setState({
       when: when,
-      where: locationName,
+      where: countryName,
       lastAnswer: 'where'
     })
   }
@@ -58,16 +81,16 @@ class VisitPage extends Component {
       return
     }
 
-    const location = locations.find((r) => { return r.name === where })
+    const country = countries.find((r) => { return r.name === where })
 
     const month = when.format("MMMM")
     const monthDay = when.format("MMMM D")
 
     const baseUrl = 'https://www.google.ca/flights/'
-    const locationAirport = location.airport
+    const airport = country.airport
     const startDate = when.format('YYYY-MM-DD')
     const endDate = moment(startDate).add(15, 'days').format('YYYY-MM-DD')
-    const flightUrl = baseUrl + `#search;t=${locationAirport};d=${startDate};r=${endDate}`
+    const flightUrl = baseUrl + `#search;t=${airport};d=${startDate};r=${endDate}`
     const flightLink = <a href={flightUrl} target="_blank">book your flights!</a>
 
     const subject = lastAnswer === 'when'
@@ -96,7 +119,7 @@ class VisitPage extends Component {
   render () {
     const { when, where } = this.state
 
-    let whereOptions = locations
+    let whereOptions = countries
       .sort((a, b) => {
         return (a.name[0] < b.name[0]) ? -1 : (a.name[0] > b.name[0]) ? 1 : 0
       })
