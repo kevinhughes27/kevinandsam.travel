@@ -8,19 +8,16 @@ export default [
   {
     name: "Phong Nha, Vietnam",
     date: "2018-12-12",
-    visit: false,
     coordinates: [17.2415026,106.1583507]
   },
   {
     name: "Nha Trang, Vietnam",
     date: "2018-12-15",
-    visit: false,
     coordinates: [12.259629,109.1764621]
   },
   {
     name: "Dalat, Vietnam",
     date: "2018-12-17",
-    visit: false,
     coordinates: [11.9040702,108.3806828]
   },
   {

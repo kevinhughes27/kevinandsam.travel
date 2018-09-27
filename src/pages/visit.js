@@ -5,8 +5,10 @@ import moment from 'moment'
 
 import { currentLocation, countries as allCountries } from '../data/route'
 
-const countries = allCountries.filter((r) => {
-  return r.visit !== false && (moment(r.date) > Date.now())
+const countries = allCountries.filter((c) => {
+   const foreignCountry = c.name !== "Ottawa" || c.name !== "Calgary"
+   const futureCountry = moment(c.date) > Date.now()
+   return foreignCountry && futureCountry
 })
 
 class VisitPage extends Component {
@@ -109,20 +111,21 @@ class VisitPage extends Component {
       whereOptions.push({value: '', text: 'Select'})
     }
 
+    const greeting = "We'd be thrilled to have visitors at any time during our travels. All you need to do is choose:"
+
     return (
       <section id="visit" className="section-padding">
         <div className="grid">
           <div className="text-container">
-            <p>
-              We'd be thrilled to have visitors at any time during our travels. All you need to do is choose:
-            </p>
+
+            <p>{greeting}</p>
 
             <div className="question-container">
               <div className="question">
                 <p>When</p>
                 <DatePicker
                   selected={when}
-                  minDate={Date.now()}
+                  minDate={moment()}
                   customInput={<DatePickerButton />}
                   withPortal
                   onChange={this.handleWhenChange}

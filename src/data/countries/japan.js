@@ -8,19 +8,16 @@ export default [
   {
     name: "Morioka, Japan",
     date: "2018-11-22",
-    visit: false,
     coordinates: [39.7472143,141.121554]
   },
   {
     name: "Nagano, Japan",
     date: "2018-11-24",
-    visit: false,
     coordinates: [36.6483413,137.9744572]
   },
   {
     name: "Kanazawa, Japan",
     date: "2018-11-27",
-    visit: false,
     coordinates: [36.5063088,136.5470522]
   },
   {

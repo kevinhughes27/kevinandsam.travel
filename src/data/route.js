@@ -8,7 +8,7 @@ export const currentLocation = {
 export const locations = [
   {
     name: "Ottawa",
-    visit: false,
+    airport: "YOW",
     coordinates: [45.4215, -75.6972]
   },
   {
@@ -51,19 +51,17 @@ export const locations = [
   {
     name: "Calgary",
     map: false,
-    visit: false,
+    airport: "YYC",
     date: "2018-06-27"
   },
   {
     name: "Frankfurt, Germany",
     date: "2018-07-05",
-    visit: false,
     coordinates: [50.121301,8.5665245]
   },
   {
     name: "Munich, Germany",
     date: "2018-07-06",
-    visit: false,
     coordinates: [48.1548895,11.4717966]
   },
   {
@@ -81,7 +79,6 @@ export const locations = [
   {
     name: "Hamburg, Germany",
     date: "2018-07-20",
-    visit: false,
     coordinates: [53.5586941,9.7877404]
   },
   {
@@ -99,7 +96,6 @@ export const locations = [
   {
     name: "Bruges, Belgium",
     date: "2018-07-28",
-    visit: false,
     coordinates: [51.2607606,3.1521058]
   },
   {
@@ -122,7 +118,7 @@ export const locations = [
   {
     name: "Ottawa",
     map: false,
-    visit: false,
+    airport: "YOW",
     date: "2018-10-22"
   },
   ...Countries.SouthKorea,
@@ -168,7 +164,7 @@ export const locations = [
   {
     name: "Bhutan",
     date: "2019-03-02",
-    visit: false,
+    airport: "PBH",
     coordinates: [27.470012,89.3147555]
   },
   {
@@ -186,8 +182,8 @@ export const locations = [
   {
     name: "Ottawa",
     date: "2019-04-01",
-    visit: false,
     map: false,
+    airport: "YOW",
     coordinates: [45.4215, -75.6972]
   }
 ]
@@ -210,9 +206,20 @@ sortedLocations.forEach((location) => {
       date: location.date,
       airport: location.airport
     })
+  } else if (countryName === "Ottawa") {
+    countries.push({
+      name: countryName,
+      date: location.date,
+      airport: location.airport
+    })
   } else {
     if (!countries[countryIndex].airport) {
       countries[countryIndex].airport = location.airport
     }
   }
+})
+
+countries.forEach((c) => {
+  if (!c.airport)
+    throw(`Missing Airport for ${c.name}. One of the locations must specifiy an airport`)
 })
