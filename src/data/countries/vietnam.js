@@ -8,7 +8,7 @@ export default [
   {
     name: "Phong Nha, Vietnam",
     date: "2018-12-12",
-    coordinates: [17.2415026,106.1583507]
+    coordinates: [17.5862435,106.2810367]
   },
   {
     name: "Nha Trang, Vietnam",

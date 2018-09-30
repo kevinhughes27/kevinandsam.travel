@@ -188,7 +188,7 @@ export const locations = [
   }
 ]
 
-export const sortedLocations = locations.sort((a, b) => new Date(a.date) - new Date(b.date))
+export const sortedLocations = [...locations].sort((a, b) => new Date(a.date) - new Date(b.date))
 
 export const countries = []
 
