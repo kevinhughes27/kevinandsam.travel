@@ -15,7 +15,7 @@ I loved a lot of the regional food I ate in South America (and Guatemala). Here 
 Sometimes slight variations on my favourite foods are the best. Eggs for breakfast is my go to so in Guatemala the typico breakfast was amazing. It had eggs and bread but added in black refried beans and fried plantain. Plain and simple, refried beans should be apart of every breakfast, it was the first thing I finished on every plate. Fried plantain was a sweet addition to the dish.
 
 
-##Colombia
+## Colombia
 
 Two items really excited me in Colombia. The first were churros!! I couldn't get enough of these deliciously fried doughnuts covered in white sugar and partially filled with dulce de leche (really creamy caramel). The best part of these churros were how light and fluffy they were on the inside. Churros were cheap and you could get them at food stands all over Colombia - so naturally we ate them as often as possible. The second food we ate all the time was trail mix we found in the grocery store. It sounds odd but the combination was amazing and we pretty much always had it on hand. The trail mix included almonds, peanuts (regular, chocolate covered, and candied with sesame), craisins, and the piece de resistance toasted corn. The corn was super crunchy and salty which was perfect for this mix.
 
