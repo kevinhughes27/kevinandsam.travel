@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import windowSize from 'react-window-size'
-import { Carousel } from 'react-responsive-carousel'
+import Slideshow from '../components/Slideshow'
 import { withPrefix } from 'gatsby-link'
 
 class AboutPage extends Component {
@@ -35,24 +35,11 @@ class Images extends Component {
 }
 
 const renderMobile = () => (
-  <div style={{paddingBottom: 15}}>
-    <Carousel
-      showArrows={false}
-      showStatus={false}
-      showThumbs={false}
-      infiniteLoop={true}
-      autoPlay={true}>
-      { Item('about-1.jpg') }
-      { Item('about-2.jpg') }
-      { Item('about-3.jpg') }
-    </Carousel>
-  </div>
-)
-
-const Item = (image) => (
-  <div>
-    <img src={`${__PATH_PREFIX__}/${image}`} />
-  </div>
+  <Slideshow>
+    <img src={`${__PATH_PREFIX__}/about-1.jpg`} />
+    <img src={`${__PATH_PREFIX__}/about-2.jpg`} />
+    <img src={`${__PATH_PREFIX__}/about-3.jpg`} />
+  </Slideshow>
 )
 
 const renderDesktop = () => (
