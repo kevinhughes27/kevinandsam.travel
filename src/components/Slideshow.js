@@ -12,7 +12,8 @@ class Slideshow extends Component {
           showStatus={false}
           showThumbs={false}
           infiniteLoop={true}
-          autoPlay={true}>
+          autoPlay={true}
+          interval={5000}>
           { children }
         </Carousel>
       </div>
