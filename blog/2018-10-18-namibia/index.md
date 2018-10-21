@@ -19,7 +19,7 @@ We spent 2 full days in the park doing game drives on our own. There are a ridic
 
 <instagram uuid="Bn_UjxjnjAf"></instagram>
 
-We found Goas, Rietfontein to be the best watering holes but your mileage may vary. If you see a truck or a bunch of trucks pulled over that's a good clue to stop and see what they're looking at. Also, if you see a guided safari speeding you may want to follow 😉.
+We found Goas, Salvadora, Kalkheuwel and Rietfontein to be the best watering holes but your mileage may vary. If you see a truck or a bunch of trucks pulled over that's a good clue to stop and see what they're looking at. Also, if you see a guided safari speeding you may want to follow 😉.
 
 On the 3rd day we drove through Etosha all the way out to the coast to stay at Terrance Bay. This was admittedly too far for a single day of driving. If you're going to Namibia we'd recommend camping near the Petrified Trees and then only driving the lower part of Skeleton Coast. We left early to make sure we'd arrive before dark (truck rentals don't allow night driving for risk of hitting animals). On this day alone we say 7 lions, 2 rhinos and a leopard all while just trying to get through the park!
 
