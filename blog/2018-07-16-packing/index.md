@@ -18,7 +18,7 @@ As a computer engineer I definitely have a specific way of looking at problems. 
   </figcaption>
 </figure>
 
-We had a pretty good idea of what we needed to bring with us from past experience but a whole year was still something new. Multifunctional items like Lululemon clothing that can be dressed up or worn hiking was pretty key for keeping the weight down. We also needed a lot more life items - to keep our bodies functioning on the road I brought a full set of [Yoga Tune-Up](https://amzn.to/2Jo1crC) gear and other self-physio items. I needed to be a able to work and do a variety of computer things which required a few small electronics, adaptors and cables. I got pretty anal about some things, for example I have a USB charger for my beard trimmer to reduce wall plugs I have to carry.
+We had a pretty good idea of what we needed to bring with us from past experience but a whole year was still something new. Multifunctional items like Lululemon clothing that can be dressed up or worn hiking was pretty key for keeping the weight down. We also needed a lot more life items - to keep our bodies functioning on the road I brought a full set of [Yoga Tune-Up](https://www.tuneupfitness.com/) gear and other self-physio items. I needed to be a able to work and do a variety of computer things which required a few small electronics, adaptors and cables. I got pretty anal about some things, for example I have a USB charger for my beard trimmer to reduce wall plugs I have to carry.
 
 <figure>
   <img src="splitter.jpeg"/>
@@ -32,7 +32,7 @@ Our pack list wasn't perfect when we left Canada on Feb 1st we've had to evolve 
 ### Kevin
 </br>
 
-[DEUTER FUTURA VARIO 50L + 10](https://amzn.to/2Jo9kZr):
+DEUTER FUTURA VARIO 50L + 10:
 
 **Shirts (packing cube)**
 * 2 Lululemon short sleeves
@@ -65,10 +65,9 @@ Our pack list wasn't perfect when we left Canada on Feb 1st we've had to evolve 
 * Climbing shoes
 
 **Fitness**
-* [Alpha ball](https://amzn.to/2Jo1crC)
+* Alpha ball
 * Lacrosse ball (better for feet)
 * Roller stick
-* [Voodoo floss](https://amzn.to/2LiMc06)
 * Physio band
 
 **Other**
@@ -77,7 +76,7 @@ Our pack list wasn't perfect when we left Canada on Feb 1st we've had to evolve 
 * Travel towel
 * Compression sack (for laundry)
 
-[DEUTER TRANS APLINE 30](https://amzn.to/2NSiFMj);
+DEUTER TRANS APLINE 30
 
 **Clothes**
 * Hoodie
@@ -90,9 +89,9 @@ Our pack list wasn't perfect when we left Canada on Feb 1st we've had to evolve 
 * [Hawkers Sun glasses](https://hawkers.co/)
 
 **Electronics**
-* [Google Pixel](https://amzn.to/2zH1N8k)
-* [Huawei Matebook X Laptop](https://amzn.to/2LdYHNu)
-* [GoPro Hero 5](https://amzn.to/2JmN02f)
+* Google Pixel
+* Huawei Matebook X Laptop
+* GoPro Hero 5
 * GoPro accessories
 * Travel adaptor
 * USB-C wall adaptor
@@ -101,7 +100,7 @@ Our pack list wasn't perfect when we left Canada on Feb 1st we've had to evolve 
 * USB flash drives
 * SIM card case
 * Headphones
-* [Electronics Organizer](https://amzn.to/2upij7P)
+* Bagsmart Electronics Organizer
 
 **Misc**
 * Travel wallet
@@ -114,7 +113,7 @@ Our pack list wasn't perfect when we left Canada on Feb 1st we've had to evolve 
 ### Sam
 </br>
 
-[DEUTER FUTURA VARIO 45L + 10](https://amzn.to/2JnvJG2):
+DEUTER FUTURA VARIO 45L + 10
 
 **Shirts** (packing cube)
 * 3 Lululemon tank tops
@@ -156,7 +155,7 @@ Our pack list wasn't perfect when we left Canada on Feb 1st we've had to evolve 
 * Hiking shoes
 * Climbing shoes
 
-[OSPREY TEMPEST 30](https://amzn.to/2ukVfHw):
+OSPREY TEMPEST 30:
 
 **Clothes**
 * Salomon base layer
