@@ -1,6 +1,6 @@
 ---
 path: "/accomodation"
-date: "2018-11-11"
+date: "2018-11-01"
 title: "Where to Stay"
 author: "Sam"
 cardImage: "card.jpeg"
