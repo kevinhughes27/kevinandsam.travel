@@ -123,22 +123,10 @@ export const locations = [
   },
   ...Countries.SouthKorea,
   ...Countries.Japan,
-  {
-    name: "Vientiane, Laos",
-    date: "2018-12-03",
-    airport: "VTE",
-    coordinates: [17.9605181,102.5707462]
-  },
-  {
-    name: "Laos",
-    date: "2018-12-05",
-    airport: "VTE",
-    coordinates: [19.6894002,102.4119533]
-  },
   ...Countries.Vietnam,
   {
     name: "Malaysia",
-    date: "2018-12-23",
+    date: "2018-12-22",
     airport: "KUL",
     coordinates: [3.138675,101.6169495]
   },
@@ -156,20 +144,32 @@ export const locations = [
   },
   ...Countries.Thailand,
   {
+    name: "Vientiane, Laos",
+    date: "2019-02-19",
+    airport: "VTE",
+    coordinates: [17.9605181,102.5707462]
+  },
+  {
+    name: "Vang Vieng, Laos",
+    date: "2019-02-22",
+    airport: "VTE",
+    coordinates: [18.9443986,102.4126404]
+  },
+  {
     name: "Myanmar",
-    date: "2019-02-18",
+    date: "2019-02-27",
     airport: "MDL",
     coordinates: [21.9403451,96.0057844]
   },
   {
     name: "Bhutan",
-    date: "2019-03-02",
+    date: "2019-03-05",
     airport: "PBH",
     coordinates: [27.470012,89.3147555]
   },
   {
     name: "Nepal",
-    date: "2019-03-05",
+    date: "2019-03-08",
     airport: "KTM",
     coordinates: [27.7089559,85.2911134]
   },
