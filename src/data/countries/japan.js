@@ -1,7 +1,7 @@
 export default [
   {
     name: "Tokyo, Japan",
-    date: "2018-11-17",
+    date: "2018-11-18",
     airport: "NRT",
     coordinates: [35.6693863,139.6012976]
   },
