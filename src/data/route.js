@@ -125,7 +125,7 @@ export const locations = [
   ...Countries.Japan,
   {
     name: "Vientiane, Laos",
-    date: "2018-12-02",
+    date: "2018-12-03",
     airport: "VTE",
     coordinates: [17.9605181,102.5707462]
   },

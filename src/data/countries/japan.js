@@ -7,7 +7,7 @@ export default [
   },
   {
     name: "Morioka, Japan",
-    date: "2018-11-22",
+    date: "2018-11-23",
     coordinates: [39.7472143,141.121554]
   },
   {
@@ -22,7 +22,7 @@ export default [
   },
   {
     name: "Kyoto, Japan",
-    date: "2018-11-29",
+    date: "2018-11-28",
     airport: "ITM",
     coordinates: [35.0061653,135.7259306]
   },
