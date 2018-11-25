@@ -1,5 +1,5 @@
 ---
-path: "/accomodation"
+path: "/accommodation"
 date: "2018-11-01"
 title: "Where to Stay"
 author: "Sam"
@@ -43,10 +43,10 @@ There are many different options for where to stay while travelling, from resort
   * More expensive option
   * No kitchen (have to eat out for all meals)
 
-<figure>
+<image>
   <img src="hotel.jpg"/>
   <figcaption>Nice hotels are fun, treat yourself!</figcaption>
-</figure>
+</image>
 
 ## Airbnb:
 **Pros**
@@ -58,7 +58,7 @@ There are many different options for where to stay while travelling, from resort
 **Cons**
   * Check in /out can be a challenge – need a specific time
   * Coordination with the host can be time consuming and a lot of work
-  * Need to figure out things to do and the local area on your own
+  * Need to image out things to do and the local area on your own
 
 <figure>
   <img src="airbnb.jpeg"/>
