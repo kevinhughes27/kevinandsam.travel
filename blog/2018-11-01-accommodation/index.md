@@ -43,10 +43,10 @@ There are many different options for where to stay while travelling, from resort
   * More expensive option
   * No kitchen (have to eat out for all meals)
 
-<image>
+<figure>
   <img src="hotel.jpg"/>
   <figcaption>Nice hotels are fun, treat yourself!</figcaption>
-</image>
+</figure>
 
 ## Airbnb:
 **Pros**
