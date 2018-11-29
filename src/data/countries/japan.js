@@ -16,11 +16,6 @@ export default [
     coordinates: [36.6483413,137.9744572]
   },
   {
-    name: "Kanazawa, Japan",
-    date: "2018-11-27",
-    coordinates: [36.5063088,136.5470522]
-  },
-  {
     name: "Kyoto, Japan",
     date: "2018-11-28",
     airport: "ITM",
