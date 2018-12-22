@@ -16,18 +16,8 @@ export default [
     coordinates: [17.5862435,106.2810367]
   },
   {
-    name: "Hue, Vietnam",
-    date: "2018-12-13",
-    coordinates: [16.4534699,107.5420938]
-  },
-  {
-    name: "Hoi An, Vietnam",
-    date: "2018-12-16",
-    coordinates: [15.9184459,108.3470331]
-  },
-  {
     name: "Ho Chi Minh, Vietnam",
-    date: "2018-12-19",
+    date: "2018-12-12",
     airport: "SGN",
     coordinates: [10.7553411,106.4150414]
   }

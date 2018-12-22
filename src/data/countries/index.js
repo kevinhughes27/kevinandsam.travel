@@ -13,7 +13,6 @@ import Scotland from './scotland'
 import SouthKorea from './south_korea'
 import Japan from './japan'
 import Vietnam from './vietnam'
-import Thailand from './thailand'
 
 export default {
   Colombia,
@@ -30,6 +29,5 @@ export default {
   Scotland,
   SouthKorea,
   Japan,
-  Vietnam,
-  Thailand
+  Vietnam
 }

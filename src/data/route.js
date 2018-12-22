@@ -2,7 +2,7 @@ import Countries from './countries'
 
 export const currentLocation = {
   name: "Vietnam",
-  coordinates: [21.0227788,105.8194541]
+  coordinates: [10.7553411,106.4150414]
 }
 
 export const locations = [
@@ -125,8 +125,13 @@ export const locations = [
   ...Countries.Japan,
   ...Countries.Vietnam,
   {
-    name: "Malaysia",
-    date: "2018-12-22",
+    name: "Penang, Malaysia",
+    date: "2018-12-26",
+    coordinates: [5.3543299,100.2229179]
+  },
+  {
+    name: "Kuala Lumpur, Malaysia",
+    date: "2018-12-20",
     airport: "KUL",
     coordinates: [3.138675,101.6169495]
   },
@@ -137,48 +142,80 @@ export const locations = [
     coordinates: [1.3439166,103.7540049]
   },
   {
-    name: "Cambodia",
+    name: "Raleigh Beach, Thailand",
     date: "2019-01-02",
+    coordinates: [7.8512262,98.6709168]
+  },
+  {
+    name: "Siem Reap, Cambodia",
+    date: "2019-02-01",
     airport: "REP",
     coordinates: [13.3403383,103.7929146]
   },
-  ...Countries.Thailand,
   {
     name: "Vientiane, Laos",
-    date: "2019-02-19",
+    date: "2019-02-03",
     airport: "VTE",
     coordinates: [17.9605181,102.5707462]
   },
   {
     name: "Vang Vieng, Laos",
-    date: "2019-02-22",
+    date: "2019-02-08",
     airport: "VTE",
     coordinates: [18.9443986,102.4126404]
   },
   {
+    name: "Bangkok, Thailand",
+    date: "2019-02-12",
+    airport: "DMK",
+    coordinates: [13.7196108,100.5322264]
+  },
+  {
+    name: "Raleigh Beach, Thailand",
+    date: "2019-02-16",
+    airport: "DMK",
+    coordinates: [7.8512262,98.6709168]
+  },
+  {
+    name: "Chaing Mai, Thailand",
+    date: "2019-02-18",
+    coordinates: [18.77183,98.9214578]
+  },
+  {
+    name: "Chaing Rai, Thailand",
+    date: "2019-02-22",
+    coordinates: [19.921806,99.8086846]
+  },
+  {
     name: "Myanmar",
-    date: "2019-02-27",
+    date: "2019-02-25",
     airport: "MDL",
     coordinates: [21.9403451,96.0057844]
   },
   {
-    name: "Bhutan",
+    name: "Raleigh Beach, Thailand",
     date: "2019-03-05",
-    airport: "PBH",
-    coordinates: [27.470012,89.3147555]
+    airport: "DMK",
+    coordinates: [7.8512262,98.6709168]
   },
-  {
-    name: "Nepal",
-    date: "2019-03-08",
-    airport: "KTM",
-    coordinates: [27.7089559,85.2911134]
-  },
-  {
-    name: "India",
-    date: "2019-03-16",
-    airport: "DEL",
-    coordinates: [28.527272,77.1389455]
-  },
+  // {
+  //   name: "Bhutan",
+  //   date: "2019-03-05",
+  //   airport: "PBH",
+  //   coordinates: [27.470012,89.3147555]
+  // },
+  // {
+  //   name: "Nepal",
+  //   date: "2019-03-08",
+  //   airport: "KTM",
+  //   coordinates: [27.7089559,85.2911134]
+  // },
+  // {
+  //   name: "India",
+  //   date: "2019-03-16",
+  //   airport: "DEL",
+  //   coordinates: [28.527272,77.1389455]
+  // },
   {
     name: "Ottawa",
     date: "2019-04-01",
