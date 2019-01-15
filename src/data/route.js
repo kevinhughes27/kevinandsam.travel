@@ -1,8 +1,8 @@
 import Countries from './countries'
 
 export const currentLocation = {
-  name: "Malaysia",
-  coordinates: [3.138675,101.6169495]
+  name: "Tonsai Beach",
+  coordinates: [7.8512262,98.6709168]
 }
 
 export const locations = [
@@ -142,61 +142,70 @@ export const locations = [
     coordinates: [1.3439166,103.7540049]
   },
   {
-    name: "Raleigh Beach, Thailand",
+    name: "Tonsai Beach, Thailand",
     date: "2019-01-02",
+    airport: "KBV",
     coordinates: [7.8512262,98.6709168]
   },
   {
+    name: "Chaing Mai, Thailand",
+    date: "2019-01-25",
+    coordinates: [18.77183,98.9214578]
+  },
+  {
     name: "Siem Reap, Cambodia",
-    date: "2019-02-01",
+    date: "2019-01-28",
     airport: "REP",
     coordinates: [13.3403383,103.7929146]
   },
   {
+    name: "Tonsai Beach, Thailand",
+    date: "2019-02-01",
+    airport: "KBV",
+    map: false,
+    coordinates: [7.8512262,98.6709168]
+  },
+  {
+    name: "Bangkok, Thailand",
+    date: "2019-02-20",
+    airport: "DMK",
+    coordinates: [13.7196108,100.5322264]
+  },
+  {
+    name: "Phuket, Thailand",
+    date: "2019-02-24",
+    airport: "HKT",
+    coordinates: [7.883403,98.374404]
+  },
+  {
+    name: "Tonsai Beach, Thailand",
+    date: "2019-02-28",
+    airport: "KBV",
+    coordinates: [7.8512262,98.6709168]
+  },
+  {
     name: "Vientiane, Laos",
-    date: "2019-02-03",
+    date: "2019-03-02",
     airport: "VTE",
     coordinates: [17.9605181,102.5707462]
   },
   {
     name: "Vang Vieng, Laos",
-    date: "2019-02-08",
+    date: "2019-03-05",
     airport: "VTE",
     coordinates: [18.9443986,102.4126404]
   },
   {
-    name: "Bangkok, Thailand",
-    date: "2019-02-12",
-    airport: "DMK",
-    coordinates: [13.7196108,100.5322264]
-  },
-  {
-    name: "Raleigh Beach, Thailand",
-    date: "2019-02-16",
-    airport: "DMK",
-    coordinates: [7.8512262,98.6709168]
-  },
-  {
-    name: "Chaing Mai, Thailand",
-    date: "2019-02-18",
-    coordinates: [18.77183,98.9214578]
-  },
-  {
-    name: "Chaing Rai, Thailand",
-    date: "2019-02-22",
-    coordinates: [19.921806,99.8086846]
-  },
-  {
     name: "Myanmar",
-    date: "2019-02-25",
+    date: "2019-03-15",
     airport: "MDL",
     coordinates: [21.9403451,96.0057844]
   },
   {
-    name: "Raleigh Beach, Thailand",
-    date: "2019-03-05",
-    airport: "DMK",
-    coordinates: [7.8512262,98.6709168]
+    name: "Sri Lanka",
+    date: "2019-03-25",
+    airport: "CMB",
+    coordinates: [7.2945875,80.6082719]
   },
   // {
   //   name: "Bhutan",
