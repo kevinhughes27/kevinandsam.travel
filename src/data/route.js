@@ -148,19 +148,34 @@ export const locations = [
     coordinates: [7.8512262,98.6709168]
   },
   {
+    name: "Kuala Lumpur, Malaysia",
+    date: "2019-01-21",
+    airport: "KUL",
+    map: false,
+    coordinates: [3.138675,101.6169495]
+  },
+  {
     name: "Chaing Mai, Thailand",
     date: "2019-01-25",
+    airport: "CNX",
     coordinates: [18.77183,98.9214578]
   },
   {
-    name: "Siem Reap, Cambodia",
+    name: "Tonsai Beach, Thailand",
     date: "2019-01-28",
+    airport: "KBV",
+    map: false,
+    coordinates: [7.8512262,98.6709168]
+  },
+  {
+    name: "Siem Reap, Cambodia",
+    date: "2019-02-07",
     airport: "REP",
     coordinates: [13.3403383,103.7929146]
   },
   {
     name: "Tonsai Beach, Thailand",
-    date: "2019-02-01",
+    date: "2019-02-10",
     airport: "KBV",
     map: false,
     coordinates: [7.8512262,98.6709168]
@@ -197,13 +212,13 @@ export const locations = [
   },
   {
     name: "Myanmar",
-    date: "2019-03-15",
+    date: "2019-03-13",
     airport: "MDL",
     coordinates: [21.9403451,96.0057844]
   },
   {
     name: "Sri Lanka",
-    date: "2019-03-25",
+    date: "2019-03-20",
     airport: "CMB",
     coordinates: [7.2945875,80.6082719]
   },
@@ -227,7 +242,7 @@ export const locations = [
   // },
   {
     name: "Ottawa",
-    date: "2019-04-01",
+    date: "2019-03-31",
     map: false,
     airport: "YOW",
     coordinates: [45.4215, -75.6972]
