@@ -158,27 +158,32 @@ export const locations = [
     name: "Chaing Mai, Thailand",
     date: "2019-01-25",
     airport: "CNX",
+    map: false,
     coordinates: [18.77183,98.9214578]
   },
   {
     name: "Tonsai Beach, Thailand",
-    date: "2019-01-28",
+    date: "2019-01-29",
     airport: "KBV",
     map: false,
     coordinates: [7.8512262,98.6709168]
   },
   {
-    name: "Siem Reap, Cambodia",
-    date: "2019-02-07",
-    airport: "REP",
-    coordinates: [13.3403383,103.7929146]
+    name: "Thakhek, Laos",
+    date: "2019-02-05",
+    coordinates: [17.4045287,104.7829623]
   },
   {
-    name: "Tonsai Beach, Thailand",
-    date: "2019-02-10",
-    airport: "KBV",
-    map: false,
-    coordinates: [7.8512262,98.6709168]
+    name: "Vientiane, Laos",
+    date: "2019-02-15",
+    airport: "VTE",
+    coordinates: [17.9605181,102.5707462]
+  },
+  {
+    name: "Vang Vieng, Laos",
+    date: "2019-02-17",
+    airport: "VTE",
+    coordinates: [18.9443986,102.4126404]
   },
   {
     name: "Bangkok, Thailand",
@@ -199,22 +204,16 @@ export const locations = [
     coordinates: [7.8512262,98.6709168]
   },
   {
-    name: "Vientiane, Laos",
-    date: "2019-03-02",
-    airport: "VTE",
-    coordinates: [17.9605181,102.5707462]
-  },
-  {
-    name: "Vang Vieng, Laos",
-    date: "2019-03-05",
-    airport: "VTE",
-    coordinates: [18.9443986,102.4126404]
+    name: "Siem Reap, Cambodia",
+    date: "2019-03-10",
+    airport: "REP",
+    coordinates: [13.3403383,103.7929146]
   },
   {
     name: "Myanmar",
     date: "2019-03-13",
-    airport: "MDL",
-    coordinates: [21.9403451,96.0057844]
+    airport: "RGN",
+    coordinates: [16.9101877,96.011896]
   },
   {
     name: "Sri Lanka",
