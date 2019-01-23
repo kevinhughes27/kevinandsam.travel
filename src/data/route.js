@@ -169,22 +169,22 @@ export const locations = [
     coordinates: [7.8512262,98.6709168]
   },
   {
-    name: "Thakhek, Laos",
-    date: "2019-02-05",
-    coordinates: [17.4045287,104.7829623]
-  },
-  {
     name: "Vientiane, Laos",
-    date: "2019-02-15",
+    date: "2019-02-05",
     airport: "VTE",
     coordinates: [17.9605181,102.5707462]
   },
   {
-    name: "Vang Vieng, Laos",
-    date: "2019-02-17",
-    airport: "VTE",
-    coordinates: [18.9443986,102.4126404]
+    name: "Thakhek, Laos",
+    date: "2019-02-09",
+    coordinates: [17.4045287,104.7829623]
   },
+  // {
+  //   name: "Vang Vieng, Laos",
+  //   date: "2019-02-17",
+  //   airport: "VTE",
+  //   coordinates: [18.9443986,102.4126404]
+  // },
   {
     name: "Bangkok, Thailand",
     date: "2019-02-20",
