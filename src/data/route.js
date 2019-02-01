@@ -205,43 +205,19 @@ export const locations = [
   },
   {
     name: "Siem Reap, Cambodia",
-    date: "2019-03-10",
+    date: "2019-03-06",
     airport: "REP",
     coordinates: [13.3403383,103.7929146]
   },
   {
     name: "Myanmar",
-    date: "2019-03-13",
+    date: "2019-03-10",
     airport: "RGN",
     coordinates: [16.9101877,96.011896]
   },
   {
-    name: "Sri Lanka",
-    date: "2019-03-20",
-    airport: "CMB",
-    coordinates: [7.2945875,80.6082719]
-  },
-  // {
-  //   name: "Bhutan",
-  //   date: "2019-03-05",
-  //   airport: "PBH",
-  //   coordinates: [27.470012,89.3147555]
-  // },
-  // {
-  //   name: "Nepal",
-  //   date: "2019-03-08",
-  //   airport: "KTM",
-  //   coordinates: [27.7089559,85.2911134]
-  // },
-  // {
-  //   name: "India",
-  //   date: "2019-03-16",
-  //   airport: "DEL",
-  //   coordinates: [28.527272,77.1389455]
-  // },
-  {
     name: "Ottawa",
-    date: "2019-03-31",
+    date: "2019-03-25",
     map: false,
     airport: "YOW",
     coordinates: [45.4215, -75.6972]
