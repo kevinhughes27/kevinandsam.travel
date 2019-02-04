@@ -24,7 +24,7 @@ With only a loose plan I left Canada with 4 doses determined to figure it out on
 
 It's been almost a year now and I've been able to re-supply along the way without too much hassle. My process for getting Humira was to start at the largest pharmacy within a reasonable distance from our accommodation, preferably in a major city and better if it's near a hospital. I didn't have a copy of my Canadian prescription but instead brought the pharmacy receipt from my last refill in Canada. I think this worked better since it is very clearly written and actually looks more official than doctor handwriting. I always show the paper to the pharmacist immediately since it's what they are used to even if it's not a local prescription. It is pretty common to get redirected to another larger pharmacy but I always press to see if they can order it. Sometimes it seemed to depend on the mood of the pharmacist whether they helped or not but after a few places I've always found someone willing.
 
-Here is a list of countries where I filled my prescription, stars mean I had to see a doctor and get a local prescription. The pharmacy was always able to direct me to the best place to see a doctor.
+Here is a list of countries where I filled my prescription, stars mean I had to see a doctor and get a local prescription. The pharmacy was always able to direct me to the best place to see a doctor. Travel clinics are a good resource and I've used the directory at [istm.org](http://www.istm.org/) a few times.
 
 <ul style="list-style-type: none; text-align: center;">
   <li>Chile</li>
@@ -37,7 +37,7 @@ Here is a list of countries where I filled my prescription, stars mean I had to 
   <li>Malaysia</li>
 </ul>
 
-The medicine was available in Colombia but couldn't ship in time before our flight out. EU countries will accept prescriptions from other EU countries so try and get a few refills on the prescription if you see a doctor. I tried and Humira is not available in Bolivia, Vietnam or Thailand (the latter resulted in a loop back to Malaysia). I also refilled the two times we returned to Canada. It can take a few days for a pharmacy to order Humira so try not to leave it until the last moment. Travel clinics are a good resource and I've used the directory at [istm.org](http://www.istm.org/) a few times.
+The medicine was available in Colombia but couldn't ship in time before our flight out. EU countries will accept prescriptions from other EU countries so try and get a few refills on the prescription if you see a doctor. I tried and Humira is not available in Bolivia, Vietnam or Thailand (the latter resulted in a loop back to Malaysia). I also refilled the two times we returned to Canada. It can take a few days for a pharmacy to order Humira so try not to leave it until the last moment.
 
 <figure>
   <img src="japanese_humira.jpeg"/>
