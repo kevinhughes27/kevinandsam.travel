@@ -21,6 +21,7 @@ class Layout extends Component {
 
     const meta = [
       { property: "keywords", content: "travel, backpacking, digital nomad" },
+      { name: "google-site-verification", content: "wWHpbIqBAdk1z_sNatMaGjs3BZPLK00EAcTO5vVqgTo"}
     ]
 
     const script = [
