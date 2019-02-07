@@ -140,3 +140,54 @@
 .post-padding {
   padding-bottom: 2em;
 }
+
+@media print {
+  @page {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .header {
+    display: none !important;
+  }
+
+  .post-mast {
+    display: none !important;
+  }
+
+  .post-header {
+    margin: 4em !important;
+    margin-bottom: 2em !important;
+  }
+
+  .grid--double {
+    margin: 0px !important;
+  }
+
+  .post-content {
+    margin: 4em !important;
+    margin-top: 2em !important;
+  }
+
+  figure {
+    break-inside: avoid;
+    max-width: 60% !important;
+    margin: auto;
+  }
+
+  p {
+    break-inside: avoid;
+  }
+
+  ul {
+    break-inside: avoid;
+  }
+
+  .share-container {
+    display: none !important;
+  }
+
+  .post-author {
+    display: none !important;
+  }
+}
