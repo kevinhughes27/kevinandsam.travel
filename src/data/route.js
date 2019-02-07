@@ -1,8 +1,8 @@
 import Countries from './countries'
 
 export const currentLocation = {
-  name: "Tonsai Beach",
-  coordinates: [7.8512262,98.6709168]
+  name: "Laos",
+  coordinates: [17.4045287,104.7829623]
 }
 
 export const locations = [
@@ -179,12 +179,6 @@ export const locations = [
     date: "2019-02-09",
     coordinates: [17.4045287,104.7829623]
   },
-  // {
-  //   name: "Vang Vieng, Laos",
-  //   date: "2019-02-17",
-  //   airport: "VTE",
-  //   coordinates: [18.9443986,102.4126404]
-  // },
   {
     name: "Bangkok, Thailand",
     date: "2019-02-20",
@@ -205,19 +199,41 @@ export const locations = [
   },
   {
     name: "Siem Reap, Cambodia",
-    date: "2019-03-06",
+    date: "2019-03-04",
     airport: "REP",
     coordinates: [13.3403383,103.7929146]
   },
   {
-    name: "Myanmar",
-    date: "2019-03-10",
+    name: "Yangon, Myanmar",
+    date: "2019-03-08",
+    airport: "RGN",
+    coordinates: [16.9101877,96.011896]
+  },
+  {
+    name: "Mandalay, Myanmar",
+    date: "2019-03-11",
+    airport: "RGN",
+    coordinates: [21.9405043,96.0057843]
+  },
+  {
+    name: "Bagan, Myanmar",
+    date: "2019-03-14",
+    coordinates: [21.1722165,94.8544872]
+  },
+  {
+    name: "Inle Lake, Myanmar",
+    date: "2019-03-17",
+    coordinates: [20.5334707,96.8357146]
+  },
+  {
+    name: "Yangon, Myanmar",
+    date: "2019-03-20",
     airport: "RGN",
     coordinates: [16.9101877,96.011896]
   },
   {
     name: "Ottawa",
-    date: "2019-03-25",
+    date: "2019-03-20",
     map: false,
     airport: "YOW",
     coordinates: [45.4215, -75.6972]
