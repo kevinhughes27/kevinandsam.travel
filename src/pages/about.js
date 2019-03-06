@@ -13,9 +13,10 @@ class AboutPage extends Component {
               In 2014, Kevin and Sam met through their mutual love of travel.
               Their first adventure together was in Costa Rica where they explored the rainforest,
               went zip-lining, and enjoyed many beachside drinks.
-              Since then the trips have escalated from hiking the Inca Trail in Peru to backpacking China for a month.
-              Now it’s time for Kevin and Sam to embark on their most ambitious plan to date,
-              sell everything and become traveling nomads.
+              The trips have escalated since then from hiking the Inca Trail in Peru to backpacking China for a month.
+              Inspired by other long-term travellers they had met Kevin and Sam often dreamt of taking a year off to
+              travel the world. In 2018 they embarked on their most ambitious plan to date, they sold everything to
+              become travelling nomads for 15 months.
             </p>
           </div>
 
