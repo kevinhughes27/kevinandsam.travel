@@ -1,8 +1,8 @@
 import Countries from './countries'
 
 export const currentLocation = {
-  name: "Cambodia",
-  coordinates: [13.3403383,103.7929146]
+  name: "Myanmar",
+  coordinates: [16.9101877,96.011896]
 }
 
 export const locations = [
@@ -210,14 +210,8 @@ export const locations = [
     coordinates: [16.9101877,96.011896]
   },
   {
-    name: "Mandalay, Myanmar",
-    date: "2019-03-11",
-    airport: "RGN",
-    coordinates: [21.9405043,96.0057843]
-  },
-  {
     name: "Bagan, Myanmar",
-    date: "2019-03-14",
+    date: "2019-03-11",
     coordinates: [21.1722165,94.8544872]
   },
   {
