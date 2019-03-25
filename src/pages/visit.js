@@ -7,8 +7,11 @@ import { currentLocation, countries as allCountries } from '../data/route'
 
 const countries = allCountries.filter((c) => {
    const foreignCountry = c.name !== "Ottawa" && c.name !== "Calgary"
-   const futureCountry = moment(c.date) > Date.now()
-   return foreignCountry && futureCountry
+
+   // const futureCountry = moment(c.date) > Date.now()
+   // return foreignCountry && futureCountry
+
+   return foreignCountry
 })
 
 class VisitPage extends Component {
@@ -51,6 +54,22 @@ class VisitPage extends Component {
       where: countryName,
       lastAnswer: 'where'
     })
+  }
+
+  renderGreeting() {
+    return(
+      <div>
+        <p>
+          We're back home in Ottawa now but the visit offer still stands!
+        </p>
+        <p>
+          This form isn't useful anymore but I think it's neat so I've left it up in an archived fashion so you can see how it used to work.
+        </p>
+        <p>
+          All you need to do is choose:
+        </p>
+      </div>
+    )
   }
 
   renderResponse() {
@@ -111,21 +130,20 @@ class VisitPage extends Component {
       whereOptions.push({value: '', text: 'Select'})
     }
 
-    const greeting = "We'd be thrilled to have visitors at any time during our travels. All you need to do is choose:"
-
     return (
       <section id="visit" className="section-padding">
         <div className="grid">
           <div className="text-container">
 
-            <p>{greeting}</p>
+            { this.renderGreeting() }
 
             <div className="question-container">
               <div className="question">
                 <p>When</p>
                 <DatePicker
                   selected={when}
-                  minDate={moment()}
+                  minDate={moment("2018-02-01")}
+                  maxDate={moment("2019-03-20")}
                   customInput={<DatePickerButton />}
                   withPortal
                   onChange={this.handleWhenChange}

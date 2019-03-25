@@ -1,8 +1,8 @@
 import Countries from './countries'
 
 export const currentLocation = {
-  name: "Myanmar",
-  coordinates: [21.9405043,96.0057843]
+  name: "Ottawa",
+  coordinates: [45.4215, -75.6972]
 }
 
 export const locations = [
