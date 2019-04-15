@@ -158,7 +158,7 @@ Climbing took us all over on some interesting paths. Avoiding the tide was somet
   <img src="tonsai-5.jpg" />
 </slideshow>
 
-The people who live on Tonsai and support the climbing community are great. There is also some awesome food to be had and we had many favourites that we repeated - Mama Chicken, Base Camp, Green Valley and so many Thai Pancakes.
+The people who live on Tonsai and support the climbing community are great. There is also some awesome food to be had and we had many favourites that we repeated - Mama Chicken, Base Camp, Green Valley and so many Thai Pancakes. I should also point out that no climbing trip to South East Asia should be considered complete without a stop in Thakhek, Laos.
 
 </br>
 
