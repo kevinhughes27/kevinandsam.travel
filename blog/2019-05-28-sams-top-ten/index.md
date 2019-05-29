@@ -149,6 +149,4 @@ In order to explore we rented an electric bike and scootered from temple to temp
   <img src="balloons_over_bagan.jpg" />
 </figure>
 
-**End**
-
 This was definitely a trip of a lifetime with all of the countries we travelled to, all the food and culture we got to take in, and especially all of the friends we met along the way. Our travel list is still ever growing and can't wait for our next (but shorter) adventure!
