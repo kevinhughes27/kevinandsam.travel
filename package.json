@@ -43,7 +43,7 @@
     "rehype-react": "^3.0.2"
   },
   "devDependencies": {
-    "prettier": "^1.8.2"
+    "prettier": "^1.18.2"
   },
   "babel": {
     "presets": [
