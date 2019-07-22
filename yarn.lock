@@ -4062,9 +4062,10 @@ gatsby-plugin-google-fonts@^0.0.4:
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-google-fonts/-/gatsby-plugin-google-fonts-0.0.4.tgz#dc1402a71f27c3ae6caee10777d10adadf74bd7c"
 
-gatsby-plugin-netlify@^1.0.19:
-  version "1.0.19"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify/-/gatsby-plugin-netlify-1.0.19.tgz#952294398f6c2c2db0f25a91b53cb5c262308e79"
+gatsby-plugin-netlify@^1.0.21:
+  version "1.0.21"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify/-/gatsby-plugin-netlify-1.0.21.tgz#a4cd6631e2c73d73177f1ce8532f125601c8c426"
+  integrity sha1-pM1mMeLHPXMXfxzoUy8SVgHIxCY=
   dependencies:
     babel-runtime "^6.26.0"
     fs-extra "^4.0.2"
