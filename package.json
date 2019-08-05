@@ -30,7 +30,7 @@
     "hast-to-hyperscript": "^7.0.2",
     "leaflet": "^1.5.1",
     "moment": "^2.24.0",
-    "prop-types": "^15.6.0",
+    "prop-types": "^15.7.2",
     "random-pick": "^0.1.1",
     "react-datepicker": "^1.0.4",
     "react-helmet": "^5.2.1",
