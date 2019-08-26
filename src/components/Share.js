@@ -2,13 +2,11 @@ import React, { Component } from 'react'
 import {
   FacebookShareButton,
   TwitterShareButton,
-  GooglePlusShareButton,
   PinterestShareButton,
   RedditShareButton,
 
   FacebookIcon,
   TwitterIcon,
-  GooglePlusIcon,
   PinterestIcon,
   RedditIcon
 } from 'react-share'
@@ -37,14 +35,6 @@ class Share extends Component {
               size={32}
               round />
           </TwitterShareButton>
-
-          <GooglePlusShareButton
-            url={shareUrl}
-            className="share-button">
-            <GooglePlusIcon
-              size={32}
-              round />
-          </GooglePlusShareButton>
 
           <PinterestShareButton
             url={shareUrl}
