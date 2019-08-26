@@ -1,6 +1,5 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import { withPrefix } from 'gatsby-link'
 
 import rehypeReact from 'rehype-react'
 

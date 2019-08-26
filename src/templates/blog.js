@@ -1,5 +1,4 @@
 import React from 'react'
-import GatsbyLink from 'gatsby-link';
 
 function Post({node: post}) {
   const { path, title, date } = post.frontmatter
