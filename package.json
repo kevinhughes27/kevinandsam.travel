@@ -13,7 +13,7 @@
     "gatsby-link": "^1.6.28",
     "gatsby-paginate": "^1.1.1",
     "gatsby-plugin-catch-links": "^1.0.26",
-    "gatsby-plugin-favicon": "^2.1.1",
+    "gatsby-plugin-favicon": "^3.1.6",
     "gatsby-plugin-google-analytics": "^1.0.31",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-netlify": "^1.0.21",
