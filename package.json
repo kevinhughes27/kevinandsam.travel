@@ -27,7 +27,7 @@
     "gatsby-source-filesystem": "^1.5.39",
     "gatsby-transformer-remark": "^1.7.44",
     "gatsby-transformer-sharp": "^1.6.27",
-    "hast-to-hyperscript": "^7.0.2",
+    "hast-to-hyperscript": "^7.0.3",
     "leaflet": "^1.5.1",
     "moment": "^2.24.0",
     "prop-types": "^15.7.2",
