@@ -7,14 +7,19 @@ import moment from 'moment'
 import { currentLocation, locations as allLocations } from '../data/route'
 const locations = allLocations.filter((r) => r.map !== false)
 
+const mobileCenters = {
+  asia: { center: [19.91, 113.15], zoom: 2.8 },
+  southAmerica: { center: [4.26, -64.32], zoom: 2.7 }
+}
+
 const MapParams = (windowWidth) => {
   const smallScreen = windowWidth < 667
   const mediumScreen = windowWidth <= 768
 
   if (smallScreen) {
-    return { center: [19.91, 113.15], zoom: 2.8 }
+    return mobileCenters.southAmerica
   } else if (mediumScreen) {
-    return { center: [21.41, 109.61], zoom: 3.8 }
+    return { center: [19.69, -23.68], zoom: 2.87 }
   } else {
     return { center: [11.82, 22.00], zoom: 3.1 }
   }
