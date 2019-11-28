@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import windowSize from 'react-window-size'
 import Slideshow from '../components/Slideshow'
-import { withPrefix } from 'gatsby-link'
 
 class AboutPage extends Component {
   render() {

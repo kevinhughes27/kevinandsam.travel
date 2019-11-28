@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import windowSize from 'react-window-size'
-import { withPrefix } from 'gatsby-link'
 
 const title = "Kevin & Sam"
 const subheading = "See the World"
