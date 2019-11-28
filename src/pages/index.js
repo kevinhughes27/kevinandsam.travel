@@ -1,12 +1,11 @@
 import React, { Component } from 'react'
-import windowSize from 'react-window-size'
+import withSizes from 'react-sizes'
 
 const title = "Kevin & Sam"
 const subheading = "See the World"
 
 class Home extends Component {
   render() {
-    if (this.props.windowWidth === 0) { return null }
     const mediumScreen = this.props.windowWidth <= 800;
     return mediumScreen ? renderMobile() : renderDesktop();
   }
@@ -43,4 +42,8 @@ const renderDesktop = () => (
   </section>
 )
 
-export default windowSize(Home)
+const mapSizesToProps = ({ width }) => ({
+  windowWidth: width
+})
+
+export default withSizes(mapSizesToProps)(Home)

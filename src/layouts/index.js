@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import { SizesProvider } from 'react-sizes'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import Nav from '../components/Nav'
@@ -28,14 +29,16 @@ class Layout extends Component {
       { src: 'https://platform.instagram.com/en_US/embeds.js', type: 'text/javascript', async: true, defer: true }
     ]
 
+    const config = { fallbackWidth: 360, fallbackHeight: 640 }
+
     return (
-      <div>
+      <SizesProvider config={config}>
         <Helmet title={title} meta={meta} script={script} />
         <Nav />
         <main>
           { children() }
         </main>
-      </div>
+      </SizesProvider>
     )
   }
 }

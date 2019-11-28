@@ -39,7 +39,7 @@
     "react-responsive-carousel": "^3.1.51",
     "react-responsive-select": "3.1.4",
     "react-share": "^3.0.1",
-    "react-window-size": "^1.0.1",
+    "react-sizes": "^2.0.0",
     "rehype-react": "^4.0.1"
   },
   "devDependencies": {

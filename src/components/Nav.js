@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import pick from 'random-pick'
-import windowSize from 'react-window-size'
+import withSizes from 'react-sizes'
 
 import fontawesome from '@fortawesome/fontawesome'
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
@@ -17,7 +17,6 @@ class Nav extends Component {
   }
 
   render() {
-    if (this.props.windowWidth === 0) { return null }
     const compressedNav = this.props.windowWidth <= 375
 
     return(
@@ -61,4 +60,8 @@ const randomAccount = () => (
   pick(['kevinhughes27', 'samcluthe', 'kevinhughes27'])[0]
 )
 
-export default windowSize(Nav)
+const mapSizesToProps = ({ width }) => ({
+  windowWidth: width
+})
+
+export default withSizes(mapSizesToProps)(Nav)

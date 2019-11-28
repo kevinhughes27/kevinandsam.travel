@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import windowSize from 'react-window-size'
+import withSizes from 'react-sizes'
 import { Map, TileLayer, Marker, CircleMarker, Circle, Popup, Polyline } from 'react-leaflet'
 import { divIcon } from 'leaflet'
 import moment from 'moment'
@@ -22,16 +22,11 @@ const MapParams = (windowWidth) => {
 
 class MapPage extends Component {
   render() {
+    if (typeof window === 'undefined') {
+      return <div></div>
+    }
+
     const windowWidth = this.props.windowWidth
-
-    if (windowWidth === 0) {
-      return <div></div>
-    }
-
-    if (window === undefined) {
-      return <div></div>
-    }
-
     const { center, zoom } = MapParams(windowWidth)
 
     return (
@@ -128,4 +123,8 @@ const RouteMarkers = ({ locations }) => {
   return <div>{circles}{markers}</div>
 }
 
-export default windowSize(MapPage)
+const mapSizesToProps = ({ width }) => ({
+  windowWidth: width
+})
+
+export default withSizes(mapSizesToProps)(MapPage)

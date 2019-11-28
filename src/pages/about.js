@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import windowSize from 'react-window-size'
+import withSizes from 'react-sizes'
 import Slideshow from '../components/Slideshow'
 
 class AboutPage extends Component {
@@ -28,7 +28,6 @@ class AboutPage extends Component {
 
 class Images extends Component {
   render() {
-    if (this.props.windowWidth === 0) { return null }
     const mediumScreen = this.props.windowWidth <= 768;
     return mediumScreen ? renderMobile() : renderDesktop();
   }
@@ -60,4 +59,8 @@ const Image = (image, overlayText) => (
   </div>
 )
 
-export default windowSize(AboutPage)
+const mapSizesToProps = ({ width }) => ({
+  windowWidth: width
+})
+
+export default withSizes(mapSizesToProps)(AboutPage)
