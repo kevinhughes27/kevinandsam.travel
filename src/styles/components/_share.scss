@@ -9,12 +9,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
 
-.share-button {
-  cursor: pointer;
-  padding-left: 10px;
-  padding-right: 10px;
+  button {
+    cursor: pointer !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
 }
 
 .share-button:hover:not(:active) {

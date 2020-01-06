@@ -20,8 +20,7 @@ class Share extends Component {
         <div className="share-buttons">
           <FacebookShareButton
             url={shareUrl}
-            quote={title}
-            className="share-button">
+            quote={title}>
             <FacebookIcon
               size={32}
               round />
@@ -29,8 +28,7 @@ class Share extends Component {
 
           <TwitterShareButton
             url={shareUrl}
-            title={title}
-            className="share-button">
+            title={title}>
             <TwitterIcon
               size={32}
               round />
@@ -40,8 +38,7 @@ class Share extends Component {
             url={shareUrl}
             media={imageUrl}
             windowWidth={1000}
-            windowHeight={730}
-            className="share-button">
+            windowHeight={730}>
             <PinterestIcon size={32} round />
           </PinterestShareButton>
 
@@ -49,8 +46,7 @@ class Share extends Component {
             url={shareUrl}
             title={title}
             windowWidth={660}
-            windowHeight={460}
-            className="share-button">
+            windowHeight={460}>
             <RedditIcon
               size={32}
               round />
