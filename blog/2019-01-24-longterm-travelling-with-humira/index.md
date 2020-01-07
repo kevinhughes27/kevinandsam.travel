@@ -48,7 +48,10 @@ Travelling with Humira has been more widely discussed online so I am just going 
 
 <figure>
   <img src="cooler.jpg"/>
-  <figcaption>I've tried a few coolers and <a href="https://www.amazon.com/gp/product/B074ZHJD2W">this one</a> (not an affiliate link) is by far the best</figcaption>
+  <figcaption>
+    The cooler I had looked like this - I liked that it was a hard case and that it had a built-in thermometer. Unfortunately it is no longer available.
+    Try searching for 24 hour medicine / insulin coolers and I'm sure you'll find some similar options.
+  </figcaption>
 </figure>
 
 I can fit a maximum of 4 doses in my cooler but I generally prefer to travel with 3 or less which allows me to fit both ice packs inside and get a full 24 hours before I need access to a fridge. Abbvie loosened the requirements a few years back and Humira is okay to be stored at room temperature for 14 days. I try to be in this situation as much as possible to make things easier, it is also a good way to practise with lower stakes. The more experience you have with your cooler the more confident you will be travelling with your medicine. Knowing the dynamics of your cooler, how long you have from each temperature and what the cold packs look like at various points is very useful in case your thermometer breaks (it happened to me). Definitely test your setup at home before leaving but remember this will be a best case scenario.
