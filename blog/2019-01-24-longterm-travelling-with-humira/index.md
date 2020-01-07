@@ -7,7 +7,7 @@ cardImage: "card.jpg"
 postImage: "post3.jpeg"
 ---
 
-One unique aspect of our trip has been figuring out how to travel long term while still taking Humira for managing my Crohn's disease. Humira is an injection that I take bi-weekly and it needs to be stored between 2 and 8 degrees Celsius. The pre-filled injection pens are a bit larger than a whiteboard marker so even if it didn't need to be refrigerated it would not be feasible to carry a year's supply. I found a few other blogs discussing travelling with Humira but no one for as long as we were planning. Neither my doctor or Abbvie Care (the drug company) were much help either. I had to figure this out on my own.
+One unique aspect of our trip has been figuring out how to travel long term while still taking Humira for managing my Crohn's disease. Humira is an injection that I take bi-weekly and it needs to be stored between 2 and 8 degrees Celsius. The pre-filled injection pens are a bit larger than a whiteboard marker so even if it didn't need to be refrigerated it would not be feasible to carry a year's supply. I found a few other blogs discussing travelling with Humira but no one for as long as we were planning. Neither my doctor or Abbvie Care (the drug company) had done anything like this before. I had to figure this one out on my own.
 
 The problem can be broken down into two main components: keeping Humira cold while travelling and re-supplying on the go.
 
