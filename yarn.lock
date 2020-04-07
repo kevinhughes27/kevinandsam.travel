@@ -8666,10 +8666,10 @@ react-proxy@^3.0.0-alpha.0:
   dependencies:
     lodash "^4.6.1"
 
-react-responsive-carousel@^3.1.56:
-  version "3.1.56"
-  resolved "https://registry.yarnpkg.com/react-responsive-carousel/-/react-responsive-carousel-3.1.56.tgz#18bddfcf13f6d9eb8db576121808fada2290c2c6"
-  integrity sha512-zx6boOYfxbD0w1/eDGaLX3kIWFkg//qy041BBkwKw0At8+y9SsMcM0Z6u11kS+JzDdo2NkzcqkfrMF8wKvFAtg==
+react-responsive-carousel@^3.1.57:
+  version "3.1.57"
+  resolved "https://registry.yarnpkg.com/react-responsive-carousel/-/react-responsive-carousel-3.1.57.tgz#7f360ae6b500cd6f697a450a37ca5bbb8e5f66e1"
+  integrity sha512-26NR93dsNUUVUjhcdB0AeCqXwk4Q/9mamp1zE1mCMgfK2XWA4SGRfHdfvngc5DKPUhBgF+m3sc+TDhplCutZDw==
   dependencies:
     classnames "^2.2.5"
     prop-types "^15.5.8"
