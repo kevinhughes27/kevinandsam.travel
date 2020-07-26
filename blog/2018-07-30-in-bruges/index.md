@@ -68,14 +68,16 @@ Not quite the words Sam used but she was definitely the Ray of our trip, she did
   </figcaption>
 </figure>
 
-<two-column>
-  <p>
-    After the tower it was time for lunch. We followed in Ken and Ray's footsteps and grabbed a pint and a bite at T' Zwart Huis a few blocks north of the main square. After a rest and a nice meal we moved on to Jan Van Eyckplein where Ken and Ray discuss their profession and the danger of men with bottles.
-  </p>
-  <quote>
-    "If I'd grown up on a farm and was retarded, Bruges might impress me. But I didn't, so it doesn't."
-  </quote>
-</two-column>
+<div style="margin-bottom: -2em;">
+  <two-column>
+    <p>
+      After the tower it was time for lunch. We followed in Ken and Ray's footsteps and grabbed a pint and a bite at T' Zwart Huis a few blocks north of the main square. After a rest and a nice meal we moved on to Jan Van Eyckplein where Ken and Ray discuss their profession and the danger of men with bottles.
+    </p>
+    <quote>
+      "If I'd grown up on a farm and was retarded, Bruges might impress me. But I didn't, so it doesn't."
+    </quote>
+  </two-column>
+</div>
 
 <figure>
   <img src="jan_van_eyckplein.jpg"/>
