@@ -85,10 +85,12 @@ Not quite the words Sam used but she was definitely the Ray of our trip, she did
 
 Wrapping up our day we walked back through town passing the Basilca of the Holy Blood. It was free entry so I quickly checked it out. They couldn't actually film inside this church so the scene that supposedly takes place here was actually shot in the Jerusalem Church. The scene has stairs as a central focus and the real Basilica doesn't not have any stairs at all.
 
-<two-column>
-  <quote>"I know I'm awake, but I feel like I'm in a dream."</quote>
-  <p>We ended in Koningin Astrid park where Ray sat on the bench contemplating life and I sat contemplating a successful day in Bruges.</p>
-</two-column>
+<div style="margin-bottom: -2em;">
+  <two-column>
+    <quote>"I know I'm awake, but I feel like I'm in a dream."</quote>
+    <p>We ended in Koningin Astrid park where Ray sat on the bench contemplating life and I sat contemplating a successful day in Bruges.</p>
+  </two-column>
+</div>
 
 <figure>
   <img src="astridpark.jpg"/>
