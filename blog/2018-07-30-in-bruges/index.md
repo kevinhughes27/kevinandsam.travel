@@ -29,7 +29,7 @@ Our first location was Minnewater Park which was nice but not super memorable fr
   </figcaption>
 </figure>
 
-<two-column>
+<two-column style="margin-bottom: -2em;">
   <quote>"It's a fairytale fucking town, isn't it?"</quote>
   <p>Just down the street from the museum is the Church of our Lady which without giving too much away is the building that Ray is looking up at during the final scene of the movie.</p>
 </two-column>
