@@ -14,7 +14,7 @@ Transportation to the hike: we flew into Lijiang which seemed like a pretty easy
 The bus took us to get tickets for the trail and dropped us off just on the other side of the ticket booth. The trail heads up a road to your left as you are walking away from town and you should pass the trail sign early on. The first 45 minutes of the trek is on a road.
 
 <figure>
-  <img src="tiger-leaping-gorge-card.jpg"/>
+  <img src="card.jpg"/>
   <figcaption>The sign which points vaguely in the direction of the trail</figcaption>
 </figure>
 

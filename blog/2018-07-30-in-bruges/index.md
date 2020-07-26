@@ -29,10 +29,12 @@ Our first location was Minnewater Park which was nice but not super memorable fr
   </figcaption>
 </figure>
 
-<two-column>
-  <quote>"It's a fairytale fucking town, isn't it?"</quote>
-  <p>Just down the street from the museum is the Church of our Lady which without giving too much away is the building that Ray is looking up at during the final scene of the movie.</p>
-</two-column>
+<div style="margin-bottom: -2em;">
+  <two-column>
+    <quote>"It's a fairytale fucking town, isn't it?"</quote>
+    <p>Just down the street from the museum is the Church of our Lady which without giving too much away is the building that Ray is looking up at during the final scene of the movie.</p>
+  </two-column>
+</div>
 
 <figure>
   <img src="church_of_our_lady.jpg"/>
@@ -66,14 +68,16 @@ Not quite the words Sam used but she was definitely the Ray of our trip, she did
   </figcaption>
 </figure>
 
-<two-column>
-  <p>
-    After the tower it was time for lunch. We followed in Ken and Ray's footsteps and grabbed a pint and a bite at T' Zwart Huis a few blocks north of the main square. After a rest and a nice meal we moved on to Jan Van Eyckplein where Ken and Ray discuss their profession and the danger of men with bottles.
-  </p>
-  <quote>
-    "If I'd grown up on a farm and was retarded, Bruges might impress me. But I didn't, so it doesn't."
-  </quote>
-</two-column>
+<div style="margin-bottom: -2em;">
+  <two-column>
+    <p>
+      After the tower it was time for lunch. We followed in Ken and Ray's footsteps and grabbed a pint and a bite at T' Zwart Huis a few blocks north of the main square. After a rest and a nice meal we moved on to Jan Van Eyckplein where Ken and Ray discuss their profession and the danger of men with bottles.
+    </p>
+    <quote>
+      "If I'd grown up on a farm and was retarded, Bruges might impress me. But I didn't, so it doesn't."
+    </quote>
+  </two-column>
+</div>
 
 <figure>
   <img src="jan_van_eyckplein.jpg"/>
@@ -81,10 +85,12 @@ Not quite the words Sam used but she was definitely the Ray of our trip, she did
 
 Wrapping up our day we walked back through town passing the Basilca of the Holy Blood. It was free entry so I quickly checked it out. They couldn't actually film inside this church so the scene that supposedly takes place here was actually shot in the Jerusalem Church. The scene has stairs as a central focus and the real Basilica doesn't not have any stairs at all.
 
-<two-column>
-  <quote>"I know I'm awake, but I feel like I'm in a dream."</quote>
-  <p>We ended in Koningin Astrid park where Ray sat on the bench contemplating life and I sat contemplating a successful day in Bruges.</p>
-</two-column>
+<div style="margin-bottom: -2em;">
+  <two-column>
+    <quote>"I know I'm awake, but I feel like I'm in a dream."</quote>
+    <p>We ended in Koningin Astrid park where Ray sat on the bench contemplating life and I sat contemplating a successful day in Bruges.</p>
+  </two-column>
+</div>
 
 <figure>
   <img src="astridpark.jpg"/>
