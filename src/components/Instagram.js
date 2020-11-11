@@ -9,6 +9,7 @@ class Instagram extends Component {
       <div className='instagram'>
         <InstagramEmbed
           url={`https://instagr.am/p/${this.props.uuid}/`}
+          clientAccessToken='1309344542748164|71e510ebaf3241868b9e00ae3ad456b3'
           hideCaption={hideCaption}
           maxWidth={640}
           injectScript={false}
