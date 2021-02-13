@@ -50,14 +50,10 @@ const HomeIcon = () => (
 
 const InstagramLink = () => (
   <li>
-    <a href={`https://instagram.com/${randomAccount()}`} target='_blank'>
+    <a href={`https://instagram.com/kevinhughes27`} target='_blank'>
       <FontAwesomeIcon icon={["fab", "instagram"]} />
     </a>
   </li>
-)
-
-const randomAccount = () => (
-  pick(['kevinhughes27', 'samcluthe', 'kevinhughes27'])[0]
 )
 
 const mapSizesToProps = ({ width }) => ({
