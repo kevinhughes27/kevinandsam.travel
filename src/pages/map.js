@@ -5,16 +5,17 @@ import { divIcon } from 'leaflet'
 import moment from 'moment'
 
 import { currentLocation, locations as allLocations } from '../data/route'
-const locations = allLocations.filter((r) => r.map !== false)
+import previousTrips from '../data/previousTrips'
 
-const mobileCenters = {
-  asia: { center: [19.91, 113.15], zoom: 2.8 },
-  southAmerica: { center: [4.26, -64.32], zoom: 2.7 }
-}
+const locations = allLocations.filter((r) => r.map !== false)
 
 const MapParams = (windowWidth) => {
   const smallScreen = windowWidth < 667
   const mediumScreen = windowWidth <= 768
+  const mobileCenters = {
+    asia: { center: [19.91, 113.15], zoom: 2.8 },
+    southAmerica: { center: [4.26, -64.32], zoom: 2.7 }
+  }
 
   if (smallScreen) {
     return mobileCenters.southAmerica
@@ -54,6 +55,7 @@ class MapPage extends Component {
 
         <TileLayer url='https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}' />
         <Route />
+        <Previous />
       </Map>
     )
   }
@@ -71,7 +73,33 @@ const Route = () => {
         dashArray={'5,5'}
         positions={coordinates} />
       <LocationMarker location={currentLocation} />
-      <RouteMarkers locations={locations} />
+      <RouteMarkers locations={locations} color='blue' />
+    </div>
+  )
+}
+
+const Previous = () => {
+  return (
+    <div>
+      {previousTrips.map((trip) => {
+        return <Trip trip={trip} />
+      })}
+    </div>
+  )
+}
+
+const Trip = ({ trip }) => {
+  const coordinates = trip.locations.map((location) => location.coordinates)
+
+  return (
+    <div>
+      <Polyline
+        color='grey'
+        weight={2}
+        opacity={0.25}
+        dashArray={'5,5'}
+        positions={coordinates} />
+      <RouteMarkers locations={trip.locations} color='grey' />
     </div>
   )
 }
@@ -109,7 +137,7 @@ const DateText = ({ date} ) => {
   }
 }
 
-const RouteMarkers = ({ locations }) => {
+const RouteMarkers = ({ locations, color }) => {
   const markers = locations.map((location, i) => (
     <CircleMarker key={i} center={location.coordinates} radius={14} color="transparent">
       <Popup>
@@ -122,7 +150,7 @@ const RouteMarkers = ({ locations }) => {
   ))
 
   const circles = locations.map((location, i) => (
-    <Circle key={i} center={location.coordinates} radius={3} />
+    <Circle key={i} center={location.coordinates} color={color} radius={3} />
   ))
 
   return <div>{circles}{markers}</div>
