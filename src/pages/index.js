@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Layout from '../components/Layout'
 import withSizes from 'react-sizes'
 
 const title = "Kevin & Sam"
@@ -7,7 +8,12 @@ const subheading = "See the World"
 class Home extends Component {
   render() {
     const mediumScreen = this.props.windowWidth <= 800;
-    return mediumScreen ? renderMobile() : renderDesktop();
+
+    return (
+      <Layout>
+        { mediumScreen ? renderMobile() : renderDesktop() }
+      </Layout>
+    );
   }
 }
 

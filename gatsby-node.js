@@ -1,8 +1,8 @@
 const path = require('path');
 const createPaginatedPages = require("gatsby-paginate");
 
-exports.createPages = ({ boundActionCreators, graphql }) => {
-  const { createPage } = boundActionCreators;
+exports.createPages = ({ actions, graphql }) => {
+  const { createPage } = actions;
 
   const blogTemplate = path.resolve(`src/templates/blog.js`);
   const postTemplate = path.resolve(`src/templates/post.js`);
@@ -65,12 +65,3 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       });
   });
 }
-
-exports.modifyWebpackConfig = ({ config, stage }) => {
-  if (stage === "build-html") {
-    config.loader("null", {
-      test: /leaflet/,
-      loader: "null-loader",
-    });
-  }
-};

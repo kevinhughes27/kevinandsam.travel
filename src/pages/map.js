@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
+import Layout from '../components/Layout'
 import withSizes from 'react-sizes'
-import { Map, TileLayer, Marker, CircleMarker, Circle, Popup, Polyline } from 'react-leaflet'
+import { MapContainer, TileLayer, Marker, CircleMarker, Circle, Popup, Polyline } from 'react-leaflet'
 import { divIcon } from 'leaflet'
 import moment from 'moment'
 
@@ -26,9 +27,17 @@ const MapParams = (windowWidth) => {
   }
 }
 
+function isDomAvailable() {
+  return (
+    typeof window !== "undefined" &&
+    !!window.document &&
+    !!window.document.createElement
+  );
+}
+
 class MapPage extends Component {
   render() {
-    if (typeof window === 'undefined') {
+    if (!isDomAvailable()) {
       return <div></div>
     }
 
@@ -36,27 +45,29 @@ class MapPage extends Component {
     const { center, zoom } = MapParams(windowWidth)
 
     return (
-      <Map
-        center={center}
-        zoom={zoom}
-        minZoom={2.7}
-        maxZoom={6.8}
-        zoomSnap={0}
-        zoomDelta={0.5}
-        wheelPxPerZoomLevel={100}
-        zoomControl={false}
-        attributionControl={false}
-        onMove={(ev) => {
-          const map = ev.target
-          const latLng = map.getCenter()
-          const zoom = map.getZoom()
-          console.log(latLng, zoom)
-        }}>
+      <Layout>
+        <MapContainer
+          center={center}
+          zoom={zoom}
+          minZoom={2.7}
+          maxZoom={6.8}
+          zoomSnap={0}
+          zoomDelta={0.5}
+          wheelPxPerZoomLevel={100}
+          zoomControl={false}
+          attributionControl={false}
+          onMove={(ev) => {
+            const map = ev.target
+            const latLng = map.getCenter()
+            const zoom = map.getZoom()
+            console.log(latLng, zoom)
+          }}>
 
-        <TileLayer url='https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}' />
-        <Route />
-        <Previous />
-      </Map>
+          <TileLayer url='https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}' />
+          <Route />
+          <Previous />
+        </MapContainer>
+      </Layout>
     )
   }
 }
@@ -82,7 +93,7 @@ const Previous = () => {
   return (
     <div>
       {previousTrips.map((trip) => {
-        return <Trip trip={trip} />
+        return <Trip key={trip.name} trip={trip} />
       })}
     </div>
   )

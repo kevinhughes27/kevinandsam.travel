@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
+import Layout from '../components/Layout'
 import ReactResponsiveSelect from 'react-responsive-select'
 import DatePicker from 'react-datepicker'
 import moment from 'moment'
 
-import { currentLocation, countries as allCountries } from '../data/route'
+import { countries as allCountries } from '../data/route'
 
 const countries = allCountries.filter((c) => {
    const foreignCountry = c.name !== "Ottawa" && c.name !== "Calgary"
@@ -82,14 +83,13 @@ class VisitPage extends Component {
     const country = countries.find((r) => { return r.name === where })
 
     const month = when.format("MMMM")
-    const monthDay = when.format("MMMM D")
 
     const baseUrl = 'https://www.google.ca/flights/'
     const airport = country.airport
     const startDate = when.format('YYYY-MM-DD')
     const endDate = moment(startDate).add(15, 'days').format('YYYY-MM-DD')
     const flightUrl = baseUrl + `#search;t=${airport};d=${startDate};r=${endDate}`
-    const flightLink = <a href={flightUrl} target="_blank">book your flights!</a>
+    const flightLink = <a href={flightUrl} target="_blank" rel="noreferrer">book your flights!</a>
 
     const subject = lastAnswer === 'when'
       ? `Coming to visit in ${month}`
@@ -131,44 +131,46 @@ class VisitPage extends Component {
     }
 
     return (
-      <section id="visit" className="section-padding">
-        <div className="grid">
-          <div className="text-container">
+      <Layout>
+        <section id="visit" className="section-padding">
+          <div className="grid">
+            <div className="text-container">
 
-            { this.renderGreeting() }
+              { this.renderGreeting() }
 
-            <div className="question-container">
-              <div className="question">
-                <p>When</p>
-                <DatePicker
-                  selected={when}
-                  minDate={moment("2018-02-01")}
-                  maxDate={moment("2019-03-20")}
-                  customInput={<DatePickerButton />}
-                  withPortal
-                  onChange={this.handleWhenChange}
-                />
+              <div className="question-container">
+                <div className="question">
+                  <p>When</p>
+                  <DatePicker
+                    selected={when}
+                    minDate={moment("2018-02-01")}
+                    maxDate={moment("2019-03-20")}
+                    customInput={<DatePickerButton />}
+                    withPortal
+                    onChange={this.handleWhenChange}
+                  />
+                </div>
+
+                <p>or</p>
+
+                <div className="question">
+                  <p>Where</p>
+                  <ReactResponsiveSelect
+                    caretIcon={caretIcon}
+                    name="where"
+                    options={whereOptions}
+                    selectedValue={where}
+                    onChange={this.handleWhereChange}
+                  />
+                </div>
               </div>
 
-              <p>or</p>
-
-              <div className="question">
-                <p>Where</p>
-                <ReactResponsiveSelect
-                  caretIcon={caretIcon}
-                  name="where"
-                  options={whereOptions}
-                  selectedValue={where}
-                  onChange={this.handleWhereChange}
-                />
-              </div>
+              { this.renderResponse() }
+              { this.renderClosing() }
             </div>
-
-            { this.renderResponse() }
-            { this.renderClosing() }
           </div>
-        </div>
-      </section>
+        </section>
+      </Layout>
     )
   }
 }

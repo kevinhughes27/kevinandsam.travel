@@ -5,7 +5,8 @@ RUN apt-get update \
     ca-certificates \
     build-essential \
     bzip2 \
-    yarn
+    yarn \
+    git
 
 WORKDIR /app
 

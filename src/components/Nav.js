@@ -1,8 +1,7 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
-import Link from 'gatsby-link'
-import pick from 'random-pick'
 import withSizes from 'react-sizes'
+import { Link } from 'gatsby'
 
 import fontawesome from '@fortawesome/fontawesome'
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
@@ -19,8 +18,10 @@ class Nav extends Component {
   render() {
     const compressedNav = this.props.windowWidth <= 375
 
+    const styles = firstLoad() ? {animation: "fadeIn 3s both 0.3s"} : {}
+
     return(
-      <header className="header">
+      <header className="header" style={styles}>
         <nav>
           <ul>
             <Item path="/" title={ compressedNav ? <HomeIcon /> : "Home" } />
@@ -36,9 +37,18 @@ class Nav extends Component {
   }
 }
 
+const firstLoad = () => {
+  if (window.hasLoaded === true) {
+    return false
+  } else {
+    window.hasLoaded = true;
+    return true
+  }
+}
+
 const Item = ({path, title}) => (
   <li>
-    <Link activeClassName="active" to={path} exact>
+    <Link activeClassName="active" to={path}>
       {title}
     </Link>
   </li>
@@ -50,7 +60,7 @@ const HomeIcon = () => (
 
 const InstagramLink = () => (
   <li>
-    <a href={`https://instagram.com/kevinhughes27`} target='_blank'>
+    <a href={`https://instagram.com/kevinhughes27`} target='_blank' rel="noreferrer">
       <FontAwesomeIcon icon={["fab", "instagram"]} />
     </a>
   </li>

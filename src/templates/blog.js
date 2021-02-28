@@ -1,4 +1,6 @@
 import React from 'react'
+import Layout from '../components/Layout'
+import { graphql } from 'gatsby'
 
 function Post({node: post}) {
   const { path, title, date } = post.frontmatter
@@ -23,8 +25,8 @@ function Post({node: post}) {
   );
 }
 
-const Pagination = (pathContext) => {
-  const { index, pageCount } = pathContext;
+const Pagination = (pageContext) => {
+  const { index, pageCount } = pageContext;
 
   const previousUrl = index - 1 <= 1 ? `/blog` : `/blog/${index -1}`;
   const nextUrl = index + 1 > pageCount ? `/blog/${index}` : `/blog/${index + 1}`;
@@ -52,18 +54,20 @@ const Pagination = (pathContext) => {
   );
 }
 
-export default function Blog({ data, pathContext }) {
-  const { group } = pathContext;
+export default function Blog({ data, pageContext }) {
+  const { group } = pageContext;
 
   return (
-    <section id="blog" className="section-padding bg-white">
-      <div className="grid">
-        <ul itemScope itemType="http://schema.org/Blog">
-          {group.map(Post)}
-        </ul>
-      </div>
-      {Pagination(pathContext)}
-    </section>
+    <Layout>
+      <section id="blog" className="section-padding bg-white">
+        <div className="grid">
+          <ul itemScope itemType="http://schema.org/Blog">
+            {group.map(Post)}
+          </ul>
+        </div>
+        {Pagination(pageContext)}
+      </section>
+    </Layout>
   );
 }
 

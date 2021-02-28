@@ -5,10 +5,6 @@
   z-index: 1;
 }
 
-.css-icon {
-
-}
-
 .gps_ring {
   border: 2px solid rgba(0, 0, 255, .5);
   -webkit-border-radius: 30px;
@@ -18,7 +14,7 @@
   -webkit-animation-iteration-count: infinite;
 }
 
-@-webkit-keyframes pulsate {
+@keyframes pulsate {
   0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;}
   50% {opacity: 1.0;}
   100% {-webkit-transform: scale(0.8, 0.8); opacity: 0.0;}
