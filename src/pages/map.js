@@ -7,6 +7,7 @@ import moment from 'moment'
 
 import { currentLocation, locations as allLocations } from '../data/route'
 import previousTrips from '../data/previousTrips'
+import { isDomAvailable } from '../utils'
 
 const locations = allLocations.filter((r) => r.map !== false)
 
@@ -25,14 +26,6 @@ const MapParams = (windowWidth) => {
   } else {
     return { center: [11.82, 22.00], zoom: 3.1 }
   }
-}
-
-function isDomAvailable() {
-  return (
-    typeof window !== "undefined" &&
-    !!window.document &&
-    !!window.document.createElement
-  );
 }
 
 class MapPage extends Component {

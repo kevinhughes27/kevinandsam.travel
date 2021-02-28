@@ -7,6 +7,7 @@ import fontawesome from '@fortawesome/fontawesome'
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 import brands from '@fortawesome/fontawesome-free-brands'
 import faHome from '@fortawesome/fontawesome-free-solid/faHome'
+import { firstLoad } from '../utils'
 
 fontawesome.library.add(brands)
 
@@ -34,15 +35,6 @@ class Nav extends Component {
         </nav>
       </header>
     )
-  }
-}
-
-const firstLoad = () => {
-  if (window.hasLoaded === true) {
-    return false
-  } else {
-    window.hasLoaded = true;
-    return true
   }
 }
 
