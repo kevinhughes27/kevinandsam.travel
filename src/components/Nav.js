@@ -25,7 +25,7 @@ class Nav extends Component {
       <header className="header" style={styles}>
         <nav>
           <ul>
-            <Item path="/" title={ compressedNav ? <HomeIcon /> : "Home" } />
+            <Item path="/" title={ compressedNav ? <HomeIcon /> : "Home" } partiallyActive={false}/>
             <Item path="/about" title="About Us" />
             <Item path="/map" title="Map" />
             <Item path="/visit" title={ compressedNav ? "Visit" : "Come Visit" } />
@@ -38,9 +38,9 @@ class Nav extends Component {
   }
 }
 
-const Item = ({path, title}) => (
+const Item = ({path, title, partiallyActive=true}) => (
   <li>
-    <Link activeClassName="active" to={path}>
+    <Link activeClassName="active" to={path} partiallyActive={partiallyActive}>
       {title}
     </Link>
   </li>
