@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import PropTypes from 'prop-types'
 import withSizes from 'react-sizes'
 import { Link } from 'gatsby'
 
@@ -12,10 +11,6 @@ import { firstLoad } from '../utils'
 fontawesome.library.add(brands)
 
 class Nav extends Component {
-  static propTypes = {
-    windowWidth: PropTypes.number,
-  }
-
   render() {
     const compressedNav = this.props.windowWidth <= 375
 
