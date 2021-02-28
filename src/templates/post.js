@@ -1,5 +1,7 @@
 import React from 'react'
+import Layout from '../components/Layout'
 import Helmet from 'react-helmet'
+import { graphql } from 'gatsby'
 
 import rehypeReact from 'rehype-react'
 
@@ -41,43 +43,45 @@ export default function Template({ data }) {
   ]
 
   return (
-    <div className="post-padding">
-      <Helmet title={`${title} - kevinandsam.travel`} meta={meta}/>
+    <Layout>
+      <div className="post-padding">
+        <Helmet title={`${title} - kevinandsam.travel`} meta={meta}/>
 
-      <article itemProp="blogPost" itemScope itemType="http://schema.org/BlogPosting">
+        <article itemProp="blogPost" itemScope itemType="http://schema.org/BlogPosting">
 
-        <header className="post-mast">
-          <figure className="absolute-bg" style={{backgroundImage: `url('${postImage.src}')`}} />
-        </header>
+          <header className="post-mast">
+            <figure className="absolute-bg" style={{backgroundImage: `url('${postImage.src}')`}} />
+          </header>
 
-        <div className="grid--double">
-          <section className="post section-padding--half" itemProp="articleBody">
-            <header className="post-header">
-              <h1 itemProp="name headline">
-                { title }
-              </h1>
-              <time itemProp="datePublished" dateTime={data}>
-                { date }
-              </time>
-            </header>
+          <div className="grid--double">
+            <section className="post section-padding--half" itemProp="articleBody">
+              <header className="post-header">
+                <h1 itemProp="name headline">
+                  { title }
+                </h1>
+                <time itemProp="datePublished" dateTime={data}>
+                  { date }
+                </time>
+              </header>
 
-            <div className="post-content">
-              { renderAst(post.htmlAst) }
-            </div>
-
-            <Share title={title} shareUrl={shareUrl} imageUrl={imageUrl} />
-
-            <div className="post-author">
-              <img src={`${__PATH_PREFIX__}/${author.toLowerCase()}.jpg`} />
-              <div>
-                <strong>Author</strong>
-                <p>{ author }</p>
+              <div className="post-content">
+                { renderAst(post.htmlAst) }
               </div>
-            </div>
-          </section>
-        </div>
-      </article>
-    </div>
+
+              <Share title={title} shareUrl={shareUrl} imageUrl={imageUrl} />
+
+              <div className="post-author">
+                <img src={`${__PATH_PREFIX__}/${author.toLowerCase()}.jpg`} alt={author} />
+                <div>
+                  <strong>Author</strong>
+                  <p>{ author }</p>
+                </div>
+              </div>
+            </section>
+          </div>
+        </article>
+      </div>
+    </Layout>
   );
 }
 

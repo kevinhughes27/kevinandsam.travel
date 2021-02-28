@@ -273,5 +273,5 @@ sortedLocations.forEach((location) => {
 
 countries.forEach((c) => {
   if (!c.airport)
-    throw(`Missing Airport for ${c.name}. One of the locations must specifiy an airport`)
+    throw(Error(`Missing Airport for ${c.name}. One of the locations must specifiy an airport`))
 })

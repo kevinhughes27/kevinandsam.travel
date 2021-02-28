@@ -61,19 +61,26 @@ const googleAnalytics = {
   },
 }
 
+const leaflet = {
+  resolve: `gatsby-plugin-react-leaflet`,
+  options: {
+    linkStyles: false // (default: true) Enable/disable loading stylesheets via CDN
+  }
+}
+
 module.exports = {
   siteMetadata: {
     title: `kevinandsam.travel`,
   },
   plugins: [
-    `gatsby-plugin-react-next`,
-    `gatsby-plugin-catch-links`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-catch-links`,
+    `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
-    `gatsby-transformer-sharp`,
     googleFonts,
     googleAnalytics,
+    leaflet,
     favicon,
     ...blog,
     `gatsby-plugin-netlify`, // make sure to put last in the array

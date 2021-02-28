@@ -3,7 +3,7 @@ import InstagramEmbed from 'react-instagram-embed'
 
 class Instagram extends Component {
   render () {
-    const hideCaption = this.props.caption == 'false'
+    const hideCaption = this.props.caption === 'false'
 
     return (
       <div className='instagram'>

@@ -5,7 +5,7 @@ class TwoColumn extends Component {
     const children = this.props.children.filter((c) => typeof(c) !== "string")
 
     if (children.length !== 2) {
-      throw("TwoColumn requires 2 children")
+      throw(Error("TwoColumn requires 2 children"))
     }
 
     return (
