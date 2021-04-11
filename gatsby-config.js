@@ -53,14 +53,6 @@ const googleFonts = {
   }
 }
 
-const googleAnalytics = {
-  resolve: `gatsby-plugin-google-analytics`,
-  options: {
-    trackingId: "UA-112059908-1",
-    anonymize: true
-  },
-}
-
 const leaflet = {
   resolve: `gatsby-plugin-react-leaflet`,
   options: {
@@ -79,7 +71,6 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
     googleFonts,
-    googleAnalytics,
     leaflet,
     favicon,
     ...blog,
