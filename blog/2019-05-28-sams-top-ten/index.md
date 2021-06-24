@@ -21,7 +21,7 @@ Hanging out with locals is what made this city incredible, we stayed in a flatsh
 
 A highlight in Medellin was that we went to a soccer game! It was one of the most memorable sporting events I've been to. The crowd was wild and chanting the entire game, the atmosphere was electric and you couldn't keep your eyes off the action.
 
-<instagram uuid="Bf7J0QshZKF"></instagram>
+"Bf7J0QshZKF"
 
 **2. Torres del Paine, Chilean Patagonia**
 
@@ -78,7 +78,7 @@ This was a standout place in my mind, it was extremely scenic being surrounded b
 
 Lake Bled is listed as one of the top 10 paragliding destinations in the world and I've always wanted to go so this was my chance!
 
-<instagram uuid="BkGKcvqH3FP"></instagram>
+"BkGKcvqH3FP"
 
 **6. Brussels, Belgium**
 
@@ -131,7 +131,7 @@ There's no way I can go to Tokyo and not talk about the food, it was incredible!
 
 I've been to Vietnam before and was in awe of the varying landscapes, delicious food and the more untouched areas. It's a lot more popular to visit since the last time I was there so I was hoping to find another place to fall in love with - it ended up being Ninh Binh. Everything to do in this town was outdoorsy, from biking through the villages and hiking up to temples, to paddling a traditional wood boat through the canals between the mountains. It was a place made for our kind of travel! My favourite activity was hiking up to the top hill that gave us breathtaking views of the entire area.
 
-<instagram uuid="BrC6KL-lRU6"></instagram>
+"BrC6KL-lRU6"
 
 We spent a few days there but I wish we would have stayed longer!
 

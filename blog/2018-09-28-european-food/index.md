@@ -17,7 +17,7 @@ This one is odd to start with as it is a supermarket item but we craved it all t
 
 The next stop that got our taste buds excited was Bosnia. A traditional dish we enjoyed over and over again was cevapi, it consists of fluffy pita, soft cheese, raw onion (for some kick), and hand formed sausage. I tried to get each component in every bite!
 
-<instagram uuid="BjU5FjKHpqZ"></instagram>
+"BjU5FjKHpqZ"
 
 ## Hungary
 
@@ -53,7 +53,7 @@ Fresh made stroopwaffles were the best dessert we hit in this part of Europe. Ho
 
 I love sweets so eating pralines in Belgium was a must. After inhaling some chocolates we decided to take a praline making workshop. There are many steps in the process and it was very technical but these ganache filled goodies were worth it. Yum!
 
-<instagram uuid="Bl79i49Dn02"></instagram>
+"Bl79i49Dn02"
 
 ## London
 

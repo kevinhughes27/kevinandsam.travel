@@ -31,7 +31,7 @@ On the way to our second lodge we took a boat up a shallow (and I mean shallow) 
 
 After 1 day and night at the lodge it was time for our camping trip. We hiked 4 hours into the jungle to setup camp near a waterfall. The hike was our most gruelling yet - Kevin had to wring the sweat out his socks afterwards 🤮. Luckily our guide taught as about the “frio” trees, they were cold to the touch and cooled us down.
 
-<instagram uuid="Bgblp1sHi6A"></instagram>
+"Bgblp1sHi6A"
 
 During the trek Kevin happened to catch this mishap on video...
 
@@ -40,7 +40,7 @@ During the trek Kevin happened to catch this mishap on video...
   src="https://www.youtube.com/embed/BxB8XwHmwQI?rel=0&amp;showinfo=0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 </div>
 
-We spent the night in hammocks surrounded by mosquito nets. These were necessary as I’ve never seen so many bugs in one place! Falling asleep to the sounds of the rainforest including a thunderstorm and insects was an amazing experience.  
+We spent the night in hammocks surrounded by mosquito nets. These were necessary as I’ve never seen so many bugs in one place! Falling asleep to the sounds of the rainforest including a thunderstorm and insects was an amazing experience.
 
 The highlight of the Amazon trip was definitely sleeping in the Amazon itself, this was a unique adventure that most people don’t get the chance to experience, I’m glad we got to!
 
