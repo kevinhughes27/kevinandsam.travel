@@ -25,6 +25,3 @@ Gatsby exposes a GraphiQL server at http://localhost:8000/___graphql which is us
 I added a script in `/bin` to print the durations we are staying / stayed in each country. Its also useful for planning and debugging.
 
 
-## Deploying
-
-`yarn deploy` builds the site and pushes it to github
