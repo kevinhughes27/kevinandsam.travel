@@ -7,7 +7,6 @@ import rehypeReact from 'rehype-react'
 
 import Quote from '../components/Quote'
 import TwoColumn from '../components/TwoColumn'
-import Instagram from '../components/Instagram'
 import Slideshow from '../components/Slideshow'
 
 import Share from '../components/Share'
@@ -17,7 +16,6 @@ const renderAst = new rehypeReact({
   components: {
     "quote": Quote,
     "two-column": TwoColumn,
-    "instagram": Instagram,
     "slideshow": Slideshow,
   }
 }).Compiler
