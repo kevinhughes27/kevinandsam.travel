@@ -7576,10 +7576,10 @@ gatsby-plugin-react-helmet@^3.10.0:
   dependencies:
     "@babel/runtime" "^7.12.5"
 
-gatsby-plugin-react-leaflet@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-react-leaflet/-/gatsby-plugin-react-leaflet-3.0.0.tgz#73e6e1b3c16f6ab09d6b440e504d2644e5197a12"
-  integrity sha512-HJQabsdYRtrtAYt9mw7sA6io8mmMOypykUUs0M90xd9RJPHiUAkqmW3yLiLH7WE6Uju+U0NN9CbNzYqWwX6yWQ==
+gatsby-plugin-react-leaflet@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-react-leaflet/-/gatsby-plugin-react-leaflet-3.0.2.tgz#e2827949c3ca0e6b91b4c1d46cf9c5775e2cdb69"
+  integrity sha512-k8gIQso1RJa4KAWMo07/nAsJRv+YMPNX18Y9WriT/cs1wjqo8jBSBcPAMF/XHs+u835q5jLRwry8EU6ax6aajw==
 
 gatsby-plugin-sass@^3.2.0:
   version "3.2.0"
