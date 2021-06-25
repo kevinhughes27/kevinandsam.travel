@@ -38,7 +38,7 @@
     "react-responsive-select": "3.1.4",
     "react-share": "^4.4.0",
     "react-sizes": "^2.0.0",
-    "rehype-react": "^6.2.0",
+    "rehype-react": "^6.2.1",
     "sass": "^1.32.8"
   },
   "devDependencies": {
