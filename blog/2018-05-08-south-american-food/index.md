@@ -19,15 +19,26 @@ Sometimes slight variations on my favourite foods are the best. Eggs for breakfa
 
 Two items really excited me in Colombia. The first were churros!! I couldn't get enough of these deliciously fried doughnuts covered in white sugar and partially filled with dulce de leche (really creamy caramel). The best part of these churros were how light and fluffy they were on the inside. Churros were cheap and you could get them at food stands all over Colombia - so naturally we ate them as often as possible. The second food we ate all the time was trail mix we found in the grocery store. It sounds odd but the combination was amazing and we pretty much always had it on hand. The trail mix included almonds, peanuts (regular, chocolate covered, and candied with sesame), craisins, and the piece de resistance toasted corn. The corn was super crunchy and salty which was perfect for this mix.
 
-"BgCkN2YnFZK"
-
+<figure>
+  <img src="sam-donut.jpg"/>
+  <figcaption>
+    I was supposed to share this churro with Kevin but after one bite I made him buy his own! #notsharing
+  </figcaption>
+</figure>
 
 ## Bolivia
 
 In Bolivia my favourite was street food called Anticucho. We were only told after we tried it that it was skewered and grilled beef heart. I would have tried it anyway, of course- it was tender and full of caramelized grill flavour.
 
-"Bgv3kV3HHPc"
-
+<slideshow>
+  <img src="gusto1.jpg" />
+  <img src="gusto2.jpg" />
+  <img src="gusto3.jpg" />
+  <img src="gusto4.jpg" />
+  <figcaption>
+    Had the best culinary experience of my life! Got to sit at the Chef's table at Gustu for an 18 course tasting menu. Favourite dish was alligator ceviche!
+  </figcaption>
+</slideshow>
 
 ## Chile
 

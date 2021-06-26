@@ -31,7 +31,12 @@ On the way to our second lodge we took a boat up a shallow (and I mean shallow) 
 
 After 1 day and night at the lodge it was time for our camping trip. We hiked 4 hours into the jungle to setup camp near a waterfall. The hike was our most gruelling yet - Kevin had to wring the sweat out his socks afterwards 🤮. Luckily our guide taught as about the “frio” trees, they were cold to the touch and cooled us down.
 
-"Bgblp1sHi6A"
+<figure>
+  <img src="tree-hugger.jpg"/>
+  <figcaption>
+    Sam loves this tree. Because this tree is naturally cold.
+  </figcaption>
+</figure>
 
 During the trek Kevin happened to catch this mishap on video...
 

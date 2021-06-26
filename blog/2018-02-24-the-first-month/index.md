@@ -17,7 +17,10 @@ After Antigua we headed to Xela. It was supposed to be a quick stop before stari
 
 Back on our feet again in Panajachel - we hiked up the Indian Nose for sunrise (same view our original trek was supposed to end with).
 
-"BfZN651BFDJ" caption "false"
+<figure>
+  <img src="atitlan.jpg"/>
+</figure>
+
 
 Our last stop in Guatemala was Flores to see the Mayan ruins of Tikal. Flores was our favourite spot in Guatemala. The town was a bit touristy but it wasn't too busy (currently) so was pretty chill. We stayed at [Casa de Grethel](https://www.hostelworld.com/hosteldetails.php/Hostal-Casa-de-Grethel/Flores/274028) on an island across from Flores so we took a boat to and from - luckily the hostel has a free boat shuttle.
 
