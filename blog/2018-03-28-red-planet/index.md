@@ -38,4 +38,13 @@ After Salar de Uyuni we explored everything the Potosi region had to offer inclu
 
 On our last night we spent the evening in a hot spring right outside our hostel. It was so chilly at night in the desert that this is exactly what we wanted! Also passing around a couple bottles of wine with our group helped. Note: drinking at altitude hits you harder so be careful. Usually at night there is an amazing view of the stars but it was impeded by a full moon, the stars were a little washed out but still pretty amazing.
 
-The last day we ended our trip by heading to San Pedro de Atacama in the north of Chile. You have the option to get dropped off here or looping back to Uyuni. I would strongly suggest taking the tour one way so you don't have to sit in the SUV for 7 hours to get back!
+The last day we ended our trip by heading to San Pedro de Atacama in the north of Chile. You have the option to get dropped off here or looping back to Uyuni.
+
+<figure>
+  <img src="sandboarding.jpg"/>
+  <figcaption>
+    Beautiful blue sky day for Sandboarding. Easier than Snowboarding but more #butthurt
+  </figcaption>
+</figure>
+
+ I would strongly suggest taking the tour one way so you don't have to sit in the SUV for 7 hours to get back! Plus Atacama was well worth the visit.

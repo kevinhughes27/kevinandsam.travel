@@ -27,6 +27,17 @@ It was intensely hot over 40 degrees and close to 100% humidity. The lodge only 
 
 After 3 days in Peru we were ready to head deeper into the jungle this time back in Colombia. We said goodbye to our new friends who were heading back to Leticia and continued all on our own. We suspected but didn’t yet know the full extent of how much things were about to escalate.
 
+<figure>
+  <slideshow>
+    <img src="darts1.jpg" />
+    <img src="darts2.jpg" />
+    <img src="darts3.jpg" />
+  </slideshow>
+  <figcaption>
+    Our guides showed us how to use a traditional blow dart weapon made with things from the forest. We played a game of darts but mostly missed the target.
+  </figcaption>
+</figure>
+
 On the way to our second lodge we took a boat up a shallow (and I mean shallow) part of the river. We had to get out of the boat and hike to the lodge because we were to heavy and the boat couldn’t make it with us inside. On our way through the rainforest we saw monkeys, a huge iguana and many indigenous fruits (including one that looked like a penis which our guide was very excited to show us).
 
 After 1 day and night at the lodge it was time for our camping trip. We hiked 4 hours into the jungle to setup camp near a waterfall. The hike was our most gruelling yet - Kevin had to wring the sweat out his socks afterwards 🤮. Luckily our guide taught as about the “frio” trees, they were cold to the touch and cooled us down.
