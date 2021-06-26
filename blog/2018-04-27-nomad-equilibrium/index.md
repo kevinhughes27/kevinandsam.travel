@@ -22,10 +22,10 @@ A lot of preparation and planning goes into travelling for a long time both pack
   <img src="darts1.jpg" />
   <img src="darts2.jpg" />
   <img src="darts3.jpg" />
-  <figcaption>
-    Our guides showed us how to use a traditional blow dart weapon made with things from the forest. We played a game of darts but mostly missed the target.
-  </figcaption>
 </slideshow>
+<figcaption>
+  Our guides showed us how to use a traditional blow dart weapon made with things from the forest. We played a game of darts but mostly missed the target.
+</figcaption>
 
 If you haven't backpacked before or aren't familiar with traveller small talk - very common topics are where you've just come from, where you're heading next and how long you're travelling for. Answering the latter early on felt weird. A lot of people you meet travelling are on longer than a standard vacation but a full year still gets a good reaction. Following it up with it's our first week or first month never felt right.
 
@@ -44,9 +44,9 @@ I first coined the term nomad equilibrium a few weeks ago to express the idea th
   <img src="chalten3.jpg" />
   <img src="chalten4.jpg" />
   <img src="chalten5.jpg" />
-  <figcaption>
-    I climbed a mountain today! Our weather window finally opened (only a day late) and we were able to get out on the rocks. In the morning we did five sport routes in sector el camina ranging from 5 to 6a (5.8 to 5.10a). The rocks were really neat - it felt more mountainous even on short pitches. Later in the afternoon I climbed the Eagle Needle for my first multi pitch ascent. Four pitches and over 120 metres of climbing to the top. To cap the day we got our best look at the Fitz Roy yet. Poincenot was fully visible and you could see the outline of the Fitz behind some light cloud. Thanks @juanraselli and @mountaineering_patagonia for a great day.
-  </figcaption>
 </slideshow>
+<figcaption>
+  I climbed a mountain today! Our weather window finally opened (only a day late) and we were able to get out on the rocks. In the morning we did five sport routes in sector el camina ranging from 5 to 6a (5.8 to 5.10a). The rocks were really neat - it felt more mountainous even on short pitches. Later in the afternoon I climbed the Eagle Needle for my first multi pitch ascent. Four pitches and over 120 metres of climbing to the top. To cap the day we got our best look at the Fitz Roy yet. Poincenot was fully visible and you could see the outline of the Fitz behind some light cloud. Thanks @juanraselli and @mountaineering_patagonia for a great day.
+</figcaption>
 
 In a short while we'll be switching continents to explore Eastern Europe and I look forward to travelling with this new found equilibrium. If you're considering long term travel or just starting out - try and remember you still see the world one day a time, one place at a time.

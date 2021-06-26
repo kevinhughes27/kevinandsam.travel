@@ -15,21 +15,31 @@ Overall, South Korea was the biggest surprise as every meal we ate was amazing, 
 
 My second favourite dish was Korean BBQ. Getting to cook the food on a flat top in front of you is fun and interactive! I loved the melt in your mouth pork and the abundance of sides. I always wrapped mine in a lettuce whereas Kevin just ate the meat straight up.
 
-"BqCVS20lihG"
+<figure>
+  <img src="djfood.jpg" />
+  <figcaption>
+    Our hostel made us some delicious lunch!
+  </figcaption>
+</figure>
 
 ## Japan
 
 Japan is a must do culinary destination! Known for the precision and expertise of their chefs which is demonstrated in everything you eat. My best bite of food from our whole trip was in Japan - yakaton (pork skewers). The specific piece was pork belly caramelized over charcoal with a light glaze; it was incredibly tender and I still can't stop thinking about it.
 
-"BqeJoBDF8vP"
+<figure>
+  <img src="bestpork.jpg" />
+  <figcaption>
+    One of the best things I've ever put in my mouth!
+  </figcaption>
+</figure>
 
 I can't say that I'm a sushi connoisseur but I love it! Basic sushi is ok with me so one of the things I enjoyed the most was conveyor belt sushi. It's great to select anything and everything you want (and to eat until you've clearly had too much).
 
 <div class="gif">
   <img src="waffle.gif"/>
-    <figcaption>
-      Japan is also known for everything cute (or Kawai as they would say), even their street food takes on that look.
-    </figcaption>
+  <figcaption>
+    Japan is also known for everything cute (or Kawai as they would say), even their street food takes on that look.
+  </figcaption>
 </div>
 
 ## Vietnam
@@ -50,5 +60,7 @@ Of course Thailand has many well known dishes such as pad thai, tom yum, or even
 
 <figure>
   <img src="icet.jpg" />
-  <figcaption> Me introducing this delicacy to Richard and Erin! </figcaption>
+  <figcaption>
+    Me introducing this delicacy to Richard and Erin!
+  </figcaption>
 </figure>

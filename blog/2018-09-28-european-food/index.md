@@ -20,7 +20,7 @@ The next stop that got our taste buds excited was Bosnia. A traditional dish we 
 <figure>
   <img src="cevapi.jpg"/>
   <figcaption>
-    Another eggsammy inspired by our travels - this time Bosnia! It includes traditional bread, soft cheese, tomato, fried egg and the best part cevapi (hand formed sausages).
+    Another eggsammy inspired by our travels. It includes traditional bread, soft cheese, tomato, fried egg and the best part cevapi (hand formed sausages).
   </figcaption>
 </figure>
 

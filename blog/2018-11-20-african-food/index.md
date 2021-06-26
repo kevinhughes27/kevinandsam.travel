@@ -19,7 +19,12 @@ I don't specify which city the pancakes were from as they were all over and I en
 
 On almost every menu across Namibia you could find game meat. Typically, it just stated "game meat" and didn't specify which type so you had to ask. We tried a few different ones but the best was Oryx steak. It had the same consistency as a beef steak but its flavour was stronger and a little earthier. I would definitely recommend trying it if you get the chance!
 
-"BoO5xU8llYq"
+<figure>
+  <img src="cooking.jpg"/>
+  <figcaption>
+    Cooking spaghetti on the chilly Namibian coast!
+  </figcaption>
+</figure>
 
 ##6
 **Red Curry Pumpkin Soup - Tanzania (Serengeti National Park)**
@@ -60,3 +65,4 @@ My top pick for food in Africa is salomie from the Bo Kaap neighbourhood in Cape
   <img src="bokap-2.jpeg" />
   <img src="bokap-3.jpeg" />
   <img src="bokap-4.jpeg" />
+</slideshow>

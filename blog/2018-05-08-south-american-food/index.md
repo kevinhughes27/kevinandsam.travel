@@ -35,10 +35,10 @@ In Bolivia my favourite was street food called Anticucho. We were only told afte
   <img src="gusto2.jpg" />
   <img src="gusto3.jpg" />
   <img src="gusto4.jpg" />
-  <figcaption>
-    Had the best culinary experience of my life! Got to sit at the Chef's table at Gustu for an 18 course tasting menu. Favourite dish was alligator ceviche!
-  </figcaption>
 </slideshow>
+<figcaption>
+  Had the best culinary experience of my life! Got to sit at the Chef's table at Gustu for an 18 course tasting menu. Favourite dish was alligator ceviche!
+</figcaption>
 
 ## Chile
 

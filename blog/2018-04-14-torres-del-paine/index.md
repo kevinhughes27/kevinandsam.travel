@@ -69,9 +69,3 @@ We had another spectacular day of weather at the Torres.
 <figure>
   <img src="the-torres.jpg"/>
 </figure>
-
-I took a lot of GoPro footage and edited this video of our trek:
-
-<div class="video-responsive">
-  <iframe frameborder="0" src="https://drive.google.com/file/d/1OPcr3S8FrtbauzD5P3MUG9y3jwDrVbzz5g/preview"></iframe>
-</div>
