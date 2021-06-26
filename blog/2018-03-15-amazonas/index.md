@@ -18,10 +18,12 @@ Typically, an Amazon tour starts around 9am leaving Colombia by boat for the lod
 
 Once at the lodge in Peru, things started to dry up. We spent 3 days in Peru mostly trekking and boating. A few highlights were seeing pink and grey dolphins swimming in the Amazon, fishing for piranhas, holding a baby cayman (alligator), and swimming in the Amazon itself - don’t worry our guides took us to a place without piranhas, caymans, or anacondas or so we were told...
 
-<div class="video-responsive">
-  <iframe frameborder="0"
-  src="https://www.youtube.com/embed/l0fvlOhcXjg?rel=0&amp;showinfo=0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-</div>
+<figure>
+  <div class="video-responsive">
+    <iframe frameborder="0"
+    src="https://www.youtube.com/embed/l0fvlOhcXjg?rel=0&amp;showinfo=0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+  </div>
+</figure>
 
 It was intensely hot over 40 degrees and close to 100% humidity. The lodge only had electricity from 6pm to 9pm which meant sleeping without AC or even a fan. Basically, we were sweating for 6 days straight. There were an insane amount of mosquitoes at all times and we ate the same fish for almost every meal (variety would have been nice!).
 
@@ -51,10 +53,12 @@ After 1 day and night at the lodge it was time for our camping trip. We hiked 4 
 
 During the trek Kevin happened to catch this mishap on video...
 
-<div class="video-responsive">
-  <iframe frameborder="0"
-  src="https://www.youtube.com/embed/BxB8XwHmwQI?rel=0&amp;showinfo=0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-</div>
+<figure>
+  <div class="video-responsive">
+    <iframe frameborder="0"
+    src="https://www.youtube.com/embed/BxB8XwHmwQI?rel=0&amp;showinfo=0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+  </div>
+</figure>
 
 We spent the night in hammocks surrounded by mosquito nets. These were necessary as I’ve never seen so many bugs in one place! Falling asleep to the sounds of the rainforest including a thunderstorm and insects was an amazing experience.
 
