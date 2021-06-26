@@ -30,15 +30,17 @@ Two items really excited me in Colombia. The first were churros!! I couldn't get
 
 In Bolivia my favourite was street food called Anticucho. We were only told after we tried it that it was skewered and grilled beef heart. I would have tried it anyway, of course- it was tender and full of caramelized grill flavour.
 
-<slideshow>
-  <img src="gusto1.jpg" />
-  <img src="gusto2.jpg" />
-  <img src="gusto3.jpg" />
-  <img src="gusto4.jpg" />
-</slideshow>
-<figcaption>
-  Had the best culinary experience of my life! Got to sit at the Chef's table at Gustu for an 18 course tasting menu. Favourite dish was alligator ceviche!
-</figcaption>
+<figure>
+  <slideshow>
+    <img src="gusto1.jpg" />
+    <img src="gusto2.jpg" />
+    <img src="gusto3.jpg" />
+    <img src="gusto4.jpg" />
+  </slideshow>
+  <figcaption>
+    Had the best culinary experience of my life! Got to sit at the Chef's table at Gustu for an 18 course tasting menu. Favourite dish was alligator ceviche!
+  </figcaption>
+</figure>
 
 ## Chile
 
