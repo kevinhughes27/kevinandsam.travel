@@ -22,7 +22,12 @@ We went with the most common route doing the trek in 5 days and 4 nights from we
 
 Day 1 was mostly spent getting to Torres del Paine. We took an early bus into the park followed by a boat to get as all the way to the west. We started trekking around noon and had a 3.5 hour hike from Paine Grande to Refugio Grey for our first night. It was a moderate uphill but the hardest part was after the main climb when the trail was pretty exposed. The wind in Patagonia is no joke. Some gusts are so strong that you have to use all your energy just to stay on the trail. We got to Grey at 3:40 and were disappointed to find out dinner was not until 7:00. We were starving but didn't want to dip into our rations for the rest of the trek. Luckily, all the Refugios have stores with snacks and trekking food - the prices were better than we expected.
 
-<instagram uuid="Bhq4FTJH-v1"></instagram>
+<figure>
+  <img src="glacier-grey.jpg"/>
+  <figcaption>
+    The top of the first line in the W is Glacier Grey. We caught the sunrise here early on day 2 of the trek.
+  </figcaption>
+</figure>
 
 The second day all we needed to do was to head back down to Paine Grande. This was only a short hike so we continued up the trail a bit in the morning to get a better view of Glacier Grey and check out the hanging bridges. This is definitely worth doing and we thought the view of the glacier from here was way better than the earlier mirador on the trail.
 
@@ -35,7 +40,12 @@ The second day all we needed to do was to head back down to Paine Grande. This w
 
 We got rained and snowed on again crossing over the exposed section of the trail and in the final approach to Paine Grande. At least we were rewarded with this nice rainbow.
 
-<instagram uuid="BhpM9YSne7V"></instagram>
+<figure>
+  <img src="rainbow.jpg"/>
+  <figcaption>
+    We may have got rained on but at least we were rewarded with this rainbow over Pehoe Lake (view from the bar at Paine Grande)
+  </figcaption>
+</figure>
 
 It was a shorter day which meant we had ample time to hang out in the bar with our newly forming crew of travellers making their way through the W on the same schedule. We were also able to correct our mistake from the previous evening and order a bottle of wine - the most economical choice.
 
@@ -56,10 +66,6 @@ We started day 5 pretty early with the goal of making the early bus back to town
 
 We had another spectacular day of weather at the Torres.
 
-<instagram uuid="BhkKyhBHGQp" caption="false"></instagram>
-
-I took a lot of GoPro footage and edited this video of our trek:
-
-<div class="video-responsive">
-  <iframe frameborder="0" src="https://drive.google.com/file/d/1OPcr3S8FrtbauzD5P3MUG9y3jwDrVbzz5g/preview"></iframe>
-</div>
+<figure>
+  <img src="the-torres.jpg"/>
+</figure>

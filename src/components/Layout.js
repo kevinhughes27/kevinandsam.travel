@@ -11,15 +11,11 @@ export default function Layout({ children }) {
     { name: "google-site-verification", content: "wWHpbIqBAdk1z_sNatMaGjs3BZPLK00EAcTO5vVqgTo"}
   ]
 
-  const script = [
-    { src: 'https://platform.instagram.com/en_US/embeds.js', type: 'text/javascript', async: true, defer: true }
-  ]
-
   const config = { fallbackWidth: 360, fallbackHeight: 640 }
 
   return (
     <SizesProvider config={config}>
-      <Helmet title={title} meta={meta} script={script} />
+      <Helmet title={title} meta={meta} />
       <Nav />
       <main>
         { children }

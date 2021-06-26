@@ -40,7 +40,12 @@ From Sarajevo, we rented a car and drove north to Travnik and Jajce (pronounced 
 
 We stayed overnight in Jajce and did most of our sightseeing the next morning. We visited the catacombs and walked around the fortress but skipped paying the fee to enter this one. The main attraction in Jajce is the waterfall right in the middle of the town.
 
-<instagram uuid="BjZT5ICnGk2"></instagram>
+<figure>
+  <img src="jajce-selfie.jpg"/>
+  <figcaption>
+    Lots of things get old when travelling long term but waterfalls are not one of them. I always appreciate a good waterfall
+  </figcaption>
+</figure>
 
 On our way out of town we stopped by Pliva Lakes which turned out to be the best thing we did in Jajce. We followed a Lonely Planet recommendation and went for lunch at Konoba Slapovi. It was the most scenic lunch of our trip.
 
@@ -53,11 +58,21 @@ On our way out of town we stopped by Pliva Lakes which turned out to be the best
 
 From Jajce we drove all the way down to Mostar where we stayed for 2 nights. I definitely levelled up my European driving skills on the way into the old town - the roads were steep, narrow and occasionally just ended. We didn't do too much in the Mostar itself aside from eat, wander the old town and look at the bridge hoping to see someone jump off.
 
-<instagram uuid="Bjc-xe6H5Q4"></instagram>
+<figure>
+  <img src="mostar-bridge.jpg"/>
+  <figcaption>
+    Stari Most - the iconic bridge in Mostar
+  </figcaption>
+</figure>
 
 For our full day, we drove from Mostar to the nearby town of Blagaj famous for the Buna Spring. We had drinks on a patio overlooking the spring which would have been super impressive except this type of scenery was becoming the norm for us. After Blagaj, we continued onto the Kravice Waterfalls. We didn't bring bathing suits which was a bit of a mistake as there were lots of people swimming in the falls and it was a very hot day.
 
-<instagram uuid="Bjci3pGnYjC"></instagram>
+<figure>
+  <img src="blagaj.jpg"/>
+  <figcaption>
+    The River Buna and the town of Blagaj just a short drive from Mostar.
+  </figcaption>
+</figure>
 
 After 2 days in Mostar, we drove back to Sarajevo which was another beautiful drive. Along the way, we stopped in Konjic for lunch, ice cream and a quick leg stretch. Konjic was a cute town with another beautiful bridge.
 
