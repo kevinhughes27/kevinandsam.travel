@@ -19,6 +19,7 @@ Blog posts are automatically generated for any markdown file in the `/blog` fold
 
 Gatsby exposes a GraphiQL server at http://localhost:8000/___graphql which is useful to help build queries.
 
+Sharp is a pain in the ass. I have found that `yarn build` is more successful and `yarn start` if it is acting up.
 
 ## Tools
 
