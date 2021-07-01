@@ -31,8 +31,16 @@ class AboutPage extends Component {
 
 class Images extends Component {
   render() {
+    const isServer = (typeof window === 'undefined');
     const mediumScreen = this.props.windowWidth <= 768;
-    return mediumScreen ? renderMobile() : renderDesktop();
+
+    if (isServer) {
+      return null
+    } else if (mediumScreen) {
+      return renderMobile()
+    } else {
+      return renderDesktop()
+    }
   }
 }
 
