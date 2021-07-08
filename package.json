@@ -8,7 +8,7 @@
     "@fortawesome/react-fontawesome": "^0.0.18",
     "babel-preset-gatsby": "^1.9.0",
     "classnames": "^2.3.1",
-    "gatsby": "^2.32.13",
+    "gatsby": "^3.9.0",
     "gatsby-image": "^2.11.0",
     "gatsby-paginate": "^1.1.1",
     "gatsby-plugin-catch-links": "^2.10.0",
