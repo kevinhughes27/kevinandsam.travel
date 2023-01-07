@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Layout from '../components/Layout'
-import ReactResponsiveSelect from 'react-responsive-select'
+import { Select } from 'react-responsive-select'
 import DatePicker from 'react-datepicker'
 import moment from 'moment'
 
@@ -127,11 +127,6 @@ class VisitPage extends Component {
         return { value: r.name, text: r.name }
       })
 
-    // add empty initial option
-    if (when === null) {
-      whereOptions.push({value: '', text: 'Select'})
-    }
-
     return (
       <Layout>
         <section id="visit" className="section-padding">
@@ -157,11 +152,13 @@ class VisitPage extends Component {
 
                 <div className="question">
                   <p>Where</p>
-                  <ReactResponsiveSelect
+                  <Select
                     caretIcon={caretIcon}
+                    noSelectionLabel="Select"
                     name="where"
                     options={whereOptions}
                     selectedValue={where}
+                    key={where}
                     onChange={this.handleWhereChange}
                   />
                 </div>

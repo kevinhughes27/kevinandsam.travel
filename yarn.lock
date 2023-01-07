@@ -7666,10 +7666,6 @@ lodash.has@^4.0:
   version "4.5.2"
   resolved "https://registry.yarnpkg.com/lodash.has/-/lodash.has-4.5.2.tgz#d19f4dc1095058cccbe2b0cdf4ee0fe4aa37c862"
 
-lodash.isequal@^4.5.0:
-  version "4.5.0"
-  resolved "https://registry.yarnpkg.com/lodash.isequal/-/lodash.isequal-4.5.0.tgz#415c4478f2bcc30120c22ce10ed3226f7d3e18e0"
-
 lodash.kebabcase@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/lodash.kebabcase/-/lodash.kebabcase-4.1.1.tgz#8489b1cb0d29ff88195cceca448ff6d6cc295c36"
@@ -9631,12 +9627,12 @@ react-responsive-carousel@^3.2.23:
     prop-types "^15.5.8"
     react-easy-swipe "^0.0.21"
 
-react-responsive-select@3.1.4:
-  version "3.1.4"
-  resolved "https://registry.yarnpkg.com/react-responsive-select/-/react-responsive-select-3.1.4.tgz#753fd35fa495147e470c1157f44cbd91faf89d14"
+react-responsive-select@7.0.4:
+  version "7.0.4"
+  resolved "https://registry.yarnpkg.com/react-responsive-select/-/react-responsive-select-7.0.4.tgz#4ce8b9f342420f671046caa1f38adfa2d56a4c6c"
+  integrity sha512-MMeOgj4DWbenXAW/K7Lc0+Z2l5EjyUb3ZqkcVZq9/q9iUud88nINTHY0Y3mXZNLPosfHFt29jBRhVWgDmBMWPg==
   dependencies:
-    lodash.isequal "^4.5.0"
-    singleline "1.0.x"
+    singleline "^2.0.0"
 
 react-server-dom-webpack@0.0.0-experimental-c8b778b7f-20220825:
   version "0.0.0-experimental-c8b778b7f-20220825"
@@ -10433,9 +10429,10 @@ simple-swizzle@^0.2.2:
   dependencies:
     is-arrayish "^0.3.1"
 
-singleline@1.0.x:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/singleline/-/singleline-1.0.0.tgz#9ce622776e452224b9584f3d0dad3eb3ecd7dcdb"
+singleline@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/singleline/-/singleline-2.0.0.tgz#38e200abe11a4cfccd4fef9e318305ca97849622"
+  integrity sha512-PJr/kx5KBJEvQ8g7+lO2P1YwCta9yx7h8vot4IcCCZJ96ucNBKJnQZKYxEtamRwmOEUN11fJe5r/3/mNFMyoOQ==
 
 sisteransi@^1.0.5:
   version "1.0.5"
