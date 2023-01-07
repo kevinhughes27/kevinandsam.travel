@@ -1,5 +1,5 @@
 const path = require('path');
-const createPaginatedPages = require("gatsby-paginate");
+const createPaginatedPages = require('gatsby-paginate');
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions;
@@ -8,10 +8,7 @@ exports.createPages = ({ actions, graphql }) => {
   const postTemplate = path.resolve(`src/templates/post.js`);
 
   return graphql(`{
-      allMarkdownRemark(
-        sort: { order: DESC, fields: [frontmatter___date] }
-        limit: 1000
-      ) {
+      allMarkdownRemark(sort: {frontmatter: {date: DESC}}, limit: 1000) {
         edges {
           node {
             excerpt(pruneLength: 250)

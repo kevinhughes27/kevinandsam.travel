@@ -3,7 +3,7 @@ import withSizes from 'react-sizes'
 import { Link } from 'gatsby'
 
 import fontawesome from '@fortawesome/fontawesome'
-import FontAwesomeIcon from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import brands from '@fortawesome/fontawesome-free-brands'
 import faHome from '@fortawesome/fontawesome-free-solid/faHome'
 import { firstLoad } from '../utils'

@@ -24,24 +24,24 @@ const blog = [
   }
 ]
 
-const favicon = {
-  resolve: `gatsby-plugin-favicon`,
-  options: {
-    logo: "./src/favicon.png",
-    injectHTML: true,
-    icons: {
-      android: true,
-      appleIcon: true,
-      appleStartup: true,
-      coast: false,
-      favicons: true,
-      firefox: true,
-      twitter: false,
-      yandex: false,
-      windows: false
-    }
-  }
-}
+// const favicon = {
+//   resolve: `gatsby-plugin-favicon`,
+//   options: {
+//     logo: "./src/favicon.png",
+//     injectHTML: true,
+//     icons: {
+//       android: true,
+//       appleIcon: true,
+//       appleStartup: true,
+//       coast: false,
+//       favicons: true,
+//       firefox: true,
+//       twitter: false,
+//       yandex: false,
+//       windows: false
+//     }
+//   }
+// }
 
 const googleFonts = {
   resolve: `gatsby-plugin-google-fonts`,
@@ -72,8 +72,9 @@ module.exports = {
     `gatsby-plugin-sass`,
     googleFonts,
     leaflet,
-    favicon,
+    // favicon,
     ...blog,
     `gatsby-plugin-netlify`, // make sure to put last in the array
-  ]
+  ],
+  trailingSlash: "never"
 }

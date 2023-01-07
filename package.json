@@ -44,6 +44,7 @@
   },
   "scripts": {
     "build": "gatsby build",
+    "clean": "rm -r .cache public",
     "serve": "gatsby serve",
     "start": "gatsby develop -H 0.0.0.0",
     "durations": "./node_modules/babel-cli/bin/babel-node.js bin/durations.js",
