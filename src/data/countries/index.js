@@ -14,7 +14,7 @@ import SouthKorea from './south_korea'
 import Japan from './japan'
 import Vietnam from './vietnam'
 
-export default {
+const data = {
   Colombia,
   Bolivia,
   Chile,
@@ -31,3 +31,5 @@ export default {
   Japan,
   Vietnam
 }
+
+export default data

@@ -1,4 +1,4 @@
-export default [
+const data = [
   {
     name: "Dublin, Ireland",
     date: "2018-08-08",
@@ -16,3 +16,5 @@ export default [
     coordinates: [52.0605387,-9.5251095]
   }
 ]
+
+export default data

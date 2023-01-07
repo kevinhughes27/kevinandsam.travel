@@ -1,4 +1,4 @@
-export default [
+const data = [
   {
     name: "Windhoek, Namibia",
     date: "2018-09-12",
@@ -47,3 +47,5 @@ export default [
     coordinates: [-22.5602536,17.0495205]
   },
 ]
+
+export default data
