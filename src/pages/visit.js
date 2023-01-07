@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Layout from '../components/Layout'
 import { Select } from 'react-responsive-select'
 import DatePicker from 'react-datepicker'
-import moment from 'moment'
+import { add, isAfter, format } from 'date-fns'
 
 import { countries as allCountries } from '../data/route'
 
@@ -30,7 +30,7 @@ class VisitPage extends Component {
         return new Date(b.date) - new Date(a.date)
       })
       .find((r) => {
-        return date.isAfter(r.date)
+        return isAfter(date, new Date(r.date))
       })
         || countries[countries.length - 1]
 
@@ -50,7 +50,7 @@ class VisitPage extends Component {
       return r.name === countryName
     })
 
-    const when = moment(country.date)
+    const when = new Date(country.date)
 
     this.setState({
       when: when,
@@ -84,12 +84,12 @@ class VisitPage extends Component {
 
     const country = countries.find((r) => { return r.name === where })
 
-    const month = when.format("MMMM")
+    const month = format(when, "MMMM")
 
     const baseUrl = 'https://www.google.ca/flights/'
     const airport = country.airport
-    const startDate = when.format('YYYY-MM-DD')
-    const endDate = moment(startDate).add(15, 'days').format('YYYY-MM-DD')
+    const startDate = format(when, 'yyyy-MM-dd')
+    const endDate = format(add(when, {days: 15}), 'yyyy-MM-dd')
     const flightUrl = baseUrl + `#search;t=${airport};d=${startDate};r=${endDate}`
     const flightLink = <a href={flightUrl} target="_blank" rel="noreferrer">book your flights!</a>
 
@@ -118,6 +118,8 @@ class VisitPage extends Component {
 
   render () {
     const { when, where } = this.state
+    const minDate = new Date("2018-02-01")
+    const maxDate = new Date ("2019-03-20")
 
     let whereOptions = countries
       .sort((a, b) => {
@@ -140,11 +142,11 @@ class VisitPage extends Component {
                   <p>When</p>
                   <DatePicker
                     selected={when}
-                    minDate={moment("2018-02-01")}
-                    maxDate={moment("2019-03-20")}
+                    minDate={minDate}
+                    maxDate={maxDate}
                     customInput={<DatePickerButton />}
-                    withPortal
                     onChange={this.handleWhenChange}
+                    withPortal
                   />
                 </div>
 
