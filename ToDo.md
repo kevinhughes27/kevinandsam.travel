@@ -1,9 +1,6 @@
 ToDo
 ----
 
-
-react helmet is not needed anymore apparently
-
 try updating remaining js deps
 
 review the rest of my code. check for anything that can be done better now.

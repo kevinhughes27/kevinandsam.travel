@@ -2,6 +2,8 @@ import React from 'react'
 import Layout from '../components/Layout'
 import { graphql } from 'gatsby'
 
+export { Head } from '../components/Head'
+
 function Post({node: post}) {
   const { path, title, date } = post.frontmatter
   const imageSrc = post.frontmatter.cardImage.childImageSharp.resize.src;

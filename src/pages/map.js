@@ -28,6 +28,8 @@ const MapParams = (windowWidth) => {
   }
 }
 
+export { Head } from '../components/Head'
+
 class MapPage extends Component {
   render() {
     if (!isDomAvailable()) {

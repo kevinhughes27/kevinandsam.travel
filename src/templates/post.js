@@ -1,6 +1,5 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 
 import rehypeReact from 'rehype-react'
@@ -20,20 +19,16 @@ const renderAst = new rehypeReact({
   }
 }).Compiler
 
-export default function Template({ data }) {
-  const { markdownRemark: post } = data;
-  const { path, title, author, date } = post.frontmatter
-
-  const postImage = post.frontmatter.postImage.childImageSharp.resize;
+export const Head = ({ data: { markdownRemark: post } }) => {
   const cardImage = post.frontmatter.cardImage.childImageSharp.resize;
 
   const baseUrl = 'https://kevinandsam.travel'
-  const shareUrl = baseUrl + path + '/'
+  const shareUrl = baseUrl + post.frontmatter.path + '/'
   const imageUrl = baseUrl + cardImage.src
 
   const meta = [
     { property: "og:url", content: shareUrl },
-    { property: "og:title", content: title },
+    { property: "og:title", content: post.frontmatter.title },
     { property: "og:description", content: post.excerpt },
     { property: "og:image", content: imageUrl },
     { property: "og:image:height", content: cardImage.height },
@@ -41,10 +36,28 @@ export default function Template({ data }) {
   ]
 
   return (
+    <>
+      <title>{post.frontmatter.title} - kevinandsam.travel</title>
+      { meta.map((m) => {
+        return (<meta property={m.property} content={m.content}/>)
+      })}
+    </>
+  )
+}
+
+export default function Template({ data: { markdownRemark: post } }) {
+  const { title, author, date } = post.frontmatter
+
+  const postImage = post.frontmatter.postImage.childImageSharp.resize;
+  const cardImage = post.frontmatter.cardImage.childImageSharp.resize;
+
+  const baseUrl = 'https://kevinandsam.travel'
+  const shareUrl = baseUrl + post.frontmatter.path + '/'
+  const imageUrl = baseUrl + cardImage.src
+
+  return (
     <Layout>
       <div className="post-padding">
-        <Helmet title={`${title} - kevinandsam.travel`} meta={meta}/>
-
         <article itemProp="blogPost" itemScope itemType="http://schema.org/BlogPosting">
 
           <header className="post-mast">
@@ -57,7 +70,7 @@ export default function Template({ data }) {
                 <h1 itemProp="name headline">
                   { title }
                 </h1>
-                <time itemProp="datePublished" dateTime={data}>
+                <time itemProp="datePublished" dateTime={date}>
                   { date }
                 </time>
               </header>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Layout from '../components/Layout'
 import withSizes from 'react-sizes'
+export { Head } from '../components/Head'
 
 const title = "Kevin & Sam"
 const subheading = "See the World"

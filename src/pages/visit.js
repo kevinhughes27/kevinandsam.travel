@@ -15,6 +15,8 @@ const countries = allCountries.filter((c) => {
    return foreignCountry
 })
 
+export { Head } from '../components/Head'
+
 class VisitPage extends Component {
   state = {
     when: null,
