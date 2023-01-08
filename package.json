@@ -36,15 +36,11 @@
     "react-sizes": "^2.0.0",
     "sass": "^1.57.1"
   },
-  "devDependencies": {
-    "prettier": "^2.8.2"
-  },
   "scripts": {
     "build": "gatsby build",
     "clean": "rm -r .cache public",
     "serve": "gatsby serve",
     "start": "gatsby develop -H 0.0.0.0",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
