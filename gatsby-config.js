@@ -27,8 +27,8 @@ const blog = [
 const manifest = {
   resolve: `gatsby-plugin-manifest`,
   options: {
-    name: "kevinandsam.travel",
-    icon: "./src/favicon.png",
+    name: 'kevinandsam.travel',
+    icon: './static/favicon.png',
   }
 }
 
