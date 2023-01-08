@@ -5906,6 +5906,17 @@ gatsby-plugin-image@^3.3.2:
     objectFitPolyfill "^2.3.5"
     prop-types "^15.8.1"
 
+gatsby-plugin-manifest@^5.3.1:
+  version "5.3.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-5.3.1.tgz#53f25ed5697c65c43fbc65c0392b9029cf7b9b76"
+  integrity sha512-zU82docfGeTyH5guPEUQet+IRAIOzOQxUY74cgG3cJlIrLuSOEc3B/wVbYhUWysO6tCaHOuP1BX+R5OUm5YX7A==
+  dependencies:
+    "@babel/runtime" "^7.15.4"
+    gatsby-core-utils "^4.3.1"
+    gatsby-plugin-utils "^4.3.1"
+    semver "^7.3.8"
+    sharp "^0.31.2"
+
 gatsby-plugin-mdx@^5.3.1:
   version "5.3.1"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-mdx/-/gatsby-plugin-mdx-5.3.1.tgz#19d23a5b78848a4a96a9150927d863074c910ba6"
@@ -6028,13 +6039,6 @@ gatsby-react-router-scroll@^6.3.0:
   dependencies:
     "@babel/runtime" "^7.15.4"
     prop-types "^15.8.1"
-
-gatsby-remark-component@^1.1.3:
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-component/-/gatsby-remark-component-1.1.3.tgz#9a5276d19028b7eaf1ab30f44070124360b8e34e"
-  integrity sha512-bRJ2r7FgdH12+ahsKSFe+OWPTmjw8lBD+S0ytm+p1M9Bfmq2Qai+ROacNAp7d18vZLEhRpzznWJgSU7gEejVXg==
-  dependencies:
-    unist-util-visit "^1.1.1"
 
 gatsby-remark-copy-linked-files@^6.3.0:
   version "6.3.0"
@@ -11538,10 +11542,6 @@ unist-util-generated@^2.0.0:
   resolved "https://registry.yarnpkg.com/unist-util-generated/-/unist-util-generated-2.0.0.tgz#86fafb77eb6ce9bfa6b663c3f5ad4f8e56a60113"
   integrity sha512-TiWE6DVtVe7Ye2QxOVW9kqybs6cZexNwTwSMVgkfjEReqy/xwGpAXb99OxktoWwmL+Z+Epb0Dn8/GNDYP1wnUw==
 
-unist-util-is@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/unist-util-is/-/unist-util-is-2.1.1.tgz#0c312629e3f960c66e931e812d3d80e77010947b"
-
 unist-util-is@^4.0.0:
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/unist-util-is/-/unist-util-is-4.0.2.tgz#c7d1341188aa9ce5b3cff538958de9895f14a5de"
@@ -11619,12 +11619,6 @@ unist-util-visit-parents@^5.1.1:
   dependencies:
     "@types/unist" "^2.0.0"
     unist-util-is "^5.0.0"
-
-unist-util-visit@^1.1.1:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/unist-util-visit/-/unist-util-visit-1.3.0.tgz#41ca7c82981fd1ce6c762aac397fc24e35711444"
-  dependencies:
-    unist-util-is "^2.1.1"
 
 unist-util-visit@^2.0.0, unist-util-visit@^2.0.3:
   version "2.0.3"

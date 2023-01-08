@@ -11,7 +11,6 @@ const blog = [
     options: {
       extensions: [`.md`, `.mdx`],
       gatsbyRemarkPlugins: [
-        'gatsby-remark-component',
         'gatsby-remark-copy-linked-files',
         {
           resolve: 'gatsby-remark-images',
@@ -25,24 +24,13 @@ const blog = [
   }
 ]
 
-// const favicon = {
-//   resolve: `gatsby-plugin-favicon`,
-//   options: {
-//     logo: "./src/favicon.png",
-//     injectHTML: true,
-//     icons: {
-//       android: true,
-//       appleIcon: true,
-//       appleStartup: true,
-//       coast: false,
-//       favicons: true,
-//       firefox: true,
-//       twitter: false,
-//       yandex: false,
-//       windows: false
-//     }
-//   }
-// }
+const manifest = {
+  resolve: `gatsby-plugin-manifest`,
+  options: {
+    name: "kevinandsam.travel",
+    icon: "./src/favicon.png",
+  }
+}
 
 const googleFonts = {
   resolve: `gatsby-plugin-google-fonts`,
@@ -71,8 +59,8 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
     googleFonts,
+    manifest,
     leaflet,
-    // favicon,
     ...blog,
     `gatsby-plugin-netlify`, // make sure to put last in the array
   ],
