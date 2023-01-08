@@ -18,7 +18,7 @@ This one is odd to start with as it is a supermarket item but we craved it all t
 The next stop that got our taste buds excited was Bosnia. A traditional dish we enjoyed over and over again was cevapi, it consists of fluffy pita, soft cheese, raw onion (for some kick), and hand formed sausage. I tried to get each component in every bite!
 
 <figure>
-  <img src="cevapi.jpg"/>
+  ![cevapi](./cevapi.jpg)
   <figcaption>
     Another eggsammy inspired by our travels. It includes traditional bread, soft cheese, tomato, fried egg and the best part cevapi (hand formed sausages).
   </figcaption>
@@ -33,7 +33,7 @@ A vegetarian twist on an old favourite was absolutely amazing- mushroom paprikas
 Slovenia started out with a foodie experience, we found ourselves at an open kitchen market. All of the best restaurants and chefs in Ljubljana have stands where you can try small portions of their food for cheap. There were a huge variety of cuisines such a Indian, Thai and Lebanese. If you’re ever in Ljubljana, go to the market, it’s on every Friday night.
 
 <figure>
-  <img src="bledcake.jpg"/>
+  ![bledcake](./bledcake.jpg)
   <figcaption>
     Huge shout out to the Kremsnita cake or Bled cake. With its flaky pastry topped with custard and whipped cream, I just couldn’t eat enough.
   </figcaption>
@@ -44,7 +44,7 @@ Slovenia started out with a foodie experience, we found ourselves at an open kit
 We ate a lot of wiener schnitzel in Austria and Germany but one stood out. We had trekked/climbed for 11 hours in the Alps and were absolutely exhausted. We ended our day at a mountain hut with a large beer and huge plate of schnitzel. The schnitzel had a perfectly crispy coating and came with a tart but sweet cranberry sauce- what a great pair!
 
 <figure>
-  <img src="beers.jpg"/>
+  ![beers](./beers.jpg)
   <figcaption>
     We found out why the Czech Republic drinks the most beer per capita in the world while enjoying many cheap Pilsners.
   </figcaption>
@@ -59,10 +59,8 @@ Fresh made stroopwaffles were the best dessert we hit in this part of Europe. Ho
 I love sweets so eating pralines in Belgium was a must. After inhaling some chocolates we decided to take a praline making workshop. There are many steps in the process and it was very technical but these ganache filled goodies were worth it. Yum!
 
 <figure>
-  <img src="mussels.jpg"/>
-  <figcaption>
-    Moules et frites in brussels!
-  </figcaption>
+  ![mussels](./mussels.jpg)
+  <figcaption>Moules et frites in brussels!</figcaption>
 </figure>
 
 ## London
@@ -74,7 +72,7 @@ We are obsessed with Indian food and have been eating it in most countries we st
 One of the best restaurants we have been to on this trip is O’Neils The Point. While driving the Ring of Kerry we stopped for lunch at this seaside spot. We ordered the salmon platter with smoked and bbq salmon, soda bread and a refreshing citrus based salad. The fish was so fresh and they were definitely experts dealing with seafood. Everything on the plate was incredible and went perfectly together.
 
 <figure>
-  <img src="oneills.jpg"/>
+  ![oneills](./oneills.jpg)
 </figure>
 
 ## Scotland

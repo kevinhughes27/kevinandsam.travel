@@ -8,28 +8,28 @@ exports.createPages = ({ actions, graphql }) => {
   const postTemplate = path.resolve(`src/templates/post.js`);
 
   return graphql(`{
-      allMarkdownRemark(sort: {frontmatter: {date: DESC}}, limit: 1000) {
-        edges {
-          node {
-            excerpt(pruneLength: 250)
-            html
-            id
-            frontmatter {
-              date
-              path
-              title
-              cardImage {
-                childImageSharp {
-                  resize(width: 800) {
-                    src
-                  }
+      allMdx(sort: {frontmatter: {date: DESC}}, limit: 1000) {
+        nodes {
+          id
+          excerpt(pruneLength: 250)
+          internal {
+            contentFilePath
+          }
+          frontmatter {
+            date
+            path
+            title
+            cardImage {
+              childImageSharp {
+                resize(width: 800) {
+                  src
                 }
               }
-              postImage {
-                childImageSharp {
-                  resize(width: 1920) {
-                    src
-                  }
+            }
+            postImage {
+              childImageSharp {
+                resize(width: 1920) {
+                  src
                 }
               }
             }
@@ -44,7 +44,7 @@ exports.createPages = ({ actions, graphql }) => {
     }
 
     createPaginatedPages({
-      edges: result.data.allMarkdownRemark.edges,
+      edges: result.data.allMdx.nodes,
       createPage: createPage,
       pageTemplate: blogTemplate,
       pageLength: 6,
@@ -52,11 +52,11 @@ exports.createPages = ({ actions, graphql }) => {
       context: {}
     });
 
-    result.data.allMarkdownRemark.edges
-      .forEach(({ node }) => {
+    result.data.allMdx.nodes
+      .forEach((node) => {
         createPage({
           path: node.frontmatter.path,
-          component: postTemplate,
+          component: `${postTemplate}?__contentFilePath=${node.internal.contentFilePath}`,
           context: {}
         });
       });

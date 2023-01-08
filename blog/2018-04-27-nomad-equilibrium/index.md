@@ -12,7 +12,7 @@ As I write this post we've been travelling for almost 3 months. There is no doub
 A lot of preparation and planning goes into travelling for a long time both packing up your life and the exciting part of where you want to go and what you want to do. We worked hard to get here and I never considered the side affects of that work. Sam and I are both "ToDo list" people so after we crossed off all the preparation items we were left with a long list of places to see. Our work lives and the associated stress might have faded but it seemed to be replaced with a sense of urgency to have grand adventures and see the world - at least for me.
 
 <figure>
-  <img src="atitlan-selfie.jpg"/>
+  ![atitlan-selfie](./atitlan-selfie.jpg)
   <figcaption>
     To start the first day of my 29th trip around the Sun I watched the sunrise over Lake Atitlan con mi novia Sam
   </figcaption>

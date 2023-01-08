@@ -1,9 +1,7 @@
 ToDo
 ----
 
-try updating remaining js deps
+finish moving over to mdx
+  * likely remove pagination plugin and do manually.
 
-review the rest of my code. check for anything that can be done better now.
-  * how does my custom tag component thing work again?
-
-I think there is an mdx approach that sounds better
+fix favicon

@@ -12,7 +12,7 @@ White salt as far as the eye can see, geysers shooting out hot steam, pink flami
 We went on a three day tour with Red Planet which is a great company to go with as they vary their route so you aren't stuck with huge crowds. The tour started in Salar de Uyuni (the famous Salt Flats). Perspective pictures are the thing to do here so we attempted many, only some of which turned out. Properly trying to line-up these pictures is much more difficult than it looks - someone has to lay flat on the wet and salty ground to make it work. Luckily, our guide brought a plastic mat to lay on. Kevin also had some success with the GoPro.
 
 <figure>
-  <img src="perspective.jpeg"/>
+  ![perspective](./perspective.jpeg)
   <figcaption>
     Here are a few of our photos and a behind the scenes look at us trying to get the alignment right
   </figcaption>
@@ -21,19 +21,15 @@ We went on a three day tour with Red Planet which is a great company to go with 
 We went in the rainy season to hopefully catch the sought after reflexion shot everyone is trying to get. You need to have perfect conditions to make it work - a large water pool and no wind. This is the best we could get.
 
 <figure>
-  <img src="reflection.jpeg"/>
-  <figcaption>
-    Kevin contemplating life... err posing for a photo!
-  </figcaption>
+  ![reflection](./reflection.jpeg)
+  <figcaption>Kevin contemplating life... err posing for a photo!</figcaption>
 </figure>
 
 After Salar de Uyuni we explored everything the Potosi region had to offer including deserts, colourful lagoons, volcanoes, and rock formations. This region had some of the most beautiful landscapes I've ever seen. Some highlights are below.
 
 <figure>
-  <img src="uyuni.jpg"/>
-  <figcaption>
-    Some strange and beautiful sights
-  </figcaption>
+  ![uyuni](./uyuni.jpg)
+  <figcaption> Some strange and beautiful sights </figcaption>
 </figure>
 
 On our last night we spent the evening in a hot spring right outside our hostel. It was so chilly at night in the desert that this is exactly what we wanted! Also passing around a couple bottles of wine with our group helped. Note: drinking at altitude hits you harder so be careful. Usually at night there is an amazing view of the stars but it was impeded by a full moon, the stars were a little washed out but still pretty amazing.
@@ -41,7 +37,7 @@ On our last night we spent the evening in a hot spring right outside our hostel.
 The last day we ended our trip by heading to San Pedro de Atacama in the north of Chile. You have the option to get dropped off here or looping back to Uyuni.
 
 <figure>
-  <img src="sandboarding.jpg"/>
+  ![sandboarding](./sandboarding.jpg)
   <figcaption>
     Beautiful blue sky day for Sandboarding. Easier than Snowboarding but more #butthurt
   </figcaption>

@@ -7,9 +7,10 @@ const blog = [
     },
   },
   {
-    resolve: 'gatsby-transformer-remark',
+    resolve: `gatsby-plugin-mdx`,
     options: {
-      plugins: [
+      extensions: [`.md`, `.mdx`],
+      gatsbyRemarkPlugins: [
         'gatsby-remark-component',
         'gatsby-remark-copy-linked-files',
         {

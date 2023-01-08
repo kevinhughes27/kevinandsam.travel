@@ -1,25 +1,17 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import { graphql } from 'gatsby'
+import Share from '../components/Share'
 
-import rehypeReact from 'rehype-react'
-
+import { MDXProvider } from '@mdx-js/react'
 import Quote from '../components/Quote'
 import TwoColumn from '../components/TwoColumn'
 import Slideshow from '../components/Slideshow'
 
-import Share from '../components/Share'
+import { graphql } from 'gatsby'
 
-const renderAst = new rehypeReact({
-  createElement: React.createElement,
-  components: {
-    "quote": Quote,
-    "two-column": TwoColumn,
-    "slideshow": Slideshow,
-  }
-}).Compiler
+const mdxComponents = { Quote, TwoColumn, Slideshow }
 
-export const Head = ({ data: { markdownRemark: post } }) => {
+export const Head = ({ data: { mdx: post } }) => {
   const cardImage = post.frontmatter.cardImage.childImageSharp.resize;
 
   const baseUrl = 'https://kevinandsam.travel'
@@ -39,13 +31,13 @@ export const Head = ({ data: { markdownRemark: post } }) => {
     <>
       <title>{post.frontmatter.title} - kevinandsam.travel</title>
       { meta.map((m) => {
-        return (<meta property={m.property} content={m.content}/>)
+        return (<meta property={m.property} key={m.property} content={m.content}/>)
       })}
     </>
   )
 }
 
-export default function Template({ data: { markdownRemark: post } }) {
+export default function Template({ data: { mdx: post }, children }) {
   const { title, author, date } = post.frontmatter
 
   const postImage = post.frontmatter.postImage.childImageSharp.resize;
@@ -76,7 +68,9 @@ export default function Template({ data: { markdownRemark: post } }) {
               </header>
 
               <div className="post-content">
-                { renderAst(post.htmlAst) }
+                <MDXProvider components={mdxComponents}>
+                  {children}
+                </MDXProvider>
               </div>
 
               <Share title={title} shareUrl={shareUrl} imageUrl={imageUrl} />
@@ -98,8 +92,7 @@ export default function Template({ data: { markdownRemark: post } }) {
 
 export const pageQuery = graphql`
   query BlogPostByPath($path: String!) {
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
-      htmlAst
+    mdx(frontmatter: { path: { eq: $path } }) {
       excerpt(pruneLength: 250)
       frontmatter {
         title

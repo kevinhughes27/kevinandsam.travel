@@ -28,7 +28,7 @@ There are many different options for where to stay while travelling, from resort
   * In Europe – there are a lot of young drunk people which is an atmosphere deterrent
 
 <figure>
-  <img src="hostel.jpg"/>
+  ![hostel](./hostel.jpg)
   <figcaption>This hostel in Beijing had an unbeatable location right in the traditional Hutong area</figcaption>
 </figure>
 
@@ -44,7 +44,7 @@ There are many different options for where to stay while travelling, from resort
   * No kitchen (have to eat out for all meals)
 
 <figure>
-  <img src="hotel.jpg"/>
+  ![hotel](./hotel.jpg)
   <figcaption>Nice hotels are fun, treat yourself!</figcaption>
 </figure>
 
@@ -61,7 +61,7 @@ There are many different options for where to stay while travelling, from resort
   * Need to figure out things to do and the local area on your own
 
 <figure>
-  <img src="airbnb.jpeg"/>
+  ![airbnb](./airbnb.jpeg)
   <figcaption>Breakfast in the making in our Airbnb kitchen</figcaption>
 </figure>
 

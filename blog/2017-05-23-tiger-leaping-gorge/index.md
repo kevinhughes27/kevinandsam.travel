@@ -14,7 +14,7 @@ Transportation to the hike: we flew into Lijiang which seemed like a pretty easy
 The bus took us to get tickets for the trail and dropped us off just on the other side of the ticket booth. The trail heads up a road to your left as you are walking away from town and you should pass the trail sign early on. The first 45 minutes of the trek is on a road.
 
 <figure>
-  <img src="card.jpg"/>
+  ![card](./card.jpg)
   <figcaption>The sign which points vaguely in the direction of the trail</figcaption>
 </figure>
 
@@ -25,14 +25,14 @@ After Upper Gorge we started trekking at 11:30 am and then 45 minutes later we g
 Since we were planning to do the hike in 2 days we logicially expected to make it to the Halfway Lodge for the first night. This turned out to be unrealistic for us. We arrived at the Tea horse Guesthouse at 615pm and decided to stay there for the night. The map we were given at the beginning of the trek didn't have accurate distance estimates so don’t let it fool you!
 
 <figure>
-  <img src="teahorse-guesthouse.jpg"/>
+  ![teahorse-guesthouse](./teahorse-guesthouse.jpg)
   <figcaption>The view from the rooftop seating area at the Teahorse Guest House</figcaption>
 </figure>
 
 The Teahorse Guest House has an incredible view and a pretty good atmosphere including a restaurant. Most of the other trekkers we encountered on day 1 also stayed the night here.
 
 <figure>
-  <img src="tiger-leaping-gorge-day2.jpg"/>
+  ![tiger-leaping-gorge-day2](./tiger-leaping-gorge-day2.jpg)
   <figcaption>A waterfall we hiked right through on day 2 of the trek</figcaption>
 </figure>
 
@@ -42,7 +42,7 @@ We arrived at Tina's Guesthouse at 11:30 am where we had lunch and inquired abou
 
 I took some footage and made a short video of the trek. Check it out!
 
-<div class="video-responsive">
+<div className="video-responsive">
   <iframe frameborder="0"
   src="https://www.youtube.com/embed/KI779jCEEWM?rel=0&amp;showinfo=0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 </div>
