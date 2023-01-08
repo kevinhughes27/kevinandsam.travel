@@ -2,7 +2,9 @@ import React from 'react'
 import Layout from '../components/Layout'
 import { graphql } from 'gatsby'
 
-function Post({node: post}) {
+export { Head } from '../components/Head'
+
+function Post(post) {
   const { path, title, date } = post.frontmatter
   const imageSrc = post.frontmatter.cardImage.childImageSharp.resize.src;
 
@@ -73,20 +75,18 @@ export default function Blog({ data, pageContext }) {
 
 export const pageQuery = graphql`
   query IndexQuery {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
-      edges {
-        node {
-          excerpt(pruneLength: 250)
-          id
-          frontmatter {
-            title
-            date(formatString: "MMMM DD, YYYY")
-            path
-            cardImage {
-              childImageSharp {
-                resize(width: 800) {
-                  src
-                }
+    allMdx(sort: {frontmatter: {date: DESC}}) {
+      nodes {
+        excerpt(pruneLength: 250)
+        id
+        frontmatter {
+          title
+          date(formatString: "MMMM DD, YYYY")
+          path
+          cardImage {
+            childImageSharp {
+              resize(width: 800) {
+                src
               }
             }
           }

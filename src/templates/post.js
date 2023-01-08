@@ -1,39 +1,26 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import Helmet from 'react-helmet'
-import { graphql } from 'gatsby'
+import Share from '../components/Share'
 
-import rehypeReact from 'rehype-react'
-
+import { MDXProvider } from '@mdx-js/react'
 import Quote from '../components/Quote'
 import TwoColumn from '../components/TwoColumn'
 import Slideshow from '../components/Slideshow'
 
-import Share from '../components/Share'
+import { graphql } from 'gatsby'
 
-const renderAst = new rehypeReact({
-  createElement: React.createElement,
-  components: {
-    "quote": Quote,
-    "two-column": TwoColumn,
-    "slideshow": Slideshow,
-  }
-}).Compiler
+const mdxComponents = { Quote, TwoColumn, Slideshow }
 
-export default function Template({ data }) {
-  const { markdownRemark: post } = data;
-  const { path, title, author, date } = post.frontmatter
-
-  const postImage = post.frontmatter.postImage.childImageSharp.resize;
+export const Head = ({ data: { mdx: post } }) => {
   const cardImage = post.frontmatter.cardImage.childImageSharp.resize;
 
   const baseUrl = 'https://kevinandsam.travel'
-  const shareUrl = baseUrl + path + '/'
+  const shareUrl = baseUrl + post.frontmatter.path + '/'
   const imageUrl = baseUrl + cardImage.src
 
   const meta = [
     { property: "og:url", content: shareUrl },
-    { property: "og:title", content: title },
+    { property: "og:title", content: post.frontmatter.title },
     { property: "og:description", content: post.excerpt },
     { property: "og:image", content: imageUrl },
     { property: "og:image:height", content: cardImage.height },
@@ -41,10 +28,28 @@ export default function Template({ data }) {
   ]
 
   return (
+    <>
+      <title>{post.frontmatter.title} - kevinandsam.travel</title>
+      { meta.map((m) => {
+        return (<meta property={m.property} key={m.property} content={m.content}/>)
+      })}
+    </>
+  )
+}
+
+export default function Template({ data: { mdx: post }, children }) {
+  const { title, author, date } = post.frontmatter
+
+  const postImage = post.frontmatter.postImage.childImageSharp.resize;
+  const cardImage = post.frontmatter.cardImage.childImageSharp.resize;
+
+  const baseUrl = 'https://kevinandsam.travel'
+  const shareUrl = baseUrl + post.frontmatter.path + '/'
+  const imageUrl = baseUrl + cardImage.src
+
+  return (
     <Layout>
       <div className="post-padding">
-        <Helmet title={`${title} - kevinandsam.travel`} meta={meta}/>
-
         <article itemProp="blogPost" itemScope itemType="http://schema.org/BlogPosting">
 
           <header className="post-mast">
@@ -57,13 +62,15 @@ export default function Template({ data }) {
                 <h1 itemProp="name headline">
                   { title }
                 </h1>
-                <time itemProp="datePublished" dateTime={data}>
+                <time itemProp="datePublished" dateTime={date}>
                   { date }
                 </time>
               </header>
 
               <div className="post-content">
-                { renderAst(post.htmlAst) }
+                <MDXProvider components={mdxComponents}>
+                  {children}
+                </MDXProvider>
               </div>
 
               <Share title={title} shareUrl={shareUrl} imageUrl={imageUrl} />
@@ -85,8 +92,7 @@ export default function Template({ data }) {
 
 export const pageQuery = graphql`
   query BlogPostByPath($path: String!) {
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
-      htmlAst
+    mdx(frontmatter: { path: { eq: $path } }) {
       excerpt(pruneLength: 250)
       frontmatter {
         title

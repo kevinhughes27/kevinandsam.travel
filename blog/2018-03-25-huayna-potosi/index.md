@@ -14,10 +14,8 @@ Backing up to the start of the story we were planning what to do from La Paz. Be
 We figured the day would go something like drive to Huayna Potosi base camp, have lunch and then learn about ice climbing on a nearby sport wall setup before driving back to La Paz. We couldn't have been more wrong.
 
 <figure>
-  <img src="huayna-potosi.jpeg"/>
-  <figcaption>
-    Huayna Potosi from base camp
-  </figcaption>
+  ![huayna-potosi](./huayna-potosi.jpeg)
+  <figcaption>Huayna Potosi from base camp</figcaption>
 </figure>
 
 The day started bright and early and we met our guide at the shop. We drove for about 30 minutes to meet our gear supplier and pick up some gear. The process was super disorganized. Other than the essentials like boots, crampons and ice picks there were some inconsistencies in the gear each of us were prescribed. For example Sam was given a winter coat and snow pants (both extra large...) while Richard took nothing (which actually turned out to be the smartest). Not the most confidence inspiring start but barring any obvious danger we were past the point of no return.
@@ -31,19 +29,15 @@ At the refugio we were served what turned out to be a huge meal. It started with
 After lunch we headed out to learn about ice climbing. But first we had to walk. And by walk I mean trek. Things escalated quickly (quite literally) as we hiked up to the glacier which was at 5000 meters. This is where we were going to learn how to ice climb.
 
 <figure>
-  <img src="trekking.jpeg"/>
-  <figcaption>
-    The trek was as beautiful as it was punishing
-  </figcaption>
+  ![trekking](./trekking.jpeg)
+  <figcaption>The trek was as beautiful as it was punishing</figcaption>
 </figure>
 
 Once at the glacier we strapped on our crampons along with the rest of our alpine gear and started up the glacier. Our guide showed us a bit of technique for walking and then climbing on some near vertical sections before a storm rolled in. Visibility dropped quickly and there was lightning pretty nearby so we decided it was best to head down. The summit of Huayna Potosi is at 6088 meters so we really did climb half the mountain.
 
 <figure>
-  <img src="climbing.jpeg"/>
-  <figcaption>
-    Sam crushing this pitch
-  </figcaption>
+  ![climbing](./climbing.jpeg)
+  <figcaption>Sam crushing this pitch</figcaption>
 </figure>
 
 The altitude was a huge factor on the day. It's a weird feeling to need such perfect breathing cadence just to keep putting one foot in front of the other. Sam had a hard time on the way up but led the group for the descent. We pretty much killed Richard and he was out for the whole next day to recover.
@@ -52,7 +46,7 @@ I have no regrets about our misadventure but I also wouldn't repeat it. We learn
 
 I took some footage of the day and it looks pretty epic with all the suffering removed.
 
-<div class="video-responsive">
+<div className="video-responsive">
   <iframe frameborder="0"
           gesture="media"
           allow="encrypted-media"

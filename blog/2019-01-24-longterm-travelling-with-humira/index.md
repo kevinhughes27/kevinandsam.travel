@@ -18,7 +18,7 @@ My backup plan was having Humira shipped from Canada to wherever we happened to 
 With only a loose plan I left Canada with 4 doses determined to figure it out on the road and make it work.
 
 <figure>
-  <img src="spanish_humira.jpeg"/>
+  ![spanish_humira](./spanish_humira.jpeg)
   <figcaption>The first time I successfully refilled my prescription in Santiago was a huge relief that this could actually work</figcaption>
 </figure>
 
@@ -26,7 +26,7 @@ It's been almost a year now and I've been able to re-supply along the way withou
 
 Here is a list of countries where I filled my prescription, stars mean I had to see a doctor and get a local prescription. The pharmacy was always able to direct me to the best place to see a doctor. Travel clinics are a good resource and I've used the directory at [istm.org](http://www.istm.org/) a few times.
 
-<ul style="list-style-type: none; text-align: center;">
+<ul style={{listStyleType: "none", textAlign: "center"}}>
   <li>Chile</li>
   <li>Argentina</li>
   <li>Croatia</li>
@@ -40,14 +40,14 @@ Here is a list of countries where I filled my prescription, stars mean I had to 
 The medicine was available in Colombia but couldn't ship in time before our flight out. EU countries will accept prescriptions from other EU countries so try and get a few refills on the prescription if you see a doctor. I tried and Humira is not available in Bolivia, Vietnam or Thailand (the latter resulted in a loop back to Malaysia). I also refilled the two times we returned to Canada. It can take a few days for a pharmacy to order Humira so try not to leave it until the last moment.
 
 <figure>
-  <img src="japanese_humira.jpeg"/>
+  ![japanese_humira](./japanese_humira.jpeg)
   <figcaption>Japan does it better. Not only does their pen look the coolest but it injects 3 times faster and I didn't feel the needle at all</figcaption>
 </figure>
 
 Travelling with Humira has been more widely discussed online so I am just going to explain how I've been doing it and not discuss alternatives. You'll need a good cooler preferably one that can hold below 8 degrees for 18 - 24 hours. This gives you more than enough time to get to your destination and not be stressed out about the temperature of your meds.
 
 <figure>
-  <img src="cooler.jpg"/>
+  ![cooloer](./cooler.jpg)
   <figcaption>
     The cooler I had looked like this - I liked that it was a hard case and that it had a built-in thermometer. Unfortunately it is no longer available.
     Try searching for 24 hour medicine / insulin coolers and I'm sure you'll find some similar options.

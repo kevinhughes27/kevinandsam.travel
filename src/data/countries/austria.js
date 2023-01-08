@@ -1,4 +1,4 @@
-export default [
+const data = [
   {
     name: "St Johann in Tirol, Austria",
     date: "2018-06-15",
@@ -16,3 +16,5 @@ export default [
     coordinates: [48.220778,16.3100206]
   }
 ]
+
+export default data

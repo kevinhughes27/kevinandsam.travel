@@ -7,10 +7,10 @@ const blog = [
     },
   },
   {
-    resolve: 'gatsby-transformer-remark',
+    resolve: `gatsby-plugin-mdx`,
     options: {
-      plugins: [
-        'gatsby-remark-component',
+      extensions: [`.md`, `.mdx`],
+      gatsbyRemarkPlugins: [
         'gatsby-remark-copy-linked-files',
         {
           resolve: 'gatsby-remark-images',
@@ -24,22 +24,11 @@ const blog = [
   }
 ]
 
-const favicon = {
-  resolve: `gatsby-plugin-favicon`,
+const manifest = {
+  resolve: `gatsby-plugin-manifest`,
   options: {
-    logo: "./src/favicon.png",
-    injectHTML: true,
-    icons: {
-      android: true,
-      appleIcon: true,
-      appleStartup: true,
-      coast: false,
-      favicons: true,
-      firefox: true,
-      twitter: false,
-      yandex: false,
-      windows: false
-    }
+    name: "kevinandsam.travel",
+    icon: "./src/favicon.png",
   }
 }
 
@@ -65,15 +54,15 @@ module.exports = {
     title: `kevinandsam.travel`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-catch-links`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
     googleFonts,
+    manifest,
     leaflet,
-    favicon,
     ...blog,
     `gatsby-plugin-netlify`, // make sure to put last in the array
-  ]
+  ],
+  trailingSlash: "never"
 }

@@ -3,7 +3,7 @@ import Layout from '../components/Layout'
 import withSizes from 'react-sizes'
 import { MapContainer, TileLayer, Marker, CircleMarker, Circle, Popup, Polyline } from 'react-leaflet'
 import { divIcon } from 'leaflet'
-import moment from 'moment'
+import { format, isAfter } from 'date-fns'
 
 import { currentLocation, locations as allLocations } from '../data/route'
 import previousTrips from '../data/previousTrips'
@@ -27,6 +27,8 @@ const MapParams = (windowWidth) => {
     return { center: [11.82, 22.00], zoom: 3.1 }
   }
 }
+
+export { Head } from '../components/Head'
 
 class MapPage extends Component {
   render() {
@@ -129,15 +131,15 @@ const LocationMarker = ({ location }) => {
   )
 }
 
-const DateText = ({ date} ) => {
+const DateText = ({ date }) => {
   if (date === undefined) {
     return null
   }
 
-  if (moment(date) < Date.now()) {
-    return moment(date).format('MMM Do YYYY')
+  if (isAfter(Date.now(), date)) {
+    return format(date, 'MMM do yyyy')
   } else {
-    return moment(date).format('MMMM YYYY')
+    return format(date, 'MMMM yyyy')
   }
 }
 
@@ -147,7 +149,7 @@ const RouteMarkers = ({ locations, color }) => {
       <Popup>
         <div>
           <h4>{location.name}</h4>
-          <DateText date={location.date}/>
+          <DateText date={new Date(location.date)}/>
         </div>
       </Popup>
     </CircleMarker>

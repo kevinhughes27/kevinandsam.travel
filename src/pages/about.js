@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Layout from '../components/Layout'
 import withSizes from 'react-sizes'
 import Slideshow from '../components/Slideshow'
+export { Head } from '../components/Head'
 
 class AboutPage extends Component {
   render() {

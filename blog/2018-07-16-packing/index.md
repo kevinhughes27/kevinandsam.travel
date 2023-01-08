@@ -12,16 +12,14 @@ Many people have asked and I am sure many more are wondering - how do you pack f
 As a computer engineer I definitely have a specific way of looking at problems. Something I used to do often in my job was look at 'diffs' or 'patches' - essentially just a list of changes but it becomes really engrained into your thinking. I developed my pack list the exact same way. After my first backpacking trip in grad school I started both a pack list and more importantly a list of changes I would have made in hindsight. It's important to be really critical, for example did I bring too many pairs of underwear? What things do I have at home that I wish I had with me? On the next trip I would apply those changes and so on. I practised this on several shorter trips and got pretty close to an ideal pack list for me personally, the big test was last year when we travelled around China for a whole month.
 
 <figure>
-  <img src="electronics.jpg"/>
-  <figcaption>
-    A few electronics I think I might need during the year
-  </figcaption>
+  ![electronics](./electronics.jpg)
+  <figcaption>A few electronics I think I might need during the year</figcaption>
 </figure>
 
 We had a pretty good idea of what we needed to bring with us from past experience but a whole year was still something new. Multifunctional items like Lululemon clothing that can be dressed up or worn hiking was pretty key for keeping the weight down. We also needed a lot more life items - to keep our bodies functioning on the road I brought a full set of [Yoga Tune-Up](https://www.tuneupfitness.com/) gear and other self-physio items. I needed to be a able to work and do a variety of computer things which required a few small electronics, adaptors and cables. I got pretty anal about some things, for example I have a USB charger for my beard trimmer to reduce wall plugs I have to carry.
 
 <figure>
-  <img src="splitter.jpeg"/>
+  ![splitter](./splitter.jpeg)
   <figcaption>
     I carry a few odd cables etc with me but sometimes they come in handy - premium entertainment is bullshit but at least we only paid for one code thanks to this headphone splitter!
   </figcaption>
@@ -30,7 +28,7 @@ We had a pretty good idea of what we needed to bring with us from past experienc
 Our pack list wasn't perfect when we left Canada on Feb 1st we've had to evolve it as we go. In Santiago we acquired some warmer gear before heading into Patagonia and we spent a lot of money at MEC when we returned to Canada for a week in July. It's still changing but without further ado here is our current pack list:
 
 ### Kevin
-</br>
+<br/>
 
 DEUTER FUTURA VARIO 50L + 10:
 
@@ -111,7 +109,7 @@ DEUTER TRANS APLINE 30
 
 
 ### Sam
-</br>
+<br/>
 
 DEUTER FUTURA VARIO 45L + 10
 

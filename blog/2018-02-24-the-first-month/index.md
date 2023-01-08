@@ -7,7 +7,7 @@ cardImage: "card.jpeg"
 postImage: "post.jpg"
 ---
 
-<quote>Validation, bad luck, redemption and reflections</quote>
+<Quote>Validation, bad luck, redemption and reflections</Quote>
 
 Its been a month since we left our apartment and our transition to nomad life has been pretty smooth. Our planning paid off and we've done a good job actually doing life things that we might not normally do while travelling. Since leaving Canada we've visited a two local climbing gyms, played some pick-up Ultimate and completed 3 hotel work-outs. We've also already had the chance to use almost everything we packed which definitely builds confidence that we brought the right stuff. However we need to up our cooking game since we haven't cooked much in Guatemala and we're still adjusting to nomad pace versus traveller pace.
 
@@ -18,14 +18,14 @@ After Antigua we headed to Xela. It was supposed to be a quick stop before stari
 Back on our feet again in Panajachel - we hiked up the Indian Nose for sunrise (same view our original trek was supposed to end with).
 
 <figure>
-  <img src="atitlan.jpg"/>
+  ![atitlan](./atitlan.jpg)
 </figure>
 
 
 Our last stop in Guatemala was Flores to see the Mayan ruins of Tikal. Flores was our favourite spot in Guatemala. The town was a bit touristy but it wasn't too busy (currently) so was pretty chill. We stayed at [Casa de Grethel](https://www.hostelworld.com/hosteldetails.php/Hostal-Casa-de-Grethel/Flores/274028) on an island across from Flores so we took a boat to and from - luckily the hostel has a free boat shuttle.
 
 <figure>
-  <img src="tikal.jpeg"/>
+  ![tikal](./tikal.jpeg)
   <figcaption>Mayan ruins of Tikal</figcaption>
 </figure>
 
