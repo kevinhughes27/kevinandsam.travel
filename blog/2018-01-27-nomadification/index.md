@@ -10,7 +10,7 @@ postImage: "post.jpg"
 For the past month we've been hard at work preparing to become Nomads. The process has included selling all our furniture, moving everything else to a storage locker and packing our backpacks (we'll write a more in depth post about what exactly we're taking with us).
 
 <div className="gif">
-  ![storage-locker.fig](./storage-locker.gif)
+  ![storage-locker.gif](./storage-locker.gif)
   <figcaption>Packing up in gif form</figcaption>
 </div>
 
