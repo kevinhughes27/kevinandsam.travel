@@ -5958,14 +5958,14 @@ gatsby-plugin-react-leaflet@^4.0.3:
   resolved "https://registry.yarnpkg.com/gatsby-plugin-react-leaflet/-/gatsby-plugin-react-leaflet-4.0.3.tgz#065f6111c2efe537b92f72e73173b701bdc90155"
   integrity sha512-xXpRJBHFUKFWRXTi9euZ4+MQIYzxPZlbf3jrW5vhxVv0t+TxXFAObcZjgrUR1QT3coANesI0EuLY0Ljc1wz7BQ==
 
-gatsby-plugin-sass@^6.3.1:
-  version "6.3.1"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-sass/-/gatsby-plugin-sass-6.3.1.tgz#52180e9658fd0f4ff38777cfbcdf772cc7ebc807"
-  integrity sha512-H5qWtE3Jac3yD6zbUCxS0o3A6Kn8lx1BblNsjgwgrJGXgOlfTuplqP57ZbifaHJQcWKtNw550kBp50pX7HjuSQ==
+gatsby-plugin-sass@^6.4.0:
+  version "6.4.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-sass/-/gatsby-plugin-sass-6.4.0.tgz#299ae359b2b9b54b0f8b4da2a0070a76f01bf9c0"
+  integrity sha512-6wBrq7TbhhewAUPVdpY8035J6bDj7WW0LYCYVVn9X7mukbZoa59SAfGiZbOcAU0U75KX1LrcPDoau6VwaeKpSg==
   dependencies:
-    "@babel/runtime" "^7.15.4"
-    resolve-url-loader "^3.1.4"
-    sass-loader "^10.1.1"
+    "@babel/runtime" "^7.20.7"
+    resolve-url-loader "^3.1.5"
+    sass-loader "^10.4.1"
 
 gatsby-plugin-sharp@^5.4.0:
   version "5.4.0"
@@ -10224,7 +10224,7 @@ resolve-from@^5.0.0:
   resolved "https://registry.yarnpkg.com/resolve-from/-/resolve-from-5.0.0.tgz#c35225843df8f776df21c57557bc087e9dfdfc69"
   integrity sha512-qYg9KP24dD5qka9J47d0aVky0N+b4fTU89LN9iDnjB5waksiC49rvMB0PrUJQGoTmH50XPiqOvAjDfaijGxYZw==
 
-resolve-url-loader@^3.1.4:
+resolve-url-loader@^3.1.5:
   version "3.1.5"
   resolved "https://registry.yarnpkg.com/resolve-url-loader/-/resolve-url-loader-3.1.5.tgz#1dce0847d4a2ef43c51f63c9fd30bf6dfbf26716"
   integrity sha512-mgFMCmrV/tA4738EsFmPFE5/MaqSgUMe8LK971kVEKA/RrNVb7+VqFsg/qmKyythf34eyq476qIobP/gfFBGSQ==
@@ -10386,7 +10386,7 @@ safe-regex-test@^1.0.0:
   resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
   integrity sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
 
-sass-loader@^10.1.1:
+sass-loader@^10.4.1:
   version "10.4.1"
   resolved "https://registry.yarnpkg.com/sass-loader/-/sass-loader-10.4.1.tgz#bea4e173ddf512c9d7f53e9ec686186146807cbf"
   integrity sha512-aX/iJZTTpNUNx/OSYzo2KsjIUQHqvWsAhhUijFjAPdZTEhstjZI9zTNvkTTwsx+uNUJqUwOw5gacxQMx4hJxGQ==
