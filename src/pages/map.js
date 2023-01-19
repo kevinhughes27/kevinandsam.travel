@@ -153,7 +153,8 @@ const LocationMarkers = ({ locations, color }) => {
       <Popup>
         <div>
           <h4>{location.name}</h4>
-          <DateText date={new Date(location.date)}/>
+          <p><DateText date={new Date(location.date)}/></p>
+          {location.text}
         </div>
       </Popup>
     </CircleMarker>
