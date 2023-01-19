@@ -6,10 +6,10 @@ import { divIcon } from 'leaflet'
 import { format, isAfter } from 'date-fns'
 import { isDomAvailable } from '../utils'
 
-import allLocations from '../data/yearTrip.json'
-import previousTrips from '../data/trips.json'
-const locations = allLocations.filter((r) => r.map !== false)
+import yearTrip from '../data/yearTrip.json'
+import trips from '../data/trips.json'
 
+const locations = yearTrip.filter((r) => r.map !== false)
 const currentLocation = {
   name: "Ottawa",
   coordinates: [45.4215, -75.6972]
@@ -63,15 +63,15 @@ class MapPage extends Component {
           }}>
 
           <TileLayer url='https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}' />
-          <Route />
-          <Previous />
+          <YearTrip />
+          <Trips />
         </MapContainer>
       </Layout>
     )
   }
 }
 
-const Route = () => {
+const YearTrip = () => {
   const coordinates = locations.map((location) => location.coordinates)
 
   return (
@@ -82,16 +82,16 @@ const Route = () => {
         opacity={0.25}
         dashArray={'5,5'}
         positions={coordinates} />
-      <LocationMarker location={currentLocation} />
-      <RouteMarkers locations={locations} color='blue' />
+      <CurrentLocationMarker location={currentLocation} />
+      <LocationMarkers locations={locations} color='blue' />
     </div>
   )
 }
 
-const Previous = () => {
+const Trips = () => {
   return (
     <div>
-      {previousTrips.map((trip) => {
+      {trips.map((trip) => {
         return <Trip key={trip.name} trip={trip} />
       })}
     </div>
@@ -109,12 +109,12 @@ const Trip = ({ trip }) => {
         opacity={0.25}
         dashArray={'5,5'}
         positions={coordinates} />
-      <RouteMarkers locations={trip.locations} color='grey' />
+      <LocationMarkers locations={trip.locations} color='grey' />
     </div>
   )
 }
 
-const LocationMarker = ({ location }) => {
+const CurrentLocationMarker = ({ location }) => {
   const pulsingIcon = divIcon({
     className: 'css-icon',
     html: '<div class="gps_ring"></div>',
@@ -147,7 +147,7 @@ const DateText = ({ date }) => {
   }
 }
 
-const RouteMarkers = ({ locations, color }) => {
+const LocationMarkers = ({ locations, color }) => {
   const markers = locations.map((location, i) => (
     <CircleMarker key={i} center={location.coordinates} radius={14} color="transparent">
       <Popup>
