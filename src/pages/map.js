@@ -27,7 +27,7 @@ const MapParams = (windowWidth) => {
   } else if (mediumScreen) {
     return { center: [19.69, -23.68], zoom: 2.87 }
   } else {
-    return { center: [11.82, 22.00], zoom: 3.1 }
+    return { center: [11.82, 22.00], zoom: 3.0 }
   }
 }
 
