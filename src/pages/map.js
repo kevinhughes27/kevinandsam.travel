@@ -4,12 +4,16 @@ import withSizes from 'react-sizes'
 import { MapContainer, TileLayer, Marker, CircleMarker, Circle, Popup, Polyline } from 'react-leaflet'
 import { divIcon } from 'leaflet'
 import { format, isAfter } from 'date-fns'
-
-import { currentLocation, locations as allLocations } from '../data/route'
-import previousTrips from '../data/previousTrips'
 import { isDomAvailable } from '../utils'
 
+import allLocations from '../data/yearTrip.json'
+import previousTrips from '../data/trips.json'
 const locations = allLocations.filter((r) => r.map !== false)
+
+const currentLocation = {
+  name: "Ottawa",
+  coordinates: [45.4215, -75.6972]
+}
 
 const MapParams = (windowWidth) => {
   const smallScreen = windowWidth < 667

@@ -64,5 +64,5 @@ module.exports = {
     ...blog,
     `gatsby-plugin-netlify`, // make sure to put last in the array
   ],
-  trailingSlash: "never"
+  trailingSlash: 'never'
 }

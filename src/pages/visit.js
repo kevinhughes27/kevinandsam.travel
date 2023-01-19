@@ -1,20 +1,9 @@
 import React, { Component } from 'react'
 import Layout from '../components/Layout'
-import { Select } from 'react-responsive-select'
 import DatePicker from 'react-datepicker'
+import { Select } from 'react-responsive-select'
 import { add, isAfter, format } from 'date-fns'
-
-import { countries as allCountries } from '../data/route'
-
-const countries = allCountries.filter((c) => {
-   const foreignCountry = c.name !== "Ottawa" && c.name !== "Calgary"
-
-   // const futureCountry = moment(c.date) > Date.now()
-   // return foreignCountry && futureCountry
-
-   return foreignCountry
-})
-
+import { countries } from '../data/countries'
 export { Head } from '../components/Head'
 
 class VisitPage extends Component {

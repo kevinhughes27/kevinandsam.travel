@@ -1,0 +1,869 @@
+[
+  {
+    "name": "Ottawa",
+    "airport": "YOW",
+    "coordinates": [
+      45.4215,
+      -75.6972
+    ]
+  },
+  {
+    "name": "Guatemala",
+    "date": "2018-02-01",
+    "airport": "GUA",
+    "coordinates": [
+      14.5666644,
+      -90.7333304
+    ]
+  },
+  {
+    "name": "Cartagena, Colombia",
+    "date": "2018-02-24",
+    "coordinates": [
+      10.4001968,
+      -75.5435449
+    ]
+  },
+  {
+    "name": "Santa Marta, Colombia",
+    "date": "2018-02-26",
+    "coordinates": [
+      11.2315247,
+      -74.1999066
+    ]
+  },
+  {
+    "name": "Medellin, Colombia",
+    "date": "2018-03-01",
+    "coordinates": [
+      6.2686734,
+      -75.6664319
+    ]
+  },
+  {
+    "name": "Bogota, Colombia",
+    "date": "2018-03-17",
+    "airport": "BOG",
+    "coordinates": [
+      4.711111,
+      -74.072222
+    ]
+  },
+  {
+    "name": "Leticia, Colombia",
+    "date": "2018-03-10",
+    "coordinates": [
+      -4.2031648,
+      -69.9599656
+    ]
+  },
+  {
+    "name": "La Paz, Bolivia",
+    "date": "2018-03-20",
+    "airport": "LAP",
+    "coordinates": [
+      -16.499998,
+      -68.1333328
+    ]
+  },
+  {
+    "name": "Uyuni, Bolivia",
+    "date": "2018-03-26",
+    "coordinates": [
+      -20.2086421,
+      -68.1524845
+    ]
+  },
+  {
+    "name": "San Pedro, Chile",
+    "date": "2018-03-28",
+    "coordinates": [
+      -22.914014,
+      -68.2074194
+    ]
+  },
+  {
+    "name": "Santiago, Chile",
+    "date": "2018-04-01",
+    "airport": "SCL",
+    "coordinates": [
+      -33.4533303,
+      -70.6967031
+    ]
+  },
+  {
+    "name": "Valparaíso, Chile",
+    "date": "2018-04-03",
+    "airport": "SCL",
+    "coordinates": [
+      -33.0507029,
+      -71.6460679
+    ]
+  },
+  {
+    "name": "Punta Arenas, Chile",
+    "date": "2018-04-08",
+    "airport": "PUQ",
+    "coordinates": [
+      -53.1417622,
+      -70.9412864
+    ]
+  },
+  {
+    "name": "Puerto Natales, Chile",
+    "date": "2018-04-08",
+    "coordinates": [
+      -51.7293565,
+      -72.5108059
+    ]
+  },
+  {
+    "name": "El Chaltén, Argentina",
+    "date": "2018-04-15",
+    "coordinates": [
+      -49.3278183,
+      -72.8985005
+    ]
+  },
+  {
+    "name": "El Bolsón, Argentina",
+    "date": "2018-04-24",
+    "coordinates": [
+      -41.9657342,
+      -71.5414559
+    ]
+  },
+  {
+    "name": "Bariloche, Argentina",
+    "date": "2018-04-26",
+    "coordinates": [
+      -41.1283316,
+      -71.4099539
+    ]
+  },
+  {
+    "name": "Mendoza, Argentina",
+    "date": "2018-05-01",
+    "coordinates": [
+      -32.883334,
+      -68.8760287
+    ]
+  },
+  {
+    "name": "Buenos Aires, Argentina",
+    "date": "2018-05-03",
+    "airport": "EZE",
+    "coordinates": [
+      -34.6037,
+      -58.3816
+    ]
+  },
+  {
+    "name": "Montenegro",
+    "date": "2018-05-08",
+    "airport": "TIV",
+    "coordinates": [
+      42.4242999,
+      18.7683874
+    ]
+  },
+  {
+    "name": "Dubrovnik, Croatia",
+    "date": "2018-05-12",
+    "airport": "DBV",
+    "coordinates": [
+      42.6457559,
+      18.0765377
+    ]
+  },
+  {
+    "name": "Zagreb, Croatia",
+    "date": "2018-05-16",
+    "airport": "ZAG",
+    "coordinates": [
+      45.8401746,
+      15.8942923
+    ]
+  },
+  {
+    "name": "Plitvice Lakes, Croatia",
+    "date": "2018-05-20",
+    "coordinates": [
+      44.8653966,
+      15.5820119
+    ]
+  },
+  {
+    "name": "Split, Croatia",
+    "date": "2018-05-22",
+    "coordinates": [
+      43.5159789,
+      16.4140642
+    ]
+  },
+  {
+    "name": "Bosnia",
+    "date": "2018-05-26",
+    "airport": "SJJ",
+    "coordinates": [
+      43.8938256,
+      18.312952
+    ]
+  },
+  {
+    "name": "Budapest, Hungary",
+    "date": "2018-06-01",
+    "airport": "BUD",
+    "coordinates": [
+      47.4813602,
+      18.9902211
+    ]
+  },
+  {
+    "name": "Bratislava, Slovakia",
+    "date": "2018-06-05",
+    "airport": "BTS",
+    "coordinates": [
+      48.1356952,
+      16.9758341
+    ]
+  },
+  {
+    "name": "Ljubljana, Slovenia",
+    "date": "2018-06-08",
+    "airport": "LJU",
+    "coordinates": [
+      46.0662151,
+      14.4620597
+    ]
+  },
+  {
+    "name": "Bled, Slovenia",
+    "date": "2018-06-11",
+    "coordinates": [
+      46.3654456,
+      14.0784375
+    ]
+  },
+  {
+    "name": "St Johann in Tirol, Austria",
+    "date": "2018-06-15",
+    "coordinates": [
+      47.5116627,
+      12.4080857
+    ]
+  },
+  {
+    "name": "Salzburg, Austria",
+    "date": "2018-06-19",
+    "coordinates": [
+      47.8028047,
+      13.0214107
+    ]
+  },
+  {
+    "name": "Vienna, Austria",
+    "date": "2018-06-21",
+    "airport": "VIE",
+    "coordinates": [
+      48.220778,
+      16.3100206
+    ]
+  },
+  {
+    "name": "Calgary",
+    "map": false,
+    "airport": "YYC",
+    "date": "2018-06-27"
+  },
+  {
+    "name": "Frankfurt, Germany",
+    "date": "2018-07-05",
+    "coordinates": [
+      50.121301,
+      8.5665245
+    ]
+  },
+  {
+    "name": "Munich, Germany",
+    "date": "2018-07-06",
+    "coordinates": [
+      48.1548895,
+      11.4717966
+    ]
+  },
+  {
+    "name": "Prague, Czech Republic",
+    "date": "2018-07-09",
+    "airport": "PRG",
+    "coordinates": [
+      50.0598058,
+      14.3255423
+    ]
+  },
+  {
+    "name": "Berlin, Germany",
+    "date": "2018-07-13",
+    "airport": "TXL",
+    "coordinates": [
+      52.5069704,
+      13.2846504
+    ]
+  },
+  {
+    "name": "Hamburg, Germany",
+    "date": "2018-07-20",
+    "coordinates": [
+      53.5586941,
+      9.7877404
+    ]
+  },
+  {
+    "name": "Amersterdam, Netherlands",
+    "date": "2018-07-22",
+    "airport": "AMS",
+    "coordinates": [
+      52.3546274,
+      4.828584
+    ]
+  },
+  {
+    "name": "Rotterdam, Netherlands",
+    "date": "2018-07-26",
+    "airport": "AMS",
+    "coordinates": [
+      51.9280573,
+      4.420367
+    ]
+  },
+  {
+    "name": "Bruges, Belgium",
+    "date": "2018-07-28",
+    "coordinates": [
+      51.2607606,
+      3.1521058
+    ]
+  },
+  {
+    "name": "Brussels, Belgium",
+    "date": "2018-07-30",
+    "airport": "BRU",
+    "coordinates": [
+      50.8550625,
+      4.3053507
+    ]
+  },
+  {
+    "name": "London UK",
+    "date": "2018-08-03",
+    "airport": "LHR",
+    "coordinates": [
+      51.5287718,
+      -0.24168
+    ]
+  },
+  {
+    "name": "Dublin, Ireland",
+    "date": "2018-08-08",
+    "airport": "DUB",
+    "coordinates": [
+      53.3239919,
+      -6.5258808
+    ]
+  },
+  {
+    "name": "Galway, Ireland",
+    "date": "2018-08-10",
+    "coordinates": [
+      53.2404728,
+      -9.7532451
+    ]
+  },
+  {
+    "name": "Killarney, Ireland",
+    "date": "2018-08-14",
+    "coordinates": [
+      52.0605387,
+      -9.5251095
+    ]
+  },
+  {
+    "name": "Aviemore, Scotland",
+    "date": "2018-08-19",
+    "coordinates": [
+      57.1943462,
+      -3.8418945
+    ]
+  },
+  {
+    "name": "Inverness, Scotland",
+    "date": "2018-08-22",
+    "coordinates": [
+      57.4679914,
+      -4.2568769
+    ]
+  },
+  {
+    "name": "Edinburgh, Scotland",
+    "date": "2018-08-26",
+    "airport": "EDI",
+    "coordinates": [
+      55.9411885,
+      -3.2753778
+    ]
+  },
+  {
+    "name": "Oban, Scotland",
+    "date": "2018-08-26",
+    "coordinates": [
+      56.4110465,
+      -5.4896182
+    ]
+  },
+  {
+    "name": "Isle of Skye, Scotland",
+    "date": "2018-08-28",
+    "coordinates": [
+      57.2417241,
+      -5.9123436
+    ]
+  },
+  {
+    "name": "Aberdeen, Scotland",
+    "date": "2018-08-31",
+    "coordinates": [
+      57.1498817,
+      -2.1950666
+    ]
+  },
+  {
+    "name": "Shetland, Scotland",
+    "date": "2018-09-01",
+    "coordinates": [
+      60.1855439,
+      -1.2824989
+    ]
+  },
+  {
+    "name": "Orkney, Scotland",
+    "date": "2018-09-05",
+    "coordinates": [
+      59.0075871,
+      -3.3099799
+    ]
+  },
+  {
+    "name": "Windhoek, Namibia",
+    "date": "2018-09-12",
+    "airport": "WDH",
+    "coordinates": [
+      -22.5602536,
+      17.0495205
+    ]
+  },
+  {
+    "name": "Etosha National Park, Namibia",
+    "date": "2018-09-15",
+    "coordinates": [
+      -18.8555858,
+      16.327131
+    ]
+  },
+  {
+    "name": "Skeleton Coast Park, Namibia",
+    "date": "2018-09-18",
+    "coordinates": [
+      -19.9999949,
+      13.3311446
+    ]
+  },
+  {
+    "name": "Swakopmund, Namibia",
+    "date": "2018-09-19",
+    "coordinates": [
+      -22.6376653,
+      14.5625599
+    ]
+  },
+  {
+    "name": "Sesriem, Namibia",
+    "date": "2018-09-22",
+    "coordinates": [
+      -24.4860011,
+      15.7988655
+    ]
+  },
+  {
+    "name": "Kolmanskop, Namibia",
+    "date": "2018-09-24",
+    "coordinates": [
+      -26.7040737,
+      15.2286172
+    ]
+  },
+  {
+    "name": "Fish River Canyon, Namibia",
+    "date": "2018-09-25",
+    "coordinates": [
+      -27.7823739,
+      17.6045005
+    ]
+  },
+  {
+    "name": "Naukluft Mountains, Namibia",
+    "date": "2018-09-26",
+    "coordinates": [
+      -24.1666465,
+      16.1579119
+    ]
+  },
+  {
+    "name": "Windhoek, Namibia",
+    "date": "2018-09-27",
+    "airport": "WDH",
+    "coordinates": [
+      -22.5602536,
+      17.0495205
+    ]
+  },
+  {
+    "name": "Cape Town, South Africa",
+    "date": "2018-09-28",
+    "airport": "WDH",
+    "coordinates": [
+      -33.914651,
+      18.3758825
+    ]
+  },
+  {
+    "name": "Johannesburg, South Africa",
+    "date": "2018-10-04",
+    "airport": "CPT",
+    "coordinates": [
+      -26.1714402,
+      28.0050052
+    ]
+  },
+  {
+    "name": "Serengeti, Tanzania",
+    "date": "2018-10-05",
+    "airport": "KIA",
+    "coordinates": [
+      -2.3333279,
+      34.8311446
+    ]
+  },
+  {
+    "name": "Kilimanjaro, Tanzania",
+    "date": "2018-10-10",
+    "airport": "KIA",
+    "coordinates": [
+      -3.0674031,
+      37.3468725
+    ]
+  },
+  {
+    "name": "Zanzibar, Tanzania",
+    "date": "2018-10-19",
+    "airport": "ZNZ",
+    "coordinates": [
+      -6.1644191,
+      39.1606327
+    ]
+  },
+  {
+    "name": "Ottawa",
+    "map": false,
+    "airport": "YOW",
+    "date": "2018-10-22"
+  },
+  {
+    "name": "Seoul, South Korea",
+    "date": "2018-11-04",
+    "airport": "ICN",
+    "coordinates": [
+      37.5652894,
+      126.8494671
+    ]
+  },
+  {
+    "name": "Seoraksan, South Korea",
+    "date": "2018-11-10",
+    "coordinates": [
+      38.1113332,
+      128.4286734
+    ]
+  },
+  {
+    "name": "Samcheok, South Korea",
+    "date": "2018-11-13",
+    "coordinates": [
+      37.4435667,
+      129.1554952
+    ]
+  },
+  {
+    "name": "Gyeongju, South Korea",
+    "date": "2018-11-14",
+    "coordinates": [
+      35.8534335,
+      129.1868404
+    ]
+  },
+  {
+    "name": "Busan, South Korea",
+    "date": "2018-11-16",
+    "coordinates": [
+      35.1645702,
+      129.0017603
+    ]
+  },
+  {
+    "name": "Tokyo, Japan",
+    "date": "2018-11-18",
+    "airport": "NRT",
+    "coordinates": [
+      35.6693863,
+      139.6012976
+    ]
+  },
+  {
+    "name": "Morioka, Japan",
+    "date": "2018-11-23",
+    "coordinates": [
+      39.7472143,
+      141.121554
+    ]
+  },
+  {
+    "name": "Nagano, Japan",
+    "date": "2018-11-24",
+    "coordinates": [
+      36.6483413,
+      137.9744572
+    ]
+  },
+  {
+    "name": "Kyoto, Japan",
+    "date": "2018-11-28",
+    "airport": "ITM",
+    "coordinates": [
+      35.0061653,
+      135.7259306
+    ]
+  },
+  {
+    "name": "Osaka, Japan",
+    "date": "2018-12-01",
+    "airport": "ITM",
+    "coordinates": [
+      34.678434,
+      135.4776404
+    ]
+  },
+  {
+    "name": "Hanoi, Vietnam",
+    "date": "2018-12-03",
+    "airport": "HAN",
+    "coordinates": [
+      21.0227788,
+      105.8194541
+    ]
+  },
+  {
+    "name": "Ninh Binh, Vietnam",
+    "date": "2018-12-06",
+    "coordinates": [
+      20.2451965,
+      105.9404321
+    ]
+  },
+  {
+    "name": "Phong Nha, Vietnam",
+    "date": "2018-12-10",
+    "coordinates": [
+      17.5862435,
+      106.2810367
+    ]
+  },
+  {
+    "name": "Ho Chi Minh, Vietnam",
+    "date": "2018-12-12",
+    "airport": "SGN",
+    "coordinates": [
+      10.7553411,
+      106.4150414
+    ]
+  },
+  {
+    "name": "Penang, Malaysia",
+    "date": "2018-12-26",
+    "coordinates": [
+      5.3543299,
+      100.2229179
+    ]
+  },
+  {
+    "name": "Kuala Lumpur, Malaysia",
+    "date": "2018-12-20",
+    "airport": "KUL",
+    "coordinates": [
+      3.138675,
+      101.6169495
+    ]
+  },
+  {
+    "name": "Singapore",
+    "date": "2018-12-29",
+    "airport": "SIN",
+    "coordinates": [
+      1.3439166,
+      103.7540049
+    ]
+  },
+  {
+    "name": "Tonsai Beach, Thailand",
+    "date": "2019-01-02",
+    "airport": "KBV",
+    "coordinates": [
+      7.8512262,
+      98.6709168
+    ]
+  },
+  {
+    "name": "Kuala Lumpur, Malaysia",
+    "date": "2019-01-21",
+    "airport": "KUL",
+    "map": false,
+    "coordinates": [
+      3.138675,
+      101.6169495
+    ]
+  },
+  {
+    "name": "Chaing Mai, Thailand",
+    "date": "2019-01-25",
+    "airport": "CNX",
+    "map": false,
+    "coordinates": [
+      18.77183,
+      98.9214578
+    ]
+  },
+  {
+    "name": "Tonsai Beach, Thailand",
+    "date": "2019-01-29",
+    "airport": "KBV",
+    "map": false,
+    "coordinates": [
+      7.8512262,
+      98.6709168
+    ]
+  },
+  {
+    "name": "Vientiane, Laos",
+    "date": "2019-02-05",
+    "airport": "VTE",
+    "coordinates": [
+      17.9605181,
+      102.5707462
+    ]
+  },
+  {
+    "name": "Thakhek, Laos",
+    "date": "2019-02-09",
+    "coordinates": [
+      17.4045287,
+      104.7829623
+    ]
+  },
+  {
+    "name": "Bangkok, Thailand",
+    "date": "2019-02-20",
+    "airport": "DMK",
+    "coordinates": [
+      13.7196108,
+      100.5322264
+    ]
+  },
+  {
+    "name": "Phuket, Thailand",
+    "date": "2019-02-24",
+    "airport": "HKT",
+    "coordinates": [
+      7.883403,
+      98.374404
+    ]
+  },
+  {
+    "name": "Tonsai Beach, Thailand",
+    "date": "2019-02-28",
+    "airport": "KBV",
+    "coordinates": [
+      7.8512262,
+      98.6709168
+    ]
+  },
+  {
+    "name": "Siem Reap, Cambodia",
+    "date": "2019-03-04",
+    "airport": "REP",
+    "coordinates": [
+      13.3403383,
+      103.7929146
+    ]
+  },
+  {
+    "name": "Yangon, Myanmar",
+    "date": "2019-03-08",
+    "airport": "RGN",
+    "coordinates": [
+      16.9101877,
+      96.011896
+    ]
+  },
+  {
+    "name": "Bagan, Myanmar",
+    "date": "2019-03-11",
+    "coordinates": [
+      21.1722165,
+      94.8544872
+    ]
+  },
+  {
+    "name": "Mandalay, Myanmar",
+    "date": "2019-03-13",
+    "airport": "RGN",
+    "coordinates": [
+      21.9405043,
+      96.0057843
+    ]
+  },
+  {
+    "name": "Inle Lake, Myanmar",
+    "date": "2019-03-17",
+    "coordinates": [
+      20.5334707,
+      96.8357146
+    ]
+  },
+  {
+    "name": "Yangon, Myanmar",
+    "date": "2019-03-20",
+    "airport": "RGN",
+    "coordinates": [
+      16.9101877,
+      96.011896
+    ]
+  },
+  {
+    "name": "Ottawa",
+    "date": "2019-03-20",
+    "map": false,
+    "airport": "YOW",
+    "coordinates": [
+      45.4215,
+      -75.6972
+    ]
+  }
+]
