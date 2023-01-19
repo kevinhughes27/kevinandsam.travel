@@ -9,7 +9,6 @@ import { isDomAvailable } from '../utils'
 import yearTrip from '../data/yearTrip.json'
 import trips from '../data/trips.json'
 
-const locations = yearTrip.filter((r) => r.map !== false)
 const currentLocation = {
   name: "Ottawa",
   coordinates: [45.4215, -75.6972]
@@ -63,6 +62,7 @@ class MapPage extends Component {
           }}>
 
           <TileLayer url='https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}' />
+          <CurrentLocationMarker location={currentLocation} />
           <YearTrip />
           <Trips />
         </MapContainer>
@@ -72,6 +72,7 @@ class MapPage extends Component {
 }
 
 const YearTrip = () => {
+  const locations = yearTrip.filter((r) => r.map !== false)
   const coordinates = locations.map((location) => location.coordinates)
 
   return (
@@ -82,7 +83,6 @@ const YearTrip = () => {
         opacity={0.25}
         dashArray={'5,5'}
         positions={coordinates} />
-      <CurrentLocationMarker location={currentLocation} />
       <LocationMarkers locations={locations} color='blue' />
     </div>
   )
@@ -104,12 +104,12 @@ const Trip = ({ trip }) => {
   return (
     <div>
       <Polyline
-        color='grey'
+        color={trip.color}
         weight={2}
         opacity={0.25}
         dashArray={'5,5'}
         positions={coordinates} />
-      <LocationMarkers locations={trip.locations} color='grey' />
+      <LocationMarkers locations={trip.locations} color={trip.color} />
     </div>
   )
 }
