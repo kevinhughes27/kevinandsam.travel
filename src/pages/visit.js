@@ -52,7 +52,7 @@ class VisitPage extends Component {
     return(
       <div>
         <p>
-          We're back home in Ottawa now but the visit offer still stands!
+          Our nomading days are behind us now but you're welcome to come visit in Ottawa!
         </p>
         <p>
           This form isn't useful anymore but I think it's neat so I've left it up in an archived fashion so you can see how it used to work.
