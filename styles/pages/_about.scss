@@ -2,6 +2,8 @@
   .images {
     display: flex;
     justify-content: space-between;
+    max-width: 64em;
+    margin: auto;
   }
 
   .image-container {
