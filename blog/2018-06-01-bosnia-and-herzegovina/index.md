@@ -1,7 +1,7 @@
 ---
 path: "/bosnia-and-herzegovina"
 date: "2018-06-01"
-title: "Bosnia in 6 Days"
+title: "6 Day Bosnia Roadtrip"
 author: "Kevin"
 cardImage: "card.jpeg"
 postImage: "post.jpeg"
