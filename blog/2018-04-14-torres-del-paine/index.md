@@ -7,7 +7,7 @@ cardImage: "card.jpg"
 postImage: "post.jpeg"
 ---
 
-Patagonia - there is something about this place, the feeling of adventure is real here. This is the furthest south we've ever been. It's not the furthest from home but it feels like it is. I think this is because it's easier to visualize the distance over land than over water; we could technically walk home from here.
+Patagonia - there is something about this place, the feeling of adventure is real here. This is the furthest south we've ever been. It's not the furthest from home but it feels like it is. Probably because we've been slowly making our way down here from Colombia at the top of the continent. I also think it is easier to visualize the distance over land than over water; we could technically walk home from here.
 
 We flew from Santiago to Punta Arenas and then bused to Puerto Natales. Our destination was Torres del Paine National Park and our goal was the W trek - as long as the weather looked okay. April is late season for Patagonia and the park closes down after April 30th for winter. At our hostel and enroute we met many other travellers still planning to do the full trek and the temperature seemed good enough so we decided to go for it. We were able to book everything last minute, a nice advantage of being here late season, in high season you need to book camp grounds or refugios months in advance.
 
