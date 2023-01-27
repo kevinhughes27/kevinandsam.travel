@@ -1,0 +1,166 @@
+[
+  {
+    "name": "Ruby Day Italy",
+    "color": "teal",
+    "locations": [
+      {
+        "name": "Florence, Italy",
+        "date": "2016-11-23",
+        "coordinates": [
+          43.7799528,
+          11.2059486
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Fullstack Fest Barcelona",
+    "color": "teal",
+    "locations": [
+      {
+        "name": "Barcelona, Spain",
+        "date": "2015-09-01",
+        "coordinates": [
+          41.3926467,
+          2.0701495
+        ]
+      },
+      {
+        "name": "Stockholm, Sweden",
+        "date": "2015-09-09",
+        "coordinates": [
+          59.3260668,
+          17.8419722
+        ]
+      },
+      {
+        "name": "Paris, France",
+        "date": "2015-09-12",
+        "coordinates": [
+          48.8588336,
+          2.2769956
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Canary Islands",
+    "color": "teal",
+    "locations": [
+      {
+        "name": "Canary Islands",
+        "date": "2014-10-04",
+        "coordinates": [
+          27.9577148,
+          -15.7365202
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Grad Trip 2023",
+    "color": "teal",
+    "locations": [
+      {
+        "name": "Japan",
+        "date": "2013-09-23",
+        "coordinates": [
+          35.6693863,
+          139.6012976
+        ]
+      },
+      {
+        "name": "Auckland, New Zealand",
+        "date": "2013-10-03",
+        "coordinates": [
+          -36.8594657,
+          174.4190391
+        ]
+      },
+      {
+        "name": "Queenstown, New Zealand",
+        "date": "2013-10-12",
+        "coordinates": [
+          -44.9968245,
+          168.6297594
+        ]
+      },
+      {
+        "name": "Thailand",
+        "date": "2013-10-15",
+        "coordinates": [
+          13.7196108,
+          100.5322264
+        ]
+      },
+      {
+        "name": "Hong Kong",
+        "date": "2013-10-25",
+        "coordinates": [
+          22.3526632,
+          113.9876156
+        ]
+      }
+    ]
+  },
+  {
+    "name": "India 2013",
+    "color": "yellow",
+    "locations": [
+      {
+        "name": "Kanpur",
+        "date": "2013-03-17",
+        "coordinates": [
+          26.5123388,
+          80.2307113
+        ]
+      },
+      {
+        "name": "Pilani",
+        "date": "2013-03-19",
+        "coordinates": [
+          28.3588634,
+          75.5854562
+        ]
+      },
+      {
+        "name": "Delhi",
+        "date": "2013-03-21",
+        "coordinates": [
+          28.6440116,
+          76.9531473
+        ]
+      },
+      {
+        "name": "Jaipur",
+        "date": "2013-03-23",
+        "coordinates": [
+          26.8851417,
+          75.6504738
+        ]
+      },
+      {
+        "name": "Agra",
+        "date": "2013-03-24",
+        "coordinates": [
+          27.1761571,
+          77.909973
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Turks and Caicos",
+    "color": "teal",
+    "locations": [
+      {
+        "name": "Turks and Caicos",
+        "date": "2011-03-25",
+        "coordinates": [
+          21.7763386,
+          -72.3703764
+        ]
+      }
+    ]
+  }
+]

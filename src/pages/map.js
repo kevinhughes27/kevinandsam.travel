@@ -7,6 +7,7 @@ import { format, isAfter } from 'date-fns'
 import { isDomAvailable } from '../utils'
 
 import yearTrip from '../data/yearTrip.json'
+import kevinTrips from '../data/kevin.json'
 import trips from '../data/trips.json'
 
 const currentLocation = {
@@ -83,6 +84,11 @@ class MapPage extends Component {
               </LayerGroup>
             </LayersControl.Overlay>
 
+            <LayersControl.Overlay checked name="Kevin">
+              <LayerGroup>
+                <Trips trips={kevinTrips}/>
+              </LayerGroup>
+            </LayersControl.Overlay>
           </LayersControl>
 
         </MapContainer>
