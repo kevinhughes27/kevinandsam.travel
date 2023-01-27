@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Layout from '../components/Layout'
 import withSizes from 'react-sizes'
-import { MapContainer, TileLayer, Marker, CircleMarker, Circle, Popup, Polyline } from 'react-leaflet'
+import { MapContainer, TileLayer, Marker, CircleMarker, Circle, Popup, Polyline, LayersControl, LayerGroup } from 'react-leaflet'
 import { divIcon } from 'leaflet'
 import { format, isAfter } from 'date-fns'
 import { isDomAvailable } from '../utils'
@@ -52,7 +52,7 @@ class MapPage extends Component {
           zoomSnap={0}
           zoomDelta={0.5}
           wheelPxPerZoomLevel={100}
-          zoomControl={false}
+          zoomControl={true}
           attributionControl={false}
           onMove={(ev) => {
             const map = ev.target
@@ -63,8 +63,28 @@ class MapPage extends Component {
 
           <TileLayer url='https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}' />
           <CurrentLocationMarker location={currentLocation} />
-          <YearTrip />
-          <Trips />
+
+          <LayersControl position="topright">
+            <LayersControl.Overlay checked name="When we were Nomads (Year Trip)">
+              <LayerGroup>
+                <YearTrip />
+              </LayerGroup>
+            </LayersControl.Overlay>
+
+            <LayersControl.Overlay checked name="Kevin and Sam">
+              <LayerGroup>
+                <Trips trips={ trips.filter(t => new Date(t.locations[0].date) < new Date("2022-04-19")) }/>
+              </LayerGroup>
+            </LayersControl.Overlay>
+
+            <LayersControl.Overlay checked name="Kevin, Sam and Miles">
+              <LayerGroup>
+                <Trips trips={ trips.filter(t => new Date(t.locations[0].date) > new Date("2022-04-19")) }/>
+              </LayerGroup>
+            </LayersControl.Overlay>
+
+          </LayersControl>
+
         </MapContainer>
       </Layout>
     )
@@ -88,7 +108,7 @@ const YearTrip = () => {
   )
 }
 
-const Trips = () => {
+const Trips = ({ trips }) => {
   return (
     <div>
       {trips.map((trip) => {
@@ -123,6 +143,7 @@ const CurrentLocationMarker = ({ location }) => {
 
   return (
     <div>
+      <CircleMarker center={location.coordinates} radius={1} color="blue"/>
       <Marker position={location.coordinates} icon={pulsingIcon}>
         <Popup>
           <div>
