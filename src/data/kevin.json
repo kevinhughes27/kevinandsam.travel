@@ -62,7 +62,7 @@
     "color": "teal",
     "locations": [
       {
-        "name": "Canary Islands",
+        "name": "Canary Islands, Spain",
         "date": "2014-10-04",
         "coordinates": [
           27.9577148,
@@ -178,7 +178,7 @@
         ]
       },
       {
-        "name": "Hong Kong",
+        "name": "Hong Kong, China",
         "date": "2013-10-25",
         "coordinates": [
           22.3526632,
@@ -220,7 +220,7 @@
     "color": "yellow",
     "locations": [
       {
-        "name": "Kanpur",
+        "name": "Kanpur, India",
         "date": "2013-03-17",
         "coordinates": [
           26.5123388,
@@ -228,7 +228,7 @@
         ]
       },
       {
-        "name": "Pilani",
+        "name": "Pilani, India",
         "date": "2013-03-19",
         "coordinates": [
           28.3588634,
@@ -236,7 +236,7 @@
         ]
       },
       {
-        "name": "Delhi",
+        "name": "Delhi, India",
         "date": "2013-03-21",
         "coordinates": [
           28.6440116,
@@ -244,7 +244,7 @@
         ]
       },
       {
-        "name": "Jaipur",
+        "name": "Jaipur, India",
         "date": "2013-03-23",
         "coordinates": [
           26.8851417,
@@ -252,7 +252,7 @@
         ]
       },
       {
-        "name": "Agra",
+        "name": "Agra, India",
         "date": "2013-03-24",
         "coordinates": [
           27.1761571,
@@ -336,7 +336,7 @@
     "color": "teal",
     "locations": [
       {
-        "name": "La Fortuna",
+        "name": "La Fortuna, Costa Rica",
         "date": "2004-03-29",
         "coordinates": [
           10.4699508,
@@ -344,7 +344,7 @@
         ]
       },
       {
-        "name": "Rincon de la Vieja",
+        "name": "Rincon de la Vieja, Costa Rica",
         "date": "2004-03-29",
         "coordinates": [
           10.8315283,
@@ -352,7 +352,7 @@
         ]
       },
       {
-        "name": "Monteverde",
+        "name": "Monteverde, Costa Rica",
         "date": "2004-04-03",
         "coordinates": [
           10.2856063,
@@ -360,7 +360,7 @@
         ]
       },
       {
-        "name": "Manuel Antonio",
+        "name": "Manuel Antonio, Costa Rica",
         "date": "2013-02-12",
         "coordinates": [
           9.4076152,
