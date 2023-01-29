@@ -354,7 +354,7 @@
     ]
   },
   {
-    "name": "London UK",
+    "name": "London, England",
     "date": "2018-08-03",
     "airport": "LHR",
     "coordinates": [
@@ -744,7 +744,6 @@
     "name": "Chaing Mai, Thailand",
     "date": "2019-01-25",
     "airport": "CNX",
-    "map": false,
     "coordinates": [
       18.77183,
       98.9214578

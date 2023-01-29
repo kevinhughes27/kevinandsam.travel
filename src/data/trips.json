@@ -4,7 +4,7 @@
     "color": "orange",
     "locations": [
       {
-        "name": "Cancun",
+        "name": "Cancun, Mexico",
         "date": "2023-01-09",
         "coordinates": [
           20.6722604,
@@ -18,7 +18,7 @@
     "color": "orange",
     "locations": [
       {
-        "name": "Helsinki",
+        "name": "Helsinki, Finland",
         "date": "2022-10-28",
         "coordinates": [
           60.1098678,
@@ -26,7 +26,7 @@
         ]
       },
       {
-        "name": "Berlin",
+        "name": "Berlin, Germany",
         "date": "2022-11-06",
         "coordinates": [
           52.5067614,
@@ -34,7 +34,7 @@
         ]
       },
       {
-        "name": "Lagos",
+        "name": "Lagos, Portugal",
         "date": "2022-11-14",
         "coordinates": [
           37.1152584,
@@ -42,7 +42,7 @@
         ]
       },
       {
-        "name": "Lisbon",
+        "name": "Lisbon, Portugal",
         "date": "2022-11-18",
         "coordinates": [
           38.7436214,
@@ -71,7 +71,7 @@
     "color": "red",
     "locations": [
       {
-        "name": "Beijing",
+        "name": "Beijing, China",
         "date": "2017-05-10",
         "coordinates": [
           39.9390731,
@@ -79,7 +79,7 @@
         ]
       },
       {
-        "name": "Xi'an",
+        "name": "Xi'an, China",
         "date": "2017-05-16",
         "coordinates": [
           34.2595844,
@@ -87,7 +87,7 @@
         ]
       },
       {
-        "name": "Zhangye",
+        "name": "Zhangye, China",
         "date": "2017-05-18",
         "coordinates": [
           38.9180207,
@@ -95,7 +95,7 @@
         ]
       },
       {
-        "name": "Lijiang",
+        "name": "Lijiang, China",
         "date": "2017-05-21",
         "coordinates": [
           26.8700055,
@@ -103,7 +103,7 @@
         ]
       },
       {
-        "name": "Yangshuo",
+        "name": "Yangshuo, China",
         "date": "2017-05-26",
         "coordinates": [
           24.8459283,
@@ -111,7 +111,7 @@
         ]
       },
       {
-        "name": "Shanghai",
+        "name": "Shanghai, China",
         "date": "2017-05-30",
         "coordinates": [
           31.2246325,
@@ -125,7 +125,7 @@
     "color": "green",
     "locations": [
       {
-        "name": "Cusco",
+        "name": "Cusco, Peru",
         "date": "2015-11-16",
         "coordinates": [
           -13.5300169,
@@ -133,7 +133,7 @@
         ]
       },
       {
-        "name": "Lima",
+        "name": "Lima, Peru",
         "date": "2015-11-22",
         "coordinates": [
           -12.0266034,
@@ -141,7 +141,7 @@
         ]
       },
       {
-        "name": "Trujillo",
+        "name": "Trujillo, Peru",
         "date": "2015-11-19",
         "coordinates": [
           -8.1167519,
@@ -155,7 +155,7 @@
     "color": "green",
     "locations": [
       {
-        "name": "Monteverde",
+        "name": "Monteverde, Costa Rica",
         "date": "2013-02-05",
         "coordinates": [
           10.2856063,
@@ -163,7 +163,7 @@
         ]
       },
       {
-        "name": "La Fortuna",
+        "name": "La Fortuna, Costa Rica",
         "date": "2013-02-09",
         "coordinates": [
           10.4699508,
@@ -171,7 +171,7 @@
         ]
       },
       {
-        "name": "Puerto Viejo",
+        "name": "Puerto Viejo, Costa Rica",
         "date": "2013-02-12",
         "coordinates": [
           9.6529511,

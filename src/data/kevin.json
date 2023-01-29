@@ -1,0 +1,372 @@
+[
+  {
+    "name": "Ruby Day Italy",
+    "color": "teal",
+    "locations": [
+      {
+        "name": "Florence, Italy",
+        "date": "2016-11-23",
+        "coordinates": [
+          43.7799528,
+          11.2059486
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Shopify Unite",
+    "color": "teal",
+    "locations": [
+      {
+        "name": "San Francisco, United States",
+        "date": "2016-03-22",
+        "coordinates": [
+          37.7576948,
+          -122.4726194
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Fullstack Fest Barcelona",
+    "color": "teal",
+    "locations": [
+      {
+        "name": "Barcelona, Spain",
+        "date": "2015-09-01",
+        "coordinates": [
+          41.3926467,
+          2.0701495
+        ]
+      },
+      {
+        "name": "Stockholm, Sweden",
+        "date": "2015-09-09",
+        "coordinates": [
+          59.3260668,
+          17.8419722
+        ]
+      },
+      {
+        "name": "Paris, France",
+        "date": "2015-09-12",
+        "coordinates": [
+          48.8588336,
+          2.2769956
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Shopify Remote Month",
+    "color": "teal",
+    "locations": [
+      {
+        "name": "Canary Islands, Spain",
+        "date": "2014-10-04",
+        "coordinates": [
+          27.9577148,
+          -15.7365202
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Rails Conf 2013",
+    "color": "teal",
+    "locations": [
+      {
+        "name": "Chicago, United States",
+        "date": "2014-04-22",
+        "coordinates": [
+          41.8336479,
+          -87.8720465
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Grad Trip 2023",
+    "color": "teal",
+    "locations": [
+      {
+        "name": "Tokyo, Japan",
+        "date": "2013-09-23",
+        "coordinates": [
+          35.6693863,
+          139.6012976
+        ]
+      },
+      {
+        "name": "Kyoto, Japan",
+        "date": "2013-09-27",
+        "coordinates": [
+          35.0061653,
+          135.7259306
+        ]
+      },
+      {
+        "name": "Osaka, Japan",
+        "date": "2013-09-28",
+        "coordinates": [
+          34.678434,
+          135.4776404
+        ]
+      },
+      {
+        "name": "Hiroshima, Japan",
+        "date": "2013-09-30",
+        "coordinates": [
+          34.4558581,
+          132.2972197
+        ]
+      },
+      {
+        "name": "Auckland, New Zealand",
+        "date": "2013-10-03",
+        "coordinates": [
+          -36.8594657,
+          174.4190391
+        ]
+      },
+      {
+        "name": "Wellington, New Zealand",
+        "date": "2013-10-06",
+        "coordinates": [
+          -41.2529389,
+          174.6842181
+        ]
+      },
+      {
+        "name": "Milford Sound, New Zealand",
+        "date": "2013-10-10",
+        "coordinates": [
+          -44.6232826,
+          167.7842967
+        ]
+      },
+      {
+        "name": "Queenstown, New Zealand",
+        "date": "2013-10-12",
+        "coordinates": [
+          -44.9968245,
+          168.6297594
+        ]
+      },
+      {
+        "name": "Bangkok, Thailand",
+        "date": "2013-10-15",
+        "coordinates": [
+          13.7196108,
+          100.5322264
+        ]
+      },
+      {
+        "name": "Chaing Mai, Thailand",
+        "date": "2013-10-17",
+        "coordinates": [
+          18.77183,
+          98.9214578
+        ]
+      },
+      {
+        "name": "Railay Beach, Thailand",
+        "date": "2013-10-19",
+        "coordinates": [
+          7.8512262,
+          98.6709168
+        ]
+      },
+      {
+        "name": "Hong Kong, China",
+        "date": "2013-10-25",
+        "coordinates": [
+          22.3526632,
+          113.9876156
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Jamaica",
+    "color": "teal",
+    "locations": [
+      {
+        "name": "Jamaica",
+        "date": "2013-09-14",
+        "coordinates": [
+          18.4711336,
+          -77.9398017
+        ]
+      }
+    ]
+  },
+  {
+    "name": "CRV 2013",
+    "color": "teal",
+    "locations": [
+      {
+        "name": "Saskatoon",
+        "date": "2011-05-31",
+        "coordinates": [
+          52.1504533,
+          -106.7344498
+        ]
+      }
+    ]
+  },
+  {
+    "name": "India 2013",
+    "color": "yellow",
+    "locations": [
+      {
+        "name": "Kanpur, India",
+        "date": "2013-03-17",
+        "coordinates": [
+          26.5123388,
+          80.2307113
+        ]
+      },
+      {
+        "name": "Pilani, India",
+        "date": "2013-03-19",
+        "coordinates": [
+          28.3588634,
+          75.5854562
+        ]
+      },
+      {
+        "name": "Delhi, India",
+        "date": "2013-03-21",
+        "coordinates": [
+          28.6440116,
+          76.9531473
+        ]
+      },
+      {
+        "name": "Jaipur, India",
+        "date": "2013-03-23",
+        "coordinates": [
+          26.8851417,
+          75.6504738
+        ]
+      },
+      {
+        "name": "Agra, India",
+        "date": "2013-03-24",
+        "coordinates": [
+          27.1761571,
+          77.909973
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MESA Conf",
+    "color": "teal",
+    "locations": [
+      {
+        "name": "Washington D.C., United States",
+        "date": "2011-08-31",
+        "coordinates": [
+          38.8937336,
+          -77.0846157
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Turks and Caicos",
+    "color": "teal",
+    "locations": [
+      {
+        "name": "Turks and Caicos",
+        "date": "2011-03-25",
+        "coordinates": [
+          21.7763386,
+          -72.3703764
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Las Vegas",
+    "color": "teal",
+    "locations": [
+      {
+        "name": "Las Vegas, United States",
+        "date": "2010-02-20",
+        "coordinates": [
+          36.1246575,
+          -115.4620826
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Summer Field Job",
+    "color": "teal",
+    "locations": [
+      {
+        "name": "Fort Nelson",
+        "date": "2009-06-01",
+        "coordinates": [
+          58.8057352,
+          -122.7459673
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Junior Nationals",
+    "color": "teal",
+    "locations": [
+      {
+        "name": "Whitehorse",
+        "date": "2006-06-01",
+        "coordinates": [
+          60.7031609,
+          -135.3583883
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Costa Rica 2004",
+    "color": "teal",
+    "locations": [
+      {
+        "name": "La Fortuna, Costa Rica",
+        "date": "2004-03-29",
+        "coordinates": [
+          10.4699508,
+          -84.6447657
+        ]
+      },
+      {
+        "name": "Rincon de la Vieja, Costa Rica",
+        "date": "2004-03-29",
+        "coordinates": [
+          10.8315283,
+          -85.3451069
+        ]
+      },
+      {
+        "name": "Monteverde, Costa Rica",
+        "date": "2004-04-03",
+        "coordinates": [
+          10.2856063,
+          -84.8535067
+        ]
+      },
+      {
+        "name": "Manuel Antonio, Costa Rica",
+        "date": "2013-02-12",
+        "coordinates": [
+          9.4076152,
+          -84.1582776
+        ]
+      }
+    ]
+  }
+]
