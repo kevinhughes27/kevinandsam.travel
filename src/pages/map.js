@@ -84,7 +84,7 @@ class MapPage extends Component {
               </LayerGroup>
             </LayersControl.Overlay>
 
-            <LayersControl.Overlay checked name="Kevin">
+            <LayersControl.Overlay name="Kevin">
               <LayerGroup>
                 <Trips trips={kevinTrips}/>
               </LayerGroup>
