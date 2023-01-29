@@ -55,6 +55,7 @@ class MapPage extends Component {
           wheelPxPerZoomLevel={100}
           zoomControl={true}
           attributionControl={false}
+          maxBounds={[[-90,-270], [90,270]]}
           onMove={(ev) => {
             const map = ev.target
             const latLng = map.getCenter()
