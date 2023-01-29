@@ -2,15 +2,15 @@
 
 import json
 from pathlib import Path
-
-countries = set()
+from collections import defaultdict
 
 
 def country_name(location):
     return location["name"].split(", ")[1] if ", " in location["name"] else location["name"]
 
 
-def add_year_trip():
+def load_year_trip():
+    countries = set()
     data_path = Path(__file__).parent / "../src/data/yearTrip.json"
 
     with open(data_path, "r") as f:
@@ -24,41 +24,42 @@ def add_year_trip():
         if name not in ["Ottawa", "Calgary"]:
             countries.add(name)
 
-
-# kevin and sam trips + kevin, sam and miles trips
-def add_family_trips():
-    data_path = Path(__file__).parent / "../src/data/trips.json"
-
-    with open(data_path, "r") as f:
-        trips = json.load(f)
-
-    for trip in trips:
-        for location in trip["locations"]:
-            name = country_name(location)
-
-            if name not in ["Gros Morne"]:
-                countries.add(name)
+    return countries
 
 
-# add solo and childhood family trips
-def add_solo_trips():
-    data_path = Path(__file__).parent / "../src/data/kevin.json"
+def load_trips(data_path, ignore=[]):
+    countries = defaultdict(int)
 
     with open(data_path, "r") as f:
         trips = json.load(f)
 
     for trip in trips:
-        for location in trip["locations"]:
+        for idx, location in enumerate(trip["locations"]):
             name = country_name(location)
 
-            if name not in ["Saskatoon", "Fort Nelson", "Whitehorse"]:
-                countries.add(name)
+            # only count a country once per trip
+            if idx > 0:
+                prev_country = country_name(trip["locations"][idx - 1])
+                if name == prev_country:
+                    continue
+
+            if name not in ignore:
+                countries[name] = countries[name] + 1
+
+    return countries
 
 
 if __name__ == "__main__":
-    add_year_trip()
-    add_family_trips()
-    add_solo_trips()
+    countries = defaultdict(int)
+
+    for country in load_year_trip():
+        countries[country] = 1
+
+    for country in load_trips(Path(__file__).parent / "../src/data/trips.json", ignore=["Gros Morne"]):
+        countries[country] += 1
+
+    for country in load_trips(Path(__file__).parent / "../src/data/kevin.json", ignore=["Saskatoon", "Fort Nelson", "Whitehorse"]):
+        countries[country] += 1
 
     print(f"{len(countries)} countries visited:\n")
     print(countries)
