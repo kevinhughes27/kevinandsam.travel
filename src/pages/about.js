@@ -13,14 +13,14 @@ class AboutPage extends Component {
             <div className="text-container">
               <p>
                 In 2014, Kevin and Sam met through their mutual love of travel.
-                Our first adventure together was Costa Rica where we explored the rainforest,
+                Our first adventure together was Costa Rica where we explored rainforests,
                 went zip-lining, and enjoyed many beachside drinks. The trips have escalated
-                since then from hiking the Inca Trail in Peru to a month of backpacking around China.
+                since from hiking the Inca Trail in Peru to a month of backpacking around China.
               </p>
               <p>
-                Inspired by other long-term travellers we'd met we often dreamt of taking a year off to
-                travel the world. In 2018 we embarked on our most ambitious trip yet - we sold everything and
-                became travelling nomads for 14 months.
+                Inspired by other long-term travellers we'd met it was our dream to take a year and
+                travel around the world. In 2018 we got our chance and embarked on our most ambitious
+                trip yet - we sold everything and became travelling nomads for 14 months.
               </p>
               <p>
                 These days our travelling is a bit more tame and family friendly but it's still our passion

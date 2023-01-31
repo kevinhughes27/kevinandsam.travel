@@ -8,12 +8,44 @@
     ]
   },
   {
-    "name": "Guatemala",
+    "name": "Antigua, Guatemala",
     "date": "2018-02-01",
     "airport": "GUA",
     "coordinates": [
-      14.5666644,
-      -90.7333304
+      14.5591436,
+      -90.7513298
+    ]
+  },
+  {
+    "name": "El Paredon, Guatemala",
+    "date": "2018-02-03",
+    "coordinates": [
+      13.917837,
+      -91.0764071
+    ]
+  },
+  {
+    "name": "Quetzaltenango, Guatemala",
+    "date": "2018-02-11",
+    "coordinates": [
+      14.8390703,
+      -91.556017
+    ]
+  },
+  {
+    "name": "Panajachel, Guatemala",
+    "date": "2018-02-19",
+    "coordinates": [
+      14.7425122,
+      -91.1595834
+    ]
+  },
+  {
+    "name": "Flores, Guatemala",
+    "date": "2018-02-20",
+    "coordinates": [
+      16.9103069,
+      -89.9392153
     ]
   },
   {

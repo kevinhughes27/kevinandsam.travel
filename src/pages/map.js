@@ -48,8 +48,8 @@ class MapPage extends Component {
         <MapContainer
           center={center}
           zoom={zoom}
-          minZoom={2.7}
-          maxZoom={6.8}
+          minZoom={2.5}
+          maxZoom={7.0}
           zoomSnap={0}
           zoomDelta={0.5}
           wheelPxPerZoomLevel={100}
@@ -67,31 +67,30 @@ class MapPage extends Component {
           <CurrentLocationMarker location={currentLocation} />
 
           <LayersControl position="topright">
+            <LayersControl.Overlay name="Kevin">
+              <LayerGroup>
+                <Trips trips={kevinTrips}/>
+              </LayerGroup>
+            </LayersControl.Overlay>
+
+            <LayersControl.Overlay checked name="Kevin & Sam">
+              <LayerGroup>
+                <Trips trips={ trips.filter(t => new Date(t.locations[0].date) < new Date("2022-04-19")) }/>
+              </LayerGroup>
+            </LayersControl.Overlay>
+
             <LayersControl.Overlay checked name="When we were Nomads (Year Trip)">
               <LayerGroup>
                 <YearTrip />
               </LayerGroup>
             </LayersControl.Overlay>
 
-            <LayersControl.Overlay checked name="Kevin and Sam">
-              <LayerGroup>
-                <Trips trips={ trips.filter(t => new Date(t.locations[0].date) < new Date("2022-04-19")) }/>
-              </LayerGroup>
-            </LayersControl.Overlay>
-
-            <LayersControl.Overlay checked name="Kevin, Sam and Miles">
+            <LayersControl.Overlay checked name="Kevin, Sam & Miles">
               <LayerGroup>
                 <Trips trips={ trips.filter(t => new Date(t.locations[0].date) > new Date("2022-04-19")) }/>
               </LayerGroup>
             </LayersControl.Overlay>
-
-            <LayersControl.Overlay name="Kevin">
-              <LayerGroup>
-                <Trips trips={kevinTrips}/>
-              </LayerGroup>
-            </LayersControl.Overlay>
           </LayersControl>
-
         </MapContainer>
       </Layout>
     )
