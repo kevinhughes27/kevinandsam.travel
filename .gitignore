@@ -5,3 +5,9 @@ yarn-error.log
 
 # Build directory
 public/
+
+# Facebook posts
+# this is temporary while I am working on how I want to do this
+# eventually this will be commited but in some cleaned up form rather
+# than the raw export
+facebook
