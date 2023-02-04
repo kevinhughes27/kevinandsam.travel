@@ -7,6 +7,13 @@ const blog = [
     },
   },
   {
+    resolve: `gatsby-source-filesystem`,
+    options: {
+      path: `${__dirname}/facebook`,
+      name: 'facebook',
+    },
+  },
+  {
     resolve: `gatsby-plugin-mdx`,
     options: {
       extensions: [`.md`, `.mdx`],
@@ -55,6 +62,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-catch-links`,
+    `gatsby-transformer-json`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
