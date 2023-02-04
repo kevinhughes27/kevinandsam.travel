@@ -1,18 +1,27 @@
 #!/usr/bin/env python3
 
 import json
+import shutil
 from pathlib import Path
 
 
 # this is the raw export file from facebook.
 # it includes all kinds of posts which I need to split
 # into types with consistent schemas for gatsby/graphql to work properly
-data_path = Path(__file__).parent / "../facebook/your_posts_1.json"
+facebook_export_dir = Path.home() / "Downloads/facebook-posts"
+facebook_export = facebook_export_dir / "your_posts_1.json"
 
-with open(data_path, "r") as f:
+output_dir = Path.home() / "Projects/kevinandsam.travel/facebook"
+images_dir = output_dir / "images"
+
+# make dirs
+images_dir.mkdir(parents=True, exist_ok=True)
+
+# load the data
+with open(facebook_export, "r") as f:
     posts = json.load(f)
 
-
+# transform
 image_posts = []
 travelling_to_posts = []
 
@@ -27,9 +36,19 @@ for post in posts:
         for attachment in attachments:
             for data in attachment["data"]:
                 if "media" in data:
-                    # TODO I should copy these images somewhere else to ensure I only commit images I am using.
                     image = data["media"]["uri"]
-                    images.append(image)
+
+                    # only jpg for now
+                    if Path(image).suffix == ".jpg":
+                        image_name = Path(image).name
+                        image_file = image[6:]  # removing leading 'posts/'
+
+                        src = str(facebook_export_dir / image_file)
+                        dst = str(images_dir / image_name)
+                        rel = f"images/{image_name}"
+
+                        shutil.copy(src, dst)
+                        images.append(rel)
 
                 elif "place" in data:
                     place = data["place"]
@@ -51,5 +70,12 @@ for post in posts:
             pass
 
     else:
-        # print what is being filtered here to be sure
+        # removes some birthday posts
+        # removes an inquiry about ultimate in colombia
+        # removes my post about all our airbnbs in bosnia being on Marsala Tita street
         pass
+
+
+# write output
+with open(output_dir / "posts.json", "w") as f:
+    f.write(json.dumps(image_posts, indent=2))

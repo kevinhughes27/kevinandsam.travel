@@ -3,7 +3,7 @@ const blog = [
     resolve: `gatsby-source-filesystem`,
     options: {
       path: `${__dirname}/blog`,
-      name: 'pages',
+      name: 'blog',
     },
   },
   {
