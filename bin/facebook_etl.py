@@ -2,6 +2,7 @@
 
 import json
 import shutil
+import io
 from pathlib import Path
 
 
@@ -17,9 +18,41 @@ images_dir = output_dir / "images"
 # make dirs
 images_dir.mkdir(parents=True, exist_ok=True)
 
+# constants
+author = "Kevin"
+
+
+# fix emoji encoding: https://krvtz.net/posts/how-facebook-got-unicode-wrong.html
+class FacebookIO(io.FileIO):
+    def read(self, size: int = -1) -> bytes:
+        data: bytes = super(FacebookIO, self).readall()
+        new_data: bytes = b''
+        i: int = 0
+        while i < len(data):
+            # \u00c4\u0085
+            # 0123456789ab
+            if data[i:].startswith(b'\\u00'):
+                u: int = 0
+                new_char: bytes = b''
+                while data[i + u:].startswith(b'\\u00'):
+                    hex = int(bytes([data[i + u + 4], data[i + u + 5]]), 16)
+                    new_char = b''.join([new_char, bytes([hex])])
+                    u += 6
+
+                char: str = new_char.decode('utf-8')
+                new_chars: bytes = bytes(json.dumps(char).strip('"'), 'ascii')
+                new_data += new_chars
+                i += u
+            else:
+                new_data = b''.join([new_data, bytes([data[i]])])
+                i += 1
+
+        return new_data
+
+
 # load the data
-with open(facebook_export, "r") as f:
-    posts = json.load(f)
+f = FacebookIO(facebook_export, 'rb')
+posts = json.load(f)
 
 # transform
 image_posts = []
@@ -58,8 +91,18 @@ for post in posts:
                     places.append(place)
 
         if len(images) > 0:
+            # strip hashtags
+            og_text = post["data"][0]["post"]
+            if "#" in og_text:
+                hash_tags_start = og_text.index("#")
+                text = og_text[:hash_tags_start]
+            else:
+                text = og_text
+
             image_posts.append({
-                "text": post["data"][0]["post"],
+                "text": text,
+                "timestamp": post["timestamp"],
+                "author": author,
                 "images": images
             })
         elif len(places) == 2:

@@ -1,27 +1,37 @@
-// this is a clone of my blog template but gatsbygram
-// https://github.com/gatsbyjs/gatsby/blob/master/examples/gatsbygram/src/pages/index.js
-// would be a better starter. it already has infinite load setup even
-//
 import React from 'react'
 import Layout from '../components/Layout'
+import PhotoAlbum from 'react-photo-album'
 import { graphql } from 'gatsby'
 
 export { Head } from '../components/Head'
 
 function Post(post) {
-  const text = post.text
-  const images = post.images
-  const imageSrc = images[0].childImageSharp.resize.src
+  const { author, text, timestamp } = post
+  const date = new Date(timestamp*1000).toDateString()
+  const images = post.images.map(img => img.childrenImageSharp[0].original)
+  const maxPhotos = images.length === 3 ? 2 : 3
 
   return (
-    <li key={post.id} className="preview" itemProp="blogPost" itemScope itemType="http://schema.org/BlogPosting">
-      <div className="image">
-        <figure className="absolute-bg" style={{backgroundImage: `url('${imageSrc}')`}} />
+    <div key={post.id} className="fb-post">
+      <div className="fb-author">
+        <img src={`${__PATH_PREFIX__}/${author.toLowerCase()}.jpg`} alt={author} />
+        <div>
+          <strong>{author}</strong>
+          <p>{date}</p>
+        </div>
       </div>
-      <div className="container">
-        {text}
-      </div>
-    </li>
+
+      <p>{text}</p>
+
+      <PhotoAlbum
+        layout="rows"
+        spacing={2}
+        targetRowHeight={300}
+        defaultContainerWidth={600}
+        rowConstraints={{maxPhotos: maxPhotos}}
+        photos={images}
+      />
+    </div>
   );
 }
 
@@ -30,11 +40,9 @@ export default function Index({ data }) {
 
   return (
     <Layout>
-      <section id="blog" className="section-padding bg-white">
+      <section className="section-padding bg-white">
         <div className="grid">
-          <ul itemScope itemType="http://schema.org/Blog">
-            {posts.map(Post)}
-          </ul>
+          {posts.map(Post)}
         </div>
       </section>
     </Layout>
@@ -43,14 +51,18 @@ export default function Index({ data }) {
 
 export const pageQuery = graphql`
   query IndexQuery {
-    allPostsJson {
+    allPostsJson(sort: {timestamp: DESC}) {
       nodes {
         id
+        author
         text
+        timestamp
         images {
-          childImageSharp {
-            resize(width: 800) {
+          childrenImageSharp {
+            original {
               src
+              width
+              height
             }
           }
         }
