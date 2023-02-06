@@ -35,19 +35,55 @@ function Post(post) {
   );
 }
 
-export default function Index({ data }) {
-  const posts = data.allPostsJson.nodes
+class Index extends React.Component {
+  constructor() {
+    super()
+    let postsToShow = 4
+    this.state = {
+      postsToShow
+    }
+  }
 
-  return (
-    <Layout>
-      <section className="section-padding bg-white">
-        <div className="grid">
-          {posts.map(Post)}
-        </div>
-      </section>
-    </Layout>
-  );
+  update() {
+    const distanceToBottom = document.documentElement.offsetHeight - (window.scrollY + window.innerHeight)
+    if (distanceToBottom < 300) {
+      this.setState({ postsToShow: this.state.postsToShow + 4 })
+    }
+    this.ticking = false
+  }
+
+  handleScroll = () => {
+    if (!this.ticking) {
+      this.ticking = true
+      requestAnimationFrame(() => this.update())
+    }
+  }
+
+  componentDidMount() {
+    window.addEventListener(`scroll`, this.handleScroll)
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener(`scroll`, this.handleScroll)
+  }
+
+  render() {
+    const posts = this.props.data.allPostsJson.nodes
+    const postsToShow = posts.slice(0, this.state.postsToShow)
+
+    return (
+      <Layout>
+        <section className="section-padding bg-white">
+          <div className="grid">
+            {postsToShow.map(Post)}
+          </div>
+        </section>
+      </Layout>
+    );
+  }
 }
+
+export default Index
 
 export const pageQuery = graphql`
   query IndexQuery {
