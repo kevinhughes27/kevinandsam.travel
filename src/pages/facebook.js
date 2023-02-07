@@ -8,8 +8,18 @@ export { Head } from '../components/Head'
 function Post(post) {
   const { author, text, timestamp } = post
   const date = new Date(timestamp*1000).toDateString()
+
   const images = post.images.map(img => img.childrenImageSharp[0].original)
-  const maxPhotos = images.length === 3 ? 2 : 3
+  const videos = post.videos.map(vid => ({
+    src: vid.src.publicURL,
+    type: "video/mp4",
+    width: vid.width,
+    height: vid.height,
+    duration: vid.duration,
+  }))
+
+  const photos = [...images, ...videos]
+  const maxPhotos = photos.length === 3 ? 2 : 3
 
   return (
     <div key={post.id} className="fb-post">
@@ -26,10 +36,26 @@ function Post(post) {
       <PhotoAlbum
         layout="rows"
         spacing={2}
-        targetRowHeight={300}
+        targetRowHeight={400}
         defaultContainerWidth={600}
         rowConstraints={{maxPhotos: maxPhotos}}
-        photos={images}
+        photos={photos}
+        renderPhoto={({ photo: { src, type, duration }, layout: { width } }) => {
+          if ((type || "").startsWith("video")) {
+            return (
+              <video
+                controls
+                playsInline
+                autoPlay={duration < 10}
+                disablepictureinpicture
+                width={Math.round(width)}
+                style={{ objectFit: "cover" }}
+              >
+                <source type={type} src={src} />
+              </video>
+            );
+          }
+        }}
       />
     </div>
   );
@@ -101,6 +127,14 @@ export const pageQuery = graphql`
               height
             }
           }
+        }
+        videos {
+          src {
+            publicURL
+          }
+          width
+          height
+          duration
         }
       }
     }
