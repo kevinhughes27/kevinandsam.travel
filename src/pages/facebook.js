@@ -1,12 +1,23 @@
 import React from 'react'
 import Layout from '../components/Layout'
+import TravellingTo from '../components/fb/TravellingTo'
 import PhotoAlbum from 'react-photo-album'
 import { graphql } from 'gatsby'
 
 export { Head } from '../components/Head'
 
+function locationText(places) {
+  if (places.length === 1) {
+    return " at " + places[0].name
+  } else if (places.length === 2) {
+    return " is ✈️ travelling from " + places[1].name + " to " + places[0].name
+  } else {
+    return null
+  }
+}
+
 function Post(post) {
-  const { author, text, timestamp } = post
+  const { author, text, places, timestamp } = post
   const date = new Date(timestamp*1000).toDateString()
 
   const images = post.images.map(img => img.childrenImageSharp[0].original)
@@ -17,7 +28,6 @@ function Post(post) {
     height: vid.height,
     duration: vid.duration,
   }))
-
   const photos = [...images, ...videos]
   const maxPhotos = photos.length === 3 ? 2 : 3
 
@@ -26,7 +36,7 @@ function Post(post) {
       <div className="fb-author">
         <img src={`${__PATH_PREFIX__}/${author.toLowerCase()}.jpg`} alt={author} />
         <div>
-          <strong>{author}</strong>
+          <strong>{author}</strong> {locationText(places)}
           <p>{date}</p>
         </div>
       </div>
@@ -47,7 +57,7 @@ function Post(post) {
                 controls
                 playsInline
                 autoPlay={duration < 10}
-                disablepictureinpicture
+                disablePictureInPicture
                 width={Math.round(width)}
                 style={{ objectFit: "cover" }}
               >
@@ -57,6 +67,8 @@ function Post(post) {
           }
         }}
       />
+
+      { places.length == 2 ? <TravellingTo places={places}/> : null }
     </div>
   );
 }
@@ -119,6 +131,13 @@ export const pageQuery = graphql`
         author
         text
         timestamp
+        places {
+          name
+          coordinate {
+            latitude
+            longitude
+          }
+        }
         images {
           childrenImageSharp {
             original {

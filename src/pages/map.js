@@ -44,7 +44,7 @@ class MapPage extends Component {
     const { center, zoom } = MapParams(windowWidth)
 
     return (
-      <Layout>
+      <Layout id="map">
         <MapContainer
           center={center}
           zoom={zoom}

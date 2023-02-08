@@ -45,3 +45,24 @@
     color: #65676B;
   }
 }
+
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.travelling_to_ring {
+  border: 3px solid rgba(255, 0, 0, .5);
+  -webkit-border-radius: 30px;
+  height: 25px;
+  width: 25px;
+  -webkit-animation: pulsate 1.25s ease-out;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes pulsate {
+  0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;}
+  50% {opacity: 1.0;}
+  100% {-webkit-transform: scale(0.8, 0.8); opacity: 0.0;}
+}

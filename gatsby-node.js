@@ -62,3 +62,22 @@ exports.createPages = ({ actions, graphql }) => {
       });
   });
 }
+
+// explicitly define the facebook post video type because gatsby
+// doesn't infer it properly sometimes probably because it is often blank.
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions
+  const typeDefs = `
+    type PostsJson implements Node {
+      videos: [PostsJsonVideos]
+    }
+
+    type PostsJsonVideos  {
+      src: File @fileByRelativePath
+      width: Int
+      height: Int
+      duration: String
+    }
+  `
+  createTypes(typeDefs)
+}

@@ -137,11 +137,9 @@ class Importer:
                     # sharing sam's post about her top ten
                     continue
 
-                if len(images) > 0 or len(videos) > 0:  # or len(places) > 0
+                if len(images) > 0 or len(videos) > 0 or len(places) > 0:
                     # len(places) == 2
                     # gets me the travelling from -> to posts.
-                    # I should use the place from image posts too though. it is nice to add the location.
-                    # some of the travelling to posts only have the final location (guatemala and south korea). will need to handle or fix these
 
                     self.posts.append({
                         "text": text,
