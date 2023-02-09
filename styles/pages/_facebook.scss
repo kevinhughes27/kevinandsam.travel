@@ -21,6 +21,12 @@
   @media (min-width: $mq-lg) {
     width: 60%;
   }
+
+  .leaflet-container {
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
 }
 
 .fb-author {
@@ -44,12 +50,6 @@
     font-size: 0.75em;
     color: #65676B;
   }
-}
-
-.leaflet-container {
-  height: 100%;
-  width: 100%;
-  z-index: 1;
 }
 
 .travelling_to_ring {
