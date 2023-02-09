@@ -1,22 +1,24 @@
-.leaflet-container {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  z-index: 1;
-}
+#map {
+  .leaflet-container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
 
-.leaflet-control-container {
-  position: absolute;
-  margin-top: 7em;
-  width: 100%;
-}
+  .leaflet-control-container {
+    position: absolute;
+    margin-top: 7em;
+    width: 100%;
+  }
 
-.leaflet-control {
-  animation: fadeIn 3s both 0.3s;
-}
+  .leaflet-control {
+    animation: fadeIn 3s both 0.3s;
+  }
 
-.leaflet-control-layers-overlays {
-  font-size: 14px;
+  .leaflet-control-layers-overlays {
+    font-size: 14px;
+  }
 }
 
 .gps_ring {

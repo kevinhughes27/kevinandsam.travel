@@ -3,7 +3,14 @@ const blog = [
     resolve: `gatsby-source-filesystem`,
     options: {
       path: `${__dirname}/blog`,
-      name: 'pages',
+      name: 'blog',
+    },
+  },
+  {
+    resolve: `gatsby-source-filesystem`,
+    options: {
+      path: `${__dirname}/facebook`,
+      name: 'facebook',
     },
   },
   {
@@ -55,6 +62,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-catch-links`,
+    `gatsby-transformer-json`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
