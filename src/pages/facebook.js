@@ -52,7 +52,6 @@ function Post(post) {
       <PhotoAlbum
         layout="rows"
         spacing={2}
-        targetRowHeight={400}
         defaultContainerWidth={600}
         rowConstraints={{maxPhotos: maxPhotos}}
         photos={photos}
