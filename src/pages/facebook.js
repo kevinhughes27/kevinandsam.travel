@@ -82,7 +82,7 @@ function Post(post) {
 class Index extends React.Component {
   constructor() {
     super()
-    let postsToShow = 4
+    let postsToShow = parseInt(sessionStorage.getItem("fb-postsToShow")) || 4
     this.state = {
       postsToShow
     }
@@ -92,6 +92,7 @@ class Index extends React.Component {
     const distanceToBottom = document.documentElement.offsetHeight - (window.scrollY + window.innerHeight)
     if (distanceToBottom < 300) {
       this.setState({ postsToShow: this.state.postsToShow + 4 })
+      sessionStorage.setItem("fb-postsToShow", this.state.postsToShow + 4)
     }
     this.ticking = false
   }
@@ -109,6 +110,7 @@ class Index extends React.Component {
 
   componentWillUnmount() {
     window.removeEventListener(`scroll`, this.handleScroll)
+    sessionStorage.setItem("fb-postsToShow", this.state.postsToShow);
   }
 
   render() {
