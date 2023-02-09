@@ -3,9 +3,14 @@ import { MapContainer, TileLayer, Marker, Circle, Polyline } from 'react-leaflet
 import { divIcon } from 'leaflet'
 import { lineString } from '@turf/helpers'
 import bezierSpline from '@turf/bezier-spline'
+import { isDomAvailable } from '../utils'
 
 class TravellingTo extends Component {
   render() {
+    if (!isDomAvailable()) {
+      return <div></div>
+    }
+
     const placeA = this.props.from
     const placeB = this.props.to
 
