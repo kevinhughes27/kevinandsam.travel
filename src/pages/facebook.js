@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import TravellingTo from '../components/fb/TravellingTo'
+import TravellingTo from '../components/TravellingTo'
 import PhotoAlbum from 'react-photo-album'
 import { graphql } from 'gatsby'
 
@@ -8,9 +8,15 @@ export { Head } from '../components/Head'
 
 function locationText(places) {
   if (places.length === 1) {
-    return " at " + places[0].name
+    const latlng = `${places[0].coordinate.latitude},${places[0].coordinate.longitude}`
+    const link = `https://www.google.com/maps/?q=${latlng}`
+    return (
+      <span> at <a style={{textDecoration: "none"}} target="_blank" href={link}>{places[0].name}</a></span>
+    )
   } else if (places.length === 2) {
-    return " is ✈️ travelling from " + places[1].name + " to " + places[0].name
+    let emoji = '✈️'
+    if (places[0].name.startsWith("London")) { emoji = "🚋" }
+    return ` is ${emoji} travelling from ${places[1].name} to ${places[0].name}`
   } else {
     return null
   }
@@ -68,7 +74,7 @@ function Post(post) {
         }}
       />
 
-      { places.length == 2 ? <TravellingTo places={places}/> : null }
+      { places.length == 2 ? <TravellingTo from={places[1]} to={places[0]} /> : null }
     </div>
   );
 }
