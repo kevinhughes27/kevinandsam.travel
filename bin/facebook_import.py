@@ -124,9 +124,9 @@ class Importer:
 
                 # post text
                 try:
-                    # strip hashtags
+                    # strip hashtags when more than 3
                     og_text = post["data"][0]["post"]
-                    if "#" in og_text:
+                    if og_text.count("#") > 3:
                         hash_tags_start = og_text.index("#")
                         text = og_text[:hash_tags_start]
                     else:
