@@ -81,7 +81,10 @@ function Post(post) {
 class Index extends React.Component {
   constructor() {
     super()
-    let postsToShow = parseInt(sessionStorage.getItem("fb-postsToShow")) || 4
+    let postsToShow = 4
+    if (typeof window !== `undefined`) {
+      postsToShow = parseInt(sessionStorage.getItem("fb-postsToShow")) || 4
+    }
     this.state = {
       postsToShow
     }
