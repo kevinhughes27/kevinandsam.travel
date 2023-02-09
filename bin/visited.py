@@ -11,7 +11,7 @@ def country_name(location):
 
 def load_year_trip():
     countries = set()
-    data_path = Path(__file__).parent / "../src/data/yearTrip.json"
+    data_path = Path(__file__).parent / "../data/yearTrip.json"
 
     with open(data_path, "r") as f:
         locations = json.load(f)
@@ -55,10 +55,10 @@ if __name__ == "__main__":
     for country in load_year_trip():
         countries[country] = 1
 
-    for country in load_trips(Path(__file__).parent / "../src/data/trips.json", ignore=["Gros Morne"]):
+    for country in load_trips(Path(__file__).parent / "../data/trips.json", ignore=["Gros Morne"]):
         countries[country] += 1
 
-    for country in load_trips(Path(__file__).parent / "../src/data/kevin.json", ignore=["Saskatoon", "Fort Nelson", "Whitehorse"]):
+    for country in load_trips(Path(__file__).parent / "../data/kevin.json", ignore=["Saskatoon", "Fort Nelson", "Whitehorse"]):
         countries[country] += 1
 
     print(f"{len(countries)} countries visited:\n")

@@ -1,4 +1,4 @@
-import locations from '../data/yearTrip.json'
+import locations from './yearTrip.json'
 
 export const countries = []
 

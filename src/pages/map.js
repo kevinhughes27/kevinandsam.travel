@@ -6,9 +6,9 @@ import { divIcon } from 'leaflet'
 import { format, isAfter } from 'date-fns'
 import { isDomAvailable } from '../utils'
 
-import yearTrip from '../data/yearTrip.json'
-import kevinTrips from '../data/kevin.json'
-import trips from '../data/trips.json'
+import yearTrip from '../../data/yearTrip.json'
+import kevinTrips from '../../data/kevin.json'
+import trips from '../../data/trips.json'
 
 const currentLocation = {
   name: "Ottawa",

@@ -13,7 +13,7 @@ from datetime import datetime
 
 
 def load_year_trip():
-    data_path = Path(__file__).parent / "../src/data/yearTrip.json"
+    data_path = Path(__file__).parent / "../data/yearTrip.json"
 
     with open(data_path, "r") as f:
         locations = json.load(f)
