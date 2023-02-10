@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from '../components/Layout'
 import PhotoAlbum from 'react-photo-album'
 import Modal from 'react-modal'
+import { Carousel } from 'react-responsive-carousel'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faImages, faPlayCircle, faCaretRight, faCaretLeft, faTimes } from '@fortawesome/fontawesome-free-solid'
 import { graphql } from 'gatsby'
@@ -90,11 +91,38 @@ class Index extends React.Component {
     }
 
     const post = this.props.data.allInstagramPostsJson.nodes[this.state.activePost]
+
     return (
       <div className="ig-post">
-        <img src={post.images[0].childrenImageSharp[0].original.src} />
-        <p style={{paddingTop: 20}}>{post.text}</p>
+        <div className="img-container">
+          {this.renderPostMedia(post)}
+        </div>
+        <div className="post-details">
+          <p style={{paddingTop: 20}}>{post.text}</p>
+        </div>
       </div>
+    )
+  }
+
+  renderPostMedia(post) {
+    const images = post.images.map(i => i.childrenImageSharp[0].original.src)
+
+    if (images.length == 1) {
+      return (
+        <img className="img" src={images[0]} />
+      )
+    }
+
+    return (
+      <Carousel
+        showArrows={true}
+        showStatus={false}
+        showThumbs={false}
+        infiniteLoop={true}
+        autoPlay={true}
+        interval={5000}>
+        {images.map(img => (<img className="img" src={img}/>))}
+      </Carousel>
     )
   }
 
@@ -107,18 +135,18 @@ class Index extends React.Component {
         className='modal-content'
         overlayClassName='modal-overlay'
       >
-        <div onClick={() => this.closeModal()} className='modal-overlay-wrapper'>
-          <div className='modal-body'>
-            <FontAwesomeIcon icon={faCaretLeft} className='modal-caret'
-              onClick={(e) => this.previousPost(e)}
-            />
-            {this.renderPost()}
-            <FontAwesomeIcon icon={faCaretRight} className='modal-caret'
-              onClick={(e) => this.nextPost(e)}
-            />
-          </div>
-          <FontAwesomeIcon icon={faTimes} className='modal-close' />
+        <div className='modal-body'>
+          <FontAwesomeIcon icon={faCaretLeft} className='modal-caret'
+            onClick={(e) => this.previousPost(e)}
+          />
+          {this.renderPost()}
+          <FontAwesomeIcon icon={faCaretRight} className='modal-caret'
+            onClick={(e) => this.nextPost(e)}
+          />
         </div>
+        <FontAwesomeIcon icon={faTimes} className='modal-close'
+          onClick={() => this.closeModal()}
+        />
       </Modal>
     )
   }
