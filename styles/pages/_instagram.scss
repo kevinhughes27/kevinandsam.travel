@@ -1,0 +1,76 @@
+.ig-grid {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  max-width: 80%;
+  margin: auto;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 4em;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.75);
+}
+
+.modal-overlay-wrapper {
+  display: flex;
+  position: relative;
+  height: 100vh;
+}
+
+.modal-content {
+  position: absolute;
+  border: none;
+  background: none;
+  padding: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  overflow: auto;
+  webkit-overflow-scrolling: touch;
+}
+
+.modal-body {
+  display: flex;
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  width: 100%;
+  max-width: 40em;
+}
+
+.ig-post {
+  background-color: $color-white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.modal-caret {
+  cursor: pointer;
+  font-size: 50px;
+  color: $color-grey;
+  margin-top: 50%;
+  padding: 10px;
+  user-select: none;
+}
+
+.modal-close {
+  cursor: pointer;
+  color: $color-grey;
+  font-size: 30px;
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+}
+
+.gallery-icon {
+  position: absolute;
+  overflow: hidden;
+  inset: 0 0 auto auto;
+  padding: 0.5em;
+  color: $color-grey;
+}

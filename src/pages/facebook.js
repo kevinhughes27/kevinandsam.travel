@@ -112,11 +112,10 @@ class Index extends React.Component {
 
   componentWillUnmount() {
     window.removeEventListener(`scroll`, this.handleScroll)
-    sessionStorage.setItem("fb-postsToShow", this.state.postsToShow);
   }
 
   render() {
-    const posts = this.props.data.allPostsJson.nodes
+    const posts = this.props.data.allFacebookPostsJson.nodes
     const postsToShow = posts.slice(0, this.state.postsToShow)
 
     return (
@@ -135,7 +134,7 @@ export default Index
 
 export const pageQuery = graphql`
   query IndexQuery {
-    allPostsJson(sort: {timestamp: DESC}) {
+    allFacebookPostsJson(sort: {timestamp: DESC}) {
       nodes {
         id
         author

@@ -14,6 +14,13 @@ const blog = [
     },
   },
   {
+    resolve: `gatsby-source-filesystem`,
+    options: {
+      path: `${__dirname}/instagram`,
+      name: 'instagram',
+    },
+  },
+  {
     resolve: `gatsby-plugin-mdx`,
     options: {
       extensions: [`.md`, `.mdx`],
