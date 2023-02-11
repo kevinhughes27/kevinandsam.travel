@@ -1,0 +1,36 @@
+.modal-overlay {
+  position: fixed;
+  top: 4em;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.75);
+}
+
+.modal-content {
+  position: absolute;
+  border: none;
+  background: none;
+  padding: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.modal-body {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.modal-close {
+  position: absolute;
+  inset: 0 0 auto auto;
+  padding: 0.5em;
+  font-size: 30px;
+  color: $color-grey;
+  cursor: pointer;
+}

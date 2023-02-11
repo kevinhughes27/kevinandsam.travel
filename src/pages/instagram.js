@@ -1,16 +1,14 @@
 import React from 'react'
 import Layout from '../components/Layout'
+import Modal from '../components/Modal'
 import PhotoAlbum from 'react-photo-album'
-import Modal from 'react-modal'
 import { Carousel } from 'react-responsive-carousel'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faImages, faPlayCircle, faCaretRight, faCaretLeft, faTimes } from '@fortawesome/fontawesome-free-solid'
+import { faImages, faPlayCircle, faCaretRight, faCaretLeft } from '@fortawesome/fontawesome-free-solid'
 import { graphql } from 'gatsby'
 import mousetrap from 'mousetrap'
 
 export { Head } from '../components/Head'
-
-Modal.setAppElement(`#___gatsby`)
 
 class Index extends React.Component {
   constructor() {
@@ -94,7 +92,7 @@ class Index extends React.Component {
 
     return (
       <div className="ig-post">
-        <div className="img-container">
+        <div className="media-container">
           {this.renderPostMedia(post)}
         </div>
         <div className="post-details">
@@ -106,11 +104,14 @@ class Index extends React.Component {
 
   renderPostMedia(post) {
     const images = post.images.map(i => i.childrenImageSharp[0].original.src)
-    const videos = post.videos.map(vid => ({ src: vid.src.publicURL, type: "video/mp4" }))
+    const videos = post.videos.map(vid => ({
+      src: vid.src.publicURL,
+      type: "video/mp4"
+    }))
 
     if (images.length == 1) {
       return (
-        <img className="img" src={images[0]} />
+        <img className="media" src={images[0]} />
       )
     } else if (images.length > 1) {
       return (
@@ -127,7 +128,7 @@ class Index extends React.Component {
               controls
               playsInline
               disablePictureInPicture
-              className="img"
+              className="media"
             >
               <source type={vid.type} src={vid.src} />
             </video>
@@ -141,7 +142,7 @@ class Index extends React.Component {
           controls
           playsInline
           disablePictureInPicture
-          className="img"
+          className="media"
         >
           <source type={type} src={src} />
         </video>
@@ -153,32 +154,16 @@ class Index extends React.Component {
     return (
       <Modal
         isOpen={this.modalIsOpened()}
-        onRequestClose={() => this.closeModal()}
-        contentLabel='Modal'
-        className='modal-content'
-        overlayClassName='modal-overlay'
+        close={() => this.closeModal()}
       >
-        <div className='modal-body'>
-          <FontAwesomeIcon icon={faCaretLeft} className='modal-caret'
-            onClick={(e) => this.previousPost(e)}
-          />
-          {this.renderPost()}
-          <FontAwesomeIcon icon={faCaretRight} className='modal-caret'
-            onClick={(e) => this.nextPost(e)}
-          />
-        </div>
-        <FontAwesomeIcon icon={faTimes} className='modal-close'
-          onClick={() => this.closeModal()}
+        <FontAwesomeIcon icon={faCaretLeft} className='ig-modal-caret'
+          onClick={(e) => this.previousPost(e)}
+        />
+        {this.renderPost()}
+        <FontAwesomeIcon icon={faCaretRight} className='ig-modal-caret'
+          onClick={(e) => this.nextPost(e)}
         />
       </Modal>
-    )
-  }
-
-  renderGalleryIcon(icon) {
-    return (
-      <div className="gallery-icon">
-        <FontAwesomeIcon icon={icon} />
-      </div>
     )
   }
 
@@ -192,7 +177,7 @@ class Index extends React.Component {
         >
           <source type={type} src={src} />
         </video>
-        {this.renderGalleryIcon(faPlayCircle)}
+        <FontAwesomeIcon className="ig-gallery-icon" icon={faPlayCircle} />
       </div>
     )
   }
@@ -202,7 +187,7 @@ class Index extends React.Component {
     return (
       <div style={{ position: "relative", cursor: "pointer", ...wrapperStyle }}>
         {renderDefaultPhoto({ wrapped: true })}
-        { post.images.length > 1 ? this.renderGalleryIcon(faImages) : null }
+        { post.images.length > 1 ? <FontAwesomeIcon className="ig-gallery-icon" icon={faImages} /> : null }
       </div>
     )
   }

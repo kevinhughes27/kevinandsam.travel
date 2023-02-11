@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 import { Carousel } from 'react-responsive-carousel'
 
 class Slideshow extends Component {
