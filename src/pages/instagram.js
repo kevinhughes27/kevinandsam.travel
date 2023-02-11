@@ -89,6 +89,8 @@ class Index extends React.Component {
     }
 
     const post = this.props.data.allInstagramPostsJson.nodes[this.state.activePost]
+    const { author, text, timestamp } = post
+    const date = new Date(timestamp*1000).toDateString()
 
     return (
       <div className="ig-post">
@@ -96,7 +98,14 @@ class Index extends React.Component {
           {this.renderPostMedia(post)}
         </div>
         <div className="post-details">
-          <p style={{paddingTop: 20}}>{post.text}</p>
+          <div className="author">
+            <img src={`${__PATH_PREFIX__}/${author.toLowerCase()}.jpg`} alt={author} />
+            <div>
+              <strong>{author}</strong>
+              <p>{date}</p>
+            </div>
+          </div>
+          <p>{text}</p>
         </div>
       </div>
     )
