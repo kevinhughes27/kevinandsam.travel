@@ -5,6 +5,14 @@
   margin: auto;
 }
 
+.ig-gallery-icon {
+  position: absolute;
+  overflow: hidden;
+  inset: 0 0 auto auto;
+  padding: 0.5em;
+  color: $color-grey;
+}
+
 .ig-post {
   background-color: $color-white;
   padding: 20px;
@@ -23,15 +31,11 @@
     justify-content: center;
     background-color: black;
 
-    .media {
-      max-width: 100%;
-      max-height: 100%;
-      object-fit: cover;
-    }
-
-    .carousel .slide img {
+    img, video {
       max-height: 70vh;
+      max-width: 100%;
       width: auto;
+      object-fit: cover;
     }
   }
 
@@ -47,12 +51,4 @@
   color: $color-grey;
   padding: 20px;
   user-select: none;
-}
-
-.ig-gallery-icon {
-  position: absolute;
-  overflow: hidden;
-  inset: 0 0 auto auto;
-  padding: 0.5em;
-  color: $color-grey;
 }
