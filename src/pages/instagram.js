@@ -106,24 +106,47 @@ class Index extends React.Component {
 
   renderPostMedia(post) {
     const images = post.images.map(i => i.childrenImageSharp[0].original.src)
+    const videos = post.videos.map(vid => ({ src: vid.src.publicURL, type: "video/mp4" }))
 
     if (images.length == 1) {
       return (
         <img className="img" src={images[0]} />
       )
+    } else if (images.length > 1) {
+      return (
+        <Carousel
+          showArrows={true}
+          showStatus={false}
+          showThumbs={false}
+          infiniteLoop={true}
+          autoPlay={true}
+          interval={3000}>
+          {images.map(img => (<img src={img}/>))}
+          {videos.map(vid => (
+            <video
+              controls
+              playsInline
+              disablePictureInPicture
+              className="img"
+            >
+              <source type={vid.type} src={vid.src} />
+            </video>
+          ))}
+        </Carousel>
+      )
+    } else if (videos.length == 1) {
+      const {type, src} = videos[0]
+      return (
+        <video
+          controls
+          playsInline
+          disablePictureInPicture
+          className="img"
+        >
+          <source type={type} src={src} />
+        </video>
+      )
     }
-
-    return (
-      <Carousel
-        showArrows={true}
-        showStatus={false}
-        showThumbs={false}
-        infiniteLoop={true}
-        autoPlay={true}
-        interval={5000}>
-        {images.map(img => (<img className="img" src={img}/>))}
-      </Carousel>
-    )
   }
 
   renderModal() {
