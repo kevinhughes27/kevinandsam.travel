@@ -80,12 +80,23 @@
     .media-container {
       display: block;
       min-width: 100%;
-      height: auto;
+      height: 60%;
+
+      .carousel-root, .carousel, .slider-wrapper, .slider, .slide {
+        height: 100%;
+      }
+
+      img, video {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+        margin: auto;
+      }
     }
 
     .post-details {
       padding-top: 1em;
-      height: 50%;
+      height: 30%;
     }
   }
 }
