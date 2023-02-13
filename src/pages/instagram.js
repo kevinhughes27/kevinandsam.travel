@@ -105,7 +105,9 @@ class Index extends React.Component {
               <p>{date}</p>
             </div>
           </div>
-          <p>{text}</p>
+          <div className="text">
+            <p>{text}</p>
+          </div>
         </div>
       </div>
     )
