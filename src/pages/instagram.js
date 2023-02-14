@@ -10,13 +10,19 @@ import mousetrap from 'mousetrap'
 
 export { Head } from '../components/Head'
 
+const initialPostsToShow = 24
+const loadInc = 6
+const storageKey = 'ig-postsToShow'
+
 class Index extends React.Component {
   constructor() {
     super()
-    let postsToShow = 12
+    let postsToShow = initialPostsToShow
+
     if (typeof window !== `undefined`) {
-      postsToShow = parseInt(sessionStorage.getItem("ig-postsToShow")) || 12
+      postsToShow = parseInt(sessionStorage.getItem(storageKey)) || initialPostsToShow
     }
+
     this.state = {
       postsToShow,
       activePost: null
@@ -26,8 +32,9 @@ class Index extends React.Component {
   update() {
     const distanceToBottom = document.documentElement.offsetHeight - (window.scrollY + window.innerHeight)
     if (distanceToBottom < 100) {
-      this.setState({ postsToShow: this.state.postsToShow + 12 })
-      sessionStorage.setItem("ig-postsToShow", this.state.postsToShow + 12)
+      const postsToShow = this.state.postsToShow + loadInc
+      sessionStorage.setItem(storageKey, postsToShow)
+      this.setState({ postsToShow })
     }
     this.ticking = false
   }
@@ -80,7 +87,14 @@ class Index extends React.Component {
     }
 
     const nextIndex = Math.min(this.state.activePost + 1, this.props.data.allInstagramPostsJson.nodes.length)
-    this.setState({ activePost: nextIndex })
+
+    // load more posts if necessary
+    let postsToShow = this.state.postsToShow
+    if (nextIndex >= postsToShow) {
+      postsToShow += loadInc
+    }
+
+    this.setState({ postsToShow, activePost: nextIndex })
   }
 
   renderPost() {
@@ -93,19 +107,19 @@ class Index extends React.Component {
     const date = new Date(timestamp*1000).toDateString()
 
     return (
-      <div className="ig-post">
-        <div className="media-container">
+      <div className='ig-post'>
+        <div className='media-container'>
           {this.renderPostMedia(post)}
         </div>
-        <div className="post-details">
-          <div className="author">
+        <div className='post-details'>
+          <div className='author'>
             <img src={`${__PATH_PREFIX__}/${author.toLowerCase()}.jpg`} alt={author} />
             <div>
               <strong>{author}</strong>
               <p>{date}</p>
             </div>
           </div>
-          <div className="text">
+          <div className='text'>
             <p>{text}</p>
           </div>
         </div>
@@ -117,12 +131,12 @@ class Index extends React.Component {
     const images = post.images.map(i => i.childrenImageSharp[0].original.src)
     const videos = post.videos.map(vid => ({
       src: vid.src.publicURL,
-      type: "video/mp4"
+      type: 'video/mp4'
     }))
 
     if (images.length == 1) {
       return (
-        <img className="media" src={images[0]} />
+        <img className='media' src={images[0]} />
       )
     } else if (images.length > 1) {
       return (
@@ -139,7 +153,7 @@ class Index extends React.Component {
               controls
               playsInline
               disablePictureInPicture
-              className="media"
+              className='media'
             >
               <source type={vid.type} src={vid.src} />
             </video>
@@ -153,7 +167,7 @@ class Index extends React.Component {
           controls
           playsInline
           disablePictureInPicture
-          className="media"
+          className='media'
         >
           <source type={type} src={src} />
         </video>
@@ -180,15 +194,14 @@ class Index extends React.Component {
 
   renderGalleryVideo(index, type, src, width) {
     return (
-      <div style={{ position: "relative", cursor: "pointer" }}>
+      <div style={{ position: 'relative' }}>
         <video
           width={Math.round(width)}
-          style={{ objectFit: "cover" }}
           onClick={() => this.onClick(index)}
         >
           <source type={type} src={src} />
         </video>
-        <FontAwesomeIcon className="ig-gallery-icon" icon={faPlayCircle} />
+        <FontAwesomeIcon className='ig-gallery-icon' icon={faPlayCircle} />
       </div>
     )
   }
@@ -196,9 +209,9 @@ class Index extends React.Component {
   renderGalleryPhoto(index, wrapperStyle, renderDefaultPhoto) {
     const post = this.props.data.allInstagramPostsJson.nodes[index]
     return (
-      <div style={{ position: "relative", cursor: "pointer", ...wrapperStyle }}>
+      <div style={{ position: 'relative', ...wrapperStyle }}>
         {renderDefaultPhoto({ wrapped: true })}
-        { post.images.length > 1 ? <FontAwesomeIcon className="ig-gallery-icon" icon={faImages} /> : null }
+        { post.images.length > 1 ? <FontAwesomeIcon className='ig-gallery-icon' icon={faImages} /> : null }
       </div>
     )
   }
@@ -211,7 +224,7 @@ class Index extends React.Component {
       const images = post.images.map(img => img.childrenImageSharp[0].original)
       const videos = post.videos.map(vid => ({
         src: vid.src.publicURL,
-        type: "video/mp4",
+        type: 'video/mp4',
         width: vid.width,
         height: vid.height,
         duration: vid.duration,
@@ -221,15 +234,15 @@ class Index extends React.Component {
 
     return (
       <Layout>
-        <section className="section-padding bg-white">
+        <section className='section-padding bg-white'>
           {this.renderModal()}
           <div className='grid ig-grid'>
             <PhotoAlbum
-              layout="rows"
+              layout='rows'
               photos={photos}
               onClick={({ index }) => this.onClick(index)}
               renderPhoto={({ photo, layout: { index, width }, wrapperStyle, renderDefaultPhoto }) => {
-                if ((photo.type || "").startsWith("video")) {
+                if ((photo.type || '').startsWith('video')) {
                   return this.renderGalleryVideo(index, photo.type, photo.src, width)
                 } else {
                   return this.renderGalleryPhoto(index, wrapperStyle, renderDefaultPhoto)
