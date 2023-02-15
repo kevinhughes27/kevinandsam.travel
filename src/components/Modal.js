@@ -17,12 +17,14 @@ class Modal extends Component {
         className='modal-content'
         overlayClassName='modal-overlay'
       >
-        <div className='modal-body'>
-          {children}
+        <div className='modal-target' onClick={close}>
+          <div className='modal-body'>
+            {children}
+          </div>
+          <FontAwesomeIcon icon={faTimes} className='modal-close'
+            onClick={close}
+          />
         </div>
-        <FontAwesomeIcon icon={faTimes} className='modal-close'
-          onClick={close}
-        />
       </ReactModal>
     )
   }

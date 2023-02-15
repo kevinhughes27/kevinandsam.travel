@@ -107,7 +107,7 @@ class Index extends React.Component {
     const date = new Date(timestamp*1000).toDateString()
 
     return (
-      <div className='ig-post'>
+      <div className='ig-post' onClick={(e) => e.stopPropagation()}>
         <div className='media-container'>
           {this.renderPostMedia(post)}
         </div>
@@ -135,44 +135,40 @@ class Index extends React.Component {
     }))
 
     if (images.length == 1) {
-      return (
-        <img className='media' src={images[0]} />
-      )
+      return (<img className='media' src={images[0]} />)
     } else if (images.length > 1) {
-      return (
-        <Carousel
-          showArrows={true}
-          showStatus={false}
-          showThumbs={false}
-          infiniteLoop={true}
-          autoPlay={true}
-          interval={3000}>
-          {images.map(img => (<img src={img}/>))}
-          {videos.map(vid => (
-            <video
-              controls
-              playsInline
-              disablePictureInPicture
-              className='media'
-            >
-              <source type={vid.type} src={vid.src} />
-            </video>
-          ))}
-        </Carousel>
-      )
+      return this.renderPostCarousel(images, videos)
     } else if (videos.length == 1) {
-      const {type, src} = videos[0]
-      return (
-        <video
-          controls
-          playsInline
-          disablePictureInPicture
-          className='media'
-        >
-          <source type={type} src={src} />
-        </video>
-      )
+      return this.renderPostVideo(videos[0])
     }
+  }
+
+  renderPostCarousel(images, videos) {
+    return (
+      <Carousel
+        showArrows={true}
+        showStatus={false}
+        showThumbs={false}
+        infiniteLoop={true}
+        autoPlay={true}
+        interval={3000}
+      >
+        {images.map(img => (<img src={img}/>))}
+        {videos.map(vid => this.renderPostVideo(vid))}
+      </Carousel>
+    )
+  }
+
+  renderPostVideo(video) {
+    return (
+      <video
+        controls
+        playsInline
+        disablePictureInPicture
+        className='media'>
+        <source type={video.type} src={video.src} />
+      </video>
+    )
   }
 
   renderModal() {

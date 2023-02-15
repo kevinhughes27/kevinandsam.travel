@@ -7,6 +7,12 @@
   background-color: rgba(0,0,0,0.75);
 }
 
+.modal-target {
+  display: flex;
+  position: relative;
+  height: 100vh;
+}
+
 .modal-content {
   position: absolute;
   border: none;
