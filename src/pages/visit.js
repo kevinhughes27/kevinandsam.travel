@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Layout from '../components/Layout'
 import DatePicker from 'react-datepicker'
 import { Select } from 'react-responsive-select'
@@ -6,7 +6,7 @@ import { add, isAfter, format } from 'date-fns'
 import { countries } from '../../data/countries'
 export { Head } from '../components/Head'
 
-class VisitPage extends Component {
+class VisitPage extends React.Component {
   state = {
     when: null,
     where: '',

@@ -1,6 +1,6 @@
-import React, {Component} from 'react'
+import React from 'react'
 
-class TwoColumn extends Component {
+class TwoColumn extends React.Component {
   render () {
     const children = this.props.children.filter((c) => typeof(c) !== "string")
 

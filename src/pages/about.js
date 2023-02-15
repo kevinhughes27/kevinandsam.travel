@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Layout from '../components/Layout'
 import Slideshow from '../components/Slideshow'
 import withSizes from 'react-sizes'
@@ -37,7 +37,7 @@ class AboutPage extends Component {
   }
 }
 
-class Images extends Component {
+class Images extends React.Component {
   render() {
     const isServer = (typeof window === 'undefined');
     const mediumScreen = this.props.windowWidth <= 768;

@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Carousel } from 'react-responsive-carousel'
 
-class Slideshow extends Component {
+class Slideshow extends React.Component {
   render () {
     const children = this.props.children.filter((c) => typeof(c) !== "string")
 

@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Layout from '../components/Layout'
 import withSizes from 'react-sizes'
 export { Head } from '../components/Head'
@@ -6,7 +6,7 @@ export { Head } from '../components/Head'
 const title = "Kevin & Sam"
 const subheading = "See the World"
 
-class Home extends Component {
+class Home extends React.Component {
   render() {
     const isServer = (typeof window === 'undefined');
     const mediumScreen = this.props.windowWidth <= 800;

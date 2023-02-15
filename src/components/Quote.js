@@ -1,6 +1,6 @@
-import React, {Component} from 'react'
+import React from 'react'
 
-class Quote extends Component {
+class Quote extends React.Component {
   render () {
     return (
       <p className='quote'>

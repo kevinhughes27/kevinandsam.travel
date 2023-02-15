@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
+import React from 'react'
 import ReactModal from 'react-modal'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTimes } from '@fortawesome/fontawesome-free-solid'
 
 ReactModal.setAppElement(`#___gatsby`)
 
-class Modal extends Component {
+class Modal extends React.Component {
   render () {
     const { isOpen, close, children } = this.props
 
