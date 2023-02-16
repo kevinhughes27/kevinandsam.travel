@@ -70,6 +70,7 @@ class Importer:
         for post in self.ig_posts:
             images = []
             videos = []
+            places = []
 
             for media in post["media"]:
                 media_file = media["uri"]
@@ -102,6 +103,25 @@ class Importer:
                         "duration": props["duration"],
                     })
 
+                # place
+                if "media_metadata" in media:
+                    if "photo_metadata" in media["media_metadata"]:
+                        if "exif_data" in media["media_metadata"]["photo_metadata"]:
+                            if "latitude" in media["media_metadata"]["photo_metadata"]["exif_data"][0]:
+                                places.append({
+                                    "name": "",
+                                    "latitude": media["media_metadata"]["photo_metadata"]["exif_data"][0]["latitude"],
+                                    "longitude": media["media_metadata"]["photo_metadata"]["exif_data"][0]["longitude"],
+                                })
+
+                    if "video_metadata" in media["media_metadata"]:
+                        if "exif_data" in media["media_metadata"]["video_metadata"]:
+                            places.append({
+                                "name": "",
+                                "latitude": media["media_metadata"]["video_metadata"]["exif_data"][0]["latitude"],
+                                "longitude": media["media_metadata"]["video_metadata"]["exif_data"][0]["longitude"],
+                            })
+
             # text
             if "title" in post:
                 text = post["title"]
@@ -130,7 +150,8 @@ class Importer:
                     "timestamp": timestamp,
                     "author": author,
                     "images": images,
-                    "videos": videos
+                    "videos": videos,
+                    "places": places,
                 })
 
     def save(self):
