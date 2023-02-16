@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from '../components/Layout'
 import Modal from '../components/Modal'
 import PhotoAlbum from 'react-photo-album'
+import Swipe from 'react-easy-swipe'
 import { Carousel } from 'react-responsive-carousel'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faImages, faPlayCircle, faCaretRight, faCaretLeft } from '@fortawesome/fontawesome-free-solid'
@@ -25,7 +26,13 @@ class Post extends React.Component {
     const date = new Date(timestamp*1000).toDateString()
 
     return (
-      <div className='ig-post' onClick={(e) => e.stopPropagation()}>
+      <Swipe
+        id={post.id}
+        className='ig-post'
+        onClick={(e) => e.stopPropagation()}
+        onSwipeLeft={() => this.props.next()}
+        onSwipeRight={() => this.props.prev()}
+      >
         <div className='media-container'>
           {this.renderPostMedia(post)}
         </div>
@@ -41,7 +48,7 @@ class Post extends React.Component {
             <p>{text}</p>
           </div>
         </div>
-      </div>
+      </Swipe>
     )
   }
 
@@ -188,7 +195,14 @@ class Index extends React.Component {
         <FontAwesomeIcon icon={faCaretLeft} className='ig-modal-caret'
           onClick={(e) => this.previousPost(e)}
         />
-        { activePost !== null ? <Post post={(posts[activePost])}/> : null }
+          { activePost !== null ?
+              <Post
+                post={(posts[activePost])}
+                next={() => this.nextPost()}
+                prev={() => this.previousPost()}
+              />
+            : null
+          }
         <FontAwesomeIcon icon={faCaretRight} className='ig-modal-caret'
           onClick={(e) => this.nextPost(e)}
         />
