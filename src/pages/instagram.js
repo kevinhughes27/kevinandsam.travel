@@ -41,6 +41,7 @@ class Post extends React.Component {
             <img src={`${__PATH_PREFIX__}/${author.toLowerCase()}.jpg`} alt={author} />
             <div>
               <strong>{author}</strong>
+              <p>{this.renderLocation(post)}</p>
               <p>{date}</p>
             </div>
           </div>
@@ -50,6 +51,17 @@ class Post extends React.Component {
         </div>
       </Swipe>
     )
+  }
+
+  renderLocation(post) {
+    if (post.places.length > 0) {
+      const place = post.places[0]
+      const latlng = `${place.latitude},${place.longitude}`
+      const link = `https://www.google.com/maps/?q=${latlng}`
+      return (<a target='_blank' href={link}>{place.name}</a>)
+    } else {
+      return null
+    }
   }
 
   renderPostMedia(post) {
@@ -172,7 +184,7 @@ class Index extends React.Component {
 
     const activePost = this.state.activePost
     const posts = this.props.data.allInstagramPostsJson.nodes
-    const nextIndex = Math.min(activePost + 1, posts.length)
+    const nextIndex = Math.min(activePost + 1, posts.length - 1)
 
     // load more posts if necessary
     let postsToShow = this.state.postsToShow
@@ -300,6 +312,11 @@ export const pageQuery = graphql`
           width
           height
           duration
+        }
+        places {
+          name
+          latitude
+          longitude
         }
       }
     }

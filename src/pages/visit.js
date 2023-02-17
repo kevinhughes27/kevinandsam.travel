@@ -165,7 +165,7 @@ class VisitPage extends React.Component {
   }
 }
 
-class DatePickerButton extends Component {
+class DatePickerButton extends React.Component {
   render() {
     return (
       <button

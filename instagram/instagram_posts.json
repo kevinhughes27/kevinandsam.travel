@@ -9,7 +9,13 @@
       "images/28765830_139901630173592_6288884143518384128_n_17873221243205366.jpg"
     ],
     "videos": [],
-    "places": []
+    "places": [
+      {
+        "name": "Leticia, Amazonas",
+        "latitude": 4.68365065912,
+        "longitude": -74.1058234678
+      }
+    ]
   },
   {
     "text": "@samcluthe loves this tree. Because this tree is naturally cold. ",
@@ -21,7 +27,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Leticia, Amazonas",
         "latitude": 4.68365065912,
         "longitude": -74.1058234678
       }
@@ -37,7 +43,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Amazonas",
         "latitude": -5,
         "longitude": -63
       }
@@ -58,7 +64,7 @@
     ],
     "places": [
       {
-        "name": "",
+        "name": "Leticia, Amazonas",
         "latitude": -4.21528,
         "longitude": -69.9406
       }
@@ -74,7 +80,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Medellín, Antioquia",
         "latitude": 6.2359,
         "longitude": -75.5751
       }
@@ -90,7 +96,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Comuna 13",
         "latitude": 3.4842059,
         "longitude": -76.4962154
       }
@@ -106,7 +112,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Guatapé",
         "latitude": 6.2325,
         "longitude": -75.158611111111
       }
@@ -131,7 +137,13 @@
       "images/28434550_1911063742540833_6658567006775672832_n_17911278124080442.jpg"
     ],
     "videos": [],
-    "places": []
+    "places": [
+      {
+        "name": "Guatapé",
+        "latitude": 6.2325,
+        "longitude": -75.158611111111
+      }
+    ]
   },
   {
     "text": "Dale! Dale! Medellin!! ",
@@ -143,7 +155,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Medellín, Antioquia",
         "latitude": 6.2359,
         "longitude": -75.5751
       }
@@ -159,7 +171,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "El Muro Escalada Deportiva",
         "latitude": 6.2428857607127,
         "longitude": -75.595173652267
       }
@@ -175,7 +187,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Parque Tayrona",
         "latitude": 11.3,
         "longitude": -74.16667
       }
@@ -191,7 +203,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Tikal, Peten, Guatemala",
         "latitude": 17.225,
         "longitude": -89.6133
       }
@@ -207,7 +219,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Minca, Magdalena, Colombia",
         "latitude": 11.1422675737,
         "longitude": -74.1172732866
       }
@@ -223,7 +235,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Cartagena, Colombia",
         "latitude": 10.423611111111,
         "longitude": -75.525277777778
       }
@@ -239,25 +251,9 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Cartagena, Colombia",
         "latitude": 10.423611111111,
         "longitude": -75.525277777778
-      }
-    ]
-  },
-  {
-    "text": "",
-    "timestamp": 1519344549,
-    "author": "Kevin",
-    "images": [
-      "images/27892828_1700507296654666_1408298022349045760_n_17928867118046089.jpg"
-    ],
-    "videos": [],
-    "places": [
-      {
-        "name": "",
-        "latitude": -45.009704424555,
-        "longitude": 168.89857292175
       }
     ]
   },
@@ -271,7 +267,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Flores, Guatemala",
         "latitude": 16.9333,
         "longitude": -89.8833
       }
@@ -287,7 +283,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Guatemala",
         "latitude": 15.5,
         "longitude": -90.25
       }
@@ -308,7 +304,7 @@
     ],
     "places": [
       {
-        "name": "",
+        "name": "Flores, Guatemala",
         "latitude": 16.9333,
         "longitude": -89.8833
       }
@@ -324,7 +320,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Flores, Guatemala",
         "latitude": 16.9333,
         "longitude": -89.8833
       }
@@ -345,7 +341,7 @@
     ],
     "places": [
       {
-        "name": "",
+        "name": "Lake Atitlán",
         "latitude": 14.7,
         "longitude": -91.2
       }
@@ -361,7 +357,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Lake Atitlán",
         "latitude": 14.7,
         "longitude": -91.2
       }
@@ -377,24 +373,11 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Panajachel, Solola",
         "latitude": 14.7333,
         "longitude": -91.15
       }
     ]
-  },
-  {
-    "text": "",
-    "timestamp": 1518743046,
-    "author": "Kevin",
-    "images": [
-      "images/27891752_1598995426850529_3701799430152781824_n_17925745066028389.jpg",
-      "images/27581635_1801160173287588_7261254182303170560_n_17925176446052398.jpg",
-      "images/27582040_1083921205081807_6428001982526521344_n_17847440509245762.jpg",
-      "images/27881315_170742363551912_6592141824259784704_n_17920677967064789.jpg"
-    ],
-    "videos": [],
-    "places": []
   },
   {
     "text": "We hiked up Pacaya one of three active volcanos in Guatemala this morning. We got to see and hear some activity at the top! ",
@@ -406,25 +389,9 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Pacaya",
         "latitude": 14.380833333333,
         "longitude": -90.601111111111
-      }
-    ]
-  },
-  {
-    "text": "",
-    "timestamp": 1518146035,
-    "author": "Kevin",
-    "images": [
-      "images/27580144_142855449716289_7605286036284899328_n_17924408269014855.jpg"
-    ],
-    "videos": [],
-    "places": [
-      {
-        "name": "",
-        "latitude": 24.7833,
-        "longitude": 110.5
       }
     ]
   },
@@ -440,7 +407,13 @@
       "images/27579182_1755660521131199_6469594252547457024_n_17910244840097363.jpg"
     ],
     "videos": [],
-    "places": []
+    "places": [
+      {
+        "name": "Antigua Guatemala",
+        "latitude": 14.5590096,
+        "longitude": -90.7352982
+      }
+    ]
   },
   {
     "text": "https://kevinandsam.travel/nomadification/ ",
@@ -462,7 +435,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Swell Guatemala",
         "latitude": 13.915260315694,
         "longitude": -91.071252822876
       }
@@ -478,7 +451,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Antigua Guatemala",
         "latitude": 14.5590096,
         "longitude": -90.7352982
       }
@@ -494,7 +467,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Antigua Guatemala",
         "latitude": 14.5590096,
         "longitude": -90.7352982
       }
@@ -510,7 +483,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Kilt Rock Viewpoint",
         "latitude": 57.61041,
         "longitude": -6.17307
       }
@@ -526,7 +499,13 @@
       "images/40304370_288453691745331_2644625549871284224_n_17975283487022343.jpg"
     ],
     "videos": [],
-    "places": []
+    "places": [
+      {
+        "name": "Isle of Skye",
+        "latitude": 57.5071218,
+        "longitude": -6.1918381
+      }
+    ]
   },
   {
     "text": "En route to the Lost Valley (Coire Gabhail). Apparently the MacDonalds of Glen Coe used to hide their cattle up here. ",
@@ -538,7 +517,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Glen Coe, Scotland",
         "latitude": 56.671234462182,
         "longitude": -5.0820421288954
       }
@@ -554,7 +533,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Edinburgh, United Kingdom",
         "latitude": 55.9546,
         "longitude": -3.2087
       }
@@ -570,7 +549,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Urquhart Castle",
         "latitude": 57.324227252109,
         "longitude": -4.4432799795918
       }
@@ -586,7 +565,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Aviemore",
         "latitude": 57.194,
         "longitude": -3.823
       }
@@ -604,7 +583,13 @@
       "images/38999767_238154420174456_8909016701786390528_n_17897299999225839.jpg"
     ],
     "videos": [],
-    "places": []
+    "places": [
+      {
+        "name": "Ring Of Kerry",
+        "latitude": 51.9246155,
+        "longitude": -10.2565106
+      }
+    ]
   },
   {
     "text": "Celebrating 4 years with @samcluthe!! ",
@@ -616,7 +601,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Dingle, Ireland",
         "latitude": 52.1408,
         "longitude": -10.2689
       }
@@ -632,7 +617,13 @@
       "images/38901133_357424061463216_753560722276876288_n_17962191820073104.jpg"
     ],
     "videos": [],
-    "places": []
+    "places": [
+      {
+        "name": "Cliffs of Moher",
+        "latitude": 52.971705717953,
+        "longitude": -9.4263725881504
+      }
+    ]
   },
   {
     "text": "The Cliffs of Moher definitely did not disappoint. We learned from our previous experiences and arrived early to avoid the crowds. We spent almost 5 hours walking around the cliffs. ",
@@ -644,7 +635,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Cliffs of Moher",
         "latitude": 52.971705717953,
         "longitude": -9.4263725881504
       }
@@ -660,7 +651,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Howth Cliff Walk",
         "latitude": 53.388437620441,
         "longitude": -6.0639773375425
       }
@@ -676,7 +667,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Trinity College Library",
         "latitude": 53.34395341921,
         "longitude": -6.2574635631208
       }
@@ -692,7 +683,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "British Museum",
         "latitude": 51.519144089134,
         "longitude": -0.1266766790757
       }
@@ -708,7 +699,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "British Museum",
         "latitude": 51.519144089134,
         "longitude": -0.1266766790757
       }
@@ -724,7 +715,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Hampton Court Palace",
         "latitude": 51.404425834232,
         "longitude": -0.34032743770856
       }
@@ -740,7 +731,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "London, United Kingdom",
         "latitude": 51.507114863624,
         "longitude": -0.12731805236353
       }
@@ -756,7 +747,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Grand Palace",
         "latitude": 50.846757649235,
         "longitude": 4.3526611982108
       }
@@ -772,7 +763,14 @@
       "images/37578137_431633517350628_5743642915784097792_n_17964312916017914.jpg"
     ],
     "videos": [],
-    "places": []
+    "places": [
+      {
+        "name": "Bruges, Belgium",
+        "latitude": 51.2609144,
+        "longitude": 3.0820254
+
+      }
+    ]
   },
   {
     "text": "Make it happen the street art says, so I did. ",
@@ -784,7 +782,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Rotterdam, Netherlands",
         "latitude": 51.9235,
         "longitude": 4.4752
       }
@@ -800,7 +798,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Rotterdam, Netherlands",
         "latitude": 51.9235,
         "longitude": 4.4752
       }
@@ -816,7 +814,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Amsterdam, Netherlands",
         "latitude": 52.3777,
         "longitude": 4.9001
       }
@@ -832,7 +830,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Amsterdam, Netherlands",
         "latitude": 52.3777,
         "longitude": 4.9001
       }
@@ -848,7 +846,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Elbphilharmonie",
         "latitude": 53.541351503846,
         "longitude": 9.9836868512819
       }
@@ -864,7 +862,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Hamburg, Germany",
         "latitude": 53.55,
         "longitude": 10.0014
       }
@@ -880,7 +878,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Berlin, Germany",
         "latitude": 52.518391,
         "longitude": 13.401251
       }
@@ -895,7 +893,13 @@
       "images/37029402_207224660127264_9190571212701433856_n_17935957390139650.jpg"
     ],
     "videos": [],
-    "places": []
+    "places": [
+      {
+        "name": "Der Kegel Kletterturm",
+        "latitude": 52.5071414,
+        "longitude": 13.452276
+      }
+    ]
   },
   {
     "text": "Hanging out in the RAW. We grabbed a beer after a bouldering session at this really cool gym right in the district. They had routes inside and outside and this WWII bunker that looked like a castle turret for top rope or leading which we're heading back for later this week. The whole area is really vibrant with street art, street food and bars. There was also a skatepark and outdoor pool right in a derelict building. ",
@@ -907,7 +911,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Berlin, Germany",
         "latitude": 52.518391,
         "longitude": 13.401251
       }
@@ -923,7 +927,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "East Side Gallery, Berlin",
         "latitude": 52.503055555556,
         "longitude": 13.444722222222
       }
@@ -939,7 +943,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Prague, Czech Republic",
         "latitude": 50.090584176597,
         "longitude": 14.400544973672
       }
@@ -955,7 +959,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Prague, Czech Republic",
         "latitude": 50.090584176597,
         "longitude": 14.400544973672
       }
@@ -971,7 +975,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Prague, Czech Republic",
         "latitude": 50.090584176597,
         "longitude": 14.400544973672
       }
@@ -987,7 +991,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Ribbon Lake",
         "latitude": 44.7224385,
         "longitude": -110.4510352
       }
@@ -1003,7 +1007,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Frankfurt, Germany",
         "latitude": 50.1154,
         "longitude": 8.6709
       }
@@ -1019,7 +1023,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Sankt Johann in Tirol",
         "latitude": 47.5167,
         "longitude": 12.4333
       }
@@ -1035,7 +1039,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Salzburg, Austria",
         "latitude": 47.799644,
         "longitude": 13.041122
       }
@@ -1051,7 +1055,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Salzburg, Austria",
         "latitude": 47.799644,
         "longitude": 13.041122
       }
@@ -1067,7 +1071,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Salzburg, Austria",
         "latitude": 47.799644,
         "longitude": 13.041122
       }
@@ -1097,7 +1101,13 @@
         "duration": "5.633333"
       }
     ],
-    "places": []
+    "places": [
+      {
+        "name": "Sankt Johann in Tirol",
+        "latitude": 47.5167,
+        "longitude": 12.4333
+      }
+    ]
   },
   {
     "text": "We're currently in the Austrian Alps. It's gorgeous here, almost every building is this photogenic. ",
@@ -1109,7 +1119,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Sankt Johann in Tirol",
         "latitude": 47.5167,
         "longitude": 12.4333
       }
@@ -1125,7 +1135,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Bohinj, Slovenia",
         "latitude": 46.2941,
         "longitude": 13.9159
       }
@@ -1141,7 +1151,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Bled, Slovenia",
         "latitude": 46.3692,
         "longitude": 14.1136
       }
@@ -1157,7 +1167,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Bohinj, Slovenia",
         "latitude": 46.2941,
         "longitude": 13.9159
       }
@@ -1173,7 +1183,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Bled, Slovenia",
         "latitude": 46.3692,
         "longitude": 14.1136
       }
@@ -1189,7 +1199,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Ljubljana, Slovenia",
         "latitude": 46.0576,
         "longitude": 14.506
       }
@@ -1205,7 +1215,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Budapest, Hungary",
         "latitude": 47.4719,
         "longitude": 19.0503
       }
@@ -1221,7 +1231,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Budapest, Hungary",
         "latitude": 47.498333333333,
         "longitude": 19.040833333333
       }
@@ -1237,7 +1247,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Bratislava, Slovakia",
         "latitude": 48.15,
         "longitude": 17.1167
       }
@@ -1253,7 +1263,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Budapest, Hungary",
         "latitude": 47.498333333333,
         "longitude": 19.040833333333
       }
@@ -1269,7 +1279,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Mostar",
         "latitude": 43.3333,
         "longitude": 17.8
       }
@@ -1285,7 +1295,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Blagaj",
         "latitude": 43.2575,
         "longitude": 17.8886
       }
@@ -1301,7 +1311,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Mostar",
         "latitude": 43.3333,
         "longitude": 17.8
       }
@@ -1317,7 +1327,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Jajce",
         "latitude": 44.340252777778,
         "longitude": 17.257233333333
       }
@@ -1333,7 +1343,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Travnik",
         "latitude": 44.233333333333,
         "longitude": 17.666666666667
       }
@@ -1349,7 +1359,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Sarajevo, Bosnia and Herzegovina",
         "latitude": 43.85,
         "longitude": 18.3833
       }
@@ -1365,7 +1375,13 @@
       "images/32625179_1830549563912922_4217447654612795392_n_17918595865159977.jpg"
     ],
     "videos": [],
-    "places": []
+    "places": [
+      {
+        "name": "Split, Croatia",
+        "latitude": 43.5139,
+        "longitude": 16.4558
+      }
+    ]
   },
   {
     "text": "Split Sunset \ud83c\udf07\ud83c\udf05 ",
@@ -1377,7 +1393,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Split, Croatia",
         "latitude": 43.5139,
         "longitude": 16.4558
       }
@@ -1393,7 +1409,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Hvar, Croatia",
         "latitude": 43.17196921073,
         "longitude": 16.441491193661
       }
@@ -1409,7 +1425,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Fig",
         "latitude": 43.172001634444,
         "longitude": 16.442568722222
       }
@@ -1425,7 +1441,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Hvar, Croatia",
         "latitude": 43.17196921073,
         "longitude": 16.441491193661
       }
@@ -1443,7 +1459,13 @@
       "images/32514494_462676570856444_7859763570127405056_n_17921728945134276.jpg"
     ],
     "videos": [],
-    "places": []
+    "places": [
+      {
+        "name": "Plitvice Lakes National Park",
+        "latitude": 44.8654004,
+        "longitude": 15.5798232
+      }
+    ]
   },
   {
     "text": "What a roof! Pixel art before its time. ",
@@ -1455,25 +1477,9 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Zagreb, Croatia",
         "latitude": 45.8167,
         "longitude": 15.9833
-      }
-    ]
-  },
-  {
-    "text": "",
-    "timestamp": 1526589441,
-    "author": "Kevin",
-    "images": [
-      "images/31557156_1634693846625903_6265730219638784_n_17945284678046941.jpg"
-    ],
-    "videos": [],
-    "places": [
-      {
-        "name": "",
-        "latitude": 38.9342,
-        "longitude": 100.452
       }
     ]
   },
@@ -1500,7 +1506,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Dubrovnik, Croatia",
         "latitude": 42.641129663648,
         "longitude": 18.109022998799
       }
@@ -1516,7 +1522,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Sveti Stefan",
         "latitude": 42.255,
         "longitude": 18.896111111111
       }
@@ -1532,7 +1538,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Budva",
         "latitude": 42.284722222222,
         "longitude": 18.845277777778
       }
@@ -1548,7 +1554,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Florence, Italy",
         "latitude": 43.7833,
         "longitude": 11.25
       }
@@ -1564,7 +1570,13 @@
       "images/32233146_995661513932996_5025970798498676736_n_17945038672054055.jpg"
     ],
     "videos": [],
-    "places": []
+    "places": [
+      {
+        "name": "Kotor, Montenegro",
+        "latitude": 42.4243077,
+        "longitude": 18.7661987
+      }
+    ]
   },
   {
     "text": "An artist remembers a different time in Palermo ",
@@ -1576,7 +1588,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Palermo Soho",
         "latitude": -34.58875817087,
         "longitude": -58.429010559929
       }
@@ -1592,7 +1604,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Buenos Aires, Argentina",
         "latitude": -34.6086,
         "longitude": -58.3734
       }
@@ -1608,7 +1620,13 @@
       "images/31042943_168842277272861_6697011160257921024_n_17914999759146372.jpg"
     ],
     "videos": [],
-    "places": []
+    "places": [
+      {
+        "name": "Bariloche, Argentina",
+        "latitude": -41.15,
+        "longitude": -71.3
+      }
+    ]
   },
   {
     "text": "The golden hour is more like 3 to 4 hours in Patagonia. Makes it easy to take great photos! ",
@@ -1620,7 +1638,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Bariloche, Argentina",
         "latitude": -41.15,
         "longitude": -71.3
       }
@@ -1636,7 +1654,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Bariloche, Argentina",
         "latitude": -41.15,
         "longitude": -71.3
       }
@@ -1654,7 +1672,13 @@
       "images/31087092_2026675037599185_6120411848014561280_n_17927131342111203.jpg"
     ],
     "videos": [],
-    "places": []
+    "places": [
+      {
+        "name": "El Chaltén",
+        "latitude": -49.331408,
+        "longitude": -72.886129
+      }
+    ]
   },
   {
     "text": "While waiting for a weather window to do some longer climbs we checked out the local boulders. It was my first time trying a real outdoor boulder problem and it took me a while to figure out all the moves. I was eventually able to get it and sent a 5b and 5c+ (V1 and V2) on this boulder. I definitely want to try more outdoor bouldering but next time we need a pad and some beta! ",
@@ -1671,7 +1695,7 @@
     ],
     "places": [
       {
-        "name": "",
+        "name": "El Chaltén",
         "latitude": -49.331408,
         "longitude": -72.886129
       }
@@ -1687,7 +1711,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "El Chaltén",
         "latitude": -49.331408,
         "longitude": -72.886129
       }
@@ -1703,7 +1727,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Torres del Paine, Chile",
         "latitude": -51.055,
         "longitude": -72.8323
       }
@@ -1719,7 +1743,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Torres del Paine, Chile",
         "latitude": -51.055,
         "longitude": -72.8323
       }
@@ -1735,7 +1759,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Torres del Paine, Chile",
         "latitude": -51.72941,
         "longitude": -72.50168
       }
@@ -1751,7 +1775,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Torres del Paine, Chile",
         "latitude": -51.72941,
         "longitude": -72.50168
       }
@@ -1767,7 +1791,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Torres del Paine, Chile",
         "latitude": -51.72941,
         "longitude": -72.50168
       }
@@ -1783,7 +1807,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Torres del Paine, Chile",
         "latitude": -51.72941,
         "longitude": -72.50168
       }
@@ -1809,7 +1833,13 @@
       "images/29716396_1744042978967131_716594140623667200_n_17938047583016378.jpg"
     ],
     "videos": [],
-    "places": []
+    "places": [
+      {
+        "name": "Valparaíso, Chile",
+        "latitude": -33.05,
+        "longitude": -71.6167
+      }
+    ]
   },
   {
     "text": "I finally finished reading The Better Angels of our Nature, my pack is now a good deal lighter and hopefully someone else will pick up this important book ",
@@ -1821,7 +1851,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Valparaíso, Chile",
         "latitude": -33.05,
         "longitude": -71.6167
       }
@@ -1837,7 +1867,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Fauna Valparaiso",
         "latitude": -33.043606889924,
         "longitude": -71.626982886042
       }
@@ -1880,7 +1910,13 @@
       "images/29739714_430879770699088_1953189558141059072_n_17908034671144915.jpg"
     ],
     "videos": [],
-    "places": []
+    "places": [
+      {
+        "name": "Santiago, Chile",
+        "latitude": -33.4724228,
+        "longitude": -70.7699153
+      }
+    ]
   },
   {
     "text": "Beautiful blue sky day for Sandboarding. Easier than Snowboarding but more ",
@@ -1904,7 +1940,13 @@
         "duration": "11.066667"
       }
     ],
-    "places": []
+    "places": [
+      {
+        "name": "San Pedro de Atacama, Chile",
+        "latitude": -22.9139942,
+        "longitude": -68.2074194
+      }
+    ]
   },
   {
     "text": "After the Salt Flats we drove through the Potosi region of Bolivia for 2 days ending in Chile with Red Planet Expeditions. The company is appropriately named - it did feel like we were on a different planet. Yes those are flamingos in the top right. The world is weird. ",
@@ -1916,7 +1958,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Potosí, Bolivia",
         "latitude": -19.5836,
         "longitude": -65.7531
       }
@@ -1933,7 +1975,13 @@
       "images/29095164_173674359864343_4607940424693186560_n_17933746012039506.jpg"
     ],
     "videos": [],
-    "places": []
+    "places": [
+      {
+        "name": "Salar De Uyuni, Bolivia",
+        "latitude": -20.33046244223,
+        "longitude": -67.081832885742
+      }
+    ]
   },
   {
     "text": "Some yoga on the flats. ",
@@ -1945,7 +1993,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Salar De Uyuni, Bolivia",
         "latitude": -20.33046244223,
         "longitude": -67.081832885742
       }
@@ -1961,7 +2009,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Salar De Uyuni, Bolivia",
         "latitude": -20.33046244223,
         "longitude": -67.081832885742
       }
@@ -1979,7 +2027,13 @@
       "images/29087972_164285287610282_413557092352262144_n_17903204836165952.jpg"
     ],
     "videos": [],
-    "places": []
+    "places": [
+      {
+        "name": "La Paz, Bolivia",
+        "latitude": -16.4965,
+        "longitude": -68.134
+      }
+    ]
   },
   {
     "text": "We took a day trip from La Paz to Huayna Potosi. We hiked from the refugios (base camp) up to the Glacier where we strapped on crampons, grabbed our ice axes and learned a bit about Alpine/Ice climbing. A storm came through shortly after so we cut our ice climbing adventure short and headed down. We were at almost 5000 meters above sea level and the altitude definitely took it's toll on all of us. ",
@@ -1999,7 +2053,13 @@
         "duration": "5.000000"
       }
     ],
-    "places": []
+    "places": [
+      {
+        "name": "Huayna Potosi, Bolivia",
+        "latitude": -16.2618491,
+        "longitude": -68.1878485
+      }
+    ]
   },
   {
     "text": "Good Morning La Paz! ",
@@ -2016,7 +2076,7 @@
     ],
     "places": [
       {
-        "name": "",
+        "name": "La Paz, Bolivia",
         "latitude": -16.4965,
         "longitude": -68.134
       }
@@ -2032,7 +2092,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "La Paz, Bolivia",
         "latitude": -16.4965,
         "longitude": -68.134
       }
@@ -2049,7 +2109,13 @@
       "images/28754351_174609193185357_4932857114407206912_n_17890495300194090.jpg"
     ],
     "videos": [],
-    "places": []
+    "places": [
+      {
+        "name": "Suesca, Colombia",
+        "latitude": 5.1039397,
+        "longitude": -73.8030093
+      }
+    ]
   },
   {
     "text": "Boiled yucca for dinner on our Amazon camping trip ",
@@ -2061,7 +2127,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Leticia, Amazonas",
         "latitude": 4.68365065912,
         "longitude": -74.1058234678
       }
@@ -2077,7 +2143,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Inle Lake, Myanmar",
         "latitude": 20.55,
         "longitude": 96.916666666667
       }
@@ -2093,7 +2159,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Bagan, Myanmar",
         "latitude": 21.172238087417,
         "longitude": 94.863106554107
       }
@@ -2109,7 +2175,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Bagan, Myanmar",
         "latitude": 21.166667,
         "longitude": 94.866667
       }
@@ -2125,7 +2191,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Pub Street, Siem Reap, Cambodia",
         "latitude": 13.355003226496,
         "longitude": 103.85426683136
       }
@@ -2141,7 +2207,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Angkor Wat, Siem Reap, Cambodia ",
         "latitude": 13.365985820279,
         "longitude": 103.86458873792
       }
@@ -2157,7 +2223,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Angkor Wat, Siem Reap, Cambodia ",
         "latitude": 13.365985820279,
         "longitude": 103.86458873792
       }
@@ -2173,7 +2239,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Angkor Wat, Siem Reap, Cambodia ",
         "latitude": 13.3667,
         "longitude": 103.85
       }
@@ -2189,7 +2255,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Dream Valley Resort",
         "latitude": 8.0200856400592,
         "longitude": 98.834481503383
       }
@@ -2205,7 +2271,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Phuket, Thailand",
         "latitude": 7.9255835816538,
         "longitude": 98.347359977522
       }
@@ -2221,7 +2287,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Bangkok, Thailand",
         "latitude": 13.7522,
         "longitude": 100.494
       }
@@ -2237,7 +2303,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Green Climbers Home",
         "latitude": 17.424028633878,
         "longitude": 104.98397827148
       }
@@ -2253,7 +2319,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Thakhek, Laos",
         "latitude": 17.403065606292,
         "longitude": 104.81898390053
       }
@@ -2269,7 +2335,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Green Climbers Home",
         "latitude": 17.424028633878,
         "longitude": 104.98397827148
       }
@@ -2285,7 +2351,13 @@
       "images/50815372_2786350004719989_7154812188748731229_n_18019746121112363.jpg"
     ],
     "videos": [],
-    "places": []
+    "places": [
+      {
+        "name": "Vientiane, Laos",
+        "latitude": 17.9605903,
+        "longitude": 102.5357252
+      }
+    ]
   },
   {
     "text": "Been working on my slack lining ",
@@ -2297,7 +2369,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Chill Out Bar and Bungalows",
         "latitude": 8.0204626826796,
         "longitude": 98.833139942615
       }
@@ -2313,7 +2385,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Ton Sai Beach, Krabi, Thailand",
         "latitude": 8.0201196470139,
         "longitude": 98.834176524745
       }
@@ -2329,7 +2401,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Tonsai Bay",
         "latitude": 8.0203832663749,
         "longitude": 98.833321097603
       }
@@ -2345,7 +2417,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Tonsai Bay",
         "latitude": 8.0203832663749,
         "longitude": 98.833321097603
       }
@@ -2361,7 +2433,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Tonsai Bay",
         "latitude": 8.0203832663749,
         "longitude": 98.833321097603
       }
@@ -2377,7 +2449,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Ao Nang Beach",
         "latitude": 8.03276,
         "longitude": 98.82382
       }
@@ -2393,7 +2465,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Tonsai Bay",
         "latitude": 8.0203832663749,
         "longitude": 98.833321097603
       }
@@ -2409,7 +2481,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "George Town, Malaysia",
         "latitude": 5.4205,
         "longitude": 100.3275
       }
@@ -2425,7 +2497,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Kek Lok S",
         "latitude": 5.39833333,
         "longitude": 100.27305556
       }
@@ -2441,7 +2513,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Penang, Malaysia",
         "latitude": 5.41667,
         "longitude": 100.333
       }
@@ -2457,7 +2529,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Kuala Lumpur",
         "latitude": 3.1597222222222,
         "longitude": 101.7
       }
@@ -2473,7 +2545,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Batu Caves Temple",
         "latitude": 3.2380722704906,
         "longitude": 101.68436765671
       }
@@ -2489,7 +2561,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Perdana Botanical Garden",
         "latitude": 3.14281,
         "longitude": 101.68446
       }
@@ -2505,7 +2577,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Phong Nha Cave",
         "latitude": 17.4796295,
         "longitude": 106.6197586
       }
@@ -2521,7 +2593,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Paradise Cave - Động Thiên Đường",
         "latitude": 17.537250533154,
         "longitude": 106.23204231262
       }
@@ -2537,7 +2609,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Hang Múa",
         "latitude": 20.229720687071,
         "longitude": 105.93498656529
       }
@@ -2553,7 +2625,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Ninh Bình",
         "latitude": 20.253888888889,
         "longitude": 105.975
       }
@@ -2569,7 +2641,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Hanoi",
         "latitude": 21.0245,
         "longitude": 105.84117
       }
@@ -2585,7 +2657,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Fushimi Inari-taisha",
         "latitude": 34.967222,
         "longitude": 135.772778
       }
@@ -2601,7 +2673,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "金閣舎利殿 (Golden Pavilion)",
         "latitude": 35.039513,
         "longitude": 135.72844
       }
@@ -2617,7 +2689,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Arashiyama Bamboo Forest",
         "latitude": 35.016727833333,
         "longitude": 135.67131166667
       }
@@ -2633,7 +2705,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Matsumoto Castle",
         "latitude": 36.238888888889,
         "longitude": 137.96916666667
       }
@@ -2649,7 +2721,13 @@
       "images/46039277_2209610525986267_6976837555113989962_n_17967067525175704.jpg"
     ],
     "videos": [],
-    "places": []
+    "places": [
+      {
+        "name": "Jigokudani Snow Monkey Park",
+        "latitude": 36.7326899,
+        "longitude": 138.4599477
+      }
+    ]
   },
   {
     "text": "Tokyo is a city with the biggest skyscrapers and the tiniest alleys. The best spots can be hidden in either or in between. ",
@@ -2661,7 +2739,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Shinjuku",
         "latitude": 35.6906,
         "longitude": 139.706
       }
@@ -2677,7 +2755,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Shinjuku",
         "latitude": 35.6906,
         "longitude": 139.706
       }
@@ -2693,7 +2771,13 @@
       "images/44850391_263835184327165_5534269365999301808_n_17885210863301814.jpg"
     ],
     "videos": [],
-    "places": []
+    "places": [
+      {
+        "name": "Hamarikyu Gardens",
+        "latitude": 35.6597417,
+        "longitude": 139.7590078
+      }
+    ]
   },
   {
     "text": "This was the first hostel I stayed at on my first ever trip to Asia six years ago. A lot has changed since then but not my love for travel and not this place. It's amazing to be back here. ",
@@ -2705,7 +2789,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Nui. Hostel & Bar Lounge",
         "latitude": 35.703893323275,
         "longitude": 139.79355794415
       }
@@ -2721,7 +2805,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Igidae Park",
         "latitude": 35.131891560773,
         "longitude": 129.12093236123
       }
@@ -2737,7 +2821,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Gyeongju, Korea",
         "latitude": 35.8428,
         "longitude": 129.212
       }
@@ -2753,7 +2837,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Seoraksan National Park",
         "latitude": 38.125,
         "longitude": 128.416
       }
@@ -2769,7 +2853,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Seoraksan National Park",
         "latitude": 38.125,
         "longitude": 128.416
       }
@@ -2785,7 +2869,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Gyeongbokgung Palace, Seoul South Korea",
         "latitude": 14.568596917519,
         "longitude": 121.0205594932
       }
@@ -2802,7 +2886,14 @@
       "images/44176988_253952215262173_6448353403991208073_n_17881611331301628.jpg"
     ],
     "videos": [],
-    "places": []
+    "places": [
+      {
+        "name": "Baegundae Peak",
+        "latitude": 37.6443785,
+        "longitude": 126.9679069
+
+      }
+    ]
   },
   {
     "text": "Changdeokgung Palace ",
@@ -2814,7 +2905,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Changdeokgung",
         "latitude": 37.579444444444,
         "longitude": 126.99166666667
       }
@@ -2830,7 +2921,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Suwon Hwaseong Fortress",
         "latitude": 37.5584529,
         "longitude": 126.9853265
       }
@@ -2856,7 +2947,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Zanzibar, Tanzania",
         "latitude": -6.1655,
         "longitude": 39.1972
       }
@@ -2878,7 +2969,13 @@
         "duration": "55.200000"
       }
     ],
-    "places": []
+    "places": [
+      {
+        "name": "Moshi, Tanzania",
+        "latitude": -3.348624,
+        "longitude": 37.3347701
+      }
+    ]
   },
   {
     "text": "Day 5: At 12:15 AM Goodluck, Peter, Natalie and I started our ascent. We reached the summit at 5:40 AM, first from our camp with only a handful of people already there from other routes. It took us just under five and a half hours - any faster my heart and lungs would have quit, any slower and I would have froze. One of the hardest things I've done.\n\nWe took our pictures at the sign quickly and started heading back down the ridge to Stella Point where the sun was just starting to rise. We passed a few large groups and then we were all alone on the ridge when I took these photos. The last photo is us at Stella Point on our way down after the sun was up.\n\n",
@@ -2890,7 +2987,14 @@
       "images/43759099_303230460267883_8826492958679931901_n_17965870903139700.jpg"
     ],
     "videos": [],
-    "places": []
+    "places": [
+      {
+        "name": "Uhuru Peak, Kilimanjaro",
+        "latitude": -3.0666171,
+        "longitude": 37.341907
+
+      }
+    ]
   },
   {
     "text": "Day 4: I took this photo of our tent with Kibo looming behind at base camp just after 6:00 pm. I'm going to bed right after this to hopefully get five hours of sleep before starting our summit push at midnight. #basecamp #summit",
@@ -2902,7 +3006,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Mount Kilimanjaro",
         "latitude": -3.0666666666667,
         "longitude": 37.359166666667
       }
@@ -2918,7 +3022,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Mount Kilimanjaro",
         "latitude": -3.0666666666667,
         "longitude": 37.359166666667
       }
@@ -2934,7 +3038,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Mount Kilimanjaro",
         "latitude": -3.0666666666667,
         "longitude": 37.359166666667
       }
@@ -2950,7 +3054,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Mount Kilimanjaro",
         "latitude": -3.0666666666667,
         "longitude": 37.359166666667
       }
@@ -2966,7 +3070,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Mount Kilimanjaro",
         "latitude": -3.2,
         "longitude": 37.2333
       }
@@ -2982,7 +3086,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Lake Manyara National Park",
         "latitude": -3.5,
         "longitude": 35.833333333333
       }
@@ -2998,7 +3102,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Serengeti National Park Tanzania",
         "latitude": -3.36667,
         "longitude": 36.6833
       }
@@ -3014,7 +3118,13 @@
       "images/42721272_2248981588665028_4886935072176784402_n_17923754047222591.jpg"
     ],
     "videos": [],
-    "places": []
+    "places": [
+      {
+        "name": "Serengeti National Park Tanzania",
+        "latitude": -3.36667,
+        "longitude": 36.6833
+      }
+    ]
   },
   {
     "text": "Serengeti is a Maasai word meaning endless plains ",
@@ -3026,7 +3136,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Serengeti National Park Tanzania",
         "latitude": -2.1920957835303,
         "longitude": 33.872566223145
       }
@@ -3042,7 +3152,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Bo-Kaap",
         "latitude": -33.91909,
         "longitude": 18.42199
       }
@@ -3057,7 +3167,13 @@
       "images/41769405_133462244279476_6984916698670551906_n_17986143145043984.jpg"
     ],
     "videos": [],
-    "places": []
+    "places": [
+      {
+        "name": "Table Mountain, South Africa",
+        "latitude": -33.957313888889,
+        "longitude": 18.403108333333
+      }
+    ]
   },
   {
     "text": "We caught a great view of the Lion's Head on our way up Table Mountain early this morning ",
@@ -3069,7 +3185,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Table Mountain, South Africa",
         "latitude": -33.957313888889,
         "longitude": 18.403108333333
       }
@@ -3090,7 +3206,7 @@
     ],
     "places": [
       {
-        "name": "",
+        "name": "Deadvlei, Namibia",
         "latitude": -24.76333,
         "longitude": 15.29472
       }
@@ -3106,7 +3222,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Sossusvlei, Namibia",
         "latitude": -22.61486375,
         "longitude": 17.10350972
       }
@@ -3122,7 +3238,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Skeleton Coast",
         "latitude": -21.612222222222,
         "longitude": 14.54
       }
@@ -3138,7 +3254,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Etosha National Park",
         "latitude": -19.035548607222,
         "longitude": 16.470987643414
       }
@@ -3154,7 +3270,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Etosha National Park",
         "latitude": -19.035548607222,
         "longitude": 16.470987643414
       }
@@ -3170,7 +3286,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Etosha National Park",
         "latitude": -19.035548607222,
         "longitude": 16.470987643414
       }
@@ -3186,7 +3302,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Etosha National Park",
         "latitude": -19.035548607222,
         "longitude": 16.470987643414
       }
@@ -3202,7 +3318,13 @@
       "images/41032791_250102099023359_6367006850675094263_n_17967128203109756.jpg"
     ],
     "videos": [],
-    "places": []
+    "places": [
+      {
+        "name": "Etosha National Park",
+        "latitude": -19.035548607222,
+        "longitude": 16.470987643414
+      }
+    ]
   },
   {
     "text": "We came across many elephants in Etosha but this one hanging out in this personal oasis was my favorite \ud83d\udc18\ud83c\udf34",
@@ -3214,7 +3336,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Etosha National Park",
         "latitude": -19.035548607222,
         "longitude": 16.470987643414
       }
@@ -3230,7 +3352,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Etosha National Park",
         "latitude": -19.035548607222,
         "longitude": 16.470987643414
       }
@@ -3246,7 +3368,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Etosha National Park",
         "latitude": -19.035548607222,
         "longitude": 16.470987643414
       }
@@ -3262,7 +3384,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Namibia",
         "latitude": -23,
         "longitude": 17
       }
@@ -3278,7 +3400,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Shetland",
         "latitude": 60.07449,
         "longitude": -1.22085
       }
@@ -3294,7 +3416,7 @@
     "videos": [],
     "places": [
       {
-        "name": "",
+        "name": "Eilean Donan Castle",
         "latitude": 57.274254579816,
         "longitude": -5.5137759225156
       }
@@ -3314,6 +3436,12 @@
       "images/40508595_205276350187801_7044316578183118848_n_17917548115206023.jpg"
     ],
     "videos": [],
-    "places": []
+    "places": [
+      {
+        "name": "Elgol, Highland, United Kingdom",
+        "latitude": 57.1492868,
+        "longitude": -6.1076438
+      }
+    ]
   }
 ]
