@@ -267,6 +267,11 @@ class Index extends React.Component {
           <div className='grid ig-grid'>
             <PhotoAlbum
               layout='rows'
+              spacing={(containerWidth) => {
+                if (containerWidth < 600) return 5
+                if (containerWidth < 1200) return 10
+                return 15
+              }}
               photos={photos}
               onClick={({ index }) => this.onClick(index)}
               renderPhoto={({ photo, layout: { index, width }, wrapperStyle, renderDefaultPhoto }) => {
