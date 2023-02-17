@@ -68,7 +68,11 @@ exports.createPages = ({ actions, graphql }) => {
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions
   const typeDefs = `
-    type PostsJson implements Node {
+    type FacebookPostsJson implements Node {
+      videos: [PostsJsonVideos]
+    }
+
+    type InstagramPostsJson implements Node {
       videos: [PostsJsonVideos]
     }
 

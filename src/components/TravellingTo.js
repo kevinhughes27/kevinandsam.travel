@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { MapContainer, TileLayer, Marker, Circle, Polyline } from 'react-leaflet'
 import { divIcon } from 'leaflet'
 import { lineString } from '@turf/helpers'
 import bezierSpline from '@turf/bezier-spline'
 import { isDomAvailable } from '../utils'
 
-class TravellingTo extends Component {
+class TravellingTo extends React.Component {
   render() {
     if (!isDomAvailable()) {
       return <div></div>

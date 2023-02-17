@@ -1,10 +1,11 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Layout from '../components/Layout'
-import withSizes from 'react-sizes'
 import Slideshow from '../components/Slideshow'
+import withSizes from 'react-sizes'
+
 export { Head } from '../components/Head'
 
-class AboutPage extends Component {
+class AboutPage extends React.Component {
   render() {
     return (
       <Layout>
@@ -36,7 +37,7 @@ class AboutPage extends Component {
   }
 }
 
-class Images extends Component {
+class Images extends React.Component {
   render() {
     const isServer = (typeof window === 'undefined');
     const mediumScreen = this.props.windowWidth <= 768;

@@ -15,9 +15,11 @@ $color-beta: #323235;
   'pages/_visit',
   'pages/_blog',
   'pages/_facebook',
+  'pages/_instagram',
   'pages/_post';
 
 @import 'components/_nav',
+  'components/_modal',
   'components/_video',
   'components/_quote',
   'components/_two_column',

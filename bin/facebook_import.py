@@ -156,7 +156,7 @@ class Importer:
                 pass
 
     def save(self):
-        with open(self.output_dir / "posts.json", "w") as f:
+        with open(self.output_dir / "facebook_posts.json", "w") as f:
             f.write(json.dumps(self.posts, indent=2))
 
 

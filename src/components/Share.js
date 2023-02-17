@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import {
   FacebookShareButton,
   TwitterShareButton,
@@ -11,7 +11,7 @@ import {
   RedditIcon
 } from 'react-share'
 
-class Share extends Component {
+class Share extends React.Component {
   render() {
     const {title, shareUrl, imageUrl } = this.props
 

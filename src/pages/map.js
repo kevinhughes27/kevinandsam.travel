@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Layout from '../components/Layout'
 import withSizes from 'react-sizes'
 import { MapContainer, TileLayer, Marker, CircleMarker, Circle, Popup, Polyline, LayersControl, LayerGroup } from 'react-leaflet'
@@ -34,7 +34,7 @@ const MapParams = (windowWidth) => {
 
 export { Head } from '../components/Head'
 
-class MapPage extends Component {
+class MapPage extends React.Component {
   render() {
     if (!isDomAvailable()) {
       return <div></div>
