@@ -58,9 +58,9 @@ This dish is a incredibly delicious beef stew with tender slow cooked meat. It h
 
 My top pick for food in Africa is salomie from the Bo Kaap neighbourhood in Cape Town. This neighbourhood specializes in Malaysian/South African fusion. Salomie is a super popular roti wrap and ours was filled with chicken curry. Every bite was incredible with bold and spicy flavour! It is a must try!
 
-<Slideshow>
+<Carousel>
   ![bokap-1](./bokap-1.jpg)
   ![bokap-2](./bokap-2.jpeg)
   ![bokap-3](./bokap-3.jpeg)
   ![bokap-4](./bokap-4.jpeg)
-</Slideshow>
+</Carousel>

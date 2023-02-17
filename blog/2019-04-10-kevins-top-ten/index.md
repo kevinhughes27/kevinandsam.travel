@@ -14,11 +14,11 @@ It's pretty hard to reduce an entire year of travelling down to a list of highli
 
 **1. Salar de Uyuni, Bolivia**
 
-<Slideshow>
+<Carousel>
   ![uyuni-1](./uyuni-1.jpeg)
   ![uyuni-2](./uyuni-2.jpeg)
   ![uyuni-3](./uyuni-3.jpeg)
-</Slideshow>
+</Carousel>
 
 More commonly known as the Salt Flats, Salar de Uyuni is a one of a kind experience. The flats themselves are truly beautiful with insane reflections even on a bad day and of course it's very fun to play with perspective photos. From Uyuni we drove through the bizarre Potosi region towards northen Chile. Our journey took us over 5000 meters high through a Mars like landscape. Definitely worth exploring.
 
@@ -119,11 +119,11 @@ Since it was my second time to Japan and I am putting it on my top ten I decided
 
 My favourite part of the Ryokan was the slippers. Japan has a complicated slipper culture and it was on full display here. Outdoor shoes are removed at the front door and traded for slippers. Some other rooms, like the bathroom, have slippers specific for that room. This means you take off a pair of slippers to enter the room and then when you come back out your slippers are pointing the wrong way and you can't step right into them. The crazy part is that you'll never find them this way because someone, a slipper ninja who you never see or hear, is constantly fixing the slippers to point in the right direction.
 
-<Slideshow>
+<Carousel>
   ![onsen](./onsen.jpg)
   ![onsen-2](./onsen-2.jpg)
   ![onsen-3](./onsen-3.jpg)
-</Slideshow>
+</Carousel>
 
 **9. Malaysia**
 
@@ -144,19 +144,19 @@ Malaysia also helped us out of a pinch by being the only country nearby with my 
 
 Tonsai Beach is where we spent the most time of any place we visited this past year. We made it our base and came and went a few times. My favourite part of staying put for that long was how well we got to know the area, the people and the food.
 
-<Slideshow>
+<Carousel>
   ![tonsai-2](./tonsai-2.jpeg)
   ![tonsai](./tonsai.jpeg)
   ![tonsai-1](./tonsai-1.jpg)
-</Slideshow>
+</Carousel>
 
 Climbing took us all over on some interesting paths. Avoiding the tide was something we learned how to do as it can affect access to certain places. We've seen Railay bay from almost every angle possible. There are some epic multi pitch climbs we weren't strong enough for this time and I plan to come back with some larger objectives in mind.
 
-<Slideshow>
+<Carousel>
   ![tonsai-3](./tonsai-3.jpg)
   ![tonsai-4b](./tonsai-4b.jpg)
   ![tonsai-5](./tonsai-5.jpg)
-</Slideshow>
+</Carousel>
 
 The people who live on Tonsai and support the climbing community are great. There is also some awesome food to be had and we had many favourites that we repeated - Mama Chicken, Base Camp, Green Valley and so many Thai Pancakes. I should also point out that no climbing trip to South East Asia should be considered complete without a stop in Thakhek, Laos.
 

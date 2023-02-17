@@ -1,13 +1,13 @@
 import React from 'react'
-import { Carousel } from 'react-responsive-carousel'
+import { Carousel as ReactResponsiveCarousel } from 'react-responsive-carousel'
 
-class Slideshow extends React.Component {
+class Carousel extends React.Component {
   render () {
     const children = this.props.children.filter((c) => typeof(c) !== "string")
 
     return (
       <div style={{paddingBottom: 15}}>
-        <Carousel
+        <ReactResponsiveCarousel
           showArrows={false}
           showStatus={false}
           showThumbs={false}
@@ -15,10 +15,10 @@ class Slideshow extends React.Component {
           autoPlay={true}
           interval={5000}>
           { children }
-        </Carousel>
+        </ReactResponsiveCarousel>
       </div>
     )
   }
 }
 
-export default Slideshow
+export default Carousel

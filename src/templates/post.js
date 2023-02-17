@@ -5,11 +5,11 @@ import Share from '../components/Share'
 import { MDXProvider } from '@mdx-js/react'
 import Quote from '../components/Quote'
 import TwoColumn from '../components/TwoColumn'
-import Slideshow from '../components/Slideshow'
+import Carousel from '../components/Carousel'
 
 import { graphql } from 'gatsby'
 
-const mdxComponents = { Quote, TwoColumn, Slideshow }
+const mdxComponents = { Quote, TwoColumn, Carousel }
 
 export const Head = ({ data: { mdx: post } }) => {
   const cardImage = post.frontmatter.cardImage.childImageSharp.resize;

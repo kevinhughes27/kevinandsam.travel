@@ -64,11 +64,11 @@ Enjoy the views from the top then run down the dune to the Dead Trees.
 
 We continued South from Sesriem to see Kolmanskop and stay in Luderitz. Kolmanskop is an abandoned German mining town that is half filled with sand. We arrived late in the afternoon when it is technically closed however they still allow visitors but you have to purchase a photography license instead which is a few times more expensive than entrance in the mornings. It turned out to be worth it though because we were the only people in the whole town and it was especially eerie with the wind banging shutters and the only creeks coming from our own steps.
 
-<Slideshow>
+<Carousel>
   ![Kolmanskop-1](./Kolmanskop-1.jpg)
   ![Kolmanskop-2](./Kolmanskop-2.jpg)
   ![Kolmanskop-3](./Kolmanskop-3.jpg)
-</Slideshow>
+</Carousel>
 
 We camped at Shark Island which was really a peninsula and drove to Fish River Canyon the next day. We enjoyed the drive but weren't super impressed with the canyon itself. The hot springs at the camp site were nice though. Kolmanskop was cool but in general if you want to do less driving or move around less you could definitely skip the southern portion of our route and head back to Windhoek right after Sesriem.
 

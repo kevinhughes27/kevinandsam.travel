@@ -30,12 +30,12 @@ A highlight in Medellin was that we went to a soccer game! It was one of the mos
 
 This National Park is one of the most beautiful places I've ever seen! We did the 5 day W Trek and saw absolutely stunning landscapes.
 
-<Slideshow>
+<Carousel>
   ![patagonia1](./patagonia1.jpg)
   ![patagonia2](./patagonia2.jpg)
   ![patagonia3](./patagonia3.jpeg)
   ![patagonia4](./patagonia4.jpg)
-</Slideshow>
+</Carousel>
 
 The trek was tough with big swings in the weather but we were lucky to meet some incredible people on the way to share the experience with!
 

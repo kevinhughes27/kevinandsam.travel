@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import Slideshow from '../components/Slideshow'
+import Carousel from '../components/Carousel'
 import withSizes from 'react-sizes'
 
 export { Head } from '../components/Head'
@@ -53,11 +53,11 @@ class Images extends React.Component {
 }
 
 const renderMobile = () => (
-  <Slideshow>
+  <Carousel>
     <img src={`${__PATH_PREFIX__}/about-1.jpg`} alt="where"/>
     <img src={`${__PATH_PREFIX__}/about-2.jpg`} alt="to"/>
     <img src={`${__PATH_PREFIX__}/about-3.jpg`} alt="next"/>
-  </Slideshow>
+  </Carousel>
 )
 
 const renderDesktop = () => (

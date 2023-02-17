@@ -30,11 +30,11 @@ It was intensely hot over 40 degrees and close to 100% humidity. The lodge only 
 After 3 days in Peru we were ready to head deeper into the jungle this time back in Colombia. We said goodbye to our new friends who were heading back to Leticia and continued all on our own. We suspected but didn’t yet know the full extent of how much things were about to escalate.
 
 <figure>
-  <Slideshow>
+  <Carousel>
     ![darts1](./darts1.jpg)
     ![darts2](./darts2.jpg)
     ![darts3](./darts3.jpg)
-  </Slideshow>
+  </Carousel>
   <figcaption>
     Our guides showed us how to use a traditional blow dart weapon made with things from the forest. We played a game of darts but mostly missed the target.
   </figcaption>
