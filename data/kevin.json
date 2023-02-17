@@ -363,6 +363,20 @@
     ]
   },
   {
+    "name": "England 2005",
+    "color": "teal",
+    "locations": [
+      {
+        "name": "London, Dover Castle, Stonehenge, Salisbury, Portsmouth, London",
+        "date": "2005-04-01",
+        "coordinates": [
+          60.7031609,
+          -135.3583883
+        ]
+      }
+    ]
+  },
+  {
     "name": "Costa Rica 2004",
     "color": "teal",
     "locations": [
@@ -396,12 +410,264 @@
       {
         "name": "Manuel Antonio, Costa Rica",
         "flag": "🇨🇷",
-        "date": "2013-02-12",
+        "date": "2004-02-12",
         "coordinates": [
           9.4076152,
           -84.1582776
         ]
       }
     ]
-  }
+  },
+  {
+    "name": "Quebec 2002",
+    "color": "teal",
+    "locations": [
+      {
+        "name": "Ottawa, Quebec City, Tremblant, Saguenay, Montreal",
+        "date": "2002-08-01",
+        "coordinates": [
+          60.7031609,
+          -135.3583883
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Mexico",
+    "color": "teal",
+    "locations": [
+      {
+        "name": "Barcelo Maya",
+        "date": "2000-11-01",
+        "coordinates": [
+          60.7031609,
+          -135.3583883
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Tofino",
+    "color": "teal",
+    "locations": [
+      {
+        "name": "",
+        "date": "2000-08-01",
+        "coordinates": [
+          60.7031609,
+          -135.3583883
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Dinosaur Provincial Park",
+    "color": "teal",
+    "locations": [
+      {
+        "name": "",
+        "date": "1999-08-01",
+        "coordinates": [
+          60.7031609,
+          -135.3583883
+        ]
+      }
+    ]
+  },
+  {
+    "name": "California 1999",
+    "color": "teal",
+    "locations": [
+      {
+        "name": "Los Angeles, San Diego",
+        "date": "1999-011-01",
+        "coordinates": [
+          60.7031609,
+          -135.3583883
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Sailing",
+    "color": "teal",
+    "locations": [
+      {
+        "name": "Victoria, Montague Harbour",
+        "date": "1996-06-01",
+        "coordinates": [
+          60.7031609,
+          -135.3583883
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Port Albernie",
+    "color": "teal",
+    "locations": [
+      {
+        "name": "",
+        "date": "1996-07-01",
+        "coordinates": [
+          60.7031609,
+          -135.3583883
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Ottawa 1995",
+    "color": "teal",
+    "locations": [
+      {
+        "name": "Ottawa, Niagra Falls, Barmey Point, Fort Erie, Lake Erie",
+        "date": "1995-06-01",
+        "coordinates": [
+          60.7031609,
+          -135.3583883
+        ]
+      }
+    ]
+  },
+  {
+    "name": "France",
+    "color": "teal",
+    "locations": [
+      {
+        "name": "Normandy, Mont St Micheal, Euro Disney",
+        "date": "1994-08",
+        "coordinates": [
+          60.7031609,
+          -135.3583883
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Greece",
+    "color": "teal",
+    "locations": [
+      {
+        "name": "Kos",
+        "date": "1994-06",
+        "coordinates": [
+          60.7031609,
+          -135.3583883
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Holland",
+    "color": "teal",
+    "locations": [
+      {
+        "name": "Keukenhof Gardens, Hague",
+        "date": "1994-05",
+        "coordinates": [
+          60.7031609,
+          -135.3583883
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Scotland",
+    "color": "teal",
+    "locations": [
+      {
+        "name": "Fort William, Loche ness",
+        "date": "1994",
+        "coordinates": [
+          60.7031609,
+          -135.3583883
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Switzerland",
+    "color": "teal",
+    "locations": [
+      {
+        "name": "Zinal",
+        "date": "1994-02",
+        "coordinates": [
+          60.7031609,
+          -135.3583883
+        ]
+      }
+    ]
+  },
+  {
+    "name": "York",
+    "color": "teal",
+    "locations": [
+      {
+        "name": "",
+        "date": "1993-11",
+        "coordinates": [
+          60.7031609,
+          -135.3583883
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Whales",
+    "color": "teal",
+    "locations": [
+      {
+        "name": "Conwy",
+        "date": "1993",
+        "coordinates": [
+          60.7031609,
+          -135.3583883
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Cornwall and Bath",
+    "color": "teal",
+    "locations": [
+      {
+        "name": "",
+        "date": "1992",
+        "coordinates": [
+          60.7031609,
+          -135.3583883
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Menorca, Spain",
+    "color": "teal",
+    "locations": [
+      {
+        "name": "",
+        "date": "1991",
+        "coordinates": [
+          60.7031609,
+          -135.3583883
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Vienna, Austria",
+    "color": "teal",
+    "locations": [
+      {
+        "name": "",
+        "date": "1991-11",
+        "coordinates": [
+          60.7031609,
+          -135.3583883
+        ]
+      }
+    ]
+  },
 ]
