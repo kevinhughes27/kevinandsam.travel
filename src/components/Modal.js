@@ -9,13 +9,6 @@ class Modal extends React.Component {
   render () {
     const { isOpen, close, children } = this.props
 
-    // scroll down 1 to hide url bar for true fullscreen on mobile
-    if (isOpen) {
-      if (window.scrollY === 0) {
-        window.scrollTo( 0, 1 );
-      }
-    }
-
     return (
       <ReactModal
         isOpen={isOpen}

@@ -43,6 +43,7 @@ const manifest = {
   options: {
     name: 'kevinandsam.travel',
     icon: './static/favicon.png',
+    display: 'standalone',
   }
 }
 
