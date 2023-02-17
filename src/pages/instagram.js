@@ -113,7 +113,7 @@ class Index extends React.Component {
     let postsToShow = initialPostsToShow
 
     if (typeof window !== `undefined`) {
-      postsToShow = parseInt(sessionStorage.getItem(storageKey)) || initialPostsToShow
+      postsToShow = window[storageKey] || initialPostsToShow
     }
 
     this.state = {
@@ -126,7 +126,7 @@ class Index extends React.Component {
     const distanceToBottom = document.documentElement.offsetHeight - (window.scrollY + window.innerHeight)
     if (distanceToBottom < 100) {
       const postsToShow = this.state.postsToShow + loadInc
-      sessionStorage.setItem(storageKey, postsToShow)
+      window[storageKey] = postsToShow
       this.setState({ postsToShow })
     }
     this.ticking = false
