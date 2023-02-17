@@ -9,10 +9,23 @@ class Modal extends React.Component {
   render () {
     const { isOpen, close, children } = this.props
 
+    if (isOpen) {
+      if (window.innerWidth < 600 && !document.fullscreenElement) {
+        document.documentElement.requestFullscreen()
+      }
+    }
+
+    const onClose = () => {
+      if (document.fullscreenElement) {
+        document.exitFullscreen();
+      }
+      close()
+    }
+
     return (
       <ReactModal
         isOpen={isOpen}
-        onRequestClose={close}
+        onRequestClose={onClose}
         contentLabel='Modal'
         className='modal-content'
         overlayClassName='modal-overlay'
@@ -22,7 +35,7 @@ class Modal extends React.Component {
             {children}
           </div>
           <FontAwesomeIcon icon={faTimes} className='modal-close'
-            onClick={close}
+            onClick={onClose}
           />
         </div>
       </ReactModal>
