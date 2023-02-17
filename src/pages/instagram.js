@@ -26,17 +26,15 @@ class Post extends React.Component {
     const date = new Date(timestamp*1000).toDateString()
 
     return (
-      <Swipe
-        id={post.id}
-        className='ig-post'
-        onClick={(e) => e.stopPropagation()}
-        onSwipeLeft={() => this.props.next()}
-        onSwipeRight={() => this.props.prev()}
-      >
+      <div id={post.id} className='ig-post' onClick={(e) => e.stopPropagation()} >
         <div className='media-container'>
           {this.renderPostMedia(post)}
         </div>
-        <div className='post-details'>
+        <Swipe
+          className='post-details'
+          onSwipeLeft={() => this.props.next()}
+          onSwipeRight={() => this.props.prev()}
+        >
           <div className='author'>
             <img src={`${__PATH_PREFIX__}/${author.toLowerCase()}.jpg`} alt={author} />
             <div>
@@ -48,8 +46,8 @@ class Post extends React.Component {
           <div className='text'>
             <p>{text}</p>
           </div>
-        </div>
-      </Swipe>
+        </Swipe>
+      </div>
     )
   }
 
