@@ -32,7 +32,7 @@ class Post extends React.Component {
         </div>
         <Swipe
           className='post-details'
-          tolerance={5}
+          tolerance={10}
           onSwipeLeft={() => this.props.next()}
           onSwipeRight={() => this.props.prev()}
         >
