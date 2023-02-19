@@ -6,6 +6,7 @@ import fontawesome from '@fortawesome/fontawesome'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import brands from '@fortawesome/fontawesome-free-brands'
 import faHome from '@fortawesome/fontawesome-free-solid/faHome'
+import classNames from 'classnames'
 import { firstLoad } from '../utils'
 
 fontawesome.library.add(brands)
@@ -24,13 +25,36 @@ class Nav extends React.Component {
             <Item path="/about" title="About Us" />
             <Item path="/map" title="Map" />
             <Item path="/visit" title={ compressedNav ? "Visit" : "Come Visit" } />
-            <Item path="/blog" title="Blog" />
+            <BlogDropdown />
             <InstagramLink />
           </ul>
         </nav>
       </header>
     )
   }
+}
+
+const BlogDropdown = () => {
+  const blogActive = () => {
+    return typeof window !== `undefined` && (
+      location.pathname.startsWith('/blog') ||
+      ['/facebook', '/instagram'].includes(location.pathname)
+    )
+  }
+  const btnClass = classNames('dropbtn', { 'active': blogActive()})
+
+  return (
+    <li>
+      <div className="dropdown">
+        <button className={btnClass}>Blog</button>
+        <div className="dropdown-content">
+          <Link to={"/blog"}>Articles</Link>
+          <Link to={"/facebook"}>Posts</Link>
+          <Link to={"/instagram"}>Photos</Link>
+        </div>
+      </div>
+    </li>
+  )
 }
 
 const Item = ({path, title, partiallyActive=true}) => (

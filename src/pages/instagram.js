@@ -12,8 +12,9 @@ import mousetrap from 'mousetrap'
 export { Head } from '../components/Head'
 
 const initialPostsToShow = 24
-const loadInc = 6
-const storageKey = 'ig-postsToShow'
+const loadPostsIncrement = 6
+const storageKey = 'ig-posts'
+const scrollKey = 'ig-scroll'
 
 class Post extends React.Component {
   constructor() {
@@ -86,8 +87,7 @@ class Post extends React.Component {
         showStatus={false}
         showThumbs={false}
         infiniteLoop={true}
-        autoPlay={true}
-        interval={3000}
+        autoPlay={false}
       >
         {images.map(img => (<img src={img}/>))}
         {videos.map(vid => this.renderPostVideo(vid))}
@@ -119,18 +119,37 @@ class Index extends React.Component {
 
     this.state = {
       postsToShow,
-      activePost: null
+      activePost: null,
+      ready: false,
     }
   }
 
   update() {
     const distanceToBottom = document.documentElement.offsetHeight - (window.scrollY + window.innerHeight)
+
     if (distanceToBottom < 100) {
-      const postsToShow = this.state.postsToShow + loadInc
+      const postsToShow = this.state.postsToShow + loadPostsIncrement
+
       window[storageKey] = postsToShow
       this.setState({ postsToShow })
     }
+
     this.ticking = false
+  }
+
+  restoreScroll = () => {
+    if (window[scrollKey] !== undefined) {
+      setTimeout(() => {
+        window.scrollTo(0, window[scrollKey])
+        this.setState({ready: true})
+      }, 0)
+    } else {
+      this.setState({ready: true})
+    }
+  }
+
+  saveScroll = () => {
+    window[scrollKey] = window.scrollY
   }
 
   handleScroll = () => {
@@ -141,6 +160,7 @@ class Index extends React.Component {
   }
 
   componentDidMount() {
+    this.restoreScroll()
     window.addEventListener(`scroll`, this.handleScroll)
     mousetrap.bind(`left`, () => this.previousPost())
     mousetrap.bind(`right`, () => this.nextPost())
@@ -148,6 +168,7 @@ class Index extends React.Component {
   }
 
   componentWillUnmount() {
+    this.saveScroll()
     window.removeEventListener(`scroll`, this.handleScroll)
     mousetrap.unbind(`left`)
     mousetrap.unbind(`right`)
@@ -263,7 +284,7 @@ class Index extends React.Component {
 
     return (
       <Layout>
-        <section className='section-padding bg-white'>
+        <section className='section-padding bg-white' style={{opacity: this.state.ready ? 1 : 0}}>
           {this.renderModal()}
           <div className='grid ig-grid'>
             <PhotoAlbum

@@ -35,6 +35,14 @@ nav ul {
       font-family: $font-header;
       font-weight: 700;
     }
+
+    button {
+      @include link-underline();
+
+      &:before {
+        bottom: 0em;
+      }
+    }
   }
 }
 

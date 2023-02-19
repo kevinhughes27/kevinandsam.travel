@@ -7,8 +7,9 @@ import { graphql } from 'gatsby'
 export { Head } from '../components/Head'
 
 const initialPostsToShow = 4
-const loadInc = 4
-const storageKey = 'fb-postsToShow'
+const loadPostsIncrement = 4
+const storageKey = 'fb-posts'
+const scrollKey = 'fb-scroll'
 
 class Post extends React.Component {
   constructor() {
@@ -32,7 +33,7 @@ class Post extends React.Component {
     const maxPhotos = photos.length === 3 ? 2 : 3
 
     return (
-      <div key={post.id} className='fb-post'>
+      <div className='fb-post'>
         <div className='fb-author'>
           <img src={`${__PATH_PREFIX__}/${author.toLowerCase()}.jpg`} alt={author} />
           <div>
@@ -99,7 +100,8 @@ class Index extends React.Component {
     }
 
     this.state = {
-      postsToShow
+      postsToShow,
+      ready: false
     }
   }
 
@@ -107,12 +109,28 @@ class Index extends React.Component {
     const distanceToBottom = document.documentElement.offsetHeight - (window.scrollY + window.innerHeight)
 
     if (distanceToBottom < 300) {
-      const postsToShow = this.state.postsToShow + loadInc
+      const postsToShow = this.state.postsToShow + loadPostsIncrement
+
       window[storageKey] = postsToShow
       this.setState({ postsToShow })
     }
 
     this.ticking = false
+  }
+
+  restoreScroll = () => {
+    if (window[scrollKey] !== undefined) {
+      setTimeout(() => {
+        window.scrollTo(0, window[scrollKey])
+        this.setState({ready: true})
+      }, 0)
+    } else {
+      this.setState({ready: true})
+    }
+  }
+
+  saveScroll = () => {
+    window[scrollKey] = window.scrollY
   }
 
   handleScroll = () => {
@@ -123,10 +141,12 @@ class Index extends React.Component {
   }
 
   componentDidMount() {
+    this.restoreScroll()
     window.addEventListener(`scroll`, this.handleScroll)
   }
 
   componentWillUnmount() {
+    this.saveScroll()
     window.removeEventListener(`scroll`, this.handleScroll)
   }
 
@@ -136,9 +156,9 @@ class Index extends React.Component {
 
     return (
       <Layout>
-        <section className='section-padding bg-white'>
+        <section className='section-padding bg-white' style={{opacity: this.state.ready ? 1 : 0}}>
           <div className='grid'>
-            {postsToShow.map(p => <Post post={p}/>)}
+            {postsToShow.map(p => <Post key={p.id} post={p}/>)}
           </div>
         </section>
       </Layout>
