@@ -8,7 +8,7 @@ from videoprops import get_video_properties
 
 
 facebook_export = Path.home() / "Downloads/facebook-posts/your_posts_1.json"
-output_dir = Path.home() / "Projects/kevinandsam.travel/facebook"
+output_dir = Path.home() / "Projects/kevinandsam.travel/blog/facebook"
 author = "Kevin"
 
 

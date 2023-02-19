@@ -9,7 +9,7 @@ from videoprops import get_video_properties
 
 
 export_file = Path.home() / "Downloads/instagram-export/content/posts_1.json"
-output_dir = Path.home() / "Projects/kevinandsam.travel/instagram"
+output_dir = Path.home() / "Projects/kevinandsam.travel/blog/instagram"
 author = "Kevin"
 
 
@@ -68,71 +68,6 @@ class Importer:
         self.posts = []
 
         for post in self.ig_posts:
-            images = []
-            videos = []
-            places = []
-
-            for media in post["media"]:
-                media_file = media["uri"]
-
-                if Path(media_file).suffix == ".jpg" or Path(media_file).suffix == ".webp":
-                    image_name = Path(media_file).name
-
-                    src = str(self.export_dir / media_file)
-                    dst = str(self.images_dir / image_name)
-                    rel = f"images/{image_name}"
-
-                    shutil.copy(src, dst)
-                    images.append(rel)
-
-                else:  # assume video if no extension
-                    video_name = Path(media_file).name
-
-                    src = str(self.export_dir / media_file)
-                    dst = str(self.videos_dir / video_name)
-                    rel = f"videos/{video_name}"
-
-                    shutil.copy(src, dst)
-
-                    props = get_video_properties(dst)
-
-                    videos.append({
-                        "src": rel,
-                        "width": props["width"],
-                        "height": props["height"],
-                        "duration": props["duration"],
-                    })
-
-                # place
-                if "media_metadata" in media:
-                    if "photo_metadata" in media["media_metadata"]:
-                        if "exif_data" in media["media_metadata"]["photo_metadata"]:
-                            if "latitude" in media["media_metadata"]["photo_metadata"]["exif_data"][0]:
-                                places.append({
-                                    "name": "",
-                                    "latitude": media["media_metadata"]["photo_metadata"]["exif_data"][0]["latitude"],
-                                    "longitude": media["media_metadata"]["photo_metadata"]["exif_data"][0]["longitude"],
-                                })
-
-                    if "video_metadata" in media["media_metadata"]:
-                        if "exif_data" in media["media_metadata"]["video_metadata"]:
-                            places.append({
-                                "name": "",
-                                "latitude": media["media_metadata"]["video_metadata"]["exif_data"][0]["latitude"],
-                                "longitude": media["media_metadata"]["video_metadata"]["exif_data"][0]["longitude"],
-                            })
-
-            # text
-            if "title" in post:
-                text = post["title"]
-            else:
-                text = post["media"][0]["title"]
-
-            # strip hashtags when more than 3
-            if text.count("#") > 2:
-                hash_tags_start = text.index("#")
-                text = text[:hash_tags_start]
-
             # timestamp
             if "creation_timestamp" in post:
                 timestamp = post["creation_timestamp"]
@@ -145,6 +80,71 @@ class Importer:
             trip_end = datetime(2019, 3, 20)
 
             if post_date >= trip_start and post_date <= trip_end:
+                images = []
+                videos = []
+                places = []
+
+                for media in post["media"]:
+                    media_file = media["uri"]
+
+                    if Path(media_file).suffix == ".jpg" or Path(media_file).suffix == ".webp":
+                        image_name = Path(media_file).name
+
+                        src = str(self.export_dir / media_file)
+                        dst = str(self.images_dir / image_name)
+                        rel = f"images/{image_name}"
+
+                        shutil.copy(src, dst)
+                        images.append(rel)
+
+                    else:  # assume video if no extension
+                        video_name = Path(media_file).name
+
+                        src = str(self.export_dir / media_file)
+                        dst = str(self.videos_dir / video_name)
+                        rel = f"videos/{video_name}"
+
+                        shutil.copy(src, dst)
+
+                        props = get_video_properties(dst)
+
+                        videos.append({
+                            "src": rel,
+                            "width": props["width"],
+                            "height": props["height"],
+                            "duration": props["duration"],
+                        })
+
+                    # place
+                    if "media_metadata" in media:
+                        if "photo_metadata" in media["media_metadata"]:
+                            if "exif_data" in media["media_metadata"]["photo_metadata"]:
+                                if "latitude" in media["media_metadata"]["photo_metadata"]["exif_data"][0]:
+                                    places.append({
+                                        "name": "",
+                                        "latitude": media["media_metadata"]["photo_metadata"]["exif_data"][0]["latitude"],
+                                        "longitude": media["media_metadata"]["photo_metadata"]["exif_data"][0]["longitude"],
+                                    })
+
+                        if "video_metadata" in media["media_metadata"]:
+                            if "exif_data" in media["media_metadata"]["video_metadata"]:
+                                places.append({
+                                    "name": "",
+                                    "latitude": media["media_metadata"]["video_metadata"]["exif_data"][0]["latitude"],
+                                    "longitude": media["media_metadata"]["video_metadata"]["exif_data"][0]["longitude"],
+                                })
+
+                # text
+                if "title" in post:
+                    text = post["title"]
+                else:
+                    text = post["media"][0]["title"]
+
+                # strip hashtags when more than 3
+                if text.count("#") > 2:
+                    hash_tags_start = text.index("#")
+                    text = text[:hash_tags_start]
+
                 self.posts.append({
                     "text": text,
                     "timestamp": timestamp,
