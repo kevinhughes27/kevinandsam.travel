@@ -8,9 +8,9 @@ from pathlib import Path
 from videoprops import get_video_properties
 
 
-export_file = Path.home() / "Downloads/instagram-export/content/posts_1.json"
+export_file = Path.home() / "Downloads/samcluthe_20230219/content/posts_1.json"
 output_dir = Path.home() / "Projects/kevinandsam.travel/blog/instagram"
-author = "Kevin"
+author = "Sam"
 
 
 class FacebookIO(io.FileIO):
@@ -155,8 +155,14 @@ class Importer:
                 })
 
     def save(self):
-        with open(self.output_dir / "instagram_posts.json", "w") as f:
-            f.write(json.dumps(self.posts, indent=2))
+        output = self.output_dir / "instagram_posts.json"
+
+        with open(output, "r") as f:
+            posts = json.loads(f.read())
+            posts.extend(self.posts)
+
+        with open(output, "w") as f:
+            f.write(json.dumps(posts, indent=2))
 
 
 if __name__ == "__main__":
