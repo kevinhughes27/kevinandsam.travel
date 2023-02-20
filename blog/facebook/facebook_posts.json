@@ -1,6 +1,6 @@
 [
   {
-    "text": "And we're off \ud83d\ude80",
+    "text": "And we're off 🚀",
     "timestamp": 1517490207,
     "author": "Kevin",
     "images": [],
@@ -57,6 +57,44 @@
     ]
   },
   {
+    "text": "Surrounded by lava rocks! ",
+    "timestamp": 1518631167,
+    "author": "Sam",
+    "images": [
+      "images/27993361_10101884784125205_1036899466554988448_o_10101884784125205.jpg"
+    ],
+    "videos": [],
+    "places": [
+      {
+        "name": "Pacaya",
+        "coordinate": {
+          "latitude": 14.380833333333,
+          "longitude": -90.601111111111
+        },
+        "address": "Guatemala City, Guatemala"
+      }
+    ]
+  },
+  {
+    "text": "#roomwithaview",
+    "timestamp": 1519007730,
+    "author": "Sam",
+    "images": [
+      "images/28164871_10101888531116205_7082372819575978300_o_10101888531116205.jpg"
+    ],
+    "videos": [],
+    "places": [
+      {
+        "name": "Lake Atitlán",
+        "coordinate": {
+          "latitude": 14.7,
+          "longitude": -91.2
+        },
+        "address": "0701-Santiago Atitlán, Guatemala"
+      }
+    ]
+  },
+  {
     "text": "To start the first day of my 29th trip around the Sun I watched the sunrise over Lake Atitlan con mi novia @samcluthe ",
     "timestamp": 1519067650,
     "author": "Kevin",
@@ -66,12 +104,12 @@
     "videos": [],
     "places": [
       {
-        "name": "Lake Atitl\u00e1n",
+        "name": "Lake Atitlán",
         "coordinate": {
           "latitude": 14.7,
           "longitude": -91.2
         },
-        "address": "0701-Santiago Atitl\u00e1n, Guatemala"
+        "address": "0701-Santiago Atitlán, Guatemala"
       }
     ]
   },
@@ -119,6 +157,38 @@
     ]
   },
   {
+    "text": "Great day climbing in Guatape! Climbed a few 5.9 slab routes. ",
+    "timestamp": 1520355735,
+    "author": "Sam",
+    "images": [
+      "images/28516770_10101902121416135_3884684558927811539_o_10101902121416135.jpg",
+      "images/28617171_10101902121461045_4603912348131451161_o_10101902121461045.jpg",
+      "images/28515276_10101902121535895_8823025362775765419_o_10101902121535895.jpg",
+      "images/28616518_10101902121580805_97655419363919985_o_10101902121580805.jpg"
+    ],
+    "videos": [],
+    "places": []
+  },
+  {
+    "text": "I was supposed to share this #churro with @kevinhughes27 but after one bite I made him buy his own! #notsharing",
+    "timestamp": 1520464630,
+    "author": "Sam",
+    "images": [
+      "images/28577569_10101903339205675_4583621529589252096_n_10101903339200685.jpg"
+    ],
+    "videos": [],
+    "places": [
+      {
+        "name": "Comuna 13",
+        "coordinate": {
+          "latitude": 3.4842059,
+          "longitude": -76.4962154
+        },
+        "address": "Santiago de Cali, Valle del Cauca, Colombia"
+      }
+    ]
+  },
+  {
     "text": "Exploring the Amazon ",
     "timestamp": 1521252439,
     "author": "Kevin",
@@ -148,6 +218,27 @@
     "author": "Kevin",
     "images": [
       "images/29339645_10155175672310588_6057311524236558336_n_10155175672300588.jpg"
+    ],
+    "videos": [],
+    "places": [
+      {
+        "name": "Amazonas",
+        "coordinate": {
+          "latitude": -5,
+          "longitude": -63
+        },
+        "address": ""
+      }
+    ]
+  },
+  {
+    "text": "Fishing for piranhas 🎣 followed by sunset on the boat ⛅ #dontfallin",
+    "timestamp": 1521295768,
+    "author": "Sam",
+    "images": [
+      "images/29343340_10101913662662385_3161912398844002304_n_10101913662652405.jpg",
+      "images/29426042_10101913662767175_4379227596500500480_n_10101913662762185.jpg",
+      "images/29356580_10101913662886935_8682786261611577344_n_10101913662876955.jpg"
     ],
     "videos": [],
     "places": [
@@ -215,7 +306,7 @@
     ]
   },
   {
-    "text": "Adi\u00f3s Colombia, Hola Bolivia",
+    "text": "Adiós Colombia, Hola Bolivia",
     "timestamp": 1521565251,
     "author": "Kevin",
     "images": [],
@@ -235,7 +326,7 @@
           "latitude": 4.700471,
           "longitude": -74.142909
         },
-        "address": "Avenida Calle 26 # 110 - 00, 11001000 Bogot\u00e1, Distrito Especial, Colombia"
+        "address": "Avenida Calle 26 # 110 - 00, 11001000 Bogotá, Distrito Especial, Colombia"
       }
     ]
   },
@@ -283,12 +374,35 @@
     ],
     "places": [
       {
-        "name": "Cerro Huayna Potosi- Bolivia 6.088 msnm",
+        "name": "Cerro Huayna Potosi, Bolivia",
         "coordinate": {
           "latitude": -16.499346294,
           "longitude": -68.150022236
         },
         "address": "Ciudad La Paz, Bolivia"
+      }
+    ]
+  },
+  {
+    "text": "Had the best culinary experience of my life! Got to sit at the Chef's table at #gustu for an 18 course tasting menu. Favourite dish was alligator ceviche!",
+    "timestamp": 1521984700,
+    "author": "Sam",
+    "images": [
+      "images/29060499_10101919618092655_3249603072385097179_o_10101919618092655.jpg",
+      "images/28954343_10101919618122595_1366503545750511373_o_10101919618122595.jpg",
+      "images/28946943_10101919618172495_3610897782693426267_o_10101919618172495.jpg",
+      "images/28947611_10101919618202435_625908319686296914_o_10101919618202435.jpg",
+      "images/28953673_10101919618232375_939412229124536088_o_10101919618232375.jpg"
+    ],
+    "videos": [],
+    "places": [
+      {
+        "name": "Gustu",
+        "coordinate": {
+          "latitude": -16.544541867501,
+          "longitude": -68.08643023
+        },
+        "address": "Calle 10, NA La Paz, Bolivia"
       }
     ]
   },
@@ -348,6 +462,27 @@
     ]
   },
   {
+    "text": "Great trip to the saltflats! #winebottle #smash",
+    "timestamp": 1522338163,
+    "author": "Sam",
+    "images": [
+      "images/29572448_10101926995054165_830553702514795186_n_10101926995054165.jpg",
+      "images/29594662_10101926995143985_407000053067005100_n_10101926995143985.jpg",
+      "images/29573319_10101926995203865_2339257817138025255_n_10101926995203865.jpg"
+    ],
+    "videos": [],
+    "places": [
+      {
+        "name": "Salar De Uyuni - Bolivia",
+        "coordinate": {
+          "latitude": -20.33046244223,
+          "longitude": -67.081832885742
+        },
+        "address": "Salar de Uyuni, BOLIVIA Uyuni, Bolivia"
+      }
+    ]
+  },
+  {
     "text": "After the Salt Flats we drove through the Potosi region of Bolivia for 2 days ending in Chile with Red Planet Expeditions. The company is appropriately named - it did feel like we were on a different planet. Yes those are flamingos in the top right. The world is weird. ",
     "timestamp": 1522369310,
     "author": "Kevin",
@@ -357,12 +492,12 @@
     "videos": [],
     "places": [
       {
-        "name": "Potos\u00ed, Bolivia",
+        "name": "Potosí, Bolivia",
         "coordinate": {
           "latitude": -19.5833,
           "longitude": -65.75
         },
-        "address": "Potos\u00ed, Bolivia"
+        "address": "Potosí, Bolivia"
       }
     ]
   },
@@ -429,7 +564,7 @@
           "latitude": -33.043754101015,
           "longitude": -71.627109646797
         },
-        "address": "Paseo Dimalow 166, Cerro Alegre, 2340000 Valpara\u00edso, Chile"
+        "address": "Paseo Dimalow 166, Cerro Alegre, 2340000 Valparaíso, Chile"
       }
     ]
   },
@@ -445,12 +580,12 @@
     "videos": [],
     "places": [
       {
-        "name": "Valpara\u00edso, Chile",
+        "name": "Valparaíso, Chile",
         "coordinate": {
           "latitude": -33.05,
           "longitude": -71.6167
         },
-        "address": "Valpara\u00edso, Chile"
+        "address": "Valparaíso, Chile"
       }
     ]
   },
@@ -469,7 +604,29 @@
           "latitude": -51.72941,
           "longitude": -72.50168
         },
-        "address": "Regi\u00f3n de Magallanes y de la Ant\u00e1rtica Chilena, Chile, Puerto Natales, Chile"
+        "address": "Región de Magallanes y de la Antártica Chilena, Chile, Puerto Natales, Chile"
+      }
+    ]
+  },
+  {
+    "text": "Trekked the W circuit in Torres del Paine National Park. So many different landscapes, great people, crazy weather and now some sore knees. Amazing experience! ",
+    "timestamp": 1523739559,
+    "author": "Sam",
+    "images": [
+      "images/30716492_10101940398049455_2156022133178761216_n_10101940398044465.jpg",
+      "images/30729314_10101940398089375_7269825532571680768_n_10101940398084385.jpg",
+      "images/30715377_10101940398159235_6812566379183472640_n_10101940398149255.jpg",
+      "images/30709777_10101940398214125_4267161991258308608_n_10101940398199155.jpg"
+    ],
+    "videos": [],
+    "places": [
+      {
+        "name": "Torres Del Paine, Patagonia",
+        "coordinate": {
+          "latitude": -51.72413,
+          "longitude": -72.50217
+        },
+        "address": "Torres del Paine, Puerto Natales, Chile"
       }
     ]
   },
@@ -488,7 +645,7 @@
           "latitude": -51.72941,
           "longitude": -72.50168
         },
-        "address": "Regi\u00f3n de Magallanes y de la Ant\u00e1rtica Chilena, Chile, Puerto Natales, Chile"
+        "address": "Región de Magallanes y de la Antártica Chilena, Chile, Puerto Natales, Chile"
       }
     ]
   },
@@ -507,7 +664,7 @@
           "latitude": -51.72941,
           "longitude": -72.50168
         },
-        "address": "Regi\u00f3n de Magallanes y de la Ant\u00e1rtica Chilena, Chile, Puerto Natales, Chile"
+        "address": "Región de Magallanes y de la Antártica Chilena, Chile, Puerto Natales, Chile"
       }
     ]
   },
@@ -526,7 +683,7 @@
           "latitude": -51.72941,
           "longitude": -72.50168
         },
-        "address": "Regi\u00f3n de Magallanes y de la Ant\u00e1rtica Chilena, Chile, Puerto Natales, Chile"
+        "address": "Región de Magallanes y de la Antártica Chilena, Chile, Puerto Natales, Chile"
       }
     ]
   },
@@ -564,7 +721,7 @@
     ],
     "places": [
       {
-        "name": "El Chalt\u00e9n",
+        "name": "El Chaltén",
         "coordinate": {
           "latitude": -49.331408,
           "longitude": -72.886129
@@ -574,7 +731,18 @@
     ]
   },
   {
-    "text": "I climbed a mountain today! Our weather window finally opened (only a day late) and we were able to get out on the rocks. In the morning we did five sport routes in sector el camina ranging from 5 to 6a (5.8 to 5.10a). The rocks were really neat - it felt more mountainous even on short pitches. Later in the afternoon I climbed the Eagle Needle for my first multi pitch ascent. Four pitches and over 120 metres of climbing to the top. To cap the day we got our best look at the Fitz Roy yet. Poincenot was fully visible and you could see the outline of the Fitz behind some light cloud. Thanks \u200bJuan Raselli and Mountaineering Patagonia for a great day. ",
+    "text": "Went climbing in El Chalten, it was an amazing experience with some great rock! This one is rated 6a.",
+    "timestamp": 1524617033,
+    "author": "Sam",
+    "images": [
+      "images/31311324_10101946367621385_1262631801323520000_n_10101946367611405.jpg",
+      "images/31317824_10101946367691245_1194862358468493312_n_10101946367686255.jpg"
+    ],
+    "videos": [],
+    "places": []
+  },
+  {
+    "text": "I climbed a mountain today! Our weather window finally opened (only a day late) and we were able to get out on the rocks. In the morning we did five sport routes in sector el camina ranging from 5 to 6a (5.8 to 5.10a). The rocks were really neat - it felt more mountainous even on short pitches. Later in the afternoon I climbed the Eagle Needle for my first multi pitch ascent. Four pitches and over 120 metres of climbing to the top. To cap the day we got our best look at the Fitz Roy yet. Poincenot was fully visible and you could see the outline of the Fitz behind some light cloud. Thanks ​Juan Raselli and Mountaineering Patagonia for a great day. ",
     "timestamp": 1524617034,
     "author": "Kevin",
     "images": [
@@ -587,7 +755,7 @@
     "videos": [],
     "places": [
       {
-        "name": "El Chalt\u00e9n",
+        "name": "El Chaltén",
         "coordinate": {
           "latitude": -49.331408,
           "longitude": -72.886129
@@ -611,7 +779,7 @@
           "latitude": -41.1347,
           "longitude": -71.3098
         },
-        "address": "San Carlos de Bariloche, R\u00edo Negro, Argentina"
+        "address": "San Carlos de Bariloche, Río Negro, Argentina"
       }
     ]
   },
@@ -632,12 +800,12 @@
           "latitude": -41.1347,
           "longitude": -71.3098
         },
-        "address": "San Carlos de Bariloche, R\u00edo Negro, Argentina"
+        "address": "San Carlos de Bariloche, Río Negro, Argentina"
       }
     ]
   },
   {
-    "text": "After 3 months of backpacking through South America it's time to change continents and explore Eastern Europe. We had a hectic morning getting to the airport but now we're crossing the pond in style - a Boeing 787 Dreamliner! I've wanted to fly in one of these ever since I learned about them in a 4th year aerospace engineering course. Oh and we got upgraded to first class!! \ud83e\udd42\ud83d\udeeb",
+    "text": "After 3 months of backpacking through South America it's time to change continents and explore Eastern Europe. We had a hectic morning getting to the airport but now we're crossing the pond in style - a Boeing 787 Dreamliner! I've wanted to fly in one of these ever since I learned about them in a 4th year aerospace engineering course. Oh and we got upgraded to first class!! 🥂🛫",
     "timestamp": 1525840394,
     "author": "Kevin",
     "images": [],
@@ -657,7 +825,7 @@
           "latitude": -34.6086,
           "longitude": -58.4215
         },
-        "address": "Buenos Aires, Ciudad Aut\u00f3noma de Buenos Aires, Argentina"
+        "address": "Buenos Aires, Ciudad Autónoma de Buenos Aires, Argentina"
       }
     ]
   },
@@ -677,6 +845,28 @@
           "longitude": 11.25
         },
         "address": "Florence, Tuscany, Italy"
+      }
+    ]
+  },
+  {
+    "text": "Finally hit my #30before30 with Montenegro! That's travelling to 30 countries before I'm 30. 😉",
+    "timestamp": 1526333904,
+    "author": "Sam",
+    "images": [
+      "images/32580661_10101960104946675_6385420216465096704_n_10101960104936695.jpg",
+      "images/32511908_10101960104996575_4868974105853952000_n_10101960104991585.jpg",
+      "images/32555241_10101960105071425_3406562076850651136_n_10101960105061445.jpg",
+      "images/32628291_10101960105121325_1885305091766878208_n_10101960105111345.jpg"
+    ],
+    "videos": [],
+    "places": [
+      {
+        "name": "Montenegro",
+        "coordinate": {
+          "latitude": 42.766667,
+          "longitude": 19.216667
+        },
+        "address": ""
       }
     ]
   },
@@ -703,7 +893,7 @@
     ]
   },
   {
-    "text": "Back in Nature! Plitvice Lakes was beautiful but very busy and it's not even high season yet \ud83d\ude2e. We were spoiled in Patagonia and crowds are going to take some adjusting to especially as we approach summer time in Europe ",
+    "text": "Back in Nature! Plitvice Lakes was beautiful but very busy and it's not even high season yet 😮. We were spoiled in Patagonia and crowds are going to take some adjusting to especially as we approach summer time in Europe ",
     "timestamp": 1526842829,
     "author": "Kevin",
     "images": [
@@ -823,7 +1013,7 @@
     ]
   },
   {
-    "text": "Relaxing day at the bath house \ud83d\udec0The Szechenyi Baths has 18 pools, 3 outdoors and 10 saunas /steam rooms. One of the Saunas was so hot I could only stay in for a minute. ",
+    "text": "Relaxing day at the bath house 🛀The Szechenyi Baths has 18 pools, 3 outdoors and 10 saunas /steam rooms. One of the Saunas was so hot I could only stay in for a minute. ",
     "timestamp": 1528299441,
     "author": "Kevin",
     "images": [
@@ -837,12 +1027,12 @@
           "latitude": 47.498333333333,
           "longitude": 19.040833333333
         },
-        "address": "Budapest, Hungary, 1011\u20131239"
+        "address": "Budapest, Hungary, 1011–1239"
       }
     ]
   },
   {
-    "text": "Time to keep moving on! \ud83d\ude87\ud83d\ude8c Here we come Slovenia! Creeper photo cred @dave_mcfc13 #nomadlife",
+    "text": "Time to keep moving on! 🚇🚌 Here we come Slovenia! Creeper photo cred @dave_mcfc13 #nomadlife",
     "timestamp": 1528444984,
     "author": "Kevin",
     "images": [
@@ -861,7 +1051,7 @@
     ]
   },
   {
-    "text": "First impressions of Slovenia \ud83c\uddf8\ud83c\uddee\ud83d\udc4c",
+    "text": "First impressions of Slovenia 🇸🇮👌",
     "timestamp": 1528532760,
     "author": "Kevin",
     "images": [
@@ -918,7 +1108,45 @@
     ]
   },
   {
-    "text": "Climb a mountain in the Alps \u2611\ufe0f Today we went up the Fleischbank North Ridge to the Meat Bank. It was quite the outing - we hiked 2 hours to the base of the rock then we roped in. We climbed around 12 pitches of 3/3+ with steep hiking interspersed. The route had over 1000 meters of climbing. Views from the summit \ud83d\udc4cThe way down was no joke either, 2 hours of down climbing and repelling followed by another 2 hours of steep descending. I'm pretty stoked about our first real mountain climb! Huge props to my amazing girlfriend Sam Cluthe who continues to join me on these crazy adventures. Thanks to Explore-Share for setting us up with Mathias Leo who was our great guide for the day. ",
+    "text": "I've been looking forward to paragliding our entire trip and it was incredible! Great views, smooth ride, and of course some adventure!  ",
+    "timestamp": 1529175210,
+    "author": "Sam",
+    "images": [
+      "images/35432250_10101983930594885_2912542169526960128_n_10101983930584905.jpg"
+    ],
+    "videos": [],
+    "places": [
+      {
+        "name": "Lake Bohinj",
+        "coordinate": {
+          "latitude": 46.27747127633,
+          "longitude": 13.886503570054
+        },
+        "address": ""
+      }
+    ]
+  },
+  {
+    "text": "We did a multi-pitch climbing course in the Alps. Here I am leading my hardest lead pitch to date (5.9/5.10a) with @samcluthe belaying down below. When I get to the top I'll setup there and belay her to follow. After we're both at the top we switch the rope and repell down. ",
+    "timestamp": 1529258980,
+    "author": "Kevin",
+    "images": [
+      "images/35896185_10155386806875588_558015937941340160_n_10155386806865588.jpg"
+    ],
+    "videos": [],
+    "places": [
+      {
+        "name": "Sankt Johann in Tirol",
+        "coordinate": {
+          "latitude": 47.52172,
+          "longitude": 12.42988
+        },
+        "address": "Sankt Johann in Tirol, Austria"
+      }
+    ]
+  },
+  {
+    "text": "Climb a mountain in the Alps ☑️ Today we went up the Fleischbank North Ridge to the Meat Bank. It was quite the outing - we hiked 2 hours to the base of the rock then we roped in. We climbed around 12 pitches of 3/3+ with steep hiking interspersed. The route had over 1000 meters of climbing. Views from the summit 👌The way down was no joke either, 2 hours of down climbing and repelling followed by another 2 hours of steep descending. I'm pretty stoked about our first real mountain climb! Huge props to my amazing girlfriend Sam Cluthe who continues to join me on these crazy adventures. Thanks to Explore-Share for setting us up with Mathias Leo who was our great guide for the day. ",
     "timestamp": 1529258981,
     "author": "Kevin",
     "images": [
@@ -953,7 +1181,7 @@
     ]
   },
   {
-    "text": "Here's the finished video edit of our \u26f0\ufe0f climb yesterday!",
+    "text": "Here's the finished video edit of our ⛰️ climb yesterday!",
     "timestamp": 1529349288,
     "author": "Kevin",
     "images": [],
@@ -977,7 +1205,7 @@
     ]
   },
   {
-    "text": "Austria is my 30th country \ud83c\udf0d\ud83c\udfc6Which means I made it! #30under30",
+    "text": "Austria is my 30th country 🌍🏆Which means I made it! #30under30",
     "timestamp": 1529507274,
     "author": "Kevin",
     "images": [
@@ -996,26 +1224,26 @@
     ]
   },
   {
-    "text": "We did a multi-pitch climbing course in the Alps. Here I am leading my hardest lead pitch to date (5.9/5.10a) with @samcluthe belaying down below. When I get to the top I'll setup there and belay her to follow. After we're both at the top we switch the rope and repell down. ",
-    "timestamp": 1529671729,
-    "author": "Kevin",
+    "text": "Great way to start my 30th bday celebration with a free bottle of bubbly from @wombatshostels! Thanks! #dirtythirty",
+    "timestamp": 1529959372,
+    "author": "Sam",
     "images": [
-      "images/35896185_10155386806875588_558015937941340160_n_10155386806865588.jpg"
+      "images/35882556_10101990918486095_3854915186053873664_n_10101990918481105.jpg"
     ],
     "videos": [],
     "places": [
       {
-        "name": "Sankt Johann in Tirol",
+        "name": "Vienna, Austria",
         "coordinate": {
-          "latitude": 47.52172,
-          "longitude": 12.42988
+          "latitude": 48.2083,
+          "longitude": 16.3731
         },
-        "address": "Sankt Johann in Tirol, Austria"
+        "address": "Vienna, Austria"
       }
     ]
   },
   {
-    "text": "Looking back down the valley from Ribbon Falls on our way to camp at Ribbon Lake for the weekend. Travelling has given us even more appreciation for our own beautiful country \ud83c\udde8\ud83c\udde6 (even when you snow on us in July) ",
+    "text": "Looking back down the valley from Ribbon Falls on our way to camp at Ribbon Lake for the weekend. Travelling has given us even more appreciation for our own beautiful country 🇨🇦 (even when you snow on us in July) ",
     "timestamp": 1530629478,
     "author": "Kevin",
     "images": [
@@ -1034,7 +1262,7 @@
     ]
   },
   {
-    "text": "The Wall. This section known as the East Side Gallery is covered in street art. The wall itself is pretty interesting. If you've never seen it - it's not that high nor very thick. It mostly worked thanks to guards and other defenses around it. Also it's not made of bricks \ud83d\ude0e ",
+    "text": "The Wall. This section known as the East Side Gallery is covered in street art. The wall itself is pretty interesting. If you've never seen it - it's not that high nor very thick. It mostly worked thanks to guards and other defenses around it. Also it's not made of bricks 😎 ",
     "timestamp": 1531598138,
     "author": "Kevin",
     "images": [
@@ -1091,7 +1319,7 @@
     ]
   },
   {
-    "text": "Going under the channel! I remember watching it being built as a kid in London and today we're going through it \ud83d\ude87",
+    "text": "Going under the channel! I remember watching it being built as a kid in London and today we're going through it 🚇",
     "timestamp": 1533285114,
     "author": "Kevin",
     "images": [],
@@ -1135,6 +1363,25 @@
     ]
   },
   {
+    "text": "#selfie at the Cliffs of Moher!",
+    "timestamp": 1534181971,
+    "author": "Sam",
+    "images": [
+      "images/39105894_10102028080737645_1139945824290078720_n_10102028080727665.jpg"
+    ],
+    "videos": [],
+    "places": [
+      {
+        "name": "Cliffs of Moher",
+        "coordinate": {
+          "latitude": 52.971705717953,
+          "longitude": -9.4263725881504
+        },
+        "address": "Cliffs of Moher Experience, Liscannor, Ireland V95 KN9T"
+      }
+    ]
+  },
+  {
     "text": "More Cliffs of Moher! ",
     "timestamp": 1534282608,
     "author": "Kevin",
@@ -1146,7 +1393,7 @@
     "videos": [],
     "places": [
       {
-        "name": "Cliffs of Moher Experience",
+        "name": "Cliffs of Moher",
         "coordinate": {
           "latitude": 52.971705717953,
           "longitude": -9.4263725881504
@@ -1288,7 +1535,7 @@
     ]
   },
   {
-    "text": "Our ride and home for the next few weeks \ud83d\ude99\ud83c\udfd5\ufe0f\ud83c\udf0d ",
+    "text": "Our ride and home for the next few weeks 🚙🏕️🌍 ",
     "timestamp": 1537370566,
     "author": "Kevin",
     "images": [
@@ -1307,7 +1554,7 @@
     ]
   },
   {
-    "text": "First stop - Etosha National Park! Get ready for same safari photos! \ud83d\udc18\ud83e\udd92\ud83e\udd93\ud83e\udd8f\ud83e\udd81\ud83d\udcf8 ",
+    "text": "First stop - Etosha National Park! Get ready for same safari photos! 🐘🦒🦓🦏🦁📸 ",
     "timestamp": 1537441009,
     "author": "Kevin",
     "images": [
@@ -1326,7 +1573,30 @@
     ]
   },
   {
-    "text": "Zebras were some of the first animals we saw in the park. We quickly pulled over in excitement - little did we know just how many we'd see over the next few days! \ud83e\udd93",
+    "text": "Couldn't be happier seeing these stunning animals in the wild! #diysafari #namibia",
+    "timestamp": 1537446463,
+    "author": "Sam",
+    "images": [
+      "images/42155136_10102054543685685_8743573535047286784_n_10102054543680695.jpg",
+      "images/41991140_10102054543720615_8508333872688136192_n_10102054543715625.jpg",
+      "images/42267728_10102054543765525_7674912476969828352_n_10102054543760535.jpg",
+      "images/42138160_10102054543810435_2111147150934016000_n_10102054543805445.jpg",
+      "images/41903772_10102054543855345_4044462061445447680_n_10102054543845365.jpg"
+    ],
+    "videos": [],
+    "places": [
+      {
+        "name": "Etosha National Park",
+        "coordinate": {
+          "latitude": -18.980730403953,
+          "longitude": 15.762634277344
+        },
+        "address": "Okaukuejo, Namibia, Namibia Okaukuejo, Namibia"
+      }
+    ]
+  },
+  {
+    "text": "Zebras were some of the first animals we saw in the park. We quickly pulled over in excitement - little did we know just how many we'd see over the next few days! 🦓",
     "timestamp": 1537461630,
     "author": "Kevin",
     "images": [
@@ -1345,7 +1615,7 @@
     ]
   },
   {
-    "text": "We came across many elephants in Etosha but this one hanging out in this personal oasis was my favorite \ud83d\udc18\ud83c\udf34",
+    "text": "We came across many elephants in Etosha but this one hanging out in this personal oasis was my favorite 🐘🌴",
     "timestamp": 1537535649,
     "author": "Kevin",
     "images": [
@@ -1364,7 +1634,7 @@
     ]
   },
   {
-    "text": "We were lucky enough to see lions every day we went to the park. The first day we saw a momma with three cubs. On day two we spotted a pair of lions heading towards a watering hole. On our last day we saw the mother and her cubs again then later on we saw four lions (including two males) crossing a plain \ud83e\udd81",
+    "text": "We were lucky enough to see lions every day we went to the park. The first day we saw a momma with three cubs. On day two we spotted a pair of lions heading towards a watering hole. On our last day we saw the mother and her cubs again then later on we saw four lions (including two males) crossing a plain 🦁",
     "timestamp": 1537604799,
     "author": "Kevin",
     "images": [
@@ -1385,7 +1655,7 @@
     ]
   },
   {
-    "text": "Apparently yesterday was #worldrhinoday so I'm a day late with this one \ud83d\ude06\n\nRhinos were one of the only animals we didn't find on day one so I was super excited when we spotted this one under a tree around lunchtime on our second day. Later on we found another one taking a drink at a watering hole. We saw two more on our last day grazing along the main road when we were just driving through the park \ud83e\udd8f",
+    "text": "Apparently yesterday was #worldrhinoday so I'm a day late with this one 😆\n\nRhinos were one of the only animals we didn't find on day one so I was super excited when we spotted this one under a tree around lunchtime on our second day. Later on we found another one taking a drink at a watering hole. We saw two more on our last day grazing along the main road when we were just driving through the park 🦏",
     "timestamp": 1537713072,
     "author": "Kevin",
     "images": [
@@ -1404,7 +1674,7 @@
     ]
   },
   {
-    "text": "Giraffes were the hardest to photograph especially in groups. Just when they're about to be positioned nicely for the shot they move and make it awkward \ud83e\udd92",
+    "text": "Giraffes were the hardest to photograph especially in groups. Just when they're about to be positioned nicely for the shot they move and make it awkward 🦒",
     "timestamp": 1537806256,
     "author": "Kevin",
     "images": [
@@ -1423,7 +1693,7 @@
     ]
   },
   {
-    "text": "This watering hole was packed with elephants, there must have been 30 of them including a few babies. This one on the move was my favorite \ud83d\udc18",
+    "text": "This watering hole was packed with elephants, there must have been 30 of them including a few babies. This one on the move was my favorite 🐘",
     "timestamp": 1537892286,
     "author": "Kevin",
     "images": [
@@ -1543,7 +1813,7 @@
     ]
   },
   {
-    "text": "The Serengeti was great for finding the big cats! We saw many lions, several cheetahs and a leopard. This cheetah chilling on a rock was close enough for some great photos. If you look closely when she's standing we think she might be pregnant! \ud83d\udc06 @ Serengeti National Park, Tanzania",
+    "text": "The Serengeti was great for finding the big cats! We saw many lions, several cheetahs and a leopard. This cheetah chilling on a rock was close enough for some great photos. If you look closely when she's standing we think she might be pregnant! 🐆 @ Serengeti National Park, Tanzania",
     "timestamp": 1539099332,
     "author": "Kevin",
     "images": [
@@ -1671,6 +1941,25 @@
     ]
   },
   {
+    "text": "We did a 6 day trek of Kilimanjaro and it was extremely challenging. Unfortunately, altitude got the better of me and I didn't summit. I am still super happy that I at least made it to Base Camp! \n\n",
+    "timestamp": 1540118586,
+    "author": "Sam",
+    "images": [
+      "images/44502935_10102075844289105_4940818725348573184_n_10102075844284115.jpg"
+    ],
+    "videos": [],
+    "places": [
+      {
+        "name": "Mount Kilimanjaro",
+        "coordinate": {
+          "latitude": -3.0666666666667,
+          "longitude": 37.359166666667
+        },
+        "address": "90292 Moshi, Tanzania"
+      }
+    ]
+  },
+  {
     "text": "It takes a team. And we had the best. Viva Africa Tours",
     "timestamp": 1540224877,
     "author": "Kevin",
@@ -1717,7 +2006,7 @@
     ]
   },
   {
-    "text": "Adding some gear for the next part of our trip \ud83d\ude01 ",
+    "text": "Adding some gear for the next part of our trip 😁 ",
     "timestamp": 1540501737,
     "author": "Kevin",
     "images": [
@@ -1771,7 +2060,7 @@
     ]
   },
   {
-    "text": "Not our usual style but the Korean girls taking our photo were insistent \ud83d\ude02 Great views from the top of Baegundae Peak in Bukhansan National Park.",
+    "text": "Not our usual style but the Korean girls taking our photo were insistent 😂 Great views from the top of Baegundae Peak in Bukhansan National Park.",
     "timestamp": 1541894748,
     "author": "Kevin",
     "images": [
@@ -1793,7 +2082,7 @@
     ]
   },
   {
-    "text": "Igidae Park with Busan in the background. Busan is our last stop in South Korea \ud83c\uddf0\ud83c\uddf7 and I'm a bit sad to be moving on, this country has so much to do and the people are so nice - I've never been given so many things by strangers before. Next stop Japan \ud83c\uddef\ud83c\uddf5! ",
+    "text": "Igidae Park with Busan in the background. Busan is our last stop in South Korea 🇰🇷 and I'm a bit sad to be moving on, this country has so much to do and the people are so nice - I've never been given so many things by strangers before. Next stop Japan 🇯🇵! ",
     "timestamp": 1542519608,
     "author": "Kevin",
     "images": [
@@ -1826,7 +2115,7 @@
           "latitude": 35.703829,
           "longitude": 139.793402
         },
-        "address": "\u8535\u524d2-14-13, Taito-ku, Tokyo, Japan 111-0051"
+        "address": "蔵前2-14-13, Taito-ku, Tokyo, Japan 111-0051"
       }
     ]
   },
@@ -1867,6 +2156,27 @@
           "longitude": 139.7058
         },
         "address": "Shinjuku-ku, Tokyo, Japan"
+      }
+    ]
+  },
+  {
+    "text": "Two years ago my sister bought me my first Japanese chef knife when she was in Tokyo. It's was an extremely cool experience to go to the same shop and buy a couple more from the set! ",
+    "timestamp": 1542927976,
+    "author": "Sam",
+    "images": [
+      "images/46505929_10102097774565655_284015698974343168_n_10102097774555675.jpg",
+      "images/46513583_10102097774605575_790384522037297152_n_10102097774595595.jpg",
+      "images/46503174_10102097774650485_7139686902516416512_n_10102097774640505.jpg"
+    ],
+    "videos": [],
+    "places": [
+      {
+        "name": "Tokyo, Japan",
+        "coordinate": {
+          "latitude": 35.68,
+          "longitude": 139.77
+        },
+        "address": "JP-13"
       }
     ]
   },
@@ -1925,7 +2235,50 @@
           "latitude": 34.96725442645,
           "longitude": 135.77279001474
         },
-        "address": "\u4f0f\u898b\u533a\u6df1\u8349\u85ae\u4e4b\u5185\u753a68\u756a\u5730, Kyoto-shi, Kyoto, Japan 612-0882"
+        "address": "伏見区深草薮之内町68番地, Kyoto-shi, Kyoto, Japan 612-0882"
+      }
+    ]
+  },
+  {
+    "text": "Finally tested out the fish shaped waffles in Japan! Yum!",
+    "timestamp": 1543538912,
+    "author": "Sam",
+    "images": [],
+    "videos": [
+      {
+        "src": "videos/zMzMzMzMzGBhkYXNoX3Y0X2hxMl9mcmFnXzJfdmlkZW8SABgYdmlkZW9zLnZ0cy5jYWxsYmFjay5wcm9kGRwVABWgtgQAKBJWSURFT19WSUVXX_10102102516622535",
+        "width": 672,
+        "height": 896,
+        "duration": "1.200000"
+      }
+    ],
+    "places": [
+      {
+        "name": "Kyoto, Japan",
+        "coordinate": {
+          "latitude": 35,
+          "longitude": 135.75
+        },
+        "address": "Kyoto-shi, Kyoto, Japan"
+      }
+    ]
+  },
+  {
+    "text": "Gorgeous views from the top of Hang Mua! ",
+    "timestamp": 1544098384,
+    "author": "Sam",
+    "images": [
+      "images/47469022_10102106865197955_6728619418022051840_n_10102106865192965.jpg"
+    ],
+    "videos": [],
+    "places": [
+      {
+        "name": "Mua Caves - Hang Múa Official",
+        "coordinate": {
+          "latitude": 20.23000092115,
+          "longitude": 105.93543135854
+        },
+        "address": "Khê Hạ, Ninh Xuân, Hoa Lư, Ninh Bình, Ninh Bình Province, Vietnam 08212"
       }
     ]
   },
@@ -1939,17 +2292,17 @@
     "videos": [],
     "places": [
       {
-        "name": "Ninh B\u00ecnh",
+        "name": "Ninh Bình",
         "coordinate": {
           "latitude": 20.253888888889,
           "longitude": 105.975
         },
-        "address": "Ninh B\u00ecnh, Ninh B\u00ecnh Province, Vietnam"
+        "address": "Ninh Bình, Ninh Bình Province, Vietnam"
       }
     ]
   },
   {
-    "text": "Exploring Trang An by boat \ud83c\udfde\ufe0f\ud83d\udea3",
+    "text": "Exploring Trang An by boat 🏞️🚣",
     "timestamp": 1544265861,
     "author": "Kevin",
     "images": [],
@@ -1968,7 +2321,7 @@
           "latitude": 20.2141414,
           "longitude": 105.9351365
         },
-        "address": "Ninh B\u00ecnh, Ninh B\u00ecnh Province, Vietnam"
+        "address": "Ninh Bình, Ninh Bình Province, Vietnam"
       }
     ]
   },
@@ -1987,7 +2340,7 @@
           "latitude": 17.610077202556,
           "longitude": 106.31021024903
         },
-        "address": "Qu\u1ea3ng B\u00ecnh, Kwang Binh, Qu\u1ea3ng B\u00ecnh Province, Vietnam 45000"
+        "address": "Quảng Bình, Kwang Binh, Quảng Bình Province, Vietnam 45000"
       }
     ]
   },
@@ -2011,7 +2364,7 @@
     ]
   },
   {
-    "text": "They said no trip to Kuala Lumpur is complete without a trip to Skybar. You can probably skip the bar but the Petronas Towers are worth a look or two or three \ud83d\ude0e\ud83c\udfd9\ufe0f",
+    "text": "They said no trip to Kuala Lumpur is complete without a trip to Skybar. You can probably skip the bar but the Petronas Towers are worth a look or two or three 😎🏙️",
     "timestamp": 1545569652,
     "author": "Kevin",
     "images": [
@@ -2030,7 +2383,7 @@
     ]
   },
   {
-    "text": "Pulling up to Tonsai beach \ud83c\udfdd\ufe0f This is going to be our home for the foreseeable future \ud83d\ude0e ",
+    "text": "Pulling up to Tonsai beach 🏝️ This is going to be our home for the foreseeable future 😎 ",
     "timestamp": 1546674875,
     "author": "Kevin",
     "images": [
@@ -2049,7 +2402,7 @@
     ]
   },
   {
-    "text": "The storm has passed and it's back to smiles and sunshine on Tonsai. Thanks to everyone that reached out, it never got too bad here just heavy rain. If you were strong enough for the steep overhangs then you didn't even have to take the day off climbing, we're not there yet though \ud83d\udcaa\ud83e\uddd7 ",
+    "text": "The storm has passed and it's back to smiles and sunshine on Tonsai. Thanks to everyone that reached out, it never got too bad here just heavy rain. If you were strong enough for the steep overhangs then you didn't even have to take the day off climbing, we're not there yet though 💪🧗 ",
     "timestamp": 1546863006,
     "author": "Kevin",
     "images": [
@@ -2062,6 +2415,25 @@
         "coordinate": {
           "latitude": 8.0180113710421,
           "longitude": 98.834569588682
+        },
+        "address": "Krabi, Thailand"
+      }
+    ]
+  },
+  {
+    "text": "Finally starting to outdoor lead climb! ",
+    "timestamp": 1547389726,
+    "author": "Sam",
+    "images": [
+      "images/49344497_10102135278896675_7319835075204349952_n_10102135278886695.jpg"
+    ],
+    "videos": [],
+    "places": [
+      {
+        "name": "Railay Beach - Thailand",
+        "coordinate": {
+          "latitude": 8.0114788919865,
+          "longitude": 98.840321767169
         },
         "address": "Krabi, Thailand"
       }
@@ -2083,6 +2455,25 @@
           "longitude": 98.834569588682
         },
         "address": "Krabi, Thailand"
+      }
+    ]
+  },
+  {
+    "text": "Great time meeting up with some Patagonia friends over the weekend! Thanks for having us!",
+    "timestamp": 1548841311,
+    "author": "Sam",
+    "images": [
+      "images/51078369_10102147281508345_2392161449452503040_n_10102147281498365.jpg"
+    ],
+    "videos": [],
+    "places": [
+      {
+        "name": "Chiang Mai, Thailand",
+        "coordinate": {
+          "latitude": 18.7903,
+          "longitude": 98.9817
+        },
+        "address": "Chiang Mai, Thailand"
       }
     ]
   },
