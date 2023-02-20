@@ -254,7 +254,7 @@ class Index extends React.Component {
 export default InifinteScroll(Index, {
   uid: 'ig',
   initialSize: 24,
-  loadSize: 6,
+  loadSize: 12,
   threshold: 100
 })
 
