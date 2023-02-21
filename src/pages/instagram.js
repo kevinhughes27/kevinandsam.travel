@@ -137,10 +137,12 @@ class Index extends React.Component {
       event.stopPropagation()
     }
 
-    const activePost = this.state.activePost
-    const prevIndex = Math.max(activePost - 1, 0)
+    if (this.modalIsOpened()) {
+      const activePost = this.state.activePost
+      const prevIndex = Math.max(activePost - 1, 0)
 
-    this.setState({ activePost: prevIndex })
+      this.setState({ activePost: prevIndex })
+    }
   }
 
   nextPost(event) {
@@ -148,11 +150,13 @@ class Index extends React.Component {
       event.stopPropagation()
     }
 
-    const activePost = this.state.activePost
-    const posts = this.props.data.allInstagramPostsJson.nodes
-    const nextIndex = Math.min(activePost + 1, posts.length - 1)
+    if (this.modalIsOpened()) {
+      const activePost = this.state.activePost
+      const posts = this.props.data.allInstagramPostsJson.nodes
+      const nextIndex = Math.min(activePost + 1, posts.length - 1)
 
-    this.setState({ activePost: nextIndex })
+      this.setState({ activePost: nextIndex })
+    }
   }
 
   renderModal() {
@@ -254,7 +258,7 @@ class Index extends React.Component {
 export default InifinteScroll(Index, {
   uid: 'ig',
   initialSize: 24,
-  loadSize: 12,
+  loadSize: 4,
   threshold: 100
 })
 

@@ -49,6 +49,7 @@ class Post extends React.Component {
                   controls
                   playsInline
                   autoPlay={duration < 10}
+                  loop={duration < 2}
                   disablePictureInPicture
                   width={Math.round(width)}
                 >
