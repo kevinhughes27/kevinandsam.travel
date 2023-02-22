@@ -1,4 +1,6 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSpinner } from '@fortawesome/fontawesome-free-solid'
 
 export default function InfinitScroll(WrappedComponent, options) {
   return class extends React.Component {
@@ -73,10 +75,31 @@ export default function InfinitScroll(WrappedComponent, options) {
       window.removeEventListener(`scroll`, this.handleScroll)
     }
 
+    renderLoader() {
+      const style = {
+        textAlign: 'center',
+        paddingTop: '0.25em',
+        paddingBottom: '0.5em',
+        opacity: 0.5
+      }
+
+      return (
+        <div className='fa-2x' style={style}>
+          <FontAwesomeIcon icon={faSpinner} className='fa-spin' />
+        </div>
+      )
+    }
+
     render() {
       const { ready, show } = this.state
+      const max = Object.values(this.props.data)[0].nodes.length
+      const showLoader = show < max
+
       return (
-        <WrappedComponent ready={ready} show={show} {...this.props} />
+        <>
+          <WrappedComponent ready={ready} show={show} {...this.props} />
+          { showLoader ? this.renderLoader() : null }
+        </>
       )
     }
   }
