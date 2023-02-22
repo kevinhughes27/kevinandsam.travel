@@ -233,6 +233,9 @@ class Index extends React.Component {
           <div className='grid ig-grid'>
             <PhotoAlbum
               layout='rows'
+              rowConstraints={{
+                maxPhotos: 3
+              }}
               spacing={(containerWidth) => {
                 if (containerWidth < 600) return 5
                 if (containerWidth < 1200) return 10
@@ -258,7 +261,7 @@ class Index extends React.Component {
 export default InifinteScroll(Index, {
   uid: 'ig',
   initialSize: 24,
-  loadSize: 4,
+  loadSize: 6,
   threshold: 100
 })
 
