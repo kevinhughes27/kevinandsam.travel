@@ -2,21 +2,21 @@ const blog = [
   {
     resolve: `gatsby-source-filesystem`,
     options: {
-      path: `${__dirname}/blog`,
-      name: 'blog',
+      path: `${__dirname}/blog/articles`,
+      name: 'articles',
     },
   },
   {
     resolve: `gatsby-source-filesystem`,
     options: {
-      path: `${__dirname}/facebook`,
+      path: `${__dirname}/blog/facebook`,
       name: 'facebook',
     },
   },
   {
     resolve: `gatsby-source-filesystem`,
     options: {
-      path: `${__dirname}/instagram`,
+      path: `${__dirname}/blog/instagram`,
       name: 'instagram',
     },
   },

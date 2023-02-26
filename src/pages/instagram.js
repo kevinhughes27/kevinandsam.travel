@@ -1,6 +1,7 @@
 import React from 'react'
 import Layout from '../components/Layout'
 import Modal from '../components/Modal'
+import InifinteScroll from '../components/InfiniteScroll'
 import PhotoAlbum from 'react-photo-album'
 import Swipe from 'react-easy-swipe'
 import { Carousel } from 'react-responsive-carousel'
@@ -11,15 +12,7 @@ import mousetrap from 'mousetrap'
 
 export { Head } from '../components/Head'
 
-const initialPostsToShow = 24
-const loadInc = 6
-const storageKey = 'ig-postsToShow'
-
 class Post extends React.Component {
-  constructor() {
-    super()
-  }
-
   render() {
     const post = this.props.post
     const { author, text, timestamp } = post
@@ -86,8 +79,7 @@ class Post extends React.Component {
         showStatus={false}
         showThumbs={false}
         infiniteLoop={true}
-        autoPlay={true}
-        interval={3000}
+        autoPlay={false}
       >
         {images.map(img => (<img src={img}/>))}
         {videos.map(vid => this.renderPostVideo(vid))}
@@ -109,46 +101,20 @@ class Post extends React.Component {
 }
 
 class Index extends React.Component {
-  constructor() {
-    super()
-    let postsToShow = initialPostsToShow
-
-    if (typeof window !== `undefined`) {
-      postsToShow = window[storageKey] || initialPostsToShow
-    }
-
+  constructor(props) {
+    super(props)
     this.state = {
-      postsToShow,
       activePost: null
     }
   }
 
-  update() {
-    const distanceToBottom = document.documentElement.offsetHeight - (window.scrollY + window.innerHeight)
-    if (distanceToBottom < 100) {
-      const postsToShow = this.state.postsToShow + loadInc
-      window[storageKey] = postsToShow
-      this.setState({ postsToShow })
-    }
-    this.ticking = false
-  }
-
-  handleScroll = () => {
-    if (!this.ticking) {
-      this.ticking = true
-      requestAnimationFrame(() => this.update())
-    }
-  }
-
   componentDidMount() {
-    window.addEventListener(`scroll`, this.handleScroll)
     mousetrap.bind(`left`, () => this.previousPost())
     mousetrap.bind(`right`, () => this.nextPost())
     mousetrap.bind(`space`, () => this.nextPost())
   }
 
   componentWillUnmount() {
-    window.removeEventListener(`scroll`, this.handleScroll)
     mousetrap.unbind(`left`)
     mousetrap.unbind(`right`)
     mousetrap.unbind(`space`)
@@ -171,9 +137,12 @@ class Index extends React.Component {
       event.stopPropagation()
     }
 
-    const activePost = this.state.activePost
-    const prevIndex = Math.max(activePost - 1, 0)
-    this.setState({ activePost: prevIndex })
+    if (this.modalIsOpened()) {
+      const activePost = this.state.activePost
+      const prevIndex = Math.max(activePost - 1, 0)
+
+      this.setState({ activePost: prevIndex })
+    }
   }
 
   nextPost(event) {
@@ -181,17 +150,13 @@ class Index extends React.Component {
       event.stopPropagation()
     }
 
-    const activePost = this.state.activePost
-    const posts = this.props.data.allInstagramPostsJson.nodes
-    const nextIndex = Math.min(activePost + 1, posts.length - 1)
+    if (this.modalIsOpened()) {
+      const activePost = this.state.activePost
+      const posts = this.props.data.allInstagramPostsJson.nodes
+      const nextIndex = Math.min(activePost + 1, posts.length - 1)
 
-    // load more posts if necessary
-    let postsToShow = this.state.postsToShow
-    if (nextIndex >= postsToShow) {
-      postsToShow += loadInc
+      this.setState({ activePost: nextIndex })
     }
-
-    this.setState({ postsToShow, activePost: nextIndex })
   }
 
   renderModal() {
@@ -247,7 +212,7 @@ class Index extends React.Component {
 
   render() {
     const posts = this.props.data.allInstagramPostsJson.nodes
-    const postsToShow = posts.slice(0, this.state.postsToShow)
+    const postsToShow = posts.slice(0, this.props.show)
 
     const photos = postsToShow.map((post) => {
       const images = post.images.map(img => img.childrenImageSharp[0].original)
@@ -263,11 +228,14 @@ class Index extends React.Component {
 
     return (
       <Layout>
-        <section className='section-padding bg-white'>
+        <section className='section-padding bg-white' style={{opacity: this.props.ready ? 1 : 0}}>
           {this.renderModal()}
           <div className='grid ig-grid'>
             <PhotoAlbum
               layout='rows'
+              rowConstraints={{
+                maxPhotos: 3
+              }}
               spacing={(containerWidth) => {
                 if (containerWidth < 600) return 5
                 if (containerWidth < 1200) return 10
@@ -290,7 +258,12 @@ class Index extends React.Component {
   }
 }
 
-export default Index
+export default InifinteScroll(Index, {
+  uid: 'ig',
+  initialSize: 24,
+  loadSize: 6,
+  threshold: 100
+})
 
 export const pageQuery = graphql`
   query IndexQuery {

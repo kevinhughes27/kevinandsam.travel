@@ -1,66 +1,53 @@
-const path = require('path');
-const createPaginatedPages = require('gatsby-paginate');
+const path = require('path')
 
-exports.createPages = ({ actions, graphql }) => {
-  const { createPage } = actions;
+exports.createPages = async ({ actions, graphql, reporter }) => {
+  const { createPage } = actions
 
-  const blogTemplate = path.resolve(`src/templates/blog.js`);
-  const postTemplate = path.resolve(`src/templates/post.js`);
-
-  return graphql(`{
-      allMdx(sort: {frontmatter: {date: DESC}}, limit: 1000) {
-        nodes {
-          id
-          excerpt(pruneLength: 250)
-          internal {
-            contentFilePath
-          }
-          frontmatter {
-            date
-            path
-            title
-            cardImage {
-              childImageSharp {
-                resize(width: 800) {
-                  src
-                }
+  const result = await graphql(`{
+    allMdx(sort: {frontmatter: {date: DESC}}, limit: 1000) {
+      nodes {
+        id
+        excerpt(pruneLength: 250)
+        internal {
+          contentFilePath
+        }
+        frontmatter {
+          date
+          path
+          title
+          cardImage {
+            childImageSharp {
+              resize(width: 800) {
+                src
               }
             }
-            postImage {
-              childImageSharp {
-                resize(width: 1920) {
-                  src
-                }
+          }
+          postImage {
+            childImageSharp {
+              resize(width: 1920) {
+                src
               }
             }
           }
         }
       }
-    }`
-  )
-  .then(result => {
-    if (result.errors) {
-      return Promise.reject(result.errors);
     }
+  }`)
 
-    createPaginatedPages({
-      edges: result.data.allMdx.nodes,
-      createPage: createPage,
-      pageTemplate: blogTemplate,
-      pageLength: 6,
-      pathPrefix: "blog",
+  if (result.errors) {
+    reporter.panicOnBuild('Error loading MDX result', result.errors)
+  }
+
+  const posts = result.data.allMdx.nodes
+  const postTemplate = path.resolve(`src/templates/post.js`)
+
+  posts.forEach((node) => {
+    createPage({
+      path: node.frontmatter.path,
+      component: `${postTemplate}?__contentFilePath=${node.internal.contentFilePath}`,
       context: {}
-    });
-
-    result.data.allMdx.nodes
-      .forEach((node) => {
-        createPage({
-          path: node.frontmatter.path,
-          component: `${postTemplate}?__contentFilePath=${node.internal.contentFilePath}`,
-          context: {}
-        });
-      });
-  });
+    })
+  })
 }
 
 // explicitly define the facebook post video type because gatsby

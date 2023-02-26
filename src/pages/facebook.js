@@ -1,20 +1,13 @@
 import React from 'react'
 import Layout from '../components/Layout'
 import TravellingTo from '../components/TravellingTo'
+import InifinteScroll from '../components/InfiniteScroll'
 import PhotoAlbum from 'react-photo-album'
 import { graphql } from 'gatsby'
 
 export { Head } from '../components/Head'
 
-const initialPostsToShow = 4
-const loadInc = 4
-const storageKey = 'fb-postsToShow'
-
 class Post extends React.Component {
-  constructor() {
-    super()
-  }
-
   render() {
     const post = this.props.post
     const { author, text, places, timestamp } = post
@@ -32,7 +25,7 @@ class Post extends React.Component {
     const maxPhotos = photos.length === 3 ? 2 : 3
 
     return (
-      <div key={post.id} className='fb-post'>
+      <div className='fb-post'>
         <div className='fb-author'>
           <img src={`${__PATH_PREFIX__}/${author.toLowerCase()}.jpg`} alt={author} />
           <div>
@@ -56,6 +49,7 @@ class Post extends React.Component {
                   controls
                   playsInline
                   autoPlay={duration < 10}
+                  loop={duration < 2}
                   disablePictureInPicture
                   width={Math.round(width)}
                 >
@@ -90,55 +84,15 @@ class Post extends React.Component {
 }
 
 class Index extends React.Component {
-  constructor() {
-    super()
-    let postsToShow = initialPostsToShow
-
-    if (typeof window !== `undefined`) {
-      postsToShow = window[storageKey] || initialPostsToShow
-    }
-
-    this.state = {
-      postsToShow
-    }
-  }
-
-  update() {
-    const distanceToBottom = document.documentElement.offsetHeight - (window.scrollY + window.innerHeight)
-
-    if (distanceToBottom < 300) {
-      const postsToShow = this.state.postsToShow + loadInc
-      window[storageKey] = postsToShow
-      this.setState({ postsToShow })
-    }
-
-    this.ticking = false
-  }
-
-  handleScroll = () => {
-    if (!this.ticking) {
-      this.ticking = true
-      requestAnimationFrame(() => this.update())
-    }
-  }
-
-  componentDidMount() {
-    window.addEventListener(`scroll`, this.handleScroll)
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener(`scroll`, this.handleScroll)
-  }
-
   render() {
     const posts = this.props.data.allFacebookPostsJson.nodes
-    const postsToShow = posts.slice(0, this.state.postsToShow)
+    const postsToShow = posts.slice(0, this.props.show)
 
     return (
       <Layout>
-        <section className='section-padding bg-white'>
+        <section className='section-padding bg-white' style={{opacity: this.props.ready ? 1 : 0}}>
           <div className='grid'>
-            {postsToShow.map(p => <Post post={p}/>)}
+            {postsToShow.map(p => <Post key={p.id} post={p}/>)}
           </div>
         </section>
       </Layout>
@@ -146,7 +100,12 @@ class Index extends React.Component {
   }
 }
 
-export default Index
+export default InifinteScroll(Index, {
+  uid: 'fb',
+  initialSize: 4,
+  loadSize: 4,
+  threshold: 300
+})
 
 export const pageQuery = graphql`
   query IndexQuery {
