@@ -27,6 +27,10 @@
     width: 60%;
   }
 
+  @media (min-width: $mq-xl) {
+    width: 40%;
+  }
+
   .leaflet-container {
     height: 100%;
     width: 100%;
