@@ -13,7 +13,7 @@ fontawesome.library.add(brands)
 
 class Nav extends React.Component {
   render() {
-    const compressedNav = this.props.windowWidth <= 375
+    const compressedNav = this.props.windowWidth <= 385
 
     const styles = firstLoad() ? {animation: "fadeIn 3s both 0.3s"} : {}
 
