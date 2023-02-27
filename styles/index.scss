@@ -1,13 +1,23 @@
+$font-header: "Quattrocento", serif;
+$font-body: "Fanwood Text", serif;
+
+$color-black: #494949;
+$color-grey: #f8f8f8;
+$color-white: #fff;
 $color-alpha: #F0F8FF;
 $color-beta: #323235;
 
-@import 'tools/_config',
-  'tools/_mixins',
-  'tools/_extends';
+$mq-xs: 20em;
+$mq-sm: 30em;
+$mq-md: 54em;
+$mq-lg: 64em;
+$mq-xl: 76.5em;
+$mq-xxl: 114em;
 
 @import 'base/_normalize',
   'base/_settings',
-  'base/_body';
+  'base/_body'
+  'base/_animations';
 
 @import 'pages/_home',
   'pages/_about',
@@ -26,6 +36,3 @@ $color-beta: #323235;
   'components/_dropdown',
   'components/_carousel',
   'components/_share';
-
-@import 'utils/_animations',
-  'utils/_helpers';

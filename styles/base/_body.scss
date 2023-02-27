@@ -43,3 +43,16 @@ section {
   max-width: $mq-md;
   margin: 2em auto 0;
 }
+
+.absolute-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  height: 100%;
+  width: 100%;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
