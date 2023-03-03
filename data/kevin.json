@@ -5,6 +5,7 @@
     "locations": [
       {
         "name": "Florence, Italy",
+        "flag": "🇮🇹",
         "date": "2016-11-23",
         "coordinates": [
           43.7799528,
@@ -19,6 +20,7 @@
     "locations": [
       {
         "name": "San Francisco, United States",
+        "flag": "🇺🇸",
         "date": "2016-03-22",
         "coordinates": [
           37.7576948,
@@ -33,6 +35,7 @@
     "locations": [
       {
         "name": "Barcelona, Spain",
+        "flag": "🇪🇸",
         "date": "2015-09-01",
         "coordinates": [
           41.3926467,
@@ -41,6 +44,7 @@
       },
       {
         "name": "Stockholm, Sweden",
+        "flag": "🇸🇪",
         "date": "2015-09-09",
         "coordinates": [
           59.3260668,
@@ -49,6 +53,7 @@
       },
       {
         "name": "Paris, France",
+        "flag": "🇫🇷",
         "date": "2015-09-12",
         "coordinates": [
           48.8588336,
@@ -63,6 +68,7 @@
     "locations": [
       {
         "name": "Canary Islands, Spain",
+        "flag": "🇪🇸",
         "date": "2014-10-04",
         "coordinates": [
           27.9577148,
@@ -77,6 +83,7 @@
     "locations": [
       {
         "name": "Chicago, United States",
+        "flag": "🇺🇸",
         "date": "2014-04-22",
         "coordinates": [
           41.8336479,
@@ -91,6 +98,7 @@
     "locations": [
       {
         "name": "Tokyo, Japan",
+        "flag": "🇯🇵",
         "date": "2013-09-23",
         "coordinates": [
           35.6693863,
@@ -99,6 +107,7 @@
       },
       {
         "name": "Kyoto, Japan",
+        "flag": "🇯🇵",
         "date": "2013-09-27",
         "coordinates": [
           35.0061653,
@@ -107,6 +116,7 @@
       },
       {
         "name": "Osaka, Japan",
+        "flag": "🇯🇵",
         "date": "2013-09-28",
         "coordinates": [
           34.678434,
@@ -115,6 +125,7 @@
       },
       {
         "name": "Hiroshima, Japan",
+        "flag": "🇯🇵",
         "date": "2013-09-30",
         "coordinates": [
           34.4558581,
@@ -123,6 +134,7 @@
       },
       {
         "name": "Auckland, New Zealand",
+        "flag": "🇳🇿",
         "date": "2013-10-03",
         "coordinates": [
           -36.8594657,
@@ -131,6 +143,7 @@
       },
       {
         "name": "Wellington, New Zealand",
+        "flag": "🇳🇿",
         "date": "2013-10-06",
         "coordinates": [
           -41.2529389,
@@ -139,6 +152,7 @@
       },
       {
         "name": "Milford Sound, New Zealand",
+        "flag": "🇳🇿",
         "date": "2013-10-10",
         "coordinates": [
           -44.6232826,
@@ -147,6 +161,7 @@
       },
       {
         "name": "Queenstown, New Zealand",
+        "flag": "🇳🇿",
         "date": "2013-10-12",
         "coordinates": [
           -44.9968245,
@@ -155,6 +170,7 @@
       },
       {
         "name": "Bangkok, Thailand",
+        "flag": "🇹🇭",
         "date": "2013-10-15",
         "coordinates": [
           13.7196108,
@@ -163,6 +179,7 @@
       },
       {
         "name": "Chaing Mai, Thailand",
+        "flag": "🇹🇭",
         "date": "2013-10-17",
         "coordinates": [
           18.77183,
@@ -171,6 +188,7 @@
       },
       {
         "name": "Railay Beach, Thailand",
+        "flag": "🇹🇭",
         "date": "2013-10-19",
         "coordinates": [
           7.8512262,
@@ -179,6 +197,7 @@
       },
       {
         "name": "Hong Kong, China",
+        "flag": "🇨🇳",
         "date": "2013-10-25",
         "coordinates": [
           22.3526632,
@@ -193,6 +212,7 @@
     "locations": [
       {
         "name": "Jamaica",
+        "flag": "🇯🇲",
         "date": "2013-09-14",
         "coordinates": [
           18.4711336,
@@ -207,6 +227,7 @@
     "locations": [
       {
         "name": "Saskatoon",
+        "flag": "🇨🇦",
         "date": "2011-05-31",
         "coordinates": [
           52.1504533,
@@ -221,6 +242,7 @@
     "locations": [
       {
         "name": "Kanpur, India",
+        "flag": "🇮🇳",
         "date": "2013-03-17",
         "coordinates": [
           26.5123388,
@@ -229,6 +251,7 @@
       },
       {
         "name": "Pilani, India",
+        "flag": "🇮🇳",
         "date": "2013-03-19",
         "coordinates": [
           28.3588634,
@@ -237,6 +260,7 @@
       },
       {
         "name": "Delhi, India",
+        "flag": "🇮🇳",
         "date": "2013-03-21",
         "coordinates": [
           28.6440116,
@@ -245,6 +269,7 @@
       },
       {
         "name": "Jaipur, India",
+        "flag": "🇮🇳",
         "date": "2013-03-23",
         "coordinates": [
           26.8851417,
@@ -253,6 +278,7 @@
       },
       {
         "name": "Agra, India",
+        "flag": "🇮🇳",
         "date": "2013-03-24",
         "coordinates": [
           27.1761571,
@@ -267,6 +293,7 @@
     "locations": [
       {
         "name": "Washington D.C., United States",
+        "flag": "🇺🇸",
         "date": "2011-08-31",
         "coordinates": [
           38.8937336,
@@ -281,6 +308,7 @@
     "locations": [
       {
         "name": "Turks and Caicos",
+        "flag": "🇹🇨",
         "date": "2011-03-25",
         "coordinates": [
           21.7763386,
@@ -295,6 +323,7 @@
     "locations": [
       {
         "name": "Las Vegas, United States",
+        "flag": "🇺🇸",
         "date": "2010-02-20",
         "coordinates": [
           36.1246575,
@@ -309,6 +338,7 @@
     "locations": [
       {
         "name": "Fort Nelson",
+        "flag": "🇨🇦",
         "date": "2009-06-01",
         "coordinates": [
           58.8057352,
@@ -323,6 +353,7 @@
     "locations": [
       {
         "name": "Whitehorse",
+        "flag": "🇨🇦",
         "date": "2006-06-01",
         "coordinates": [
           60.7031609,
@@ -337,6 +368,7 @@
     "locations": [
       {
         "name": "La Fortuna, Costa Rica",
+        "flag": "🇨🇷",
         "date": "2004-03-29",
         "coordinates": [
           10.4699508,
@@ -345,6 +377,7 @@
       },
       {
         "name": "Rincon de la Vieja, Costa Rica",
+        "flag": "🇨🇷",
         "date": "2004-03-29",
         "coordinates": [
           10.8315283,
@@ -353,6 +386,7 @@
       },
       {
         "name": "Monteverde, Costa Rica",
+        "flag": "🇨🇷",
         "date": "2004-04-03",
         "coordinates": [
           10.2856063,
@@ -361,6 +395,7 @@
       },
       {
         "name": "Manuel Antonio, Costa Rica",
+        "flag": "🇨🇷",
         "date": "2013-02-12",
         "coordinates": [
           9.4076152,

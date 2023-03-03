@@ -12,6 +12,7 @@ import trips from '../../data/trips.json'
 
 const currentLocation = {
   name: "Ottawa",
+  flag: "🇨🇦",
   coordinates: [45.4215, -75.6972]
 }
 
@@ -153,7 +154,7 @@ const CurrentLocationMarker = ({ location }) => {
       <Marker position={location.coordinates} icon={pulsingIcon}>
         <Popup>
           <div>
-            <h4>{location.name}</h4>
+            <h4>{location.name} {location.flag}</h4>
             {"We're here now!"}
           </div>
         </Popup>
@@ -179,7 +180,7 @@ const LocationMarkers = ({ locations, color }) => {
     <CircleMarker key={i} center={location.coordinates} radius={14} color="transparent">
       <Popup>
         <div>
-          <h4>{location.name}</h4>
+          <h4>{location.name} {location.flag}</h4>
           <p><DateText date={new Date(location.date)}/></p>
           {location.text}
         </div>

@@ -5,6 +5,7 @@
     "locations": [
       {
         "name": "Cancun, Mexico",
+        "flag": "🇲🇽",
         "date": "2023-01-09",
         "coordinates": [
           20.6722604,
@@ -19,6 +20,7 @@
     "locations": [
       {
         "name": "Helsinki, Finland",
+        "flag": "🇫🇮",
         "date": "2022-10-28",
         "coordinates": [
           60.1098678,
@@ -27,6 +29,7 @@
       },
       {
         "name": "Berlin, Germany",
+        "flag": "🇩🇪",
         "date": "2022-11-06",
         "coordinates": [
           52.5067614,
@@ -35,6 +38,7 @@
       },
       {
         "name": "Lagos, Portugal",
+        "flag": "🇵🇹",
         "date": "2022-11-14",
         "coordinates": [
           37.1152584,
@@ -43,6 +47,7 @@
       },
       {
         "name": "Lisbon, Portugal",
+        "flag": "🇵🇹",
         "date": "2022-11-18",
         "coordinates": [
           38.7436214,
@@ -57,6 +62,7 @@
     "locations": [
       {
         "name": "Gros Morne",
+        "flag": "🇨🇦",
         "date": "2021-08-25",
         "text": "🥂 We got Married! 🥂",
         "coordinates": [
@@ -72,6 +78,7 @@
     "locations": [
       {
         "name": "Beijing, China",
+        "flag": "🇨🇳",
         "date": "2017-05-10",
         "coordinates": [
           39.9390731,
@@ -80,6 +87,7 @@
       },
       {
         "name": "Xi'an, China",
+        "flag": "🇨🇳",
         "date": "2017-05-16",
         "coordinates": [
           34.2595844,
@@ -88,6 +96,7 @@
       },
       {
         "name": "Zhangye, China",
+        "flag": "🇨🇳",
         "date": "2017-05-18",
         "coordinates": [
           38.9180207,
@@ -96,6 +105,7 @@
       },
       {
         "name": "Lijiang, China",
+        "flag": "🇨🇳",
         "date": "2017-05-21",
         "coordinates": [
           26.8700055,
@@ -104,6 +114,7 @@
       },
       {
         "name": "Yangshuo, China",
+        "flag": "🇨🇳",
         "date": "2017-05-26",
         "coordinates": [
           24.8459283,
@@ -112,6 +123,7 @@
       },
       {
         "name": "Shanghai, China",
+        "flag": "🇨🇳",
         "date": "2017-05-30",
         "coordinates": [
           31.2246325,
@@ -126,6 +138,7 @@
     "locations": [
       {
         "name": "Cusco, Peru",
+        "flag": "🇵🇪",
         "date": "2015-11-16",
         "coordinates": [
           -13.5300169,
@@ -134,6 +147,7 @@
       },
       {
         "name": "Lima, Peru",
+        "flag": "🇵🇪",
         "date": "2015-11-22",
         "coordinates": [
           -12.0266034,
@@ -142,6 +156,7 @@
       },
       {
         "name": "Trujillo, Peru",
+        "flag": "🇵🇪",
         "date": "2015-11-19",
         "coordinates": [
           -8.1167519,
@@ -156,6 +171,7 @@
     "locations": [
       {
         "name": "Monteverde, Costa Rica",
+        "flag": "🇨🇷",
         "date": "2013-02-05",
         "coordinates": [
           10.2856063,
@@ -164,6 +180,7 @@
       },
       {
         "name": "La Fortuna, Costa Rica",
+        "flag": "🇨🇷",
         "date": "2013-02-09",
         "coordinates": [
           10.4699508,
@@ -172,6 +189,7 @@
       },
       {
         "name": "Puerto Viejo, Costa Rica",
+        "flag": "🇨🇷",
         "date": "2013-02-12",
         "coordinates": [
           9.6529511,

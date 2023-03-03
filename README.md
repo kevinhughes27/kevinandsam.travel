@@ -24,5 +24,3 @@ Sharp is a pain in the ass. I have found that `yarn build` is more successful an
 ## Tools
 
 I added a script in `/bin` to print the durations we are staying / stayed in each country. Its also useful for planning and debugging.
-
-
