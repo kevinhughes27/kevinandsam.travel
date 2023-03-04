@@ -8,6 +8,7 @@ import { isDomAvailable } from '../utils'
 
 import yearTrip from '../../data/yearTrip.json'
 import kevinTrips from '../../data/kevin.json'
+import kevinChildhoodTrips from '../../data/kevin-childhood.json'
 import trips from '../../data/trips.json'
 
 const currentLocation = {
@@ -65,11 +66,11 @@ class MapPage extends React.Component {
           }}>
 
           <TileLayer url='https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}' />
-          <CurrentLocationMarker location={currentLocation} />
 
           <LayersControl position="topright">
             <LayersControl.Overlay name="Kevin">
               <LayerGroup>
+                <Trips trips={kevinChildhoodTrips}/>
                 <Trips trips={kevinTrips}/>
               </LayerGroup>
             </LayersControl.Overlay>
@@ -83,6 +84,7 @@ class MapPage extends React.Component {
             <LayersControl.Overlay checked name="When we were Nomads (Year Trip)">
               <LayerGroup>
                 <YearTrip />
+                <CurrentLocationMarker location={currentLocation} />
               </LayerGroup>
             </LayersControl.Overlay>
 

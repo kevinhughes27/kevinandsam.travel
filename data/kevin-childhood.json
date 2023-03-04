@@ -1,0 +1,321 @@
+[
+  {
+    "name": "Quebec 2002",
+    "color": "teal",
+    "locations": [
+      {
+        "name": "Ottawa, Quebec City, Tremblant, Saguenay, Montreal",
+        "date": "2002-08-01",
+        "coordinates": [
+          46.8567985,
+          -71.6257785
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Mexico",
+    "color": "teal",
+    "locations": [
+      {
+        "name": "Barceló Maya",
+        "date": "2000-11-01",
+        "coordinates": [
+          20.4886825,
+          -87.2495307
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Tofino",
+    "color": "teal",
+    "locations": [
+      {
+        "name": "Tofino",
+        "date": "2000-08-01",
+        "coordinates": [
+          49.128984,
+          -125.886313
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Dinosaur Provincial Park",
+    "color": "teal",
+    "locations": [
+      {
+        "name": "Dinosaur Provincial Park",
+        "date": "1999-08-01",
+        "coordinates": [
+          50.7596157,
+          -111.4839985
+        ]
+      }
+    ]
+  },
+  {
+    "name": "California 1999",
+    "color": "teal",
+    "locations": [
+      {
+        "name": "Los Angeles",
+        "date": "1999-11-01",
+        "coordinates": [
+          34.0201598,
+          -118.6926017
+        ]
+      },
+      {
+        "name": "San Diego",
+        "date": "1999-11-01",
+        "coordinates": [
+          32.8242389,
+          -117.3898482
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Sailing",
+    "color": "teal",
+    "locations": [
+      {
+        "name": "Victoria",
+        "date": "1996-06-01",
+        "coordinates": [
+          48.4262038,
+          -123.3943276
+        ]
+      },
+      {
+        "name": "Montague Harbour",
+        "date": "1996-06-01",
+        "coordinates": [
+          48.892443,
+          -123.3894132
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Port Alberni",
+    "color": "teal",
+    "locations": [
+      {
+        "name": "Port Alberni",
+        "date": "1996-07-01",
+        "coordinates": [
+          49.2455345,
+          -124.8773564
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Ottawa 1995",
+    "color": "teal",
+    "locations": [
+      {
+        "name": "Ottawa",
+        "date": "1995-06-01",
+        "coordinates": [
+          45.2487795,
+          -76.3620342
+        ]
+      },
+      {
+        "name": "Niagra Falls",
+        "date": "1995-06-01",
+        "coordinates": [
+          43.0539325,
+          -79.0880345
+        ]
+      },
+      {
+        "name": "Fort Erie",
+        "date": "1995-06-01",
+        "coordinates": [
+          42.8711221,
+          -79.014247
+        ]
+      }
+    ]
+  },
+  {
+    "name": "France",
+    "color": "teal",
+    "locations": [
+      {
+        "name": "Normandy, France",
+        "TODO": "where in normandy did we stay? maybe just Mont Saint-Michel?",
+        "date": "1994-08",
+        "coordinates": [
+          49.1042206,
+          -2.3206897
+        ]
+      },
+      {
+        "name": "Mont Saint-Michel, France",
+        "date": "1994-08",
+        "coordinates": [
+          48.6244746,
+          -1.5286981
+        ]
+      },
+      {
+        "name": "Euro Disney, France",
+        "date": "1994-08",
+        "coordinates": [
+          48.8673858,
+          2.781399
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Greece",
+    "color": "teal",
+    "locations": [
+      {
+        "name": "Kos, Greece",
+        "date": "1994-06",
+        "coordinates": [
+          36.8912597,
+          27.2594349
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Holland",
+    "color": "teal",
+    "locations": [
+      {
+        "name": "Hague, Netherlands",
+        "date": "1994-05",
+        "coordinates": [
+          52.0715708,
+          4.1694437
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Scotland",
+    "color": "teal",
+    "locations": [
+      {
+        "name": "Fort William, Scotlant",
+        "date": "1994",
+        "coordinates": [
+          56.8169325,
+          -5.1032339
+        ]
+      },
+      {
+        "name": "Loch Ness, Scotland",
+        "date": "1994",
+        "coordinates": [
+          57.2737224,
+          -4.7825418
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Switzerland",
+    "color": "teal",
+    "locations": [
+      {
+        "name": "Zinal, Switzerland",
+        "date": "1994-02",
+        "coordinates": [
+          46.0479266,
+          7.5114367
+        ]
+      }
+    ]
+  },
+  {
+    "name": "York",
+    "color": "teal",
+    "locations": [
+      {
+        "name": "York, UK",
+        "date": "1993-11",
+        "coordinates": [
+          53.9585965,
+          -1.0805916
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Whales",
+    "color": "teal",
+    "locations": [
+      {
+        "name": "Conwy, Whales",
+        "date": "1993",
+        "coordinates": [
+          53.2741325,
+          -3.8756307
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Cornwall and Bath",
+    "color": "teal",
+    "locations": [
+      {
+        "todo": "where more specifically",
+        "name": "Cornwall, UK",
+        "date": "1992",
+        "coordinates": [
+          50.4379315,
+          -6.0797046
+        ]
+      },
+      {
+        "name": "Bath, UK",
+        "date": "1992",
+        "coordinates": [
+          51.3801055,
+          -2.434741
+        ]
+      }
+
+    ]
+  },
+  {
+    "name": "Menorca, Spain",
+    "color": "teal",
+    "locations": [
+      {
+        "name": "Menorca, Spain",
+        "date": "1991",
+        "coordinates": [
+          40.0011588,
+          3.8274723
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Vienna, Austria",
+    "color": "teal",
+    "locations": [
+      {
+        "name": "Vienna, Austria",
+        "date": "1991-11",
+        "coordinates": [
+          48.2203429,
+          16.0991976
+        ]
+      }
+    ]
+  }
+]
