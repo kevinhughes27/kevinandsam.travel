@@ -4,11 +4,43 @@
     "color": "teal",
     "locations": [
       {
-        "name": "Ottawa, Quebec City, Tremblant, Saguenay, Montreal",
+        "name": "Ottawa",
+        "date": "2002-08-01",
+        "coordinates": [
+          45.2487795,
+          -76.3620342
+        ]
+      },
+      {
+        "name": "Quebec City",
         "date": "2002-08-01",
         "coordinates": [
           46.8567985,
           -71.6257785
+        ]
+      },
+      {
+        "name": "Mont-Tremblant",
+        "date": "2002-08-01",
+        "coordinates": [
+          46.1756729,
+          -74.732755
+        ]
+      },
+      {
+        "name": "Saguenay",
+        "date": "2002-08-01",
+        "coordinates": [
+          48.3766769,
+          -71.6917721
+        ]
+      },
+      {
+        "name": "Montreal",
+        "date": "2002-08-01",
+        "coordinates": [
+          45.5588386,
+          -73.9927371
         ]
       }
     ]
