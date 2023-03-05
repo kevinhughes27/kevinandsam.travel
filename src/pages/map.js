@@ -170,7 +170,10 @@ const DateText = ({ date }) => {
     return null
   }
 
-  if (isAfter(Date.now(), date)) {
+  const now = new Date()
+  const inPast = isAfter(now, date)
+
+  if (inPast) {
     return format(date, 'MMM do yyyy')
   } else {
     return format(date, 'MMMM yyyy')
