@@ -165,19 +165,9 @@ const CurrentLocationMarker = ({ location }) => {
   )
 }
 
-const DateText = ({ date }) => {
-  if (date === undefined) {
-    return null
-  }
-
-  const now = new Date()
-  const inPast = isAfter(now, date)
-
-  if (inPast) {
-    return format(date, 'MMM do yyyy')
-  } else {
-    return format(date, 'MMMM yyyy')
-  }
+const DateText = ({ location }) => {
+  const date = new Date(location.date)
+  return format(date, 'MMMM yyyy')
 }
 
 const LocationMarkers = ({ locations, color }) => {
@@ -186,7 +176,7 @@ const LocationMarkers = ({ locations, color }) => {
       <Popup>
         <div>
           <h4>{location.name} {location.flag}</h4>
-          <p><DateText date={new Date(location.date)}/></p>
+          <p><DateText location={location}/></p>
           {location.text}
         </div>
       </Popup>
