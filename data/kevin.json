@@ -354,7 +354,7 @@
       {
         "name": "Fort Nelson",
         "flag": "🇨🇦",
-        "date": "2009-06-01",
+        "date": "2009-06",
         "coordinates": [
           58.8057352,
           -122.7459673
@@ -363,13 +363,28 @@
     ]
   },
   {
-    "name": "Junior Nationals",
+    "name": "Junior Nationals 2007",
+    "color": "teal",
+    "locations": [
+      {
+        "name": "SilverStar",
+        "flag": "🇨🇦",
+        "date": "2007-04",
+        "coordinates": [
+          50.3597927,
+          -119.0588591
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Junior Nationals 2006",
     "color": "teal",
     "locations": [
       {
         "name": "Whitehorse",
         "flag": "🇨🇦",
-        "date": "2006-06-01",
+        "date": "2006-04",
         "coordinates": [
           60.7031609,
           -135.3583883
@@ -382,11 +397,50 @@
     "color": "teal",
     "locations": [
       {
-        "name": "London, Dover Castle, Stonehenge, Salisbury, Portsmouth, London",
-        "date": "2005-04-01",
+        "name": "London",
+        "date": "2005-04",
         "coordinates": [
-          60.7031609,
-          -135.3583883
+          51.5283064,
+          -0.3824591
+        ]
+      },
+      {
+        "name": "Dover Castle",
+        "date": "2005-04",
+        "coordinates": [
+          51.128771,
+          1.321197
+        ]
+      },
+      {
+        "name": "Stonehenge",
+        "date": "2005-04",
+        "coordinates": [
+          51.178882,
+          -1.828409
+        ]
+      },
+      {
+        "name": "Portsmouth",
+        "date": "2005-04",
+        "coordinates": [
+          50.8046515,
+          -1.237155
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Whistler Summer Ski Camp",
+    "color": "teal",
+    "locations": [
+      {
+        "name": "Whistler",
+        "flag": "🇨🇦",
+        "date": "2004-08-05",
+        "coordinates": [
+          50.1040633,
+          -123.14194
         ]
       }
     ]

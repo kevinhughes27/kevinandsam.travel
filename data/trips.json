@@ -1,5 +1,38 @@
 [
   {
+    "name": "Skiing 2023",
+    "color": "orange",
+    "locations": [
+      {
+        "name": "Calgary",
+        "flag": "🇨🇦",
+        "date": "2023-02-01",
+        "coordinates": [
+          51.0220084,
+          -114.1875
+        ]
+      },
+      {
+        "name": "Fernie",
+        "flag": "🇨🇦",
+        "date": "2023-02-06",
+        "coordinates": [
+          49.5155937,
+          -115.0516175
+        ]
+      },
+      {
+        "name": "Lethbridge",
+        "flag": "🇨🇦",
+        "date": "2023-02-18",
+        "coordinates": [
+          49.6885007,
+          -112.98601
+        ]
+      }
+    ]
+  },
+  {
     "name": "Cancun 2023",
     "color": "orange",
     "locations": [
