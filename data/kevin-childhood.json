@@ -5,7 +5,8 @@
     "locations": [
       {
         "name": "Ottawa",
-        "date": "2002-08-01",
+        "flag": "🇨🇦",
+        "date": "2002-08",
         "coordinates": [
           45.2487795,
           -76.3620342
@@ -13,7 +14,8 @@
       },
       {
         "name": "Quebec City",
-        "date": "2002-08-01",
+        "flag": "🇨🇦",
+        "date": "2002-08",
         "coordinates": [
           46.8567985,
           -71.6257785
@@ -21,7 +23,8 @@
       },
       {
         "name": "Mont-Tremblant",
-        "date": "2002-08-01",
+        "flag": "🇨🇦",
+        "date": "2002-08",
         "coordinates": [
           46.1756729,
           -74.732755
@@ -29,7 +32,8 @@
       },
       {
         "name": "Saguenay",
-        "date": "2002-08-01",
+        "flag": "🇨🇦",
+        "date": "2002-08",
         "coordinates": [
           48.3766769,
           -71.6917721
@@ -37,7 +41,8 @@
       },
       {
         "name": "Montreal",
-        "date": "2002-08-01",
+        "flag": "🇨🇦",
+        "date": "2002-08",
         "coordinates": [
           45.5588386,
           -73.9927371
@@ -51,7 +56,8 @@
     "locations": [
       {
         "name": "Barceló Maya",
-        "date": "2000-11-01",
+        "flag": "🇲🇽",
+        "date": "2000-11",
         "coordinates": [
           20.4886825,
           -87.2495307
@@ -65,7 +71,8 @@
     "locations": [
       {
         "name": "Tofino",
-        "date": "2000-08-01",
+        "flag": "🇨🇦",
+        "date": "2000-08",
         "coordinates": [
           49.128984,
           -125.886313
@@ -79,7 +86,8 @@
     "locations": [
       {
         "name": "Dinosaur Provincial Park",
-        "date": "1999-08-01",
+        "flag": "🇨🇦",
+        "date": "1999-08",
         "coordinates": [
           50.7596157,
           -111.4839985
@@ -93,7 +101,8 @@
     "locations": [
       {
         "name": "Los Angeles",
-        "date": "1999-11-01",
+        "flag": "🇺🇸",
+        "date": "1999-11",
         "coordinates": [
           34.0201598,
           -118.6926017
@@ -101,7 +110,8 @@
       },
       {
         "name": "San Diego",
-        "date": "1999-11-01",
+        "flag": "🇺🇸",
+        "date": "1999-11",
         "coordinates": [
           32.8242389,
           -117.3898482
@@ -115,7 +125,8 @@
     "locations": [
       {
         "name": "Victoria",
-        "date": "1996-06-01",
+        "flag": "🇨🇦",
+        "date": "1996-06",
         "coordinates": [
           48.4262038,
           -123.3943276
@@ -123,7 +134,8 @@
       },
       {
         "name": "Montague Harbour",
-        "date": "1996-06-01",
+        "flag": "🇨🇦",
+        "date": "1996-06",
         "coordinates": [
           48.892443,
           -123.3894132
@@ -137,7 +149,8 @@
     "locations": [
       {
         "name": "Port Alberni",
-        "date": "1996-07-01",
+        "flag": "🇨🇦",
+        "date": "1996-07",
         "coordinates": [
           49.2455345,
           -124.8773564
@@ -151,7 +164,8 @@
     "locations": [
       {
         "name": "Ottawa",
-        "date": "1995-06-01",
+        "flag": "🇨🇦",
+        "date": "1995-06",
         "coordinates": [
           45.2487795,
           -76.3620342
@@ -159,7 +173,8 @@
       },
       {
         "name": "Niagra Falls",
-        "date": "1995-06-01",
+        "flag": "🇨🇦",
+        "date": "1995-06",
         "coordinates": [
           43.0539325,
           -79.0880345
@@ -167,7 +182,8 @@
       },
       {
         "name": "Fort Erie",
-        "date": "1995-06-01",
+        "flag": "🇨🇦",
+        "date": "1995-06",
         "coordinates": [
           42.8711221,
           -79.014247
@@ -180,8 +196,9 @@
     "color": "teal",
     "locations": [
       {
-        "name": "Normandy, France",
         "TODO": "where in normandy did we stay? maybe just Mont Saint-Michel?",
+        "name": "Normandy, France",
+        "flag": "🇫🇷",
         "date": "1994-08",
         "coordinates": [
           49.1042206,
@@ -190,6 +207,7 @@
       },
       {
         "name": "Mont Saint-Michel, France",
+        "flag": "🇫🇷",
         "date": "1994-08",
         "coordinates": [
           48.6244746,
@@ -198,6 +216,7 @@
       },
       {
         "name": "Euro Disney, France",
+        "flag": "🇫🇷",
         "date": "1994-08",
         "coordinates": [
           48.8673858,
@@ -212,6 +231,7 @@
     "locations": [
       {
         "name": "Kos, Greece",
+        "flag": "🇬🇷",
         "date": "1994-06",
         "coordinates": [
           36.8912597,
@@ -226,6 +246,7 @@
     "locations": [
       {
         "name": "Hague, Netherlands",
+        "flag": "🇳🇱",
         "date": "1994-05",
         "coordinates": [
           52.0715708,
@@ -239,7 +260,8 @@
     "color": "teal",
     "locations": [
       {
-        "name": "Fort William, Scotlant",
+        "name": "Fort William, Scotland",
+        "flag": "🇬🇧",
         "date": "1994",
         "coordinates": [
           56.8169325,
@@ -248,6 +270,7 @@
       },
       {
         "name": "Loch Ness, Scotland",
+        "flag": "🇬🇧",
         "date": "1994",
         "coordinates": [
           57.2737224,
@@ -262,6 +285,7 @@
     "locations": [
       {
         "name": "Zinal, Switzerland",
+        "flag": "🇨🇭",
         "date": "1994-02",
         "coordinates": [
           46.0479266,
@@ -276,6 +300,7 @@
     "locations": [
       {
         "name": "York, UK",
+        "flag": "🇬🇧",
         "date": "1993-11",
         "coordinates": [
           53.9585965,
@@ -290,6 +315,7 @@
     "locations": [
       {
         "name": "Conwy, Whales",
+        "flag": "🇬🇧",
         "date": "1993",
         "coordinates": [
           53.2741325,
@@ -303,8 +329,9 @@
     "color": "teal",
     "locations": [
       {
-        "todo": "where more specifically",
+        "TODO": "where more specifically",
         "name": "Cornwall, UK",
+        "flag": "🇬🇧",
         "date": "1992",
         "coordinates": [
           50.4379315,
@@ -313,6 +340,7 @@
       },
       {
         "name": "Bath, UK",
+        "flag": "🇬🇧",
         "date": "1992",
         "coordinates": [
           51.3801055,
@@ -328,6 +356,7 @@
     "locations": [
       {
         "name": "Menorca, Spain",
+        "flag": "🇪🇸",
         "date": "1991",
         "coordinates": [
           40.0011588,
@@ -342,6 +371,7 @@
     "locations": [
       {
         "name": "Vienna, Austria",
+        "flag": "🇦🇹",
         "date": "1991-11",
         "coordinates": [
           48.2203429,
