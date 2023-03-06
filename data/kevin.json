@@ -397,7 +397,8 @@
     "color": "teal",
     "locations": [
       {
-        "name": "London",
+        "name": "London, UK",
+        "flag": "🇬🇧",
         "date": "2005-04",
         "coordinates": [
           51.5283064,
@@ -405,7 +406,8 @@
         ]
       },
       {
-        "name": "Dover Castle",
+        "name": "Dover Castle, UK",
+        "flag": "🇬🇧",
         "date": "2005-04",
         "coordinates": [
           51.128771,
@@ -413,7 +415,8 @@
         ]
       },
       {
-        "name": "Stonehenge",
+        "name": "Stonehenge, UK",
+        "flag": "🇬🇧",
         "date": "2005-04",
         "coordinates": [
           51.178882,
@@ -421,7 +424,8 @@
         ]
       },
       {
-        "name": "Portsmouth",
+        "name": "Portsmouth, UK",
+        "flag": "🇬🇧",
         "date": "2005-04",
         "coordinates": [
           50.8046515,
