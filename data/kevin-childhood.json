@@ -196,13 +196,12 @@
     "color": "teal",
     "locations": [
       {
-        "TODO": "where in normandy did we stay? maybe just Mont Saint-Michel?",
-        "name": "Normandy, France",
+        "name": "Honfleur, France",
         "flag": "🇫🇷",
         "date": "1994-08",
         "coordinates": [
-          49.1042206,
-          -2.3206897
+          49.4084322,
+          0.159317
         ]
       },
       {
@@ -262,7 +261,7 @@
       {
         "name": "Fort William, Scotland",
         "flag": "🇬🇧",
-        "date": "1994",
+        "date": "1994-08",
         "coordinates": [
           56.8169325,
           -5.1032339
@@ -271,7 +270,7 @@
       {
         "name": "Loch Ness, Scotland",
         "flag": "🇬🇧",
-        "date": "1994",
+        "date": "1994-08",
         "coordinates": [
           57.2737224,
           -4.7825418
@@ -316,7 +315,7 @@
       {
         "name": "Conwy, Whales",
         "flag": "🇬🇧",
-        "date": "1993",
+        "date": "1993-05",
         "coordinates": [
           53.2741325,
           -3.8756307
@@ -329,19 +328,18 @@
     "color": "teal",
     "locations": [
       {
-        "TODO": "where more specifically",
-        "name": "Cornwall, UK",
+        "name": "Perranporth, UK",
         "flag": "🇬🇧",
-        "date": "1992",
+        "date": "1992-06",
         "coordinates": [
-          50.4379315,
-          -6.0797046
+          50.3377191,
+          -5.1883551
         ]
       },
       {
         "name": "Bath, UK",
         "flag": "🇬🇧",
-        "date": "1992",
+        "date": "1992-06",
         "coordinates": [
           51.3801055,
           -2.434741
@@ -357,7 +355,7 @@
       {
         "name": "Menorca, Spain",
         "flag": "🇪🇸",
-        "date": "1991",
+        "date": "1991-09",
         "coordinates": [
           40.0011588,
           3.8274723
