@@ -8,6 +8,7 @@ import { isDomAvailable } from '../utils'
 
 import yearTrip from '../../data/yearTrip.json'
 import kevinTrips from '../../data/kevin.json'
+import kevinChildhoodTrips from '../../data/kevin-childhood.json'
 import trips from '../../data/trips.json'
 
 const currentLocation = {
@@ -65,11 +66,11 @@ class MapPage extends React.Component {
           }}>
 
           <TileLayer url='https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}' />
-          <CurrentLocationMarker location={currentLocation} />
 
           <LayersControl position="topright">
             <LayersControl.Overlay name="Kevin">
               <LayerGroup>
+                <Trips trips={kevinChildhoodTrips}/>
                 <Trips trips={kevinTrips}/>
               </LayerGroup>
             </LayersControl.Overlay>
@@ -83,6 +84,7 @@ class MapPage extends React.Component {
             <LayersControl.Overlay checked name="When we were Nomads (Year Trip)">
               <LayerGroup>
                 <YearTrip />
+                <CurrentLocationMarker location={currentLocation} />
               </LayerGroup>
             </LayersControl.Overlay>
 
@@ -163,16 +165,9 @@ const CurrentLocationMarker = ({ location }) => {
   )
 }
 
-const DateText = ({ date }) => {
-  if (date === undefined) {
-    return null
-  }
-
-  if (isAfter(Date.now(), date)) {
-    return format(date, 'MMM do yyyy')
-  } else {
-    return format(date, 'MMMM yyyy')
-  }
+const DateText = ({ location }) => {
+  const date = new Date(location.date)
+  return format(date, 'MMMM yyyy')
 }
 
 const LocationMarkers = ({ locations, color }) => {
@@ -181,7 +176,7 @@ const LocationMarkers = ({ locations, color }) => {
       <Popup>
         <div>
           <h4>{location.name} {location.flag}</h4>
-          <p><DateText date={new Date(location.date)}/></p>
+          <p><DateText location={location}/></p>
           {location.text}
         </div>
       </Popup>

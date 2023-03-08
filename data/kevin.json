@@ -288,6 +288,21 @@
     ]
   },
   {
+    "name": "FRC Worlds",
+    "color": "teal",
+    "locations": [
+      {
+        "name": "St. Louis, United States",
+        "flag": "🇺🇸",
+        "date": "2012-03-12",
+        "coordinates": [
+          38.6530165,
+          -90.3838883
+        ]
+      }
+    ]
+  },
+  {
     "name": "MESA Conf",
     "color": "teal",
     "locations": [
@@ -339,7 +354,7 @@
       {
         "name": "Fort Nelson",
         "flag": "🇨🇦",
-        "date": "2009-06-01",
+        "date": "2009-06",
         "coordinates": [
           58.8057352,
           -122.7459673
@@ -348,16 +363,88 @@
     ]
   },
   {
-    "name": "Junior Nationals",
+    "name": "Junior Nationals 2007",
+    "color": "teal",
+    "locations": [
+      {
+        "name": "SilverStar",
+        "flag": "🇨🇦",
+        "date": "2007-04",
+        "coordinates": [
+          50.3597927,
+          -119.0588591
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Junior Nationals 2006",
     "color": "teal",
     "locations": [
       {
         "name": "Whitehorse",
         "flag": "🇨🇦",
-        "date": "2006-06-01",
+        "date": "2006-04",
         "coordinates": [
           60.7031609,
           -135.3583883
+        ]
+      }
+    ]
+  },
+  {
+    "name": "England 2005",
+    "color": "teal",
+    "locations": [
+      {
+        "name": "London, UK",
+        "flag": "🇬🇧",
+        "date": "2005-04",
+        "coordinates": [
+          51.5283064,
+          -0.3824591
+        ]
+      },
+      {
+        "name": "Dover Castle, UK",
+        "flag": "🇬🇧",
+        "date": "2005-04",
+        "coordinates": [
+          51.128771,
+          1.321197
+        ]
+      },
+      {
+        "name": "Stonehenge, UK",
+        "flag": "🇬🇧",
+        "date": "2005-04",
+        "coordinates": [
+          51.178882,
+          -1.828409
+        ]
+      },
+      {
+        "name": "Portsmouth, UK",
+        "flag": "🇬🇧",
+        "date": "2005-04",
+        "coordinates": [
+          50.8046515,
+          -1.237155
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Whistler Summer Ski Camp",
+    "color": "teal",
+    "locations": [
+      {
+        "name": "Whistler",
+        "flag": "🇨🇦",
+        "date": "2004-08-05",
+        "coordinates": [
+          50.1040633,
+          -123.14194
         ]
       }
     ]
@@ -396,7 +483,7 @@
       {
         "name": "Manuel Antonio, Costa Rica",
         "flag": "🇨🇷",
-        "date": "2013-02-12",
+        "date": "2004-02-12",
         "coordinates": [
           9.4076152,
           -84.1582776
