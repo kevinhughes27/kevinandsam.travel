@@ -9,6 +9,7 @@ import { isDomAvailable } from '../utils'
 import yearTrip from '../../data/yearTrip.json'
 import kevinTrips from '../../data/kevin.json'
 import kevinChildhoodTrips from '../../data/kevin-childhood.json'
+import samTrips from '../../data/sam.json'
 import trips from '../../data/trips.json'
 
 const currentLocation = {
@@ -72,6 +73,12 @@ class MapPage extends React.Component {
               <LayerGroup>
                 <Trips trips={kevinChildhoodTrips}/>
                 <Trips trips={kevinTrips}/>
+              </LayerGroup>
+            </LayersControl.Overlay>
+
+            <LayersControl.Overlay name="Sam">
+              <LayerGroup>
+                <Trips trips={samTrips}/>
               </LayerGroup>
             </LayersControl.Overlay>
 
