@@ -9,6 +9,7 @@ import { isDomAvailable } from '../utils'
 import yearTrip from '../../data/yearTrip.json'
 import kevinTrips from '../../data/kevin.json'
 import kevinChildhoodTrips from '../../data/kevin-childhood.json'
+import samTrips from '../../data/sam.json'
 import trips from '../../data/trips.json'
 
 const currentLocation = {
@@ -75,20 +76,26 @@ class MapPage extends React.Component {
               </LayerGroup>
             </LayersControl.Overlay>
 
-            <LayersControl.Overlay checked name="Kevin & Sam">
+            <LayersControl.Overlay checked name="Sam">
+              <LayerGroup>
+                <Trips trips={samTrips}/>
+              </LayerGroup>
+            </LayersControl.Overlay>
+
+            <LayersControl.Overlay name="Kevin & Sam">
               <LayerGroup>
                 <Trips trips={ trips.filter(t => new Date(t.locations[0].date) < new Date("2022-04-19")) }/>
               </LayerGroup>
             </LayersControl.Overlay>
 
-            <LayersControl.Overlay checked name="When we were Nomads (Year Trip)">
+            <LayersControl.Overlay name="When we were Nomads (Year Trip)">
               <LayerGroup>
                 <YearTrip />
                 <CurrentLocationMarker location={currentLocation} />
               </LayerGroup>
             </LayersControl.Overlay>
 
-            <LayersControl.Overlay checked name="Kevin, Sam & Miles">
+            <LayersControl.Overlay name="Kevin, Sam & Miles">
               <LayerGroup>
                 <Trips trips={ trips.filter(t => new Date(t.locations[0].date) > new Date("2022-04-19")) }/>
               </LayerGroup>
