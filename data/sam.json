@@ -156,16 +156,94 @@
     ]
   },
   {
-    "name": "Australia",
+    "name": "Out West",
     "color": "purple",
     "locations": [
       {
-        "name": "Syndey, Australia",
-        "flag": "🇦🇺",
-        "date": "2011-02",
+        "name": "Calgary",
+        "flag": "🇨🇦",
+        "date": "2011-07",
         "coordinates": [
-          -33.847927,
-          150.6517923
+          51.0220084,
+          -114.1875
+        ]
+      },
+      {
+        "name": "Drumheller",
+        "flag": "🇨🇦",
+        "date": "2011-07",
+        "coordinates": [
+          51.405118,
+          -112.701249
+        ]
+      },
+      {
+        "name": "Jasper",
+        "flag": "🇨🇦",
+        "date": "2011-07",
+        "coordinates": [
+          52.8789397,
+          -118.1053981
+        ]
+      },
+      {
+        "name": "Vancouver",
+        "flag": "🇨🇦",
+        "date": "2011-07",
+        "coordinates": [
+          49.2577143,
+          -123.1939434
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Asia and Australia",
+    "color": "purple",
+    "locations": [
+      {
+        "name": "Hong Kong, China",
+        "flag": "🇨🇳",
+        "date": "2011-01",
+        "coordinates": [
+          22.3526632,
+          113.9876156
+        ]
+      },
+      {
+        "name": "Ko Pha Ngan, Thailand",
+        "flag": "🇹🇭",
+        "date": "2011-01",
+        "coordinates": [
+          9.7349679,
+          99.9861855
+        ]
+      },
+      {
+        "name": "Singapore",
+        "flag": "🇸🇬",
+        "date": "2011-01",
+        "coordinates": [
+          1.3439166,
+          103.7540049
+        ]
+      },
+      {
+        "name": "Perth, Australia",
+        "flag": "🇦🇺",
+        "date": "2011-01",
+        "coordinates": [
+          -32.0397559,
+          115.6813525
+        ]
+      },
+      {
+        "name": "Gracetown, Australia",
+        "flag": "🇦🇺",
+        "date": "2011-01",
+        "coordinates": [
+          -33.8690287,
+          114.9711745
         ]
       },
       {
@@ -178,30 +256,12 @@
         ]
       },
       {
-        "name": "Perth, Australia",
+        "name": "Syndey, Australia",
         "flag": "🇦🇺",
         "date": "2011-02",
         "coordinates": [
-          -32.0397559,
-          115.6813525
-        ]
-      },
-      {
-        "name": "Gracetown, Australia",
-        "flag": "🇦🇺",
-        "date": "2011-02",
-        "coordinates": [
-          -33.8690287,
-          114.9711745
-        ]
-      },
-      {
-        "name": "Surfers Paradise, Australia",
-        "flag": "🇦🇺",
-        "date": "2011-02",
-        "coordinates": [
-          -27.9987563,
-          153.4048711
+          -33.847927,
+          150.6517923
         ]
       },
       {
@@ -212,38 +272,29 @@
           -28.6335379,
           153.6058903
         ]
+      },
+      {
+        "name": "Surfers Paradise, Australia",
+        "flag": "🇦🇺",
+        "date": "2011-02",
+        "coordinates": [
+          -27.9987563,
+          153.4048711
+        ]
       }
     ]
   },
   {
-    "name": "SE Asia",
+    "name": "Cuba",
     "color": "purple",
     "locations": [
       {
-        "name": "Phuket, Thailand",
-        "flag": "🇹🇭",
-        "date": "2011-02",
+        "name": "Varadero, Cuba",
+        "flag": "🇮🇹",
+        "date": "2010-05",
         "coordinates": [
-          7.883403,
-          98.374404
-        ]
-      },
-      {
-        "name": "Singapore",
-        "flag": "🇸🇬",
-        "date": "2011-02",
-        "coordinates": [
-          1.3439166,
-          103.7540049
-        ]
-      },
-      {
-        "name": "Hong Kong, China",
-        "flag": "🇨🇳",
-        "date": "2011-02",
-        "coordinates": [
-          22.3526632,
-          113.9876156
+          23.1677148,
+          -81.2499489
         ]
       }
     ]
@@ -253,9 +304,18 @@
     "color": "purple",
     "locations": [
       {
+        "name": "Paris, France",
+        "flag": "🇫🇷",
+        "date": "2010-06",
+        "coordinates": [
+          48.8588336,
+          2.2769956
+        ]
+      },
+      {
         "name": "Geneva, Switzerland",
         "flag": "🇨🇭",
-        "date": "2010-07",
+        "date": "2010-06",
         "coordinates": [
           46.2048247,
           6.1080195
@@ -264,19 +324,10 @@
       {
         "name": "London, England",
         "flag": "🇬🇧",
-        "date": "2010-07",
+        "date": "2010-06",
         "coordinates": [
           51.5287718,
           -0.24168
-        ]
-      },
-      {
-        "name": "Dublin, Ireland",
-        "flag": "🇮🇪",
-        "date": "2010-07",
-        "coordinates": [
-          53.3239919,
-          -6.5258808
         ]
       },
       {
@@ -286,6 +337,15 @@
         "coordinates": [
           55.9411885,
           -3.2753778
+        ]
+      },
+      {
+        "name": "Dublin, Ireland",
+        "flag": "🇮🇪",
+        "date": "2010-07",
+        "coordinates": [
+          53.3239919,
+          -6.5258808
         ]
       },
       {
@@ -333,16 +393,70 @@
     ]
   },
   {
-    "name": "New Zealand",
+    "name": "New Zealand and Australia",
     "color": "purple",
     "locations": [
       {
-        "name": "New Zealand",
+        "name": "Queenstown, New Zealand",
         "flag": "🇳🇿",
         "date": "2009-06",
         "coordinates": [
           -44.9968245,
           168.6297594
+        ]
+      },
+      {
+        "name": "Milford Sound, New Zealand",
+        "flag": "🇳🇿",
+        "date": "2009-06",
+        "coordinates": [
+          -44.6232826,
+          167.7842967
+        ]
+      },
+      {
+        "name": "Mt Cook, New Zealand",
+        "flag": "🇳🇿",
+        "date": "2009-06",
+        "coordinates": [
+          -43.5949729,
+          170.1238495
+        ]
+      },
+      {
+        "name": "Syndey, Australia",
+        "flag": "🇦🇺",
+        "date": "2009-06",
+        "coordinates": [
+          -33.847927,
+          150.6517923
+        ]
+      },
+      {
+        "name": "Kangaroo Island, Australia",
+        "flag": "🇦🇺",
+        "date": "2009-06",
+        "coordinates": [
+          -35.8177544,
+          137.0537424
+        ]
+      },
+      {
+        "name": "Adelaide, Australia",
+        "flag": "🇦🇺",
+        "date": "2009-06",
+        "coordinates": [
+          -34.9271074,
+          138.6184182
+        ]
+      },
+      {
+        "name": "Cairns, Australia",
+        "flag": "🇦🇺",
+        "date": "2009-06",
+        "coordinates": [
+          -16.8804789,
+          145.5768596
         ]
       }
     ]
@@ -356,8 +470,8 @@
         "flag": "🇳🇿",
         "date": "2009-02",
         "coordinates": [
-          18.6665725,
-          -71.2512762
+          19.7895249,
+          -70.7211018
         ]
       }
     ]
@@ -388,6 +502,66 @@
         "coordinates": [
           52.5069704,
           13.2846504
+        ]
+      },
+      {
+        "name": "Vienna, Austria",
+        "flag": "🇦🇹",
+        "date": "2007-05",
+        "coordinates": [
+          48.220778,
+          16.3100206
+        ]
+      },
+      {
+        "name": "Rome, Italy",
+        "flag": "🇮🇹",
+        "date": "2010-07",
+        "coordinates": [
+          41.909986,
+          12.3959153
+        ]
+      },
+      {
+        "name": "Venice, Italy",
+        "flag": "🇮🇹",
+        "date": "2010-07",
+        "coordinates": [
+          45.4044576,
+          12.2472507
+        ]
+      },
+      {
+        "name": "Athens, Greece",
+        "flag": "🇬🇷",
+        "date": "2010-07",
+        "coordinates": [
+          37.990832,
+          23.70332
+        ]
+      },
+      {
+        "name": "Santorini, Greece",
+        "flag": "🇬🇷",
+        "date": "2010-07",
+        "coordinates": [
+          36.4203259,
+          25.4234157
+        ]
+      }
+    ]
+  },
+  {
+    "name": "NYC",
+    "color": "purple",
+    "locations": [
+      {
+        "name": "New York, United States",
+        "flag": "🇺🇸",
+        "date": "2006-01",
+        "coordinates": [
+          40.6974034,
+          -74.1197637
         ]
       }
     ]
