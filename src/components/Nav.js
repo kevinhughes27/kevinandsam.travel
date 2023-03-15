@@ -33,7 +33,7 @@ class Nav extends React.Component {
 
 const SearchDisabled = () => {
   return (
-    <FontAwesomeIcon style={{color: 'grey'}} icon={faSearch} />
+    <FontAwesomeIcon style={{width: '24.8px', color: 'grey'}} icon={faSearch} />
   )
 }
 

@@ -105,9 +105,9 @@ class Search extends React.Component {
 
     return (
       <div className="search">
-        <div onClick={toggleDropdown}>
+        <button className="search-btn" onClick={toggleDropdown}>
           <FontAwesomeIcon icon={faSearch} />
-        </div>
+        </button>
         {this.state.open && (
           <div className="search-dropdown">
             <input
@@ -176,6 +176,15 @@ class Search extends React.Component {
                 <input type="radio" value="desc" onChange={() => this.props.searchChange({order: "desc"})} checked={this.props.order == "desc"} /> Desc
               </label>
             </div>
+
+            <button
+              style={{
+                marginTop: '1em',
+                left: '12em'
+              }}
+              onClick={() => this.setState({open: false})}>
+              Close
+            </button>
           </div>
         )}
       </div>
@@ -196,6 +205,7 @@ class Index extends React.Component {
 
   render() {
     const posts = this.props.data.allFacebookPostsJson.nodes
+    // need to debounce search a bit
     const filteredPosts = posts.filter((post) => {
       if (this.state.search.length > 3) {
         return post.places.some((place) => (
