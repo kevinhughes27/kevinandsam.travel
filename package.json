@@ -39,7 +39,7 @@
     "react-responsive-select": "7.0.4",
     "react-share": "^4.4.1",
     "react-sizes": "^2.0.0",
-    "sass": "^1.59.2"
+    "sass": "^1.59.3"
   },
   "babel": {
     "presets": [
