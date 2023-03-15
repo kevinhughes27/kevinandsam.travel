@@ -26,6 +26,13 @@ export default function InfinitScroll(WrappedComponent, options) {
       }
     }
 
+    reset() {
+      this.setState({show: this.loadSize, ready: false})
+      window.scrollTo(0, 0)
+      delete window[this.scrollKey]
+      this.setState({ready: true})
+    }
+
     update() {
       const distanceToBottom = document.documentElement.offsetHeight - (window.scrollY + window.innerHeight)
 
@@ -92,12 +99,15 @@ export default function InfinitScroll(WrappedComponent, options) {
 
     render() {
       const { ready, show } = this.state
+      // this calc isn't correct anymore with search
+      // I guess the loader needs to be shown by the sub index
+      // component? doesn't feel quite right either
       const max = Object.values(this.props.data)[0].nodes.length
       const showLoader = show < max
 
       return (
         <>
-          <WrappedComponent ready={ready} show={show} {...this.props} />
+          <WrappedComponent ready={ready} show={show} resetInfiniteScroll={() => this.reset} {...this.props} />
           { showLoader ? this.renderLoader() : null }
         </>
       )
