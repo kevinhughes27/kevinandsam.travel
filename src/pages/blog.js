@@ -66,7 +66,8 @@ class Index extends React.Component {
 
       // check search
       if (this.state.search.length > 3) {
-        return post.frontmatter.title.toLowerCase().includes(this.state.search.toLowerCase())
+        return post.frontmatter.title.toLowerCase().includes(this.state.search.toLowerCase()) ||
+          post.excerpt.toLowerCase().includes(this.state.search.toLowerCase())
       } else {
         return true
       }
