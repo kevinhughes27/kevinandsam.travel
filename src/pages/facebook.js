@@ -6,6 +6,7 @@ import PhotoAlbum from 'react-photo-album'
 import { Range } from 'react-range'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import faSearch from '@fortawesome/fontawesome-free-solid/faSearch'
+import { format } from 'date-fns'
 import { graphql } from 'gatsby'
 
 export { Head } from '../components/Head'
@@ -120,47 +121,20 @@ class Search extends React.Component {
 
             <div className="date-range-slider">
               <Range
-                step={0.1}
-                min={0}
-                max={100}
+                step={1}
+                min={this.props.start}
+                max={this.props.end}
                 values={this.props.range}
-                onChange={(values) => this.searchChange({ range: values })}
+                onChange={(values) => this.props.searchChange({ range: values })}
                 renderTrack={({ props, children }) => (
-                  <div
-                    {...props}
-                    style={{
-                      ...props.style,
-                      height: '6px',
-                      width: '100%',
-                      backgroundColor: '#ccc'
-                    }}
-                  >
+                  <div {...props} style={{ ...props.style }} className="track">
                     {children}
                   </div>
                 )}
                 renderThumb={({ index, props }) => (
-                  <div
-                    {...props}
-                    style={{
-                      ...props.style,
-                      height: '1em',
-                      width: '1em',
-                      borderRadius: '1em',
-                      backgroundColor: '#999'
-                    }}
-                  >
-                    <div style={{
-                        position: 'absolute',
-                        top: '-32px',
-                        color: '#fff',
-                        fontWeight: 'bold',
-                        fontSize: '14px',
-                        padding: '4px',
-                        borderRadius: '4px',
-                        backgroundColor: '#548BF4'
-                      }}
-                    >
-                      {this.props.range[index]}
+                  <div {...props} style={{ ...props.style }} className="thumb" >
+                    <div className="thumb-label">
+                      {format(new Date(this.props.range[index]*1000), "MM/yy")}
                     </div>
                   </div>
                 )}
@@ -178,10 +152,7 @@ class Search extends React.Component {
             </div>
 
             <button
-              style={{
-                marginTop: '1em',
-                left: '12em'
-              }}
+              className="search-close"
               onClick={() => this.setState({open: false})}>
               Close
             </button>
@@ -196,25 +167,43 @@ class Index extends React.Component {
   constructor(props) {
     super(props)
 
+    const posts = props.data.allFacebookPostsJson.nodes // is desc
+    const range = [
+      posts[posts.length - 1].timestamp,
+      posts[0].timestamp
+    ]
+
     this.state = {
       search: "",
-      range: [20, 40],
+      range: range,
       order: "desc"
     }
   }
 
   render() {
-    const posts = this.props.data.allFacebookPostsJson.nodes
+    const posts = this.props.data.allFacebookPostsJson.nodes // is desc
+    const rangeBounds = [
+      posts[posts.length - 1].timestamp,
+      posts[0].timestamp
+    ]
+
     // need to debounce search a bit
     const filteredPosts = posts.filter((post) => {
+      // check range
+      if (post.timestamp < this.state.range[0] || post.timestamp > this.state.range[1]) {
+        return false
+      }
+
+      // check search
       if (this.state.search.length > 3) {
         return post.places.some((place) => (
-          place.name.toLowerCase().includes(this.state.search.toLowerCase())
-        )) ||
-        post.text.toLowerCase().includes(this.state.search.toLowerCase())
+            place.name.toLowerCase().includes(this.state.search.toLowerCase())
+          )) || post.text.toLowerCase().includes(this.state.search.toLowerCase())
+      } else {
+        return true
       }
-      return true
     })
+
     let sortedPosts = filteredPosts
     if (this.state.order === "asc") {
       sortedPosts = filteredPosts.reverse()
@@ -224,8 +213,8 @@ class Index extends React.Component {
     return (
       <Layout search={
         <Search
-          start={posts[0].timestamp}
-          end={posts[posts.length - 1]}
+          start={rangeBounds[0]}
+          end={rangeBounds[1]}
           search={this.state.search}
           range={this.state.range}
           order={this.state.order}

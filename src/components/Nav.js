@@ -44,7 +44,7 @@ const BlogDropdown = () => {
       ['/facebook', '/instagram'].includes(location.pathname)
     )
   }
-  const btnClass = classNames('dropbtn', { 'active': blogActive()})
+  const btnClass = classNames('dropbtn nav-button', { 'active': blogActive()})
 
   return (
     <li>

@@ -4,6 +4,15 @@
   cursor: pointer;
 }
 
+.search-close {
+  position: relative;
+  left: 12em;
+  background-color: #f8f8f8;
+  border: 2px solid $color-black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 .search-dropdown {
   position: absolute;
   right: 0;
@@ -37,4 +46,30 @@
 .date-range-slider {
   margin-top: 3em;
   margin-bottom: 1.5em;
+  padding-left: 0.5em;
+  width: 84%;
+
+  .track {
+    height: 6px;
+    width: 100%;
+    background-color: #ccc;
+  }
+
+  .thumb {
+    height: 1em;
+    width: 1em;
+    border-radius: 1em;
+    background-color: #999;
+  }
+
+  .thumb-label {
+    position: absolute;
+    top: -32px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 4px;
+    border-radius: 4px;
+    background-color: #548BF4;
+  }
 }
