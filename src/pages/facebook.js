@@ -1,12 +1,10 @@
 import React from 'react'
 import Layout from '../components/Layout'
 import TravellingTo from '../components/TravellingTo'
-import InifinteScroll from '../components/InfiniteScroll'
+import InfinteScroll from '../components/InfiniteScroll'
+import Search from '../components/Search'
+import Loader from '../components/Loader'
 import PhotoAlbum from 'react-photo-album'
-import { Range } from 'react-range'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import faSearch from '@fortawesome/fontawesome-free-solid/faSearch'
-import { format } from 'date-fns'
 import { graphql } from 'gatsby'
 
 export { Head } from '../components/Head'
@@ -87,82 +85,6 @@ class Post extends React.Component {
   }
 }
 
-// this will actually be a shared form for each "blog" page I think
-// the range slider doesn't handle dates yet
-// add a close button that hides the search form. clicking on the search icon to close is annoying
-class Search extends React.Component {
-  constructor(props) {
-    super(props)
-
-    this.state = {
-      open: false,
-    }
-  }
-
-  render() {
-    const toggleDropdown = () => {
-      this.setState({open: !this.state.open})
-    }
-
-    return (
-      <div className="search">
-        <button className="search-btn" onClick={toggleDropdown}>
-          <FontAwesomeIcon icon={faSearch} />
-        </button>
-        {this.state.open && (
-          <div className="search-dropdown">
-            <input
-              className="search-input"
-              type="text"
-              placeholder="Search"
-              value={this.props.search}
-              onChange={(ev) => this.props.searchChange({search: ev.target.value})}
-            />
-
-            <div className="date-range-slider">
-              <Range
-                step={1}
-                min={this.props.start}
-                max={this.props.end}
-                values={this.props.range}
-                onChange={(values) => this.props.searchChange({ range: values })}
-                renderTrack={({ props, children }) => (
-                  <div {...props} style={{ ...props.style }} className="track">
-                    {children}
-                  </div>
-                )}
-                renderThumb={({ index, props }) => (
-                  <div {...props} style={{ ...props.style }} className="thumb" >
-                    <div className="thumb-label">
-                      {format(new Date(this.props.range[index]*1000), "MM/yy")}
-                    </div>
-                  </div>
-                )}
-              />
-            </div>
-
-            <div className="asc-desc-toggle">
-              <label>
-                <input type="radio" value="asc" onChange={() => this.props.searchChange({order: "asc"})} checked={this.props.order == "asc"} /> Asc
-              </label>
-              <span> / </span>
-              <label>
-                <input type="radio" value="desc" onChange={() => this.props.searchChange({order: "desc"})} checked={this.props.order == "desc"} /> Desc
-              </label>
-            </div>
-
-            <button
-              className="search-close"
-              onClick={() => this.setState({open: false})}>
-              Close
-            </button>
-          </div>
-        )}
-      </div>
-    )
-  }
-}
-
 class Index extends React.Component {
   constructor(props) {
     super(props)
@@ -187,7 +109,6 @@ class Index extends React.Component {
       posts[0].timestamp
     ]
 
-    // need to debounce search a bit
     const filteredPosts = posts.filter((post) => {
       // check range
       if (post.timestamp < this.state.range[0] || post.timestamp > this.state.range[1]) {
@@ -208,7 +129,9 @@ class Index extends React.Component {
     if (this.state.order === "asc") {
       sortedPosts = filteredPosts.reverse()
     }
+
     const postsToShow = sortedPosts.slice(0, this.props.show)
+    const showLoader = postsToShow.length < sortedPosts.length
 
     return (
       <Layout search={
@@ -227,6 +150,7 @@ class Index extends React.Component {
         <section className='section-padding bg-white' style={{opacity: this.props.ready ? 1 : 0}}>
           <div className='grid'>
             {postsToShow.map(p => <Post key={p.id} post={p}/>)}
+            {showLoader ? <Loader/> : null}
           </div>
         </section>
       </Layout>
@@ -234,7 +158,7 @@ class Index extends React.Component {
   }
 }
 
-export default InifinteScroll(Index, {
+export default InfinteScroll(Index, {
   uid: 'fb',
   initialSize: 4,
   loadSize: 4,
