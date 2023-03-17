@@ -58,6 +58,7 @@ class Index extends React.Component {
       postTime(posts[0])
     ]
 
+    const query = this.state.search.toLowerCase().trim()
     const filteredPosts = posts.filter((post) => {
       // check range
       if (postTime(post) < this.state.range[0] || postTime(post) > this.state.range[1]) {
@@ -66,9 +67,9 @@ class Index extends React.Component {
 
       // check search
       if (this.state.search.length > 3) {
-        return post.frontmatter.title.toLowerCase().includes(this.state.search.toLowerCase().trim()) ||
-          (post.frontmatter.searchMeta && post.frontmatter.searchMeta.toLowerCase().includes(this.state.search.toLowerCase().trim())) ||
-          post.excerpt.toLowerCase().includes(this.state.search.toLowerCase().trim())
+        return post.frontmatter.title.toLowerCase().includes(query) ||
+          (post.frontmatter.searchMeta && post.frontmatter.searchMeta.toLowerCase().includes(query)) ||
+          post.excerpt.toLowerCase().includes(query)
       } else {
         return true
       }

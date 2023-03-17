@@ -229,6 +229,7 @@ class Index extends React.Component {
       posts[0].timestamp
     ]
 
+    const query = this.state.search.toLowerCase().trim()
     const filteredPosts = posts.filter((post) => {
       // check range
       if (post.timestamp < this.state.range[0] || post.timestamp > this.state.range[1]) {
@@ -238,8 +239,8 @@ class Index extends React.Component {
       // check search
       if (this.state.search.length > 3) {
         return post.places.some((place) => (
-            place.name.toLowerCase().includes(this.state.search.toLowerCase().trim())
-          )) || post.text.toLowerCase().includes(this.state.search.toLowerCase().trim())
+            place.name.toLowerCase().includes(query)
+          )) || post.text.toLowerCase().includes(query)
       } else {
         return true
       }
