@@ -1,6 +1,8 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import InifinteScroll from '../components/InfiniteScroll'
+import InfinteScroll from '../components/InfiniteScroll'
+import Search from '../components/Search'
+import Loader from '../components/Loader'
 import { graphql } from 'gatsby'
 
 export { Head } from '../components/Head'
@@ -28,24 +30,87 @@ function Post(post) {
   );
 }
 
-function Index(props) {
-  const posts = props.data.allMdx.nodes
-  const postsToShow = posts.slice(0, props.show)
-
-  return (
-    <Layout>
-      <section id='blog' className='section-padding bg-white' style={{opacity: props.ready ? 1 : 0}}>
-        <div className='grid'>
-          <ul itemScope itemType='http://schema.org/Blog'>
-            {postsToShow.map(Post)}
-          </ul>
-        </div>
-      </section>
-    </Layout>
-  );
+function postTime(post) {
+  return new Date(post.frontmatter.date).getTime() / 1000
 }
 
-export default InifinteScroll(Index, {
+class Index extends React.Component {
+  constructor(props) {
+    super(props)
+
+    const posts = props.data.allMdx.nodes // is desc
+    const range = [
+      postTime(posts[posts.length - 1]),
+      postTime(posts[0])
+    ]
+
+    this.state = {
+      search: "",
+      range: range,
+      order: "desc"
+    }
+  }
+
+  render() {
+    const posts = this.props.data.allMdx.nodes
+    const rangeBounds = [
+      postTime(posts[posts.length - 1]),
+      postTime(posts[0])
+    ]
+
+    const query = this.state.search.toLowerCase().trim()
+    const filteredPosts = posts.filter((post) => {
+      // check range
+      if (postTime(post) < this.state.range[0] || postTime(post) > this.state.range[1]) {
+        return false
+      }
+
+      // check search
+      if (this.state.search.length > 3) {
+        return post.frontmatter.title.toLowerCase().includes(query) ||
+          (post.frontmatter.searchMeta && post.frontmatter.searchMeta.toLowerCase().includes(query)) ||
+          post.excerpt.toLowerCase().includes(query)
+      } else {
+        return true
+      }
+    })
+
+    let sortedPosts = filteredPosts
+    if (this.state.order === "asc") {
+      sortedPosts = filteredPosts.reverse()
+    }
+
+    const postsToShow = sortedPosts.slice(0, this.props.show)
+    const showLoader = postsToShow.length < sortedPosts.length
+
+    return (
+      <Layout search={
+        <Search
+          start={rangeBounds[0]}
+          end={rangeBounds[1]}
+          search={this.state.search}
+          range={this.state.range}
+          order={this.state.order}
+          searchChange={(state) => {
+            this.setState(state)
+            this.props.resetInfiniteScroll()
+          }}
+        />
+      }>
+        <section id='blog' className='section-padding bg-white' style={{opacity: this.props.ready ? 1 : 0}}>
+          <div className='grid'>
+            <ul itemScope itemType='http://schema.org/Blog'>
+              {postsToShow.map(Post)}
+            </ul>
+          </div>
+          {showLoader ? <Loader/> : null}
+        </section>
+      </Layout>
+    );
+  }
+}
+
+export default InfinteScroll(Index, {
   uid: 'blog',
   initialSize: 6,
   loadSize: 2,
@@ -62,6 +127,7 @@ export const pageQuery = graphql`
           title
           date(formatString: "MMMM DD, YYYY")
           path
+          searchMeta
           cardImage {
             childImageSharp {
               resize(width: 800) {

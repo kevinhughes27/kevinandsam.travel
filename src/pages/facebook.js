@@ -1,7 +1,9 @@
 import React from 'react'
 import Layout from '../components/Layout'
 import TravellingTo from '../components/TravellingTo'
-import InifinteScroll from '../components/InfiniteScroll'
+import InfinteScroll from '../components/InfiniteScroll'
+import Search from '../components/Search'
+import Loader from '../components/Loader'
 import PhotoAlbum from 'react-photo-album'
 import { graphql } from 'gatsby'
 
@@ -84,15 +86,72 @@ class Post extends React.Component {
 }
 
 class Index extends React.Component {
+  constructor(props) {
+    super(props)
+
+    const posts = props.data.allFacebookPostsJson.nodes // is desc
+    const range = [
+      posts[posts.length - 1].timestamp,
+      posts[0].timestamp
+    ]
+
+    this.state = {
+      search: "",
+      range: range,
+      order: "desc"
+    }
+  }
+
   render() {
-    const posts = this.props.data.allFacebookPostsJson.nodes
-    const postsToShow = posts.slice(0, this.props.show)
+    const posts = this.props.data.allFacebookPostsJson.nodes // is desc
+    const rangeBounds = [
+      posts[posts.length - 1].timestamp,
+      posts[0].timestamp
+    ]
+
+    const query = this.state.search.toLowerCase().trim()
+    const filteredPosts = posts.filter((post) => {
+      // check range
+      if (post.timestamp < this.state.range[0] || post.timestamp > this.state.range[1]) {
+        return false
+      }
+
+      // check search
+      if (this.state.search.length > 3) {
+        return post.places.some((place) => (
+            place.name.toLowerCase().includes(query) || place.address.toLowerCase().includes(query)
+          )) || post.text.toLowerCase().includes(query)
+      } else {
+        return true
+      }
+    })
+
+    let sortedPosts = filteredPosts
+    if (this.state.order === "asc") {
+      sortedPosts = filteredPosts.reverse()
+    }
+
+    const postsToShow = sortedPosts.slice(0, this.props.show)
+    const showLoader = postsToShow.length < sortedPosts.length
 
     return (
-      <Layout>
+      <Layout search={
+        <Search
+          start={rangeBounds[0]}
+          end={rangeBounds[1]}
+          search={this.state.search}
+          range={this.state.range}
+          order={this.state.order}
+          searchChange={(state) => {
+            this.setState(state)
+            this.props.resetInfiniteScroll()
+          }}
+        />
+      }>
         <section className='section-padding bg-white' style={{opacity: this.props.ready ? 1 : 0}}>
           <div className='grid'>
             {postsToShow.map(p => <Post key={p.id} post={p}/>)}
+            {showLoader ? <Loader/> : null}
           </div>
         </section>
       </Layout>
@@ -100,7 +159,7 @@ class Index extends React.Component {
   }
 }
 
-export default InifinteScroll(Index, {
+export default InfinteScroll(Index, {
   uid: 'fb',
   initialSize: 4,
   loadSize: 4,
@@ -121,6 +180,7 @@ export const pageQuery = graphql`
             latitude
             longitude
           }
+          address
         }
         images {
           childrenImageSharp {

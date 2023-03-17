@@ -1,20 +1,17 @@
 import React from 'react'
 import withSizes from 'react-sizes'
 import { Link } from 'gatsby'
-
-import fontawesome from '@fortawesome/fontawesome'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import brands from '@fortawesome/fontawesome-free-brands'
 import faHome from '@fortawesome/fontawesome-free-solid/faHome'
+import faSearch from '@fortawesome/fontawesome-free-solid/faSearch'
 import classNames from 'classnames'
 import { firstLoad } from '../utils'
 
-fontawesome.library.add(brands)
 
 class Nav extends React.Component {
   render() {
-    const compressedNav = this.props.windowWidth <= 385
-
+    const Search = this.props.search || <SearchDisabled />
+    const compressedNav = this.props.windowWidth <= 392
     const styles = firstLoad() ? {animation: "fadeIn 3s both 0.3s"} : {}
 
     return(
@@ -26,12 +23,18 @@ class Nav extends React.Component {
             <Item path="/map" title="Map" />
             <Item path="/visit" title={ compressedNav ? "Visit" : "Come Visit" } />
             <BlogDropdown />
-            <InstagramLink />
+            <li>{Search}</li>
           </ul>
         </nav>
       </header>
     )
   }
+}
+
+const SearchDisabled = () => {
+  return (
+    <FontAwesomeIcon style={{width: '24.8px', color: 'grey'}} icon={faSearch} />
+  )
 }
 
 const BlogDropdown = () => {
@@ -41,7 +44,7 @@ const BlogDropdown = () => {
       ['/facebook', '/instagram'].includes(location.pathname)
     )
   }
-  const btnClass = classNames('dropbtn', { 'active': blogActive()})
+  const btnClass = classNames('dropbtn nav-button', { 'active': blogActive()})
 
   return (
     <li>
@@ -67,14 +70,6 @@ const Item = ({path, title, partiallyActive=true}) => (
 
 const HomeIcon = () => (
   <FontAwesomeIcon icon={faHome} />
-)
-
-const InstagramLink = () => (
-  <li>
-    <a href={`https://instagram.com/kevinhughes27`} target='_blank' rel="noreferrer">
-      <FontAwesomeIcon icon={["fab", "instagram"]} />
-    </a>
-  </li>
 )
 
 const mapSizesToProps = ({ width }) => ({

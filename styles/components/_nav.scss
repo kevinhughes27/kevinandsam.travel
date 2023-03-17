@@ -68,7 +68,7 @@ nav ul {
       font-weight: 700;
     }
 
-    button {
+    .nav-button {
       @include link-underline();
 
       &:before {

@@ -1,7 +1,9 @@
 import React from 'react'
 import Layout from '../components/Layout'
 import Modal from '../components/Modal'
-import InifinteScroll from '../components/InfiniteScroll'
+import InfinteScroll from '../components/InfiniteScroll'
+import Search from '../components/Search'
+import Loader from '../components/Loader'
 import PhotoAlbum from 'react-photo-album'
 import Swipe from 'react-easy-swipe'
 import { Carousel } from 'react-responsive-carousel'
@@ -103,8 +105,18 @@ class Post extends React.Component {
 class Index extends React.Component {
   constructor(props) {
     super(props)
+
+    const posts = props.data.allInstagramPostsJson.nodes // is desc
+    const range = [
+      posts[posts.length - 1].timestamp,
+      posts[0].timestamp
+    ]
+
     this.state = {
-      activePost: null
+      activePost: null,
+      search: "",
+      range: range,
+      order: "desc"
     }
   }
 
@@ -212,11 +224,43 @@ class Index extends React.Component {
 
   render() {
     const posts = this.props.data.allInstagramPostsJson.nodes
-    const postsToShow = posts.slice(0, this.props.show)
+    const rangeBounds = [
+      posts[posts.length - 1].timestamp,
+      posts[0].timestamp
+    ]
+
+    const query = this.state.search.toLowerCase().trim()
+    const filteredPosts = posts.filter((post) => {
+      // check range
+      if (post.timestamp < this.state.range[0] || post.timestamp > this.state.range[1]) {
+        return false
+      }
+
+      // check search
+      if (this.state.search.length > 3) {
+        return post.places.some((place) => (
+            place.name.toLowerCase().includes(query)
+          )) || post.text.toLowerCase().includes(query)
+      } else {
+        return true
+      }
+    })
+
+    let sortedPosts = filteredPosts
+    if (this.state.order === "asc") {
+      sortedPosts = filteredPosts.reverse()
+    }
+
+    const postsToShow = sortedPosts.slice(0, this.props.show)
+    const showLoader = postsToShow.length < sortedPosts.length
 
     const photos = postsToShow.map((post) => {
-      const images = post.images.map(img => img.childrenImageSharp[0].original)
+      const images = post.images.map(img => ({
+        id: post.id,
+        ...img.childrenImageSharp[0].original
+      }))
       const videos = post.videos.map(vid => ({
+        id: post.id,
         src: vid.src.publicURL,
         type: 'video/mp4',
         width: vid.width,
@@ -227,7 +271,19 @@ class Index extends React.Component {
     })
 
     return (
-      <Layout>
+      <Layout search={
+        <Search
+          start={rangeBounds[0]}
+          end={rangeBounds[1]}
+          search={this.state.search}
+          range={this.state.range}
+          order={this.state.order}
+          searchChange={(state) => {
+            this.setState(state)
+            this.props.resetInfiniteScroll()
+          }}
+        />
+      }>
         <section className='section-padding bg-white' style={{opacity: this.props.ready ? 1 : 0}}>
           {this.renderModal()}
           <div className='grid ig-grid'>
@@ -242,7 +298,11 @@ class Index extends React.Component {
                 return 15
               }}
               photos={photos}
-              onClick={({ index }) => this.onClick(index)}
+              onClick={(ev) => {
+                const id = ev.photo.id
+                const index = posts.findIndex(p => p.id == id)
+                this.onClick(index)
+              }}
               renderPhoto={({ photo, layout: { index, width }, wrapperStyle, renderDefaultPhoto }) => {
                 if ((photo.type || '').startsWith('video')) {
                   return this.renderGalleryVideo(index, photo.type, photo.src, width)
@@ -252,13 +312,14 @@ class Index extends React.Component {
               }}
             />
           </div>
+          {showLoader ? <Loader/> : null}
         </section>
       </Layout>
     );
   }
 }
 
-export default InifinteScroll(Index, {
+export default InfinteScroll(Index, {
   uid: 'ig',
   initialSize: 24,
   loadSize: 6,
