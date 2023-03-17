@@ -66,8 +66,9 @@ class Index extends React.Component {
 
       // check search
       if (this.state.search.length > 3) {
-        return post.frontmatter.title.toLowerCase().includes(this.state.search.toLowerCase()) ||
-          post.excerpt.toLowerCase().includes(this.state.search.toLowerCase())
+        return post.frontmatter.title.toLowerCase().includes(this.state.search.toLowerCase().trim()) ||
+          (post.frontmatter.searchMeta && post.frontmatter.searchMeta.toLowerCase().includes(this.state.search.toLowerCase().trim())) ||
+          post.excerpt.toLowerCase().includes(this.state.search.toLowerCase().trim())
       } else {
         return true
       }
@@ -125,6 +126,7 @@ export const pageQuery = graphql`
           title
           date(formatString: "MMMM DD, YYYY")
           path
+          searchMeta
           cardImage {
             childImageSharp {
               resize(width: 800) {

@@ -3,6 +3,7 @@ path: "/torres-del-paine"
 date: "2018-04-14"
 title: "Torres del Paine"
 author: "Kevin"
+searchMeta: "Chile"
 cardImage: "card.jpg"
 postImage: "post.jpeg"
 ---

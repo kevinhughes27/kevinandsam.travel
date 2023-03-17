@@ -118,8 +118,9 @@ class Index extends React.Component {
       // check search
       if (this.state.search.length > 3) {
         return post.places.some((place) => (
-            place.name.toLowerCase().includes(this.state.search.toLowerCase())
-          )) || post.text.toLowerCase().includes(this.state.search.toLowerCase())
+            place.name.toLowerCase().includes(this.state.search.toLowerCase().trim()) ||
+              place.address.toLowerCase().includes(this.state.search.toLowerCase().trim())
+          )) || post.text.toLowerCase().includes(this.state.search.toLowerCase().trim())
       } else {
         return true
       }
@@ -179,6 +180,7 @@ export const pageQuery = graphql`
             latitude
             longitude
           }
+          address
         }
         images {
           childrenImageSharp {
