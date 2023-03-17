@@ -19,21 +19,21 @@ export default class Search extends React.Component {
     }
 
     return (
-      <div className="search">
-        <button className="search-btn" onClick={toggleDropdown}>
+      <div className='search'>
+        <button className='search-btn' onClick={toggleDropdown}>
           <FontAwesomeIcon icon={faSearch} />
         </button>
         {this.state.open && (
-          <div className="search-dropdown">
+          <div className='search-dropdown'>
             <input
-              className="search-input"
-              type="text"
-              placeholder="Search"
+              className='search-input'
+              type='text'
+              placeholder='Search'
               value={this.props.search}
               onChange={(ev) => this.props.searchChange({search: ev.target.value})}
             />
 
-            <div className="date-range-slider">
+            <div className='date-range-slider'>
               <Range
                 step={1}
                 min={this.props.start}
@@ -41,32 +41,32 @@ export default class Search extends React.Component {
                 values={this.props.range}
                 onChange={(values) => this.props.searchChange({ range: values })}
                 renderTrack={({ props, children }) => (
-                  <div {...props} style={{ ...props.style }} className="track">
+                  <div {...props} style={{ ...props.style }} className='track'>
                     {children}
                   </div>
                 )}
                 renderThumb={({ index, props }) => (
-                  <div {...props} style={{ ...props.style }} className="thumb" >
-                    <div className="thumb-label">
-                      {format(new Date(this.props.range[index]*1000), "MM/yy")}
+                  <div {...props} style={{ ...props.style }} className='thumb' >
+                    <div className='thumb-label'>
+                      {format(new Date(this.props.range[index]*1000), 'MM/yy')}
                     </div>
                   </div>
                 )}
               />
             </div>
 
-            <div className="asc-desc-toggle">
+            <div className='asc-desc-toggle'>
               <label>
-                <input type="radio" value="asc" onChange={() => this.props.searchChange({order: "asc"})} checked={this.props.order == "asc"} /> Asc
+                <input type='radio' value='asc' onChange={() => this.props.searchChange({order: 'asc'})} checked={this.props.order == 'asc'} /> Asc
               </label>
               <span> / </span>
               <label>
-                <input type="radio" value="desc" onChange={() => this.props.searchChange({order: "desc"})} checked={this.props.order == "desc"} /> Desc
+                <input type='radio' value='desc' onChange={() => this.props.searchChange({order: 'desc'})} checked={this.props.order == 'desc'} /> Desc
               </label>
             </div>
 
             <button
-              className="search-close"
+              className='search-close'
               onClick={() => this.setState({open: false})}>
               Close
             </button>
