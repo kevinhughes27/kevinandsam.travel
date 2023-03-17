@@ -255,8 +255,12 @@ class Index extends React.Component {
     const showLoader = postsToShow.length < sortedPosts.length
 
     const photos = postsToShow.map((post) => {
-      const images = post.images.map(img => img.childrenImageSharp[0].original)
+      const images = post.images.map(img => ({
+        id: post.id,
+        ...img.childrenImageSharp[0].original
+      }))
       const videos = post.videos.map(vid => ({
+        id: post.id,
         src: vid.src.publicURL,
         type: 'video/mp4',
         width: vid.width,
@@ -294,7 +298,11 @@ class Index extends React.Component {
                 return 15
               }}
               photos={photos}
-              onClick={({ index }) => this.onClick(index)}
+              onClick={(ev) => {
+                const id = ev.photo.id
+                const index = posts.findIndex(p => p.id == id)
+                this.onClick(index)
+              }}
               renderPhoto={({ photo, layout: { index, width }, wrapperStyle, renderDefaultPhoto }) => {
                 if ((photo.type || '').startsWith('video')) {
                   return this.renderGalleryVideo(index, photo.type, photo.src, width)
