@@ -11,7 +11,7 @@ import { firstLoad } from '../utils'
 class Nav extends React.Component {
   render() {
     const Search = this.props.search || <SearchDisabled />
-    const compressedNav = this.props.windowWidth <= 392
+    const compressedNav = this.props.windowWidth <= 400
     const styles = firstLoad() ? {animation: "fadeIn 3s both 0.3s"} : {}
 
     return(
