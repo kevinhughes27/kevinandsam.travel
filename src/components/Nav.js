@@ -12,6 +12,8 @@ class Nav extends React.Component {
   render() {
     const Search = this.props.search || <SearchDisabled />
     const compressedNav = this.props.windowWidth <= 400
+    const superCompressedNav = this.props.windowWidth <= 380
+    const maxCompressedNav = this.props.windowWidth <= 330
     const styles = firstLoad() ? {animation: "fadeIn 3s both 0.3s"} : {}
 
     return(
@@ -19,9 +21,9 @@ class Nav extends React.Component {
         <nav>
           <ul>
             <Item path="/" title={ compressedNav ? <HomeIcon /> : "Home" } partiallyActive={false}/>
-            <Item path="/about" title="About Us" />
+            <Item path="/about" title={ maxCompressedNav ? "About" : "About Us" } />
             <Item path="/map" title="Map" />
-            <Item path="/visit" title={ compressedNav ? "Visit" : "Come Visit" } />
+            <Item path="/visit" title={ superCompressedNav ? "Visit" : "Come Visit" } />
             <BlogDropdown />
             <li>{Search}</li>
           </ul>
