@@ -24,7 +24,7 @@
     ]
   },
   {
-    "name": "SE Asia",
+    "name": "Family SE Asia",
     "color": "purple",
     "locations": [
       {
@@ -198,7 +198,7 @@
     ]
   },
   {
-    "name": "Asia and Australia",
+    "name": "Lisa Asia and Australia",
     "color": "purple",
     "locations": [
       {
@@ -256,7 +256,7 @@
         ]
       },
       {
-        "name": "Syndey, Australia",
+        "name": "Sydney, Australia",
         "flag": "🇦🇺",
         "date": "2011-02",
         "coordinates": [
@@ -285,6 +285,39 @@
     ]
   },
   {
+    "name": "Family Europe 2011",
+    "color": "purple",
+    "locations": [
+      {
+        "name": "Athens, Greece",
+        "flag": "🇬🇷",
+        "date": "2007-05",
+        "coordinates": [
+          37.990832,
+          23.70332
+        ]
+      },
+      {
+        "name": "Naxos, Greece",
+        "flag": "🇬🇷",
+        "date": "2007-05",
+        "coordinates": [
+          37.0598888,
+          25.3295743
+        ]
+      },
+      {
+        "name": "Santorini, Greece",
+        "flag": "🇬🇷",
+        "date": "2007-05",
+        "coordinates": [
+          36.4203259,
+          25.4234157
+        ]
+      }
+    ]
+  },
+  {
     "name": "Cuba",
     "color": "purple",
     "locations": [
@@ -300,18 +333,9 @@
     ]
   },
   {
-    "name": "Europe 2010",
+    "name": "Lisa Europe 2010",
     "color": "purple",
     "locations": [
-      {
-        "name": "Paris, France",
-        "flag": "🇫🇷",
-        "date": "2010-06",
-        "coordinates": [
-          48.8588336,
-          2.2769956
-        ]
-      },
       {
         "name": "Geneva, Switzerland",
         "flag": "🇨🇭",
@@ -319,6 +343,15 @@
         "coordinates": [
           46.2048247,
           6.1080195
+        ]
+      },
+      {
+        "name": "Paris, France",
+        "flag": "🇫🇷",
+        "date": "2010-06",
+        "coordinates": [
+          48.8588336,
+          2.2769956
         ]
       },
       {
@@ -393,7 +426,7 @@
     ]
   },
   {
-    "name": "New Zealand and Australia",
+    "name": "Family New Zealand and Australia",
     "color": "purple",
     "locations": [
       {
@@ -424,7 +457,25 @@
         ]
       },
       {
-        "name": "Syndey, Australia",
+        "name": "Christchurch, New Zealand",
+        "flag": "🇳🇿",
+        "date": "2009-06",
+        "coordinates": [
+          -43.5120569,
+          172.458919
+        ]
+      },
+      {
+        "name": "Arthur's Pass, New Zealand",
+        "flag": "🇳🇿",
+        "date": "2009-06",
+        "coordinates": [
+          -42.9422038,
+          171.5553691
+        ]
+      },
+      {
+        "name": "Sydney, Australia",
         "flag": "🇦🇺",
         "date": "2009-06",
         "coordinates": [
@@ -492,7 +543,7 @@
     ]
   },
   {
-    "name": "Europe 2007",
+    "name": "Family Europe 2007",
     "color": "purple",
     "locations": [
       {
@@ -505,6 +556,15 @@
         ]
       },
       {
+        "name": "Munich, Germany",
+        "flag": "🇩🇪",
+        "date": "2007-5",
+        "coordinates": [
+          48.1548895,
+          11.4717966
+        ]
+      },
+      {
         "name": "Vienna, Austria",
         "flag": "🇦🇹",
         "date": "2007-05",
@@ -514,39 +574,21 @@
         ]
       },
       {
-        "name": "Rome, Italy",
-        "flag": "🇮🇹",
-        "date": "2010-07",
-        "coordinates": [
-          41.909986,
-          12.3959153
-        ]
-      },
-      {
         "name": "Venice, Italy",
         "flag": "🇮🇹",
-        "date": "2010-07",
+        "date": "2007-05",
         "coordinates": [
           45.4044576,
           12.2472507
         ]
       },
       {
-        "name": "Athens, Greece",
-        "flag": "🇬🇷",
-        "date": "2010-07",
+        "name": "Rome, Italy",
+        "flag": "🇮🇹",
+        "date": "2007-05",
         "coordinates": [
-          37.990832,
-          23.70332
-        ]
-      },
-      {
-        "name": "Santorini, Greece",
-        "flag": "🇬🇷",
-        "date": "2010-07",
-        "coordinates": [
-          36.4203259,
-          25.4234157
+          41.909986,
+          12.3959153
         ]
       }
     ]
@@ -562,6 +604,129 @@
         "coordinates": [
           40.6974034,
           -74.1197637
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Hawaii",
+    "color": "purple",
+    "locations": [
+      {
+        "name": "Waikiki, United States",
+        "flag": "🇺🇸",
+        "date": "2003-12",
+        "coordinates": [
+          21.2801307,
+          -157.841453
+        ]
+      },
+      {
+        "name": "Maui, United States",
+        "flag": "🇺🇸",
+        "date": "2003-12",
+        "coordinates": [
+          20.8029389,
+          -156.4780672
+        ]
+      },
+      {
+        "name": "Hawaii, United States",
+        "flag": "🇺🇸",
+        "date": "2003-12",
+        "coordinates": [
+          19.5964719,
+          -155.5514207
+        ]
+      }
+    ]
+  },
+    {
+    "name": "Switzerland",
+    "color": "purple",
+    "locations": [
+      {
+        "name": "Geneva, Switzerland",
+        "flag": "🇨🇭",
+        "date": "2002-06",
+        "coordinates": [
+          46.2048247,
+          6.1080195
+        ]
+      },
+      {
+        "name": "Montreux, Switzerland",
+        "flag": "🇨🇭",
+        "date": "2002-06",
+        "coordinates": [
+          46.448216,
+          6.8907018
+        ]
+      },
+      {
+        "name": "Yverdon-les-bains, Switzerland",
+        "flag": "🇨🇭",
+        "date": "2002-06",
+        "coordinates": [
+          46.7680935,
+          6.603175
+        ]
+      },
+      {
+        "name": "Megève, France",
+        "flag": "🇫🇷",
+        "date": "2002-06",
+        "coordinates": [
+          45.8396596,
+          6.5524028
+        ]
+      },
+      {
+        "name": "Annecy, France",
+        "flag": "🇫🇷",
+        "date": "2002-06",
+        "coordinates": [
+          45.8898747,
+          6.0934837
+        ]
+      },
+      {
+        "name": "Paris, France",
+        "flag": "🇫🇷",
+        "date": "2002-06",
+        "coordinates": [
+          48.8588336,
+          2.2769956
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Disney",
+    "color": "purple",
+    "locations": [
+      {
+        "name": "Disney, Florida",
+        "flag": "🇺🇸",
+        "date": "2001-04",
+        "coordinates": [
+          28.3771856,
+          -81.5752247
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Disney",
+    "color": "purple",
+    "locations": [
+      {
+        "name": "Disney, Florida",
+        "flag": "🇺🇸",
+        "date": "1992-10",
+        "coordinates": [
+          28.3771856,
+          -81.5752247
         ]
       }
     ]
