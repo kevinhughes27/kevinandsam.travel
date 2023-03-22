@@ -47,16 +47,6 @@ const manifest = {
   }
 }
 
-const googleFonts = {
-  resolve: `gatsby-plugin-google-fonts`,
-  options: {
-    fonts: [
-      `Fanwood`,
-      `Quattrocento\:400,700`
-    ]
-  }
-}
-
 const leaflet = {
   resolve: `gatsby-plugin-react-leaflet`,
   options: {
@@ -74,7 +64,6 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
-    googleFonts,
     manifest,
     leaflet,
     ...blog,
