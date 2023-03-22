@@ -77,9 +77,7 @@ class VisitPage extends React.Component {
 
     const baseUrl = 'https://www.google.ca/flights/'
     const airport = country.airport
-    const startDate = format(when, 'yyyy-MM-dd')
-    const endDate = format(add(when, {days: 15}), 'yyyy-MM-dd')
-    const flightUrl = baseUrl + `#search;t=${airport};d=${startDate};r=${endDate}`
+    const flightUrl = baseUrl + `?q=Flights%20to%20${airport}`
     const flightLink = <a href={flightUrl} target="_blank" rel="noreferrer">book your flights!</a>
 
     const subject = lastAnswer === 'when'
