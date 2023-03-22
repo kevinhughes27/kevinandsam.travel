@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactModal from 'react-modal'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTimes } from '@fortawesome/fontawesome-free-solid'
+import { faTimes } from '@fortawesome/free-solid-svg-icons'
 
 ReactModal.setAppElement(`#___gatsby`)
 

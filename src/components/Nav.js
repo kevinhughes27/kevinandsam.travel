@@ -2,8 +2,7 @@ import React from 'react'
 import withSizes from 'react-sizes'
 import { Link } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import faHome from '@fortawesome/fontawesome-free-solid/faHome'
-import faSearch from '@fortawesome/fontawesome-free-solid/faSearch'
+import { faHouseChimney, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 import classNames from 'classnames'
 import { firstLoad } from '../utils'
 
@@ -35,7 +34,7 @@ class Nav extends React.Component {
 
 const SearchDisabled = () => {
   return (
-    <FontAwesomeIcon style={{width: '24.8px', color: 'grey'}} icon={faSearch} />
+    <FontAwesomeIcon style={{width: '24.8px', color: 'grey'}} icon={faMagnifyingGlass} />
   )
 }
 
@@ -71,7 +70,7 @@ const Item = ({path, title, partiallyActive=true}) => (
 )
 
 const HomeIcon = () => (
-  <FontAwesomeIcon icon={faHome} />
+  <FontAwesomeIcon icon={faHouseChimney} />
 )
 
 const mapSizesToProps = ({ width }) => ({

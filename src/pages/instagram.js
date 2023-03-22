@@ -8,7 +8,7 @@ import PhotoAlbum from 'react-photo-album'
 import Swipe from 'react-easy-swipe'
 import { Carousel } from 'react-responsive-carousel'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faImages, faPlayCircle, faCaretRight, faCaretLeft } from '@fortawesome/fontawesome-free-solid'
+import { faImages, faPlayCircle, faCaretRight, faCaretLeft } from '@fortawesome/free-solid-svg-icons'
 import { graphql } from 'gatsby'
 import mousetrap from 'mousetrap'
 

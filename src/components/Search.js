@@ -1,7 +1,7 @@
 import React from 'react'
 import { Range } from 'react-range'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import faSearch from '@fortawesome/fontawesome-free-solid/faSearch'
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 import { format } from 'date-fns'
 
 export default class Search extends React.Component {
@@ -21,7 +21,7 @@ export default class Search extends React.Component {
     return (
       <div className='search'>
         <button className='search-btn' onClick={toggleDropdown}>
-          <FontAwesomeIcon icon={faSearch} />
+          <FontAwesomeIcon icon={faMagnifyingGlass} />
         </button>
         {this.state.open && (
           <div className='search-dropdown'>
