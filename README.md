@@ -1,11 +1,17 @@
 # kevinandsam.travel
 
-Our travel blog written using [Gatsby](https://www.gatsbyjs.org/)
+Our travel blog [kevinandsam.travel](https://kevinandsam.travel/) written using [Gatsby](https://www.gatsbyjs.org/)
 
-Gatsby is configured using two top level files `gatsby-config.js` and `gatsby-node.js`. The `gatsby-config.js` file specifies which plugins to use and passes some arguments to plugins if required. The `gatsby-node.js` hooks into [Gatsby's Node API](https://www.gatsbyjs.org/docs/node-apis/) and is used to dynamically create React components from Markdown files.
+For an interesting write up about most of the features of this blog read [An Over-Engineered Travel Blog](https://www.kevinhughes.ca/blog/an-over-engineered-travel-blog)
 
-Blog posts are automatically generated for any markdown file in the `/blog` folder. Images for the blog also go in this folder and are referenced relatively in the code.
+## About
 
+Gatsby is configured using three top level files `gatsby-browser.js`, `gatsby-config.js` and `gatsby-node.js`. `gatsby-config.js` file specifies which plugins to use and passes some arguments to plugins if required. The `gatsby-node.js` hooks into [Gatsby's Node API](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/) and is used to dynamically create React components from Markdown files.
+
+Blog posts are automatically generated for each `/blog/articles/*/index.md` directory. Images for the blog go in this folder and are referenced relatively in the code.
+
+Social media data is exported then imported into `blog/facebook/` and `blog/instagram/`. The posts are defined in a json file and image and video assets are stored in local folders.
+  * sometimes it seems that you need to clear gatsby's cache after changing this data
 
 ## Setup
 
@@ -23,4 +29,4 @@ Sharp is a pain in the ass. I have found that `yarn build` is more successful an
 
 ## Tools
 
-I added a script in `/bin` to print the durations we are staying / stayed in each country. Its also useful for planning and debugging.
+There some scripts in `/bin`for various purposes like printing the durations we are staying / stayed in each country.
