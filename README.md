@@ -1,8 +1,8 @@
 # kevinandsam.travel
 
-Our travel blog [kevinandsam.travel](https://kevinandsam.travel/) written using [Gatsby](https://www.gatsbyjs.org/)
+Our travel blog [kevinandsam.travel](https://kevinandsam.travel/) written using [Gatsby](https://www.gatsbyjs.org/).
 
-For an interesting write up about most of the features of this blog read [An Over-Engineered Travel Blog](https://www.kevinhughes.ca/blog/an-over-engineered-travel-blog)
+For an interesting write up about most of the features of this blog read [An Over-Engineered Travel Blog](https://www.kevinhughes.ca/blog/an-over-engineered-travel-blog) on my personal blog.
 
 ## About
 
