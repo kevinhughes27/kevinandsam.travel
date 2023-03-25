@@ -71,4 +71,8 @@
   .fadeIn-bottom {
     top: 80%;
   }
+
+  img {
+    animation: fadeIn 3s both 0.3s;
+  }
 }
