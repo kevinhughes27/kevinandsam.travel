@@ -27,7 +27,6 @@ export default function InfinitScroll(WrappedComponent, options) {
     reset() {
       this.setState({show: this.loadSize, ready: false})
       window.scrollTo(0, 0)
-      delete window[this.scrollKey]
       this.setState({ready: true})
     }
 
@@ -87,7 +86,7 @@ export default function InfinitScroll(WrappedComponent, options) {
         <WrappedComponent
           ready={ready}
           show={show}
-          resetInfiniteScroll={() => this.reset}
+          resetInfiniteScroll={() => this.reset()}
           {...this.props}
         />
       )
