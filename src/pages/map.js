@@ -22,16 +22,16 @@ const MapParams = (windowWidth) => {
   const smallScreen = windowWidth < 667
   const mediumScreen = windowWidth <= 768
   const mobileCenters = {
-    asia: { center: [19.91, 113.15], zoom: 2.8 },
-    southAmerica: { center: [4.26, -64.32], zoom: 2.7 }
+    asia: { center: [19.91, 113.15], zoom: 2.8, minZoom: 1.6 },
+    southAmerica: { center: [4.26, -64.32], zoom: 2.7, minZoom: 1.6 }
   }
 
   if (smallScreen) {
     return mobileCenters.southAmerica
   } else if (mediumScreen) {
-    return { center: [19.69, -23.68], zoom: 2.87 }
+    return { center: [19.69, -23.68], zoom: 2.87, minZoom: 2.0 }
   } else {
-    return { center: [11.82, 22.00], zoom: 3.0 }
+    return { center: [11.82, 22.00], zoom: 3.0, minZoom: 2.5 }
   }
 }
 
@@ -44,14 +44,14 @@ class MapPage extends React.Component {
     }
 
     const windowWidth = this.props.windowWidth
-    const { center, zoom } = MapParams(windowWidth)
+    const { center, zoom, minZoom } = MapParams(windowWidth)
 
     return (
       <Layout id="map">
         <MapContainer
           center={center}
           zoom={zoom}
-          minZoom={2.5}
+          minZoom={minZoom}
           maxZoom={7.0}
           zoomSnap={0}
           zoomDelta={0.5}
