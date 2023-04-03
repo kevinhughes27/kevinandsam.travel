@@ -80,7 +80,7 @@ nav ul {
 
 .active {
   &:before {
-    visibility: visible;
-    transform: scaleX(1);
+    visibility: visible !important;
+    transform: scaleX(1) !important;
   }
 }
