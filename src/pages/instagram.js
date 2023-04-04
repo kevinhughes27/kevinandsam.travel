@@ -11,6 +11,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faImages, faPlayCircle, faCaretRight, faCaretLeft } from '@fortawesome/free-solid-svg-icons'
 import { graphql } from 'gatsby'
 import mousetrap from 'mousetrap'
+import { isDomAvailable } from '../utils'
 
 export { Head } from '../components/Head'
 
@@ -252,7 +253,7 @@ class Index extends React.Component {
     }
 
     const postsToShow = sortedPosts.slice(0, this.props.show)
-    const showLoader = postsToShow.length < sortedPosts.length
+    const showLoader = isDomAvailable() && postsToShow.length < sortedPosts.length
 
     const photos = postsToShow.map((post) => {
       const images = post.images.map(img => ({

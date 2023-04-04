@@ -6,6 +6,7 @@ import Search from '../components/Search'
 import Loader from '../components/Loader'
 import PhotoAlbum from 'react-photo-album'
 import { graphql } from 'gatsby'
+import { isDomAvailable } from '../utils'
 
 export { Head } from '../components/Head'
 
@@ -132,7 +133,7 @@ class Index extends React.Component {
     }
 
     const postsToShow = sortedPosts.slice(0, this.props.show)
-    const showLoader = postsToShow.length < sortedPosts.length
+    const showLoader = isDomAvailable() && postsToShow.length < sortedPosts.length
 
     return (
       <Layout search={
