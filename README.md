@@ -29,4 +29,4 @@ Sharp is a pain in the ass. I have found that `yarn build` is more successful an
 
 ## Tools
 
-There some scripts in `/bin` for various purposes like printing the durations we are staying / stayed in each country.
+There are some scripts in `/bin` for various purposes like printing the durations we are staying / stayed in each country.
