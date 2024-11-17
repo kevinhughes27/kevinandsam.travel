@@ -1,5 +1,37 @@
 [
   {
+    "name": "Crab Week 2024",
+    "color": "orange",
+    "locations": [
+      {
+        "name": "Tarragona, Spain",
+        "text": "🦀 Crab Week 🦀",
+        "flag": "🇪🇸",
+        "date": "2024-04-20",
+        "coordinates": [
+          41.1257754,
+          1.1561826
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Crab Week 2023",
+    "color": "orange",
+    "locations": [
+      {
+        "name": "Albufeira, Portugal",
+        "text": "🦀 Crab Week 🦀",
+        "flag": "🇵🇹",
+        "date": "2023-04-20",
+        "coordinates": [
+          37.1122003,
+          -8.2591872
+        ]
+      }
+    ]
+  },
+  {
     "name": "Ruby Day Italy",
     "color": "teal",
     "locations": [

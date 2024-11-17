@@ -1,5 +1,59 @@
 [
   {
+    "name": "Montreal",
+    "color": "orange",
+    "locations": [
+      {
+        "name": "Montreal",
+        "flag": "🇨🇦",
+        "date": "2024-11-12",
+        "coordinates": [
+          45.5635972,
+          -73.5482972
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Vancouver Island",
+    "color": "orange",
+    "locations": [
+      {
+        "name": "Sidney",
+        "flag": "🇨🇦",
+        "date": "2023-08-13",
+        "coordinates": [
+          48.6494111,
+          -123.3959444
+        ]
+      },
+      {
+        "name": "Nanaimo",
+        "flag": "🇨🇦",
+        "date": "2023-08-16",
+        "coordinates": [
+          49.1780849,
+          -124.0194121
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Cancun 2023",
+    "color": "orange",
+    "locations": [
+      {
+        "name": "Cancun, Mexico",
+        "flag": "🇲🇽",
+        "date": "2023-12-06",
+        "coordinates": [
+          20.7582806,
+          -86.9630694
+        ]
+      }
+    ]
+  },
+  {
     "name": "Skiing 2023",
     "color": "orange",
     "locations": [
@@ -85,148 +139,6 @@
         "coordinates": [
           38.7436214,
           -9.1952226
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Gros Morne",
-    "color": "purple",
-    "locations": [
-      {
-        "name": "Gros Morne",
-        "flag": "🇨🇦",
-        "date": "2021-08-25",
-        "text": "🥂 We got Married! 🥂",
-        "coordinates": [
-          49.483219,
-          -58.122293
-        ]
-      }
-    ]
-  },
-  {
-    "name": "China 2017",
-    "color": "red",
-    "locations": [
-      {
-        "name": "Beijing, China",
-        "flag": "🇨🇳",
-        "date": "2017-05-10",
-        "coordinates": [
-          39.9390731,
-          116.1172797
-        ]
-      },
-      {
-        "name": "Xi'an, China",
-        "flag": "🇨🇳",
-        "date": "2017-05-16",
-        "coordinates": [
-          34.2595844,
-          108.8271257
-        ]
-      },
-      {
-        "name": "Zhangye, China",
-        "flag": "🇨🇳",
-        "date": "2017-05-18",
-        "coordinates": [
-          38.9180207,
-          100.3312612
-        ]
-      },
-      {
-        "name": "Lijiang, China",
-        "flag": "🇨🇳",
-        "date": "2017-05-21",
-        "coordinates": [
-          26.8700055,
-          100.1568584
-        ]
-      },
-      {
-        "name": "Yangshuo, China",
-        "flag": "🇨🇳",
-        "date": "2017-05-26",
-        "coordinates": [
-          24.8459283,
-          110.3149131
-        ]
-      },
-      {
-        "name": "Shanghai, China",
-        "flag": "🇨🇳",
-        "date": "2017-05-30",
-        "coordinates": [
-          31.2246325,
-          121.1965706
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Peru 2016",
-    "color": "green",
-    "locations": [
-      {
-        "name": "Cusco, Peru",
-        "flag": "🇵🇪",
-        "date": "2015-11-16",
-        "coordinates": [
-          -13.5300169,
-          -71.9742685
-        ]
-      },
-      {
-        "name": "Lima, Peru",
-        "flag": "🇵🇪",
-        "date": "2015-11-22",
-        "coordinates": [
-          -12.0266034,
-          -77.1278635
-        ]
-      },
-      {
-        "name": "Trujillo, Peru",
-        "flag": "🇵🇪",
-        "date": "2015-11-19",
-        "coordinates": [
-          -8.1167519,
-          -79.0371252
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Costa Rica 2015",
-    "color": "green",
-    "locations": [
-      {
-        "name": "Monteverde, Costa Rica",
-        "flag": "🇨🇷",
-        "date": "2013-02-05",
-        "coordinates": [
-          10.2856063,
-          -84.8535067
-        ]
-      },
-      {
-        "name": "La Fortuna, Costa Rica",
-        "flag": "🇨🇷",
-        "date": "2013-02-09",
-        "coordinates": [
-          10.4699508,
-          -84.6447657
-        ]
-      },
-      {
-        "name": "Puerto Viejo, Costa Rica",
-        "flag": "🇨🇷",
-        "date": "2013-02-12",
-        "coordinates": [
-          9.6529511,
-          -82.7574456
         ]
       }
     ]

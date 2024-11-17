@@ -6,10 +6,11 @@ import { divIcon } from 'leaflet'
 import { format, isAfter } from 'date-fns'
 import { isDomAvailable } from '../utils'
 
-import yearTrip from '../../data/yearTrip.json'
 import kevinTrips from '../../data/kevin.json'
 import kevinChildhoodTrips from '../../data/kevin-childhood.json'
 import samTrips from '../../data/sam.json'
+import kevinAndSamTrips from '../../data/kevin-and-sam.json'
+import yearTrip from '../../data/yearTrip.json'
 import trips from '../../data/trips.json'
 
 const currentLocation = {
@@ -84,7 +85,7 @@ class MapPage extends React.Component {
 
             <LayersControl.Overlay checked name="Kevin & Sam">
               <LayerGroup>
-                <Trips trips={ trips.filter(t => new Date(t.locations[0].date) < new Date("2022-04-19")) }/>
+                <Trips trips={kevinAndSamTrips}/>
               </LayerGroup>
             </LayersControl.Overlay>
 
@@ -97,7 +98,7 @@ class MapPage extends React.Component {
 
             <LayersControl.Overlay checked name="Kevin, Sam & Miles">
               <LayerGroup>
-                <Trips trips={ trips.filter(t => new Date(t.locations[0].date) > new Date("2022-04-19")) }/>
+                <Trips trips={trips}/>
               </LayerGroup>
             </LayersControl.Overlay>
           </LayersControl>
