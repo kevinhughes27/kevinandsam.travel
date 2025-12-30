@@ -1,5 +1,6 @@
 {
   "name": "kevinandsam.travel",
+  "engine": ">=22",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^7.1.0",
