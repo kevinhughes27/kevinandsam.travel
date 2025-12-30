@@ -1,3 +1,5 @@
+@use '../variables' as *;
+
 .ig-grid {
   padding-top: 1em;
   padding-bottom: 1em;
@@ -16,10 +18,12 @@
 
 .ig-gallery-icon {
   position: absolute;
-  overflow: hidden;
-  inset: 0 0 auto auto;
-  padding: 0.5em;
+  top: 0.5em;
+  right: 0.5em;
   color: $color-grey;
+  pointer-events: none;
+  z-index: 1;
+  overflow: visible;
 }
 
 .ig-post {

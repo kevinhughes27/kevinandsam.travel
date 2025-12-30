@@ -4,7 +4,7 @@ import Modal from '../components/Modal'
 import InfinteScroll from '../components/InfiniteScroll'
 import Search from '../components/Search'
 import Loader from '../components/Loader'
-import PhotoAlbum from 'react-photo-album'
+import { RowsPhotoAlbum } from 'react-photo-album'
 import Swipe from 'react-easy-swipe'
 import { Carousel } from 'react-responsive-carousel'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -199,30 +199,6 @@ class Index extends React.Component {
     )
   }
 
-  renderGalleryVideo(index, type, src, width) {
-    return (
-      <div style={{ position: 'relative' }}>
-        <video
-          width={Math.round(width)}
-          onClick={() => this.onClick(index)}
-        >
-          <source type={type} src={src} />
-        </video>
-        <FontAwesomeIcon className='ig-gallery-icon' icon={faPlayCircle} />
-      </div>
-    )
-  }
-
-  renderGalleryPhoto(index, wrapperStyle, renderDefaultPhoto) {
-    const post = this.props.data.allInstagramPostsJson.nodes[index]
-    return (
-      <div style={{ position: 'relative', ...wrapperStyle }}>
-        {renderDefaultPhoto({ wrapped: true })}
-        { post.images.length > 1 ? <FontAwesomeIcon className='ig-gallery-icon' icon={faImages} /> : null }
-      </div>
-    )
-  }
-
   render() {
     const posts = this.props.data.allInstagramPostsJson.nodes
     const rangeBounds = [
@@ -288,8 +264,7 @@ class Index extends React.Component {
         <section className='section-padding bg-white' style={{opacity: this.props.ready ? 1 : 0}}>
           {this.renderModal()}
           <div className='grid ig-grid'>
-            <PhotoAlbum
-              layout='rows'
+            <RowsPhotoAlbum
               rowConstraints={{
                 maxPhotos: 3
               }}
@@ -304,11 +279,28 @@ class Index extends React.Component {
                 const index = posts.findIndex(p => p.id == id)
                 this.onClick(index)
               }}
-              renderPhoto={({ photo, layout: { index, width }, wrapperStyle, renderDefaultPhoto }) => {
-                if ((photo.type || '').startsWith('video')) {
-                  return this.renderGalleryVideo(index, photo.type, photo.src, width)
-                } else {
-                  return this.renderGalleryPhoto(index, wrapperStyle, renderDefaultPhoto)
+              render={{
+                image: (props, { photo, width }) => {
+                  if ((photo.type || '').startsWith('video')) {
+                    return (
+                      <video width={Math.round(width)}>
+                        <source type={photo.type} src={photo.src} />
+                      </video>
+                    )
+                  }
+                  return <img {...props} />
+                },
+                extras: (_, { photo, index }) => {
+                  const post = posts[index]
+                  const isVideo = (photo.type || '').startsWith('video')
+                  const isMulti = (post.images.length > 1)
+
+                  if (isVideo) {
+                    return <FontAwesomeIcon className='ig-gallery-icon' icon={faPlayCircle} />
+                  } else if (isMulti) {
+                    return <FontAwesomeIcon className='ig-gallery-icon' icon={faImages} />
+                  }
+                  return null
                 }
               }}
             />

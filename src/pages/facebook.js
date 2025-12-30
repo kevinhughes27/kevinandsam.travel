@@ -4,7 +4,7 @@ import TravellingTo from '../components/TravellingTo'
 import InfinteScroll from '../components/InfiniteScroll'
 import Search from '../components/Search'
 import Loader from '../components/Loader'
-import PhotoAlbum from 'react-photo-album'
+import { RowsPhotoAlbum } from 'react-photo-album'
 import { graphql } from 'gatsby'
 import { isDomAvailable } from '../utils'
 
@@ -39,26 +39,27 @@ class Post extends React.Component {
 
         <p>{text}</p>
 
-        <PhotoAlbum
-          layout='rows'
+        <RowsPhotoAlbum
           spacing={2}
           defaultContainerWidth={600}
           rowConstraints={{maxPhotos: maxPhotos}}
           photos={photos}
-          renderPhoto={({ photo: { src, type, duration }, layout: { width } }) => {
-            if ((type || '').startsWith('video')) {
-              return (
-                <video
-                  controls
-                  playsInline
-                  autoPlay={duration < 10}
-                  loop={duration < 2}
-                  disablePictureInPicture
-                  width={Math.round(width)}
-                >
-                  <source type={type} src={src} />
-                </video>
-              );
+          render={{
+            photo: ({ onClick }, { photo: { src, type, duration }, width }) => {
+              if ((type || '').startsWith('video')) {
+                return (
+                  <video
+                    controls
+                    playsInline
+                    autoPlay={duration < 10}
+                    loop={duration < 2}
+                    disablePictureInPicture
+                    width={Math.round(width)}
+                  >
+                    <source type={type} src={src} />
+                  </video>
+                );
+              }
             }
           }}
         />
