@@ -1,6 +1,5 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import Share from '../components/Share'
 
 import { MDXProvider } from '@mdx-js/react'
 import Quote from '../components/Quote'
@@ -73,7 +72,9 @@ export default function Template({ data: { mdx: post }, children }) {
                 </MDXProvider>
               </div>
 
-              <Share title={title} shareUrl={shareUrl} imageUrl={imageUrl} />
+              <div style={{ textAlign: "center", margin: "2rem 0", fontSize: "0.6rem", color: "#999", opacity: "0.5", letterSpacing: "2.5rem" }}>
+                ◆ ◆ ◆
+              </div>
 
               <div className="post-author">
                 <img src={`${__PATH_PREFIX__}/${author.toLowerCase()}.jpg`} alt={author} />
