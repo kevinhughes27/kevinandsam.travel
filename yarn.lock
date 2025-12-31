@@ -10049,10 +10049,10 @@ react-responsive-carousel@^3.2.23:
     prop-types "^15.5.8"
     react-easy-swipe "^0.0.21"
 
-react-responsive-select@7.0.4:
-  version "7.0.4"
-  resolved "https://registry.yarnpkg.com/react-responsive-select/-/react-responsive-select-7.0.4.tgz#4ce8b9f342420f671046caa1f38adfa2d56a4c6c"
-  integrity sha512-MMeOgj4DWbenXAW/K7Lc0+Z2l5EjyUb3ZqkcVZq9/q9iUud88nINTHY0Y3mXZNLPosfHFt29jBRhVWgDmBMWPg==
+react-responsive-select@7.0.8:
+  version "7.0.8"
+  resolved "https://registry.yarnpkg.com/react-responsive-select/-/react-responsive-select-7.0.8.tgz#11d60fef56391e1aa3179dc9e6003506b7795193"
+  integrity sha512-4NsV7l/EnbltPiOeLkVnyxOQ/BAAfvBmg/Jbkn9RDeST82n8QamINvPC9TBTGQDJfSCUNy6YsdCoOyXlVOUU/A==
   dependencies:
     singleline "^2.0.0"
 
