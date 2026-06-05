@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+IMAGE="node:22"
+PODMAN_CMD=(podman run -it --rm --userns=keep-id -v "$PWD":/app -w /app)
+
+case "$1" in
+  up)
+    echo "Starting Gatsby development server..."
+    "${PODMAN_CMD[@]}" -p 8000:8000 $IMAGE yarn run start
+    ;;
+
+  yarn)
+    shift # Remove 'yarn' from the arguments
+    echo "Running yarn $@..."
+    "${PODMAN_CMD[@]}" $IMAGE yarn "$@"
+    ;;
+
+  shell)
+    echo "Opening container shell..."
+    "${PODMAN_CMD[@]}" $IMAGE bash
+    ;;
+  *)
+    echo "Gatsby Podman Wrapper"
+    echo "Usage:"
+    echo "  ./dev up           - Start the Gatsby development server on port 8000"
+    echo "  ./dev yarn [args]  - Run yarn commands (e.g., ./dev.sh yarn install)"
+    echo "  ./dev shell        - Open a shell inside the container for debugging"
+    ;;
+esac
