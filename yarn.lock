@@ -9977,10 +9977,10 @@ react-onclickoutside@^6.13.0:
   resolved "https://registry.yarnpkg.com/react-onclickoutside/-/react-onclickoutside-6.13.0.tgz#e165ea4e5157f3da94f4376a3ab3e22a565f4ffc"
   integrity sha512-ty8So6tcUpIb+ZE+1HAhbLROvAIJYyJe/1vRrrcmW+jLsaM+/powDRqxzo6hSh9CuRZGSL1Q8mvcF5WRD93a0A==
 
-react-photo-album@^3.6.0:
-  version "3.6.0"
-  resolved "https://registry.yarnpkg.com/react-photo-album/-/react-photo-album-3.6.0.tgz#d3402ffc9d20192569fd051df16fa5ffe85c120e"
-  integrity sha512-W9NgI+0XxOYF/FLQJ/ZiKsizNQtGtgDdiFgojmTmpBKDGeGiWKfSzmbw3v9WAqzimPeiFJ2sEb9DO0nHRHP/OA==
+react-photo-album@^3.6.1:
+  version "3.6.1"
+  resolved "https://registry.yarnpkg.com/react-photo-album/-/react-photo-album-3.6.1.tgz#4e81b23e8a08ccf329b2f08ef43b56f2a9f27add"
+  integrity sha512-m4pTIpgEpdAJgRnf3DfISHfIHMjJkouWJdKUyGy9UaFBBePv1kolqKTzAmZrfQcoZBVfT/g9vvcc39o1RfwZgA==
 
 react-range@^1.10.0:
   version "1.10.0"
